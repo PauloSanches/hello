@@ -141,13 +141,13 @@ h1, h2, h3, h4, p { margin: 0; }
   z-index: 1;
   width: 55%;
   min-width: 0;
-  padding: 48px var(--page-gutter);
+  padding: 32px var(--page-gutter);
 }
 .hero-title {
   max-width: 11ch;
   font-family: var(--sans);
-  font-size: min(var(--hero-title-size), 12vh);
-  font-size: min(var(--hero-title-size), 12svh);
+  font-size: min(var(--hero-title-size), 11vh);
+  font-size: min(var(--hero-title-size), 11svh);
   font-weight: 400;
   letter-spacing: -0.055em;
   line-height: 1.05;
@@ -163,6 +163,29 @@ h1, h2, h3, h4, p { margin: 0; }
   font-size: 11px;
   letter-spacing: 0.04em;
   text-transform: none;
+}
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  min-height: 44px;
+  margin-top: 24px;
+  padding: 10px 12px;
+  border: 1px solid currentColor;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.hero-cta-label { min-width: 0; }
+.hero-cta > [aria-hidden] { flex-shrink: 0; }
+.hero-cta:hover {
+  background: var(--ink);
+  color: var(--paper);
 }
 .contact-link:hover { border-bottom-width: 2px; }
 /* A definite banner height keeps the portrait visible on mobile Safari. */
@@ -646,7 +669,7 @@ details[open] .detail-plus { transform: rotate(45deg); }
   .contact h2 { font-size: 42px; }
   .contact-kicker { max-width: 220px; font-size: 9px; }
 }
-@media (max-height: 700px) {
+@media (max-height: 760px) {
   .hero-main { padding-block: 24px; }
   .hero-title {
     font-size: min(var(--hero-title-size), 8.5vh);
@@ -654,6 +677,16 @@ details[open] .detail-plus { transform: rotate(45deg); }
   }
   .hero-cheer { margin-top: 12px; }
   .hero-signature { margin-top: 16px; }
+}
+@media (max-height: 420px) {
+  .hero-main { padding-block: 8px; }
+  .hero-title {
+    font-size: min(var(--hero-title-size), 7.5vh);
+    font-size: min(var(--hero-title-size), 7.5svh);
+  }
+  .hero-cheer { margin-top: 8px; }
+  .hero-signature { margin-top: 12px; }
+  .hero-cta { margin-top: 8px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
