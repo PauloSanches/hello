@@ -14,14 +14,16 @@ O conteúdo está em `index.html`, o estilo em `assets/style.css` e os filtros e
 
 ## Publicação no GitHub Pages
 
-1. Enviar os ficheiros para a branch `main` do repositório `PauloSanches/hello`.
-2. No GitHub, abrir **Settings → Pages → Build and deployment → Source** e escolher **GitHub Actions**.
-3. Em **Actions**, executar **Deploy portfolio to GitHub Pages** (ou fazer um novo push para `main`).
-4. Confirmar que o workflow terminou com sucesso. Endereço esperado: `https://paulosanches.github.io/hello/`.
+Este site é publicado diretamente da branch `main`, sem um workflow de deployment personalizado e sem processamento Jekyll.
 
-O workflow publica apenas `index.html`, `assets/` e `.nojekyll`. Os caminhos relativos permitem servir o site no subdiretório `/hello/`.
+1. No GitHub, abrir **Settings → Pages → Build and deployment → Source** e escolher **Deploy from a branch**.
+2. Selecionar a branch **main**, a pasta **/ (root)** e guardar.
+3. Um push para `main` inicia a publicação. Acompanhar **pages build and deployment** no separador **Actions**.
+4. Após uma execução com sucesso, abrir `https://paulosanches.github.io/hello/`.
 
-Alternativa sem Actions: em **Settings → Pages**, escolher **Deploy from a branch**, branch `main`, pasta `/ (root)`. Não é necessária uma branch chamada `gh-pages` para usar GitHub Pages.
+O ficheiro `.nojekyll` na raiz permite servir o HTML, CSS e JavaScript diretamente. Os caminhos relativos suportam o subdiretório `/hello/`. Não é necessária uma branch chamada `gh-pages`.
+
+Tudo o que for acrescentado à branch pública deve ser apropriado para divulgação. Os anexos originais não estão no repositório.
 
 ## Conteúdo e privacidade
 
