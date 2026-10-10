@@ -698,10 +698,16 @@ details[open] .detail-plus { transform: rotate(45deg); }
   .hero-intro { max-width: 576px; font-size: 22px; }
   .hero-actions { flex-direction: row; gap: 18px 24px; margin-top: 28px; }
   .hero-aside {
+    display: block;
     min-height: 0;
-    aspect-ratio: 1 / 1;
     border-top: 1px solid var(--line);
     border-left: 0;
+  }
+  .portrait-card { display: block; min-height: 0; }
+  .portrait-photo {
+    position: relative;
+    inset: auto;
+    height: calc(100vw - var(--ruler-width));
   }
   .portrait-card::before { background-size: 40px 40px; }
   .hero-bottom { gap: 20px; font-size: 9px; }
