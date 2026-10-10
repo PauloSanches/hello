@@ -749,6 +749,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 }
 .explore-links li + li { border-inline-start: 1px solid #555; }
 .explore-links li:nth-child(odd) { border-inline-start: 0; }
+.explore-links li:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .explore-links li:nth-child(n + 3) { border-top: 1px solid #555; }
 .explore-link {
   display: grid;
