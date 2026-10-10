@@ -16,14 +16,12 @@ In **Settings → Pages**, choose **Deploy from a branch**, branch **main**, fol
 
 ## Design and accessibility
 
-The site uses self-hosted Exo 2 and Inter fonts, with their Open Font Licenses in `assets/fonts/`.
+The layout uses a white and black palette, a large sans-serif name, serif headings, monospaced labels and fine rules. Its visual direction follows [Lucas Montano's website](https://lucasmontano.com/). System font stacks require no font downloads. The hero's PS monogram is a typographic composition.
 
-Project filters, approach controls and case disclosures use short animations. A persistent animation switch and the operating system’s reduced-motion preference control motion. Essential content, navigation and native disclosures work without JavaScript. Mobile navigation supports Escape and keyboard focus restoration.
+The page opens with a welcoming personal introduction, followed by a timeline organised by projects and a section of stories. Project contributions and two stories expand through native disclosures. Essential content, navigation and disclosures work without JavaScript. Mobile navigation supports Escape and keyboard focus restoration. The operating system's reduced-motion preference disables smooth scrolling and transitions.
 
-Browser validation covers widths from 320 to 1440 pixels, keyboard interaction, project filtering, reduced motion, clipboard feedback and JavaScript-disabled use. An axe-core WCAG A/AA scan complements manual visual checks; automated checks do not establish complete accessibility conformance.
+JavaScript syntax, HTML structure, internal links and local assets were checked. The revised layout has not been validated in a browser because browser execution is unavailable in the current environment.
 
 ## Content
 
-All visitor-facing content is in English. Professional claims are based on the supplied documents and distinguish individual contributions from team outcomes. Clients are described by sector. Original attachments, private financial metrics and telephone numbers are excluded from the public site.
-
-Credential dates reflect the source documents, not independent verification of current certification status. Internal credentials are separated from external certifications. The AWS Solutions Architect date is omitted because the sources disagree.
+All visitor-facing content is in English. Project dates, contributions and the people and AI stories come from the supplied CV and career highlights. The security incident card contains only a teaser based on Paulo's description; incident details and outcomes have not been inferred. Clients are described by sector. Original attachments, private financial metrics and telephone numbers are excluded from the public site.
