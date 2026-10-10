@@ -191,7 +191,6 @@ details[open]>summary .icon{transform:rotate(45deg)}
 #main:focus{outline:0}
 
 
-/* Kimi reference: dark neutral surfaces, teal accents and a compact dashboard rhythm. */
 html{color-scheme:dark}
 
 .hero-shell{background:radial-gradient(ellipse 90% 70% at 15% -10%,#2dd4bf1f,transparent 55%),linear-gradient(175deg,#0a0a0d,#060608 72%)}

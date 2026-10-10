@@ -16,7 +16,7 @@ In **Settings → Pages**, choose **Deploy from a branch**, branch **main**, fol
 
 ## Design and accessibility
 
-The site uses self-hosted Exo 2 and Inter fonts, with their Open Font Licenses in `assets/fonts/`. See `DESIGN.md` for the visual system and motion rules.
+The site uses self-hosted Exo 2 and Inter fonts, with their Open Font Licenses in `assets/fonts/`.
 
 Project filters, approach controls and case disclosures use short animations. A persistent animation switch and the operating system’s reduced-motion preference control motion. Essential content, navigation and native disclosures work without JavaScript. Mobile navigation supports Escape and keyboard focus restoration.
 
@@ -24,6 +24,6 @@ Browser validation covers widths from 320 to 1440 pixels, keyboard interaction, 
 
 ## Content
 
-All visitor-facing content must remain in English. Professional claims are based on the supplied documents and distinguish individual contributions from team outcomes. Clients are described by sector. Original attachments, private financial metrics and telephone numbers are excluded from the public site.
+All visitor-facing content is in English. Professional claims are based on the supplied documents and distinguish individual contributions from team outcomes. Clients are described by sector. Original attachments, private financial metrics and telephone numbers are excluded from the public site.
 
 Credential dates reflect the source documents, not independent verification of current certification status. Internal credentials are separated from external certifications. The AWS Solutions Architect date is omitted because the sources disagree.
