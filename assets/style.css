@@ -5,7 +5,7 @@
   --line: #161616;
   --quiet-line: #d8d8d8;
   --page-gutter: clamp(20px, 4vw, 72px);
-  --ruler-width: 32px;
+  --ruler-width: 20px;
   --hero-height: 56vh;
   --journey-row-padding: clamp(28px, 3.3vw, 52px);
   --journey-marker-offset: 13px;
@@ -22,13 +22,14 @@ html { scroll-behavior: smooth; scroll-padding-top: 24px; }
 body {
   position: relative;
   margin: 0;
-  min-width: 320px;
+  min-width: 0;
   padding-inline-start: var(--ruler-width);
   background: var(--paper);
   color: var(--ink);
   font-family: var(--sans);
   font-size: 16px;
   line-height: 1.45;
+  overflow-wrap: anywhere;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -44,7 +45,7 @@ body::before {
   background-image:
     repeating-linear-gradient(to bottom, var(--quiet-line) 0 1px, transparent 1px 12px),
     repeating-linear-gradient(to bottom, #a6a6a6 0 1px, transparent 1px 60px);
-  background-size: 6px 100%, 16px 100%;
+  background-size: 4px 100%, 10px 100%;
   background-position: right top;
   background-repeat: no-repeat;
   pointer-events: none;
@@ -220,6 +221,7 @@ h1, h2, h3, h4, p { margin: 0; }
   grid-template-columns: minmax(144px, 0.33fr) minmax(0, 1fr);
   column-gap: clamp(24px, 5vw, 112px);
 }
+.section-heading > *, .journey-item > *, .stories-grid > * { min-width: 0; }
 .section-heading { margin-bottom: clamp(40px, 5vw, 80px); }
 .section-index { color: var(--muted); padding-top: 8px; }
 .section-heading h2 {
@@ -621,7 +623,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 }
 @media (max-width: 760px) {
   :root {
-    --ruler-width: 24px;
+    --ruler-width: 12px;
     --journey-row-padding: 32px;
     --journey-marker-offset: 11.5px;
   }
@@ -636,7 +638,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
     padding: 32px 12px 64px var(--page-gutter);
   }
   .hero-portrait::after { background-size: 40px 40px; }
-  .section-heading { grid-template-columns: 1fr; row-gap: 32px; }
+  .section-heading { grid-template-columns: minmax(0, 1fr); row-gap: 32px; }
   .section-index { padding-top: 0; font-size: 10px; }
   .section-heading h2 { font-size: clamp(46px, 8vw, 62px); }
   .section-heading p:not(.section-index) { margin-top: 24px; font-size: 17px; }
@@ -652,7 +654,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   .journey-description, .detail-content { font-size: 15px; }
   .project-tags { gap: 8px 12px; font-size: 9px; }
   .project-tags li + li::before { margin-right: 12px; }
-  .stories-grid { grid-template-columns: 1fr; }
+  .stories-grid { grid-template-columns: minmax(0, 1fr); }
   .story-featured { grid-row: auto; border-right: 0; }
   .story + .story { border-top: 1px solid var(--line); }
   .story { padding: 32px 28px; }
@@ -661,7 +663,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   .story-featured .story-teaser { font-size: 24px; }
   .story-meta { margin-top: 40px; }
   .contact {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     row-gap: 26px;
     padding: 32px 28px;
   }
@@ -674,9 +676,8 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   .site-footer { flex-wrap: wrap; column-gap: 18px; row-gap: 20px; }
   .site-footer p { order: 3; width: 100%; }
 }
-@media (max-width: 440px) {
-  .section-heading h2 { font-size: 46px; }
-  .journey-item { grid-template-columns: 1fr; row-gap: 24px; }
+@media (max-width: 600px) {
+  .journey-item { grid-template-columns: minmax(0, 1fr); row-gap: 24px; }
   .journey-date {
     display: flex;
     align-items: baseline;
@@ -684,8 +685,11 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
     gap: 20px;
   }
   .date-note { max-width: 180px; margin-top: 0; text-align: right; }
+}
+@media (max-width: 440px) {
+  .section-heading h2 { font-size: 46px; }
   .project-label { margin-bottom: 16px; }
-  .journey-content h3 { font-size: 36px; }
+  .journey-content h3 { font-size: clamp(28px, 10vw, 36px); }
   .timeline-note { text-align: left; }
   .story, .contact { padding-inline: 23px; }
   .story-category { font-size: 9px; }
@@ -764,11 +768,12 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 }
 .explore-label {
   grid-column: 1;
+  min-width: 0;
   font-size: clamp(23px, 2.65vw, 44px);
   font-weight: 700;
   letter-spacing: -0.055em;
   line-height: 1;
-  white-space: nowrap;
+  white-space: normal;
   text-transform: uppercase;
 }
 .explore-arrow {
