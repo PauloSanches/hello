@@ -249,9 +249,9 @@ h1, h2, h3, h4, p { margin: 0; }
 .profile-section .section-heading { margin-bottom: 0; }
 .profile-section .profile-title {
   min-width: 0;
-  max-width: 24ch;
+  max-width: 34ch;
   font-family: var(--sans);
-  font-size: clamp(30px, 4.4vw, 72px);
+  font-size: clamp(24px, 3.2vw, 48px);
   font-weight: 700;
   letter-spacing: -0.045em;
   line-height: 1.08;
@@ -260,6 +260,27 @@ h1, h2, h3, h4, p { margin: 0; }
   overflow-wrap: anywhere;
 }
 .project-timeline { padding: 0; margin: 0; list-style: none; }
+.journey-more { margin-top: 32px; }
+.journey-more > .journey-toggle {
+  min-height: 48px;
+  margin-inline: auto;
+  padding: 12px 20px;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  text-transform: uppercase;
+}
+.journey-more > .journey-toggle:hover {
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+}
+.journey-toggle-icon { font-size: 20px; line-height: 1; }
+.journey-collapse-label { display: none; }
+.journey-more[open] > .journey-toggle { margin-bottom: 32px; }
+.journey-more[open] .journey-expand-label { display: none; }
+.journey-more[open] .journey-collapse-label { display: inline; }
+.journey-more[open] .journey-toggle-icon { transform: rotate(45deg); }
 /* In the experience section the same ruler becomes a project timeline. */
 #journey { position: relative; }
 #journey::before {
@@ -428,7 +449,7 @@ summary:hover { text-decoration: underline; text-underline-offset: 4px; }
   line-height: 1;
   transition: transform 170ms ease;
 }
-details[open] .detail-plus { transform: rotate(45deg); }
+details[open] > summary .detail-plus { transform: rotate(45deg); }
 .detail-content {
   max-width: 736px;
   padding-top: 24px;
