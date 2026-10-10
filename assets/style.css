@@ -97,7 +97,7 @@ h1, h2, h3, h4, p { margin: 0; }
 .skip-link:focus { transform: translateY(0); }
 .brand, .section-index,
 .project-label, .story-category, .story-meta, .contact-kicker,
-.hero-signature, .site-footer,
+.site-footer,
 .timeline-note, .project-tags, .date-note, .contact-social {
   font-family: var(--mono);
   font-size: 11px;
@@ -144,7 +144,7 @@ h1, h2, h3, h4, p { margin: 0; }
   padding: 32px var(--page-gutter);
 }
 .hero-title {
-  max-width: 11ch;
+  max-width: 15ch;
   font-family: var(--sans);
   font-size: min(var(--hero-title-size), 11vh);
   font-size: min(var(--hero-title-size), 11svh);
@@ -152,17 +152,11 @@ h1, h2, h3, h4, p { margin: 0; }
   letter-spacing: -0.055em;
   line-height: 1.05;
 }
-.hero-cheer {
-  display: block;
-  margin-top: 20px;
-  font-size: 0.58em;
-  letter-spacing: -0.045em;
-}
-.hero-signature {
-  margin-top: 24px;
-  font-size: 11px;
-  letter-spacing: 0.04em;
-  text-transform: none;
+.hero-intro {
+  max-width: 32ch;
+  margin-top: 16px;
+  font-size: clamp(16px, 1.5vw, 22px);
+  line-height: 1.35;
 }
 .hero-cta {
   display: inline-flex;
@@ -170,10 +164,9 @@ h1, h2, h3, h4, p { margin: 0; }
   gap: 10px;
   max-width: 100%;
   min-height: 44px;
-  margin-top: 24px;
-  padding: 10px 12px;
-  border: 1px solid currentColor;
-  background: var(--paper);
+  margin-top: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid currentColor;
   color: var(--ink);
   font-family: var(--mono);
   font-size: 11px;
@@ -184,8 +177,7 @@ h1, h2, h3, h4, p { margin: 0; }
 .hero-cta-label { min-width: 0; }
 .hero-cta > [aria-hidden] { flex-shrink: 0; }
 .hero-cta:hover {
-  background: var(--ink);
-  color: var(--paper);
+  border-bottom-width: 2px;
 }
 .contact-link:hover { border-bottom-width: 2px; }
 /* A definite banner height keeps the portrait visible on mobile Safari. */
@@ -675,8 +667,7 @@ details[open] .detail-plus { transform: rotate(45deg); }
     font-size: min(var(--hero-title-size), 8.5vh);
     font-size: min(var(--hero-title-size), 8.5svh);
   }
-  .hero-cheer { margin-top: 12px; }
-  .hero-signature { margin-top: 16px; }
+  .hero-intro { margin-top: 16px; }
 }
 @media (max-height: 420px) {
   .hero-main { padding-block: 8px; }
@@ -684,8 +675,7 @@ details[open] .detail-plus { transform: rotate(45deg); }
     font-size: min(var(--hero-title-size), 7.5vh);
     font-size: min(var(--hero-title-size), 7.5svh);
   }
-  .hero-cheer { margin-top: 8px; }
-  .hero-signature { margin-top: 12px; }
+  .hero-intro { margin-top: 8px; font-size: 14px; }
   .hero-cta { margin-top: 8px; }
 }
 @media (prefers-reduced-motion: reduce) {
