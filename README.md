@@ -16,7 +16,7 @@ In **Settings → Pages**, choose **Deploy from a branch**, branch **main**, fol
 
 ## Design and accessibility
 
-The site uses self-hosted Space Grotesk and Manrope fonts, with their Open Font Licenses in `assets/fonts/`. See `DESIGN.md` for the visual system and motion rules.
+The site uses self-hosted Exo 2 and Inter fonts, with their Open Font Licenses in `assets/fonts/`. See `DESIGN.md` for the visual system and motion rules.
 
 Project filters, approach controls and case disclosures use short animations. A persistent animation switch and the operating system’s reduced-motion preference control motion. Essential content, navigation and native disclosures work without JavaScript. Mobile navigation supports Escape and keyboard focus restoration.
 

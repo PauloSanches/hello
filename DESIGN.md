@@ -6,9 +6,13 @@ Help visitors understand Paulo Sanches’s architecture experience, leadership r
 
 ## Visual system
 
-Retain the portfolio’s sage and forest palette: warm paper `#f7f8f2`, primary ink `#1b2925`, muted text `#536356`, accent `#bddf89`, dark background `#111b19`, and dark-surface text `#f0f5e9`. Use self-hosted Space Grotesk for headings and Manrope for body text. Preserve readable contrast, visible keyboard focus and generous spacing.
+The user selected https://kimiantonelli.online/ as the explicit reference for layout, colour and typography. Its live page and stylesheet were successfully inspected on 10 October 2026. This replaces the earlier sage/forest direction.
 
-The opening presents Paulo’s name and actual role alongside a diagram connecting people, architecture and delivery. Selected work uses a featured architecture case, concise project summaries and expandable evidence. Expertise links back to relevant projects. Career history and credentials precede direct contact options.
+Use the observed dark palette: background `#060608`, alternate section `#0a0a0d`, cards `#0e0e11`, deep section `#101014`, foreground `#eceef2`, headings `#f4f5f7`, muted text `#949aa6`, and teal `#2dd4bf`. Borders are adapted to `#26262d` for legibility. Preserve visible keyboard focus and readable contrast.
+
+Use Exo 2 for display typography and Inter for body text, as confirmed in the reference CSS. Both are self-hosted as Latin-subset variable WOFF2 fonts sourced from Google Fonts, with their Open Font Licenses included. Display headings use bold weights, tight line height and negative tracking no tighter than -0.03em. The hero name is uppercase with a teal surname.
+
+Adapt the observed composition: compact sticky navigation, a slim contextual strip, a two-column hero, a six-cell facts strip, centred section headings with short teal dividers, bordered project cards, career timeline and a deep-neutral contact section. At mobile widths the hero stacks and the facts form two rows. The hero diagram represents Paulo’s work; no reference photography, sports statistics or branding is reused.
 
 ## Interaction and motion
 
@@ -21,7 +25,7 @@ Avoid autoplay loops, scroll hijacking, hidden-on-load content and decorative ef
 - Watermelon UI: component hierarchy and restrained interaction; no component source copied.
 - Motion Primitives: concise state transitions and animated disclosure patterns, implemented here with native browser APIs.
 - The supplied Instagram Reel: publicly accessible descriptive ideas only, including expertise grouping; the video itself was not inspected.
-- Kimi Antonelli: structural organisation reference. Its CSS was inaccessible during research, so no exact colour or font match is claimed.
+- Kimi Antonelli: primary visual reference. Live dark presentation and CSS `/_next/static/css/ff7e826600485e4a.css` inspected; Exo 2, Inter, dark neutral surfaces, teal accents and composition confirmed. Earlier CSS access limitations no longer apply.
 - Vengeance UI, Uiverse and Animate UI: interaction references, adapted to this static site without React dependencies. No third-party component code copied.
 
 Do not invent portraits, testimonials, client results or professional claims. Do not expose private source documents or internal financial metrics. Preserve relative URLs for GitHub Pages under `/hello/`.
