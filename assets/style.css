@@ -871,7 +871,21 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 }
 .mindset-card > * { min-width: 0; }
 .mindset-card-intro .mindset-description { margin-top: 0; }
-.mindset-icon { width: 32px; height: 32px; margin-bottom: 24px; color: var(--icon-services); }
+.mindset-card-image { padding: 0; gap: 0; }
+.mindset-card-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+}
+.mindset-card-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+  padding: 20px;
+}
+.mindset-card-body > * { min-width: 0; }
 .mindset-card h3 {
   max-width: 18ch;
   font-size: clamp(24px, 2vw, 30px);
