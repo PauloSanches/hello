@@ -118,7 +118,7 @@ h1, h2, h3, h4, p { margin: 0; }
   text-decoration: underline;
 }
 .hero {
-  --paper: #111111;
+  --paper: #262626;
   --ink: #f6f6f6;
   --muted: #c9c9c9;
   --line: rgba(255, 255, 255, 0.18);
@@ -213,7 +213,6 @@ h1, h2, h3, h4, p { margin: 0; }
   height: 100%;
   object-fit: cover;
   object-position: center 12%;
-  filter: grayscale(1);
 }
 .section { padding-block: clamp(72px, 9vw, 144px); }
 .section-heading, .journey-item {
