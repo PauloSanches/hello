@@ -881,6 +881,12 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   text-transform: uppercase;
   text-wrap: balance;
 }
+.mindset-transition {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
 .mindset-saying {
   max-width: 28ch;
   font-size: clamp(20px, 1.6vw, 24px);
