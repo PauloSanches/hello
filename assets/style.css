@@ -878,7 +878,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 .talk, .contribution-item { min-width: 0; }
 .contribution-item { scroll-snap-align: start; }
 .contribution-photo { display: block; width: 100%; height: auto; align-self: center; }
-.contribution-photo-portrait { aspect-ratio: 1024 / 683; object-fit: contain; background: #202020; }
+.contribution-photo-portrait { aspect-ratio: 1024 / 683; object-fit: cover; background: #202020; }
 .talk-card {
   position: relative;
   display: block;
