@@ -876,6 +876,8 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 }
 
 .talk { min-width: 0; }
+.talk + .talk { margin-top: 32px; }
+.contribution-photo { display: block; width: 100%; height: auto; align-self: center; }
 .talk-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
