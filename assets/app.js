@@ -2,22 +2,26 @@
 const year = document.getElementById('year');
 if (year) year.textContent = String(new Date().getFullYear());
 
-const certificationTrack = document.getElementById('certification-track');
-if (certificationTrack) {
-  const carousel = certificationTrack.closest('.certification-carousel');
-  const controls = carousel.querySelector('.certification-controls');
-  const previous = controls.querySelector('.certification-previous');
-  const next = controls.querySelector('.certification-next');
-  const position = controls.querySelector('.certification-position');
-  const cards = Array.from(certificationTrack.children);
+document.querySelectorAll('.carousel').forEach(carousel => {
+  const track = carousel.querySelector('.carousel-track');
+  const controls = carousel.querySelector('.carousel-controls');
+  const previous = controls.querySelector('.carousel-previous');
+  const next = controls.querySelector('.carousel-next');
+  const position = controls.querySelector('.carousel-position');
+  const buttons = controls.querySelector('.carousel-buttons');
+  const hint = carousel.querySelector('.carousel-hint');
+  const cards = Array.from(track.children);
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let settleTimer;
 
   const updateControls = () => {
-    const maximum = certificationTrack.scrollWidth - certificationTrack.clientWidth;
-    previous.setAttribute('aria-disabled', String(certificationTrack.scrollLeft <= 1));
-    next.setAttribute('aria-disabled', String(certificationTrack.scrollLeft >= maximum - 1));
-    const viewport = certificationTrack.getBoundingClientRect();
+    const maximum = track.scrollWidth - track.clientWidth;
+    const scrollable = maximum > 1;
+    buttons.hidden = !scrollable;
+    hint.hidden = !scrollable;
+    previous.setAttribute('aria-disabled', String(track.scrollLeft <= 1));
+    next.setAttribute('aria-disabled', String(track.scrollLeft >= maximum - 1));
+    const viewport = track.getBoundingClientRect();
     const visible = cards.map((card, index) => {
       const rect = card.getBoundingClientRect();
       const overlap = Math.min(rect.right, viewport.right) - Math.max(rect.left, viewport.left);
@@ -33,28 +37,33 @@ if (certificationTrack) {
 
   const move = (direction) => {
     const button = direction < 0 ? previous : next;
-    if (button.getAttribute('aria-disabled') === 'true') return;
+    if (cards.length < 2 || button.getAttribute('aria-disabled') === 'true') return;
     const step = cards[1].offsetLeft - cards[0].offsetLeft;
-    certificationTrack.scrollBy({ left: direction * step, behavior: reducedMotion.matches ? 'auto' : 'smooth' });
+    track.scrollBy({ left: direction * step, behavior: reducedMotion.matches ? 'auto' : 'smooth' });
   };
   previous.addEventListener('click', () => move(-1));
   next.addEventListener('click', () => move(1));
-  certificationTrack.addEventListener('keydown', event => {
-    if (event.target !== certificationTrack) return;
+  track.addEventListener('keydown', event => {
+    if (event.target !== track) return;
     if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
       event.preventDefault();
       move(event.key === 'ArrowLeft' ? -1 : 1);
     } else if (event.key === 'Home' || event.key === 'End') {
       event.preventDefault();
-      certificationTrack.scrollTo({ left: event.key === 'Home' ? 0 : certificationTrack.scrollWidth, behavior: reducedMotion.matches ? 'auto' : 'smooth' });
+      track.scrollTo({ left: event.key === 'Home' ? 0 : track.scrollWidth, behavior: reducedMotion.matches ? 'auto' : 'smooth' });
     }
   });
   const scheduleUpdate = () => {
     clearTimeout(settleTimer);
     settleTimer = setTimeout(updateControls, 160);
   };
-  certificationTrack.addEventListener('scroll', scheduleUpdate, { passive: true });
+  track.addEventListener('scroll', scheduleUpdate, { passive: true });
   window.addEventListener('resize', scheduleUpdate);
+  if ('ResizeObserver' in window) {
+    const observer = new ResizeObserver(scheduleUpdate);
+    observer.observe(track);
+    cards.forEach(card => observer.observe(card));
+  }
   controls.hidden = false;
   updateControls();
-}
+});

@@ -13,8 +13,8 @@
   <meta property="og:locale" content="en_GB">
   <link rel="canonical" href="https://paulosanches.github.io/hello/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/style.css?v=2e4c15765ed0">
-  <script src="assets/app.js?v=1c60475a9615" defer></script>
+  <link rel="stylesheet" href="assets/style.css?v=2b10a0006839">
+  <script src="assets/app.js?v=b778c4d878a6" defer></script>
 </head>
 <body>
 <svg class="visual-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="0" height="0">
@@ -155,31 +155,47 @@
         <h2 id="contributions-title">Talks, events<br>&amp; contributions.</h2>
       </div>
     </div>
-    <article class="talk" aria-labelledby="tech-lead-talk-title">
-      <a class="talk-card" href="https://www.youtube.com/watch?v=1hOnAOXTUeM" target="_blank" rel="noopener noreferrer" aria-labelledby="tech-lead-talk-title" aria-describedby="tech-lead-talk-meta tech-lead-talk-cta">
-        <div class="talk-cover" aria-hidden="true">
-          <span class="talk-cover-kicker">MASTERCLASS / 02</span>
-          <span class="talk-cover-title">Cubo<br>for Devs.</span>
-          <span class="talk-play"><svg viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="m9 5 11 7-11 7z"/></svg></span>
-        </div>
-        <div class="talk-content">
-          <p class="talk-meta" id="tech-lead-talk-meta">Cubo Itaú · Masterclass #2</p>
-          <h3 id="tech-lead-talk-title">How to become a Tech Lead.</h3>
-          <p class="talk-description">My participation in the second Cubo for Devs masterclass, focused on the path to technical leadership.</p>
-          <span class="talk-cta" id="tech-lead-talk-cta">Watch on YouTube <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></span>
-        </div>
-      </a>
-    </article>
-    <article class="talk" aria-labelledby="flashcamp-title">
-      <div class="talk-card">
-        <img class="contribution-photo" src="assets/flashcamp-2010.jpg" alt="Group photo in front of the FlashCamp event backdrop." width="1024" height="683" loading="lazy" decoding="async">
-        <div class="talk-content">
-          <p class="talk-meta">Community event</p>
-          <h3 id="flashcamp-title">FlashCamp <time datetime="2010">2010</time>.</h3>
-          <p class="talk-description">Representing Ogilvy at FlashCamp 2010, Brazil’s largest Adobe community event.</p>
+    <div class="carousel" role="group" aria-roledescription="carousel" aria-labelledby="contributions-title">
+      <p class="carousel-hint" id="contribution-help">Swipe or scroll to explore talks and events.</p>
+      <ol class="carousel-track contribution-list" id="contribution-track" role="list" tabindex="0" aria-label="Talks and events" aria-describedby="contribution-help">
+        <li class="contribution-item">
+          <article class="talk" aria-labelledby="tech-lead-talk-title">
+            <a class="talk-card" href="https://www.youtube.com/watch?v=1hOnAOXTUeM" target="_blank" rel="noopener noreferrer" aria-labelledby="tech-lead-talk-title" aria-describedby="tech-lead-talk-meta tech-lead-talk-cta">
+              <div class="talk-cover" aria-hidden="true">
+                <span class="talk-cover-kicker">MASTERCLASS / 02</span>
+                <span class="talk-cover-title">Cubo<br>for Devs.</span>
+                <span class="talk-play"><svg viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="m9 5 11 7-11 7z"/></svg></span>
+              </div>
+              <div class="talk-content">
+                <p class="talk-meta" id="tech-lead-talk-meta">Cubo Itaú · Masterclass #2</p>
+                <h3 id="tech-lead-talk-title">How to become a Tech Lead.</h3>
+                <p class="talk-description">My participation in the second Cubo for Devs masterclass, focused on the path to technical leadership.</p>
+                <span class="talk-cta" id="tech-lead-talk-cta">Watch on YouTube <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></span>
+              </div>
+            </a>
+          </article>
+        </li>
+        <li class="contribution-item">
+          <article class="talk" aria-labelledby="flashcamp-title">
+            <div class="talk-card">
+              <img class="contribution-photo" src="assets/flashcamp-2010.jpg" alt="Group photo in front of the FlashCamp event backdrop." width="1024" height="683" loading="lazy" decoding="async">
+              <div class="talk-content">
+                <p class="talk-meta">Community event</p>
+                <h3 id="flashcamp-title">FlashCamp <time datetime="2010">2010</time>.</h3>
+                <p class="talk-description">Representing Ogilvy at FlashCamp 2010, Brazil’s largest Adobe community event.</p>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ol>
+      <div class="carousel-controls" hidden>
+        <p class="carousel-position" aria-live="polite" aria-atomic="true"></p>
+        <div class="carousel-buttons">
+          <button class="carousel-previous" type="button" aria-label="Previous talks and events" aria-controls="contribution-track" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M19 12H5m7-7-7 7 7 7"/></svg></button>
+          <button class="carousel-next" type="button" aria-label="Next talks and events" aria-controls="contribution-track" aria-disabled="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></button>
         </div>
       </div>
-    </article>
+    </div>
   </section>
   </div>
 
@@ -192,9 +208,9 @@
         <p>Certifications, courses and professional recognition.</p>
       </div>
     </div>
-    <div class="certification-carousel" role="group" aria-roledescription="carousel" aria-labelledby="certifications-title">
-      <p class="certification-hint" id="certification-help">Swipe or scroll to explore all 25 credentials.</p>
-      <ol class="certification-list" id="certification-track" role="list" tabindex="0" aria-label="Certifications, ordered by relevance and technical depth" aria-describedby="certification-help">
+    <div class="carousel" role="group" aria-roledescription="carousel" aria-labelledby="certifications-title">
+      <p class="carousel-hint" id="certification-help">Swipe or scroll to explore all 25 credentials.</p>
+      <ol class="carousel-track certification-list" id="certification-track" role="list" tabindex="0" aria-label="Certifications, ordered by relevance and technical depth" aria-describedby="certification-help">
         <li class="certification-item">
           <div class="certification-card-top">
             <img class="certification-logo certification-logo-dark" src="assets/issuers/deel.svg" alt="" width="64" height="64" loading="lazy" decoding="async">
@@ -554,11 +570,11 @@
           </div>
         </li>
       </ol>
-      <div class="certification-controls" hidden>
-        <p class="certification-position" aria-live="polite" aria-atomic="true"></p>
-        <div class="certification-buttons">
-          <button class="certification-previous" type="button" aria-label="Previous certifications" aria-controls="certification-track" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M19 12H5m7-7-7 7 7 7"/></svg></button>
-          <button class="certification-next" type="button" aria-label="Next certifications" aria-controls="certification-track" aria-disabled="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></button>
+      <div class="carousel-controls" hidden>
+        <p class="carousel-position" aria-live="polite" aria-atomic="true"></p>
+        <div class="carousel-buttons">
+          <button class="carousel-previous" type="button" aria-label="Previous certifications" aria-controls="certification-track" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M19 12H5m7-7-7 7 7 7"/></svg></button>
+          <button class="carousel-next" type="button" aria-label="Next certifications" aria-controls="certification-track" aria-disabled="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></button>
         </div>
       </div>
     </div>
