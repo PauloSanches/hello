@@ -75,6 +75,7 @@ The compact cards and all 25 descriptions were checked in Chromium and Linux Web
 
 | Credential | Description source |
 | --- | --- |
+| Global Leader \| Certified by Deel | [Source 1](https://www.deel.com/global-badges/) |
 | Senior Technology Architect | [Source 1](https://www.credly.com/org/accenture/badge/senior-technology-architect) |
 | AWS Certified Solutions Architect – Associate | [Source 1](https://aws.amazon.com/certification/certified-solutions-architect-associate/), [Source 2](https://www.credly.com/org/amazon-web-services/badge/aws-certified-solutions-architect-associate) |
 | Cloud Solution Architect Certified | [Source 1](https://www.credly.com/org/accenture/badge/cloud-solution-architect-certified-certification) |
@@ -96,22 +97,21 @@ The compact cards and all 25 descriptions were checked in Chromium and Linux Web
 | Getting Started with Google Kubernetes Engine | [Source 1](https://www.skills.google/course_templates/2?locale=en) |
 | Essential Google Cloud Infrastructure: Foundation | [Source 1](https://www.skills.google/course_templates/50?locale=en) |
 | Google Cloud Fundamentals: Core Infrastructure | [Source 1](https://www.skills.google/course_templates/60?locale=en) |
-| Global Leader \| Certified by Deel | [Source 1](https://www.deel.com/global-badges/) |
 | FY25 IS Elite Advocate | [Source 1](https://www.credly.com/org/accenture/badge/fy25-is-elite-advocate) |
 | FY24 IS Elite Advocate | [Source 1](https://www.credly.com/org/accenture/badge/fy24-is-elite-advocate/) |
 | Accenture Information Security Elite Advocate | [Source 1](https://www.accenture.com/content/dam/accenture/final/accenture-com/document/Accenture-Information-Security-Overview-2023.pdf) |
 
 ## Credential order
 
-The carousel uses an editorial order that considers both relevance to Paulo’s architecture, leadership, execution and AI profile and the depth of the credential’s scope. It is not a standardized difficulty ranking across issuers. Senior architecture, AWS architecture, cloud solution planning, delivery management and AWS development lead the selection. Applied AI and architectural review follow; agile leadership, cloud foundations, supporting technical courses and broader recognition round out the list. Expiry dates remain visible and are not changed or interpreted as renewed validity.
+The carousel uses an editorial order that considers both relevance to Paulo’s architecture, leadership, execution and AI profile and the depth of the credential’s scope. It is not a standardized difficulty ranking across issuers. Global Leader | Certified by Deel appears first at Paulo’s request. Senior architecture, AWS architecture, cloud solution planning, delivery management and AWS development follow. Applied AI and architectural review follow; agile leadership, cloud foundations, supporting technical courses and broader recognition round out the list. Expiry dates remain visible and are not changed or interpreted as renewed validity.
 
 The first eight cards are:
 
-1. Senior Technology Architect
-2. AWS Certified Solutions Architect – Associate
-3. Cloud Solution Architect Certified
-4. Certified Delivery Professional
-5. AWS Certified Developer – Associate
-6. Technology Architect
-7. Reinvention with Agentic AI
-8. AWS Certified AI Practitioner
+1. Global Leader | Certified by Deel
+2. Senior Technology Architect
+3. AWS Certified Solutions Architect – Associate
+4. Cloud Solution Architect Certified
+5. Certified Delivery Professional
+6. AWS Certified Developer – Associate
+7. Technology Architect
+8. Reinvention with Agentic AI
