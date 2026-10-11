@@ -4,6 +4,18 @@
   --muted: #5c5c5c;
   --line: #161616;
   --quiet-line: #d8d8d8;
+  --icon-services: #2854a6;
+  --icon-people: #a44928;
+  --icon-telecom: #7850a0;
+  --icon-banking: #227357;
+  --icon-cloud: #197083;
+  --icon-utilities: #9a690e;
+  --icon-finance: #846044;
+  --icon-commerce: #a03e65;
+  --icon-digital: #535da1;
+  --icon-sun: #a97012;
+  --icon-water: #237f94;
+  --icon-alert: #be5333;
   --page-gutter: clamp(20px, 4vw, 72px);
   --ruler-width: 20px;
   --hero-height: 56vh;
@@ -415,6 +427,15 @@ h1, h2, h3, h4, p { margin: 0; }
   flex: 0 0 32px;
   color: var(--ink);
 }
+.project-icon-services { color: var(--icon-services); }
+.project-icon-people { color: var(--icon-people); }
+.project-icon-telecom { color: var(--icon-telecom); }
+.project-icon-banking { color: var(--icon-banking); }
+.project-icon-cloud { color: var(--icon-cloud); }
+.project-icon-utilities { color: var(--icon-utilities); }
+.project-icon-finance { color: var(--icon-finance); }
+.project-icon-commerce { color: var(--icon-commerce); }
+.project-icon-digital { color: var(--icon-digital); }
 .journey-content h3 {
   grid-column: 1;
   max-width: 820px;
