@@ -875,6 +875,80 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   text-transform: uppercase;
 }
 
+.talk { min-width: 0; }
+.talk-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+.talk-card > * { min-width: 0; }
+.talk-cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  min-height: 280px;
+  padding: clamp(24px, 3vw, 44px);
+  background-color: #202020;
+  background-image: linear-gradient(#ffffff09 1px, transparent 1px), linear-gradient(90deg, #ffffff09 1px, transparent 1px);
+  background-size: 32px 32px;
+  color: var(--paper);
+}
+.talk-cover-kicker, .talk-meta {
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.talk-cover-title {
+  max-width: calc(100% - 68px);
+  font-size: clamp(38px, 4.5vw, 68px);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+.talk-play {
+  position: absolute;
+  right: clamp(24px, 3vw, 44px);
+  bottom: clamp(24px, 3vw, 44px);
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--icon-alert);
+  color: var(--paper);
+}
+.talk-play svg { width: 24px; height: 24px; }
+.talk-content { align-self: center; padding: clamp(24px, 3.5vw, 52px); }
+.talk-meta { color: var(--muted); }
+.talk-content h3 {
+  margin-top: 16px;
+  font-size: clamp(28px, 2.8vw, 44px);
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+.talk-description { max-width: 48ch; margin-top: 18px; color: var(--muted); line-height: 1.55; }
+.talk-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  margin-top: 20px;
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.talk-card:hover .talk-cta, .talk-card:focus-visible .talk-cta { border-bottom-width: 2px; }
+@media (max-width: 760px) {
+  .talk-card { grid-template-columns: minmax(0, 1fr); }
+  .talk-cover { min-height: 220px; }
+}
+
 /* Only this track scrolls horizontally; the page keeps its normal width. */
 .certification-carousel { min-width: 0; }
 .certification-hint {
