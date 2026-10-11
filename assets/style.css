@@ -846,6 +846,23 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   letter-spacing: 0.025em;
   text-transform: uppercase;
 }
+.certification-content {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  align-items: start;
+  gap: 20px;
+}
+.certification-logo {
+  display: block;
+  width: 64px;
+  height: 64px;
+  padding: 8px;
+  border: 1px solid var(--quiet-line);
+  border-radius: 12px;
+  background: var(--paper);
+  object-fit: contain;
+}
+.certification-logo-dark { border-color: #17212a; background: #17212a; }
 .certification-content h3 {
   max-width: 36ch;
   font-size: clamp(22px, 2.2vw, 32px);
@@ -878,4 +895,6 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 @media (max-width: 760px) {
   .certification-item { grid-template-columns: minmax(0, 1fr); }
   .certification-date { padding-top: 0; }
+  .certification-content { grid-template-columns: 56px minmax(0, 1fr); gap: 16px; }
+  .certification-logo { width: 56px; height: 56px; padding: 6px; border-radius: 10px; }
 }

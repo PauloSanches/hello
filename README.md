@@ -33,3 +33,18 @@ Horizontal-overflow checks in Chromium and Linux WebKit each covered 23 viewport
 The credentials section includes certifications, completed courses and professional recognition. Names and month-level dates were transcribed from six LinkedIn screenshots and overlapping entries were deduplicated. The repeated word in “SAFe Agilist Certification Certification” was removed for display. Expiry dates are shown as dates rather than inferred current-validity badges. Credential URLs were not visible in the screenshots, so no verification links were inferred. Credential IDs and the screenshots themselves are not published.
 
 The populated credentials section was verified in Chromium and Linux WebKit at widths of 280, 320, 390, 760, 800, 1100 and 1440 pixels with JavaScript disabled. Enter and Space expand and collapse the list, the labels and item counts update, and keyboard focus stays on the disclosure. All 25 names, issuers and issue dates, plus the eight supplied expiry dates, were checked against the transcription. No horizontal overflow was found with all page disclosures open or closed; LinkedIn remains the only external contact link.
+
+## Credential issuer icons
+
+Each credential displays its issuer's logo beside the title, following the icons Paulo identified in the LinkedIn screenshots. These are issuer marks, not individual earned-badge verification images. Google Cloud's actual logo replaces the generic company placeholder visible in the screenshots. AWS and SAFe use the official variants available from their sources. All six original assets are stored locally under `assets/issuers/`, loaded lazily, and fitted without cropping or changing their colours. Decorative empty alt text avoids repeating the adjacent issuer name. The reserved square size prevents layout shifts, and the icon/text grid adapts to small screens.
+
+All 25 issuer mappings and image loads were verified in Chromium and Linux WebKit at widths from 280 to 1440 pixels. The certification disclosure still works by keyboard without JavaScript, and the page has no horizontal overflow with disclosures open or closed. Source assets were checked against their downloaded originals.
+
+| Asset | Official source |
+| --- | --- |
+| `deel.svg` | [Deel website wordmark](https://website-media.deel.com/logo_revamp_white_3237bd2303.svg) |
+| `accenture.png` | [Accenture issuer profile](https://www.credly.com/organizations/accenture/badges), [image](https://images.credly.com/images/5d71fd0f-1408-425d-a617-9c7d17b7e065/blob.png) |
+| `aws.png` | [AWS static CDN wordmark](https://a0.awsstatic.com/libra-css/images/logos/aws_smile-header-desktop-en-white_59x35@2x.png) |
+| `google-cloud.png` | [Google-hosted product icon](https://www.gstatic.com/images/branding/product/2x/google_cloud_64dp.png) |
+| `safe.png` | [SAFe issuer profile](https://www.credly.com/organizations/scaled-agile/badges), [image](https://images.credly.com/images/34405e63-6468-4b08-90c3-ccb22c735b13/blob) |
+| `scrum-alliance.png` | [Scrum Alliance support](https://support.scrumalliance.org/), [image](https://support.scrumalliance.org/hc/theming_assets/01J94ZG0G5EN0Z891XQZ40VMQM) |
