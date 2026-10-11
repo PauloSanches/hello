@@ -13,7 +13,7 @@
   <meta property="og:locale" content="en_GB">
   <link rel="canonical" href="https://paulosanches.github.io/hello/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/style.css?v=f9634f349bc3">
+  <link rel="stylesheet" href="assets/style.css?v=46bf1f5b299a">
   <script src="assets/app.js?v=b778c4d878a6" defer></script>
 </head>
 <body>
@@ -143,20 +143,36 @@
         <h2 id="mindset-title">My philosophy.</h2>
       </div>
     </div>
-    <article class="mindset-card mindset-card-intro" aria-labelledby="mindset-intro-title">
-      <h3 id="mindset-intro-title">What shapes me.</h3>
-      <p class="mindset-description">These are phrases, thoughts and reflections that express what I believe. They shape who I am and how I approach life and work.</p>
-    </article>
-    <article class="mindset-card" aria-labelledby="preparedness-title">
-      <div class="mindset-card-heading">
-        <svg class="mindset-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 8 3v6c0 4-4 7-8 9-4-2-8-5-8-9V6l8-3Z"/><path d="m8 12 3 3 5-5"/></svg>
-        <h3 id="preparedness-title" lang="pt">Tudo certo para dar errado?</h3>
+    <div class="carousel" role="group" aria-roledescription="carousel" aria-labelledby="mindset-title">
+      <p class="carousel-hint" id="mindset-help">Swipe or scroll to explore my mindset.</p>
+      <ol class="carousel-track mindset-list" id="mindset-track" role="list" tabindex="0" aria-label="Mindset introduction and principles" aria-describedby="mindset-help">
+        <li class="mindset-item">
+          <article class="mindset-card mindset-card-intro" aria-labelledby="mindset-intro-title">
+            <h3 id="mindset-intro-title">What shapes me.</h3>
+            <p class="mindset-description">These are phrases, thoughts and reflections that express what I believe. They shape who I am and how I approach life and work.</p>
+          </article>
+        </li>
+        <li class="mindset-item">
+          <article class="mindset-card" aria-labelledby="preparedness-title">
+            <div class="mindset-card-heading">
+              <svg class="mindset-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 8 3v6c0 4-4 7-8 9-4-2-8-5-8-9V6l8-3Z"/><path d="m8 12 3 3 5-5"/></svg>
+              <h3 id="preparedness-title" lang="pt">Tudo certo para dar errado?</h3>
+            </div>
+            <div class="mindset-card-content">
+              <p class="mindset-saying">Hope for the best, prepare for the worst.</p>
+              <p class="mindset-description">I often ask this at the start of the day. I expect things to go well, and I want us to be ready if they don’t. Thinking ahead gives us the confidence to handle the unexpected and keep going.</p>
+            </div>
+          </article>
+        </li>
+      </ol>
+      <div class="carousel-controls" hidden>
+        <p class="carousel-position" aria-live="polite" aria-atomic="true"></p>
+        <div class="carousel-buttons">
+          <button class="carousel-previous" type="button" aria-label="Previous mindset card" aria-controls="mindset-track" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M19 12H5m7-7-7 7 7 7"/></svg></button>
+          <button class="carousel-next" type="button" aria-label="Next mindset card" aria-controls="mindset-track" aria-disabled="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></button>
+        </div>
       </div>
-      <div class="mindset-card-content">
-        <p class="mindset-saying">Hope for the best, prepare for the worst.</p>
-        <p class="mindset-description">I often ask this at the start of the day. I expect things to go well, and I want us to be ready if they don’t. Thinking ahead gives us the confidence to handle the unexpected and keep going.</p>
-      </div>
-    </article>
+    </div>
   </section>
   </div>
 
