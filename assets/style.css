@@ -880,6 +880,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 .contribution-photo { display: block; width: 100%; height: auto; align-self: center; }
 .contribution-photo-portrait { aspect-ratio: 1024 / 683; object-fit: contain; background: #202020; }
 .talk-card {
+  position: relative;
   display: block;
   border: 1px solid var(--line);
   background: var(--paper);
