@@ -24,4 +24,3 @@ The website is primarily in English. Mindset cards preserve Paulo’s original P
 
 - [LinkedIn](https://www.linkedin.com/in/paulosanches): Paulo’s public contact channel.
 - [Sitemap](https://paulosanches.github.io/hello/sitemap.xml): Canonical public page URLs.
-- [Crawler policy](https://paulosanches.github.io/robots.txt): Domain-root robots.txt, which applies to this GitHub Pages project.
