@@ -2,6 +2,24 @@
 const year = document.getElementById('year');
 if (year) year.textContent = String(new Date().getFullYear());
 
+const experienceDisclosures = Array.from(document.querySelectorAll('#journey details'));
+if (experienceDisclosures.length) {
+  const desktop = window.matchMedia('(min-width: 1024px)');
+  const mobileState = new Map(experienceDisclosures.map(detail => [detail, false]));
+  const applyExperienceLayout = () => {
+    experienceDisclosures.forEach(detail => {
+      detail.open = desktop.matches || mobileState.get(detail);
+    });
+  };
+  desktop.addEventListener('change', () => {
+    if (desktop.matches) {
+      experienceDisclosures.forEach(detail => mobileState.set(detail, detail.open));
+    }
+    applyExperienceLayout();
+  });
+  applyExperienceLayout();
+}
+
 document.querySelectorAll('.carousel').forEach(carousel => {
   const track = carousel.querySelector('.carousel-track');
   const controls = carousel.querySelector('.carousel-controls');
@@ -12,13 +30,24 @@ document.querySelectorAll('.carousel').forEach(carousel => {
   const hint = carousel.querySelector('.carousel-hint');
   const cards = Array.from(track.children);
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const helpId = track.getAttribute('aria-describedby');
   let settleTimer;
 
   const updateControls = () => {
     const maximum = track.scrollWidth - track.clientWidth;
     const scrollable = maximum > 1;
+    controls.hidden = !scrollable;
     buttons.hidden = !scrollable;
     hint.hidden = !scrollable;
+    track.tabIndex = scrollable ? 0 : -1;
+    if (scrollable) {
+      carousel.setAttribute('aria-roledescription', 'carousel');
+      if (helpId) track.setAttribute('aria-describedby', helpId);
+    } else {
+      carousel.removeAttribute('aria-roledescription');
+      track.removeAttribute('aria-describedby');
+      track.scrollLeft = 0;
+    }
     previous.setAttribute('aria-disabled', String(track.scrollLeft <= 1));
     next.setAttribute('aria-disabled', String(track.scrollLeft >= maximum - 1));
     const viewport = track.getBoundingClientRect();
@@ -38,7 +67,9 @@ document.querySelectorAll('.carousel').forEach(carousel => {
   const move = (direction) => {
     const button = direction < 0 ? previous : next;
     if (cards.length < 2 || button.getAttribute('aria-disabled') === 'true') return;
-    const step = cards[1].offsetLeft - cards[0].offsetLeft;
+    const nextColumn = cards.find(card => card.offsetLeft > cards[0].offsetLeft + 1);
+    if (!nextColumn) return;
+    const step = nextColumn.offsetLeft - cards[0].offsetLeft;
     track.scrollBy({ left: direction * step, behavior: reducedMotion.matches ? 'auto' : 'smooth' });
   };
   previous.addEventListener('click', () => move(-1));
@@ -64,6 +95,5 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     observer.observe(track);
     cards.forEach(card => observer.observe(card));
   }
-  controls.hidden = false;
   updateControls();
 });

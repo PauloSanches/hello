@@ -1099,6 +1099,80 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 }
 
 
+/* Desktop uses the page width for navigation, project detail and card grids. */
+@media (min-width: 1024px) {
+  :root {
+    --page-gutter: clamp(28px, 2.4vw, 56px);
+    --journey-row-padding: 28px;
+  }
+  .section, .stories-section { padding-block: 64px; }
+  .profile-section { padding-block: 48px; }
+  .section-heading { grid-template-columns: minmax(0, 1fr); row-gap: 18px; margin-bottom: 32px; }
+  .section-index { padding: 7px 10px; font-size: 10px; }
+  .section-heading > div {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    align-items: end;
+    gap: 40px;
+  }
+  .section-heading > div > h2:only-child { grid-column: 1 / -1; }
+  .section-heading h2 { max-width: none; font-size: clamp(42px, 3.7vw, 60px); line-height: 1.04; }
+  .section-heading p:not(.section-index) { max-width: 64ch; margin-top: 0; font-size: 17px; line-height: 1.6; }
+  .profile-section .profile-title { max-width: none; font-size: clamp(30px, 2.8vw, 46px); line-height: 1.12; }
+
+  .explore-nav { padding-block: 12px; }
+  .explore-kicker { display: none; }
+  .explore-links { grid-template-columns: repeat(5, minmax(0, 1fr)); margin-top: 0; border: 0; }
+  .explore-links li:nth-child(n) { grid-column: auto; border: 0; }
+  .explore-links li:last-child:nth-child(odd) { grid-column: auto; }
+  .explore-links li:nth-child(n + 2) { border-inline-start: 1px solid #555; }
+  .explore-link { grid-template-columns: minmax(0, 1fr) 18px; gap: 12px; align-items: center; min-height: 56px; padding: 12px 16px; }
+  .explore-number { display: none; }
+  .explore-label { grid-column: 1; font-size: 15px; font-weight: 600; line-height: 1.3; letter-spacing: -.015em; text-transform: none; }
+  .explore-arrow { grid-column: 2; grid-row: 1; width: 18px; }
+
+  .journey-item { grid-template-columns: 144px minmax(0, 1fr); column-gap: 36px; }
+  .journey-content { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); column-gap: 40px; }
+  .project-label { grid-column: 1; grid-row: 1; margin-bottom: 12px; }
+  .journey-content h3 { grid-column: 1; grid-row: 2; font-size: clamp(30px, 2.5vw, 42px); }
+  .journey-description { grid-column: 2; grid-row: 1; max-width: none; margin-top: 0; line-height: 1.55; }
+  .project-tags { grid-column: 1; grid-row: 3; align-self: start; margin-top: 18px; }
+  .project-detail { grid-column: 2; grid-row: 2 / span 2; margin-top: 16px; }
+  .detail-content { max-width: none; padding-top: 0; }
+  .journey-more { margin-top: 0; }
+  .journey-more > summary, .project-detail > summary { display: none; }
+  #journey > .project-timeline > .journey-item:last-child { border-bottom: 0; }
+
+  .stories-grid { grid-template-columns: minmax(0, 1fr); }
+  .story-front { display: grid; grid-template-columns: 144px minmax(0, .9fr) minmax(0, 1.1fr); gap: 16px 32px; min-height: 0; padding: 28px; }
+  .story-category { grid-column: 2 / -1; }
+  .story-illustration { grid-column: 1; grid-row: 1 / span 3; align-self: center; width: 100%; margin-top: 0; }
+  .story h3 { grid-column: 2; grid-row: 2; margin-top: 0; font-size: clamp(30px, 2.6vw, 42px); }
+  .story-teaser { grid-column: 3; grid-row: 2; align-self: center; margin-block: 0; }
+  .story-open { grid-column: 2 / -1; grid-row: 3; margin-top: 0; }
+
+  .carousel-grid-desktop .carousel-track {
+    grid-auto-flow: row;
+    grid-auto-columns: auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-bottom: 0;
+    overflow-x: visible;
+    scroll-snap-type: none;
+  }
+  .carousel-grid-desktop .carousel-hint { display: none; }
+  .carousel-grid-desktop .mindset-item:first-child { grid-column: 1 / -1; }
+  .mindset-card-intro { grid-template-columns: minmax(0, .6fr) minmax(0, 1.4fr); gap: 32px; padding: 24px; }
+  .mindset-card-intro .mindset-description { max-width: none; }
+  .carousel-grid-desktop .contribution-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .certification-list { grid-template-rows: repeat(2, auto); grid-auto-columns: clamp(260px, 22vw, 320px); }
+}
+@media (min-width: 1280px) {
+  .carousel-grid-desktop .contribution-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (min-width: 1800px) {
+  .carousel-grid-desktop .mindset-list { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}
+
 /* Field Notes use a single editorial column with a separate contact section. */
 .story-page { --hero-height: 0px; --reading-width: 720px; }
 .story-page::before { inset-block-start: 0; }
