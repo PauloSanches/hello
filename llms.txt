@@ -2,7 +2,16 @@
 
 > Personal portfolio of Paulo Sanches, a Technology & Solution Architecture Manager based in Braga, Portugal, with 17+ years leading teams, solving complex technology challenges and stabilizing mission-critical programs.
 
-The website is primarily in English. Mindset cards preserve Paulo’s original Portuguese quotes, marked PT-BR, with English explanations. The HTML pages are the primary sources; this file is a concise guide to their public content.
+The website is available in English (EN), Italian (ITA) and Brazilian Portuguese (PT), with English as the default. Mindset cards preserve Paulo’s original Portuguese and English quotes, with explanations in the selected language. Official credential names remain in English. The HTML pages are the primary sources; this file is a concise guide to their public content.
+
+## Language versions
+
+- [English portfolio](https://paulosanches.github.io/hello/)
+- [Italian portfolio](https://paulosanches.github.io/hello/it/)
+- [Brazilian Portuguese portfolio](https://paulosanches.github.io/hello/pt/)
+- [English security incident story](https://paulosanches.github.io/hello/field-notes/security-at-the-beach/)
+- [Italian security incident story](https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/)
+- [Brazilian Portuguese security incident story](https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/)
 
 ## Profile and experience
 

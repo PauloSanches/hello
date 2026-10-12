@@ -1,11 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://paulosanches.github.io/hello/</loc>
     <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paulosanches.github.io/hello/" />
+  </url>
+  <url>
+    <loc>https://paulosanches.github.io/hello/it/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paulosanches.github.io/hello/" />
+  </url>
+  <url>
+    <loc>https://paulosanches.github.io/hello/pt/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paulosanches.github.io/hello/" />
   </url>
   <url>
     <loc>https://paulosanches.github.io/hello/field-notes/security-at-the-beach/</loc>
     <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/security-at-the-beach/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paulosanches.github.io/hello/field-notes/security-at-the-beach/" />
+  </url>
+  <url>
+    <loc>https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/security-at-the-beach/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paulosanches.github.io/hello/field-notes/security-at-the-beach/" />
+  </url>
+  <url>
+    <loc>https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/security-at-the-beach/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paulosanches.github.io/hello/field-notes/security-at-the-beach/" />
   </url>
 </urlset>

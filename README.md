@@ -1,6 +1,6 @@
 # Paulo Sanches · Portfolio
 
-An English-language portfolio based on Paulo’s supplied career documents. Built with static HTML, CSS and JavaScript and published at https://paulosanches.github.io/hello/.
+A portfolio in English, Italian and Brazilian Portuguese, based on Paulo’s supplied career documents. Built with static HTML, CSS and JavaScript and published at https://paulosanches.github.io/hello/.
 
 ## Local development
 
@@ -26,7 +26,7 @@ The navigation and placeholder sections follow the approved layout. LinkedIn is 
 
 ## Content
 
-All visitor-facing content is in English. The experience timeline is updated from `Paulo_Sanches_CV_Microsoft_TechTalk_Leadership_Impact.pdf`; project dates and contributions use that CV and previously supplied career context. The security incident card and dedicated page are edited in English from Paulo’s supplied first-person narrative. The client remains anonymous and is described only as one of Brazil’s leading agribusiness companies. No incident date, attack type, version number, data breach or commercial outcome is inferred. Clients are described by sector. Original attachments, telephone numbers and personal email addresses are excluded from the public site. Paulo explicitly supplied the profile summary containing €7M and €3.5M for publication; the same two amounts appear in the relevant project contributions. Other commercial amounts from the CV are omitted. Reported performance percentages are reproduced as results from the supplied CV, without inventing new attribution or guarantees.
+The English HTML is the source for the Italian and Brazilian Portuguese versions. The experience timeline is updated from `Paulo_Sanches_CV_Microsoft_TechTalk_Leadership_Impact.pdf`; project dates and contributions use that CV and previously supplied career context. The security incident card and dedicated page are edited from Paulo’s supplied first-person narrative. The client remains anonymous and is described only as one of Brazil’s leading agribusiness companies. No incident date, attack type, version number, data breach or commercial outcome is inferred. Clients are described by sector. Original attachments, telephone numbers and personal email addresses are excluded from the public site. Paulo explicitly supplied the profile summary containing €7M and €3.5M for publication; the same two amounts appear in the relevant project contributions. Other commercial amounts from the CV are omitted. Reported performance percentages are reproduced as results from the supplied CV, without inventing new attribution or guarantees.
 
 Horizontal-overflow checks in Chromium and Linux WebKit each covered 23 viewport widths from 280 to 1440 pixels with all disclosures both closed and open. The document stayed within the viewport, menu labels did not overlap their arrows, and project titles stayed inside their columns. Project heading sizes also adapt on narrow phones to avoid awkward word breaks.
 
@@ -206,11 +206,11 @@ Paulo’s supplied Google tag with GA4 measurement ID `G-1ZQYS54JD0` is installe
 
 ## Search and AI discovery
 
-Both public HTML pages have unique descriptive titles, descriptions, stable absolute canonical URLs, an explicit indexing directive, Open Graph image metadata and Twitter cards. The homepage uses the existing colour portrait with a summary card; Field Notes uses its supplied coastal cover with a large-image card. The approved visible copy, layout, images, contact destinations and analytics configuration are unchanged.
+All six public HTML pages have unique descriptive titles, descriptions, stable absolute canonical URLs, an explicit indexing directive, Open Graph image metadata and Twitter cards. The homepage uses the existing colour portrait with a summary card; Field Notes uses its supplied coastal cover with a large-image card. The approved visible copy, layout, images, contact destinations and analytics configuration are unchanged.
 
 The homepage’s JSON-LD graph connects a `ProfilePage`, `Person`, `WebSite` and portrait `ImageObject`. The person’s name, role, Braga location, public LinkedIn profile and areas of expertise come from the visible portfolio. Section references point to existing anchors. The story graph connects a `BlogPosting`, author, website, page, cover and two-level breadcrumb. Its publication date is 12 October 2026, the date of the first story-page commit and publication; this is not an inferred date for the incident. Metadata contains no phone, email, undisclosed client, vulnerability identifier or unsupported credential-validity claim.
 
-`sitemap.xml` lists only the two canonical HTML pages. Its `lastmod` values describe actual page changes, including metadata, and must be updated when those pages change. Add a sitemap entry whenever a new public story is published. Do not include fragments, tracking query strings, assets, private attachments or repository documentation in the sitemap.
+`sitemap.xml` lists the portfolio and story in each of the three languages: six canonical HTML pages, with reciprocal `hreflang` entries. Its `lastmod` values describe actual page changes, including metadata, and must be updated when those pages change. Add a sitemap entry whenever a new public story is published. Do not include fragments, tracking query strings, assets, private attachments or repository documentation in the sitemap.
 
 The effective crawler policy is installed at **https://paulosanches.github.io/robots.txt**, served by the separate `PauloSanches/PauloSanches.github.io` repository, branch `master`, whose existing Pages source is `/`. A file under `/hello/robots.txt` would not control crawlers for the domain. The domain-root file permits crawling and declares the portfolio sitemap. The domain-root `llms.txt` links to the portfolio and its fuller `/hello/llms.txt` guide. Both files were published after Paulo enabled integration access to the repository. Other projects and legacy case files in that repository are unchanged. When the portfolio URL changes, update the root discovery files as well as the canonical URLs, structured data and sitemap here.
 
@@ -218,6 +218,16 @@ The `llms.txt` files are concise English indexes of public sources, not a replac
 
 ## Closing invitation
 
-Section 07 thanks visitors for reaching the end of the portfolio: “Wow, you made it this far!” Its text reads “I hope you enjoyed what you saw. Let’s have a virtual coffee — I’d love to tell you more.” The “Let’s have a virtual coffee” button links to Paulo’s LinkedIn profile, with an accessible notice of its destination and new-tab behaviour. This follows Paulo’s requested welcoming invitation and keeps the website in English.
+Section 07 thanks visitors for reaching the end of the portfolio: “Wow, you made it this far!” Its text reads “I hope you enjoyed what you saw. Let’s have a virtual coffee — I’d love to tell you more.” The “Let’s have a virtual coffee” button links to Paulo’s LinkedIn profile, with an accessible notice of its destination and new-tab behaviour. This follows Paulo’s requested welcoming invitation; equivalent text appears in the Portuguese and Italian versions.
 
 The homepage footer is reduced to the copyright and one “Back to top” link. The duplicated name/brand link is removed. Two-item footers retain a compact row on mobile when space permits, with natural wrapping on narrower screens.
+
+## Language options
+
+A compact EN / ITA / PT control appears inside the existing hero, without adding a name/menu header. The story page has the same control beside its return link. English remains at `/hello/`; Italian is at `/hello/it/`; Brazilian Portuguese, explicitly selected by Paulo, is at `/hello/pt/`. Each language also has its own `field-notes/security-at-the-beach/` page. Native links work without JavaScript; links from a localized homepage to its story and back retain the language. JavaScript preserves a selected section’s URL fragment when switching languages. The active option is indicated visually and with `aria-current="page"`, and each language has a native accessible label and a minimum 44px target.
+
+All profile, experience, story, card descriptions, navigation, contact and accessibility text is adapted to the selected language. Figures and credential dates are retained. Official credential names remain in English. Original personal quotes retain their Portuguese or English wording, with appropriate `lang` attributes; their explanations and transition text are localized. Shared photos, logos and illustrations are unchanged. Carousel roles and position counts use the selected language. LinkedIn remains the only contact destination, and each page has the supplied GA tag exactly once.
+
+English HTML remains the editable source. Translations are maintained in `locales/translations.json`. Run `python3 scripts/build-locales.py` after updating English content and its translations. The generator uses only Python’s standard library, rejects missing translations, refreshes shared asset hashes, generates the four localized HTML files, and rebuilds the six-page sitemap with reciprocal English, Italian, Brazilian Portuguese and x-default alternates. Generated HTML is committed so GitHub Pages serves complete content without runtime translation. Keep page modification dates accurate when editing published content.
+
+Every page has a self-canonical URL, localized title, description, social metadata, document language and structured page/article data. The Person and WebSite identities remain shared across languages. Language alternates are reciprocal in the HTML and sitemap. The portfolio and domain-root `llms.txt` guides list the language versions.

@@ -1,6 +1,17 @@
 'use strict';
 const year = document.getElementById('year');
 if (year) year.textContent = String(new Date().getFullYear());
+const language = document.documentElement.lang;
+const carouselRole = language === 'it' ? 'carosello' : language === 'pt-BR' ? 'carrossel' : 'carousel';
+const counterJoin = language === 'it' ? 'di' : language === 'pt-BR' ? 'de' : 'of';
+document.querySelectorAll('.language-switcher a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (!window.location.hash) return;
+    const destination = new URL(link.href);
+    destination.hash = window.location.hash;
+    link.href = destination.href;
+  });
+});
 
 const experienceDisclosures = Array.from(document.querySelectorAll('#journey details'));
 if (experienceDisclosures.length) {
@@ -41,7 +52,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     hint.hidden = !scrollable;
     track.tabIndex = scrollable ? 0 : -1;
     if (scrollable) {
-      carousel.setAttribute('aria-roledescription', 'carousel');
+      carousel.setAttribute('aria-roledescription', carouselRole);
       if (helpId) track.setAttribute('aria-describedby', helpId);
     } else {
       carousel.removeAttribute('aria-roledescription');
@@ -59,7 +70,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     if (visible.length) {
       const first = visible[0];
       const last = visible[visible.length - 1];
-      const label = `${first === last ? first : `${first}–${last}`} of ${cards.length}`;
+      const label = `${first === last ? first : `${first}–${last}`} ${counterJoin} ${cards.length}`;
       if (position.textContent !== label) position.textContent = label;
     }
   };
