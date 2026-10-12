@@ -663,6 +663,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 }
 .story-bank { --story-accent: var(--icon-cloud); }
 .story-brumadinho { --story-accent: var(--icon-banking); }
+.story-community { --story-accent: var(--icon-telecom); }
 .story-card-link { display: block; height: 100%; }
 .story-card-link:focus-visible { outline-color: var(--story-accent); }
 .story-front {

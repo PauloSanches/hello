@@ -30,6 +30,7 @@ PRESERVE = {
     "Accenture · Coimbra, Portugal", "JNation", "FlashCamp", "Cubo", "for Devs.",
     "Cubo Itaú · Masterclass #2", "MASTERCLASS / 02", "Mindset", "LinkedIn",
     "Ruan Morais", "Giovana Andrade", "Wilton Junior", "Mercia Oliveira", "Lucas Medeiros",
+    "“Você conhece o Zeno Rocha?”",
 }
 english_home = (ROOT / SOURCES[0]).read_text()
 certificates = english_home[english_home.index('id="certifications"'):english_home.index('id="contact"')]
