@@ -681,7 +681,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   line-height: 0.96;
 }
 .contact > p:not(.contact-kicker) {
-  align-self: end;
+  align-self: start;
   max-width: 380px;
   color: var(--muted);
   font-size: 16px;
@@ -1160,7 +1160,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   .section-heading > div {
     display: grid;
     grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
-    align-items: end;
+    align-items: start;
     gap: 40px;
   }
   .section-heading > div > h2:only-child { grid-column: 1 / -1; }
