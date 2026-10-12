@@ -280,6 +280,16 @@ h1, h2, h3, h4, p { margin: 0; }
   text-wrap: balance;
   overflow-wrap: anywhere;
 }
+.profile-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.6;
+}
+.profile-summary > * { min-width: 0; }
 .project-timeline { padding: 0; margin: 0; list-style: none; }
 .journey-more { margin-top: 40px; }
 .journey-more > .journey-toggle {
@@ -389,8 +399,8 @@ h1, h2, h3, h4, p { margin: 0; }
   line-height: 1.3;
   text-transform: uppercase;
 }
-.is-current .journey-date time { font-weight: 600; }
-.journey-date time {
+.is-current .journey-date time, .is-current .journey-period { font-weight: 600; }
+.journey-date time, .journey-period {
   display: block;
   font-family: var(--mono);
   font-size: 13px;
@@ -515,6 +525,8 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 }
 .detail-content h4:first-child { margin-top: 0; }
 .detail-content p + p { margin-top: 14px; }
+.project-highlights { margin: 0; padding-inline-start: 18px; list-style: disc; }
+.project-highlights li + li { margin-top: 8px; }
 .detail-content a { color: var(--ink); text-decoration: underline; }
 .timeline-note {
   margin-top: 24px;
@@ -706,7 +718,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
     column-gap: 24px;
     padding-block: var(--journey-row-padding);
   }
-  .journey-date time { font-size: 11px; }
+  .journey-date time, .journey-period { font-size: 11px; }
   .date-note { font-size: 9px; }
   .project-label { font-size: 9px; }
   .journey-content h3 { font-size: 34px; }
@@ -1119,6 +1131,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   .section-heading h2 { max-width: none; font-size: clamp(42px, 3.7vw, 60px); line-height: 1.04; }
   .section-heading p:not(.section-index) { max-width: 64ch; margin-top: 0; font-size: 17px; line-height: 1.6; }
   .profile-section .profile-title { max-width: none; font-size: clamp(30px, 2.8vw, 46px); line-height: 1.12; }
+  .profile-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; }
 
   .explore-nav { padding-block: 12px; }
   .explore-kicker { display: none; }
@@ -1132,7 +1145,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   .explore-arrow { grid-column: 2; grid-row: 1; width: 18px; }
 
   .journey-item { grid-template-columns: 144px minmax(0, 1fr); column-gap: 36px; }
-  .journey-content { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); column-gap: 40px; }
+  .journey-content { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); grid-template-rows: auto auto 1fr; column-gap: 40px; }
   .project-label { grid-column: 1; grid-row: 1; margin-bottom: 12px; }
   .journey-content h3 { grid-column: 1; grid-row: 2; font-size: clamp(30px, 2.5vw, 42px); }
   .journey-description { grid-column: 2; grid-row: 1; max-width: none; margin-top: 0; line-height: 1.55; }
