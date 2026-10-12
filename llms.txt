@@ -15,6 +15,9 @@ The website is available in English (EN), Italian (ITA) and Brazilian Portuguese
 - [English banking handover story](https://paulosanches.github.io/hello/field-notes/banking-handover-in-brasilia/)
 - [Italian banking handover story](https://paulosanches.github.io/hello/it/field-notes/banking-handover-in-brasilia/)
 - [Brazilian Portuguese banking handover story](https://paulosanches.github.io/hello/pt/field-notes/banking-handover-in-brasilia/)
+- [English Brumadinho support story](https://paulosanches.github.io/hello/field-notes/supporting-families-after-brumadinho/)
+- [Italian Brumadinho support story](https://paulosanches.github.io/hello/it/field-notes/supporting-families-after-brumadinho/)
+- [Brazilian Portuguese Brumadinho support story](https://paulosanches.github.io/hello/pt/field-notes/supporting-families-after-brumadinho/)
 
 ## Profile and experience
 
@@ -26,6 +29,7 @@ The website is available in English (EN), Italian (ITA) and Brazilian Portuguese
 - [Field Notes](https://paulosanches.github.io/hello/#stories): Experiences from Paulo’s career, written from his perspective.
 - [A week at the beach. A security incident on day two.](https://paulosanches.github.io/hello/field-notes/security-at-the-beach/): A production security incident involving Liferay Portal, with lessons about maintenance and support, technical response, stakeholder communication and preparing for remote work. The incident date, client name, software version and vulnerability identifiers are not disclosed.
 - [I flew to Brazil’s largest bank with a few bullet points as my brief.](https://paulosanches.github.io/hello/field-notes/banking-handover-in-brasilia/): A two-week banking handover in Brasília. Paulo listened to four stakeholders, aligned their expectations and prioritised workshops, defects and training. Client workstation restrictions and a failed PC cost him a night’s unpublished work; he resumed the fixes and addressed the client’s priorities. The bank is not named, and the visit date and technical stack are not disclosed.
+- [We built a system to support families after Brumadinho.](https://paulosanches.github.io/hello/field-notes/supporting-families-after-brumadinho/): Paulo’s first-hand account of mobilising a multidisciplinary team of six after the January 2019 disaster. They built a registration and follow-up system for social workers, adapted it as requirements developed and supported it in production. The project was initially planned for two months and extended by six, totalling eight. The story credits five colleagues through the LinkedIn links he supplied and recalls the trust built on an earlier project. The client, technology stack and number of families assisted are not disclosed.
 - [Mindset](https://paulosanches.github.io/hello/#mindset): Approved personal principles and their context, including preparing for setbacks, learning through pressure, planning enough to act, adapting when plans meet reality, and bringing game-day energy to the team.
 
 ## Contributions and certifications
