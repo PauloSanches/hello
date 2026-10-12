@@ -219,3 +219,5 @@ The `llms.txt` files are concise English indexes of public sources, not a replac
 ## Closing invitation
 
 Section 07 thanks visitors for reaching the end of the portfolio: “Wow, you made it this far!” Its text reads “I hope you enjoyed what you saw. Let’s have a virtual coffee — I’d love to tell you more.” The “Let’s have a virtual coffee” button links to Paulo’s LinkedIn profile, with an accessible notice of its destination and new-tab behaviour. This follows Paulo’s requested welcoming invitation and keeps the website in English.
+
+The homepage footer is reduced to the copyright and one “Back to top” link. The duplicated name/brand link is removed. Two-item footers retain a compact row on mobile when space permits, with natural wrapping on narrower screens.
