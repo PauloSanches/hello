@@ -108,3 +108,103 @@ document.querySelectorAll('.carousel').forEach(carousel => {
   }
   updateControls();
 });
+
+// A keyboard-only Easter egg; keep typing in forms and browser shortcuts untouched.
+(() => {
+  const root = document.documentElement;
+  const storageKey = 'paulo-redbull-mode';
+  const portrait = document.querySelector('.portrait-photo');
+  const originalPortrait = portrait?.getAttribute('src');
+  const originalAlt = portrait?.getAttribute('alt');
+  const themedPortrait = originalPortrait && new URL('paulo-portrait-redbull.webp', new URL(originalPortrait, document.baseURI)).href;
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+  const originalThemeColor = themeMeta?.getAttribute('content');
+  const copy = root.lang === 'pt-BR' ? {
+    enabled: 'Modo Red Bull. Esc para voltar.',
+    disabled: 'Tema original restaurado.',
+    portrait: 'Paulo Sanches segurando uma lata de Red Bull'
+  } : root.lang === 'it' ? {
+    enabled: 'Modalità Red Bull. Esc per tornare al tema originale.',
+    disabled: 'Tema originale ripristinato.',
+    portrait: 'Paulo Sanches con una lattina di Red Bull'
+  } : {
+    enabled: 'Red Bull mode. Esc to reset.',
+    disabled: 'Original theme restored.',
+    portrait: 'Paulo Sanches holding a Red Bull can'
+  };
+  let active = false;
+  let buffer = '';
+  let lastKeyTime = 0;
+  let notice;
+  let noticeTimer;
+
+  const announce = text => {
+    if (!notice) {
+      notice = document.createElement('div');
+      notice.className = 'easter-egg-notice';
+      notice.setAttribute('role', 'status');
+      notice.setAttribute('aria-live', 'polite');
+      document.body.append(notice);
+    }
+    clearTimeout(noticeTimer);
+    notice.hidden = false;
+    notice.textContent = text;
+    noticeTimer = setTimeout(() => { notice.hidden = true; }, 4000);
+  };
+
+  const setMode = (enabled, notify = true) => {
+    active = enabled;
+    if (active) root.dataset.theme = 'redbull';
+    else delete root.dataset.theme;
+    if (portrait) {
+      portrait.src = active ? themedPortrait : originalPortrait;
+      portrait.alt = active ? copy.portrait : originalAlt;
+    }
+    if (themeMeta) themeMeta.content = active ? '#001e3c' : originalThemeColor;
+    try {
+      if (active) sessionStorage.setItem(storageKey, 'on');
+      else sessionStorage.removeItem(storageKey);
+    } catch { /* The Easter egg also works when browser storage is unavailable. */ }
+    if (notify) announce(active ? copy.enabled : copy.disabled);
+  };
+
+  try {
+    if (sessionStorage.getItem(storageKey) === 'on') setMode(true, false);
+  } catch { /* Storage is optional. */ }
+
+  portrait?.addEventListener('error', () => {
+    if (portrait.src === themedPortrait) {
+      portrait.src = originalPortrait;
+      portrait.alt = originalAlt;
+    }
+  });
+
+  document.addEventListener('keydown', event => {
+    const editable = event.composedPath().some(target => target instanceof Element && (
+      target.isContentEditable || target.matches('input, textarea, select, [role="textbox"]')
+    ));
+    if (editable || event.ctrlKey || event.metaKey || event.altKey || event.isComposing || event.repeat) {
+      buffer = '';
+      return;
+    }
+    if (event.key === 'Escape') {
+      buffer = '';
+      if (active) setMode(false);
+      return;
+    }
+    if (event.key === 'Shift' || event.key === 'CapsLock') return;
+    if (event.key.length !== 1 || !/^[a-z]$/i.test(event.key)) {
+      buffer = '';
+      return;
+    }
+    const now = performance.now();
+    if (now - lastKeyTime > 2000) buffer = '';
+    lastKeyTime = now;
+    buffer = (buffer + event.key.toLowerCase()).slice(-7);
+    if (buffer === 'redbull') {
+      buffer = '';
+      setMode(!active);
+    }
+  });
+  window.addEventListener('blur', () => { buffer = ''; });
+})();

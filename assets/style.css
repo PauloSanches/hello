@@ -1353,3 +1353,70 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   .story-page-conversation { margin-top: 40px; padding: 22px; }
   .story-page-linkedin { width: 100%; padding-inline: 10px; }
 }
+
+/* Hidden Red Bull palette, activated only by the keyboard Easter egg. */
+:root[data-theme="redbull"] {
+  --paper: #f5f7fa;
+  --ink: #001e3c;
+  --muted: #4b5b70;
+  --line: #001e3c;
+  --quiet-line: #cbd5e2;
+  --icon-services: #003da5;
+  --icon-people: #d2003c;
+  --icon-telecom: #003da5;
+  --icon-banking: #d2003c;
+  --icon-cloud: #003da5;
+  --icon-utilities: #947000;
+  --icon-finance: #d2003c;
+  --icon-commerce: #003da5;
+  --icon-digital: #d2003c;
+  --icon-sun: #ffc400;
+  --icon-water: #003da5;
+  --icon-alert: #d2003c;
+}
+:root[data-theme="redbull"] .hero {
+  --paper: #001e3c;
+  --ink: #ffffff;
+  --muted: #d4dce8;
+  border-bottom: 3px solid #d2003c;
+}
+:root[data-theme="redbull"] .hero-cta { color: #ffc400; }
+:root[data-theme="redbull"] .hero-portrait { transform: none; }
+:root[data-theme="redbull"] .hero .language-switcher a[aria-current="page"] {
+  background: #ffc400;
+  color: #001e3c;
+}
+:root[data-theme="redbull"] .section-index {
+  background: #d2003c;
+  color: #ffffff;
+}
+:root[data-theme="redbull"] .section-band-muted,
+:root[data-theme="redbull"] .story-page-conversation,
+:root[data-theme="redbull"] .story-prose aside { background: #e9eef6; }
+:root[data-theme="redbull"] .explore-number { color: #ffc400; }
+:root[data-theme="redbull"] .explore-link:hover .explore-number,
+:root[data-theme="redbull"] .explore-link:focus-visible .explore-number { color: #001e3c; }
+:root[data-theme="redbull"] .section-heading em { color: #d2003c; }
+:root[data-theme="redbull"] .journey-item.is-current::before { background: #d2003c; }
+:root[data-theme="redbull"] .carousel-track::-webkit-scrollbar-thumb { background: #003da5; }
+:root[data-theme="redbull"] .contact-link:hover { color: #d2003c; }
+:root[data-theme="redbull"] .story-page-linkedin:hover { background: #d2003c; }
+@media (max-width: 760px) {
+  :root[data-theme="redbull"] .hero { --portrait-width: min(78%, calc(var(--hero-height) * 1.12)); }
+}
+.easter-egg-notice {
+  position: fixed;
+  z-index: 30;
+  right: 20px;
+  bottom: 20px;
+  max-width: calc(100% - 40px);
+  padding: 12px 16px;
+  border-left: 4px solid #ffc400;
+  background: #001e3c;
+  color: #ffffff;
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.5;
+  box-shadow: 0 4px 20px #001e3c26;
+  pointer-events: none;
+}
