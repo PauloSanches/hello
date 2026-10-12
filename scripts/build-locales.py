@@ -17,7 +17,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://paulosanches.github.io/hello/"
 LOCALES = {"pt": ("pt-BR", "pt_BR"), "it": ("it", "it_IT")}
-SOURCES = ["index.html", "field-notes/security-at-the-beach/index.html"]
+SOURCES = ["index.html", *sorted(str(path.relative_to(ROOT)) for path in (ROOT / "field-notes").glob("*/index.html"))]
 DATA = json.loads((ROOT / "locales/translations.json").read_text())
 MONTHS = {
     "pt": ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"],
