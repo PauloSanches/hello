@@ -179,10 +179,25 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     }
   };
   const codes = Object.keys(modes);
-  const matchCode = value => codes.find(code => value.endsWith(code));
+  const aliases = new Map([
+    ['redbull', 'redbull'], ['itstimetofly', 'redbull'],
+    ['gameday', 'gameday'], ['nfl', 'gameday'],
+    ['everydayisgameday', 'gameday'], ['everydayisgamedayletsgo', 'gameday'],
+    ['vietnam', 'vietnam'], ['goodmorning', 'vietnam'], ['goodmorningvietnam', 'vietnam']
+  ]);
+  const orderedAliases = Array.from(aliases.keys()).sort((a, b) => b.length - a.length);
+  const maximumCodeLength = orderedAliases[0].length;
+  const normalizeCode = value => value.toLowerCase().replace(/[^a-z]/g, '')
+    .replace(/go{2,}d/g, 'good').replace(/mo+rning/g, 'morning');
+  const matchCode = value => {
+    const compact = normalizeCode(value);
+    const alias = orderedAliases.find(candidate => compact.endsWith(candidate));
+    return alias ? { alias, mode: aliases.get(alias) } : null;
+  };
   let active = '';
   let buffer = '';
   let lastKeyTime = 0;
+  let previousAlias = '';
   let notice;
   let noticeTimer;
 
@@ -229,6 +244,18 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     if (notify) announce(theme ? theme.notice[locale] : originalNotice[locale]);
   };
   const toggleMode = code => setMode(active === code ? '' : code);
+  const clearSequence = () => {
+    buffer = '';
+    lastKeyTime = 0;
+    previousAlias = '';
+  };
+  const recognizeCode = match => {
+    // A longer greeting can complete a phrase that already activated the same mode.
+    const continuation = active === match.mode && previousAlias &&
+      match.alias.length > previousAlias.length && match.alias.startsWith(previousAlias);
+    if (!continuation) toggleMode(match.mode);
+    previousAlias = match.alias;
+  };
 
   try {
     const saved = sessionStorage.getItem(storageKey);
@@ -248,25 +275,33 @@ document.querySelectorAll('.carousel').forEach(carousel => {
   const codeInput = keyboard?.querySelector('.secret-code-input');
   const keyboardPanel = keyboard?.querySelector('.secret-keyboard-panel');
   if (keyboardToggle && codeInput && keyboardPanel) {
+    let lastInputValue = '';
     const closeKeyboard = (returnFocus = false) => {
       keyboardPanel.hidden = true;
       codeInput.value = '';
+      lastInputValue = '';
       keyboardToggle.setAttribute('aria-expanded', 'false');
       if (returnFocus) keyboardToggle.focus({ preventScroll: true });
     };
     const checkCode = () => {
-      const code = matchCode(codeInput.value.trim().toLowerCase());
-      if (!code) return;
-      buffer = '';
-      toggleMode(code);
-      closeKeyboard(true);
+      const raw = codeInput.value.trim().toLowerCase();
+      const compact = normalizeCode(raw);
+      if (compact === lastInputValue) return;
+      lastInputValue = compact;
+      const match = matchCode(compact);
+      if (!match) return;
+      buffer = compact.slice(-maximumCodeLength);
+      lastKeyTime = performance.now();
+      recognizeCode(match);
+      // Keep a phrase in the field until Done, so the rest can be typed safely.
+      if (codes.includes(raw) || raw === 'nfl') closeKeyboard(true);
     };
     keyboardToggle.addEventListener('click', () => {
       if (!keyboardPanel.hidden) {
         closeKeyboard(true);
         return;
       }
-      buffer = '';
+      clearSequence();
       keyboardPanel.hidden = false;
       keyboardToggle.setAttribute('aria-expanded', 'true');
       // Keep focus synchronous with the tap so iOS can open its software keyboard.
@@ -277,7 +312,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     });
     codeInput.addEventListener('compositionend', checkCode);
     resetButtons.forEach(button => button.addEventListener('click', () => {
-      buffer = '';
+      clearSequence();
       setMode('');
       closeKeyboard(true);
     }));
@@ -287,7 +322,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     codeInput.addEventListener('keydown', event => {
       if (event.isComposing || (event.key !== 'Escape' && event.key !== 'Enter')) return;
       event.preventDefault();
-      buffer = '';
+      clearSequence();
       if (event.key === 'Escape' && active) setMode('');
       closeKeyboard(true);
     });
@@ -298,29 +333,31 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     const editable = event.composedPath().some(target => target instanceof Element && (
       target.isContentEditable || target.matches('input, textarea, select, [role="textbox"]')
     ));
-    if (editable || event.ctrlKey || event.metaKey || event.altKey || event.isComposing || event.repeat) {
-      buffer = '';
+    if (editable) {
+      if (event.target !== codeInput) clearSequence();
+      return;
+    }
+    if (event.ctrlKey || event.metaKey || event.altKey || event.isComposing || event.repeat) {
+      clearSequence();
       return;
     }
     if (event.key === 'Escape') {
-      buffer = '';
+      clearSequence();
       if (active) setMode('');
       return;
     }
     if (event.key === 'Shift' || event.key === 'CapsLock') return;
     if (event.key.length !== 1 || !/^[a-z]$/i.test(event.key)) {
-      buffer = '';
+      if (/^[\s’'.,!?…-]$/.test(event.key)) return;
+      clearSequence();
       return;
     }
     const now = performance.now();
-    if (now - lastKeyTime > 2000) buffer = '';
+    if (now - lastKeyTime > 2000) clearSequence();
     lastKeyTime = now;
-    buffer = (buffer + event.key.toLowerCase()).slice(-7);
-    const code = matchCode(buffer);
-    if (code) {
-      buffer = '';
-      toggleMode(code);
-    }
+    buffer = normalizeCode(buffer + event.key).slice(-maximumCodeLength);
+    const match = matchCode(buffer);
+    if (match) recognizeCode(match);
   });
-  window.addEventListener('blur', () => { buffer = ''; });
+  window.addEventListener('blur', clearSequence);
 })();
