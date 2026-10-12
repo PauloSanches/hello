@@ -4,16 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#111111">
-  <meta name="description" content="A day at the beach. An unexpected security incident. One of the experiences that stayed with Paulo Sanches.">
-  <title>A security incident. And I was at the beach. — Paulo Sanches</title>
-  <meta property="og:title" content="A security incident. And I was at the beach. — Paulo Sanches">
-  <meta property="og:description" content="A day at the beach. An unexpected security incident. One of the experiences that stayed with Paulo Sanches.">
+  <meta name="description" content="A security incident during a week of remote work at a beach house. Lessons in architecture, communication and leadership under pressure.">
+  <title>A week at the beach. A security incident on day two. — Paulo Sanches</title>
+  <meta property="og:title" content="A week at the beach. A security incident on day two. — Paulo Sanches">
+  <meta property="og:description" content="A security incident during a week of remote work at a beach house. Lessons in architecture, communication and leadership under pressure.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://paulosanches.github.io/hello/field-notes/security-at-the-beach/">
   <meta property="og:locale" content="en_GB">
+  <meta property="og:image" content="https://paulosanches.github.io/hello/assets/field-notes-beach.png?v=cfb755a41222">
+  <meta property="og:image:width" content="770">
+  <meta property="og:image:height" content="342">
+  <meta property="og:image:alt" content="Pixelated coastal view with palm trees, a sandy beach and turquoise water.">
   <link rel="canonical" href="https://paulosanches.github.io/hello/field-notes/security-at-the-beach/">
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../assets/style.css?v=a9c0cce616b1">
+  <link rel="stylesheet" href="../../assets/style.css?v=b3fe95130f26">
   <script src="../../assets/app.js?v=b778c4d878a6" defer></script>
 </head>
 <body class="story-page">
@@ -25,27 +29,53 @@
   <main id="story-main" tabindex="-1">
     <article aria-labelledby="story-title">
       <header class="story-page-header wrap">
-        <p class="story-page-category">SECURITY &amp; THE UNEXPECTED</p>
-        <h1 id="story-title">A security incident.<br>And I was at the beach.</h1>
-        <p class="story-page-lead">A day at the beach. An unexpected security incident. One of the experiences that stayed with me.</p>
+        <p class="story-page-category">SECURITY &amp; LEADERSHIP</p>
+        <h1 id="story-title">A week at the beach.<br>A security incident on day two.</h1>
+        <p class="story-page-lead">I went to a beach house for a week of remote work, hoping to spend more time with my family. On the second day, a production security incident changed the plan.</p>
       </header>
       <figure class="story-page-visual wrap">
-        <svg viewBox="0 0 240 96" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-          <g stroke="var(--icon-sun)"><circle cx="36" cy="28" r="10"/><path d="M36 10V6M36 50v-4M18 28h-4M58 28h-4M23 15l-3-3M52 44l-3-3M23 41l-3 3M52 12l-3 3"/></g>
- <g stroke="var(--icon-water)"><path d="M12 63h66M125 63h18M218 63h10M12 78q10-5 20 0t20 0t20 0M119 83h23"/></g>
- <path stroke="var(--icon-banking)" d="M73 47Q101 9 129 47Q115 40 101 47Q87 40 73 47ZM101 47v31q0 5-6 5M101 47Q94 30 101 19Q108 30 101 47"/>
- <path stroke="var(--icon-alert)" d="m183 16 24 9v20c0 18-11 29-24 35-13-6-24-17-24-35V25ZM183 34v17M183 61h.01"/>
-        </svg>
-        <figcaption>A moment beyond the ordinary working day.</figcaption>
+        <img src="../../assets/field-notes-beach.png?v=cfb755a41222" width="770" height="342" alt="Pixelated coastal view with palm trees, a sandy beach and turquoise water." decoding="async">
       </figure>
       <div class="story-prose">
-        <section class="story-page-placeholder" aria-labelledby="story-status-title">
-          <p class="story-page-eyebrow">THE STORY</p>
-          <h2 id="story-status-title">Full story coming soon.</h2>
-        </section>
-        <!-- Replace the placeholder with approved narrative. This column supports headings,
-             paragraphs, lists, figures with captions, blockquotes and callouts. Wider visuals
-             can sit outside the column using the same wrap as the opening figure. -->
+        <dl class="story-context" aria-label="The project and the incident">
+          <div><dt>Years in production</dt><dd>3</dd></div>
+          <div><dt>People on the project team</dt><dd>2</dd></div>
+          <div><dt>Nights of downloads and builds</dt><dd>2</dd></div>
+        </dl>
+
+        <h2>A project that looked steady.</h2>
+        <p>I had just been promoted to Manager. Among my new responsibilities, I had taken on the roles of Delivery Lead and Solution Architect for a marketing and CMS project serving one of Brazil’s leading agribusiness companies.</p>
+        <p>The solution used Liferay Portal and had been in production for three years. The project team had just two people, there were no significant issues on record, and the client was discussing a contract renewal. It was a small project in terms of team size, but an important one for the account.</p>
+        <p>With everything apparently under control, working from the beach house seemed straightforward. I expected a normal working week with more time close to my family.</p>
+
+        <h2>When instability became a security incident.</h2>
+        <p>On the second day, we identified a suspicious process running on the production server. Memory usage kept rising, putting the environment under strain and causing restarts. What first looked like a stability problem became a security incident.</p>
+        <p>We activated the company’s incident protocols, escalated the issue and set up a war room. My responsibility was to coordinate the technical response, organise the next actions and keep the client and leadership informed about the problem and our progress.</p>
+
+        <h2>Finding the fix was only part of the work.</h2>
+        <p>During the investigation, we found something that complicated the response. The project had been designed around Liferay’s Community edition during the sales phase. In that setup, we didn’t have the support or readily available fixes we needed to respond quickly.</p>
+        <p>We identified known vulnerabilities in the version we were running, but couldn’t find a ready-to-install update package to address them.</p>
+        <p>After searching forums and raising support requests with specialists, we discovered that the community had made a fix available. There was an extra step, though: we had to download several gigabytes of files and compile the application before installing the updated version on the server.</p>
+        <p>That was when the beach-house connection stopped being a minor detail. The downloads and build took two full nights.</p>
+
+        <h2>Keeping everyone informed.</h2>
+        <p>As the downloads progressed, the pressure grew. Leadership across Latin America was now following the incident, with updates requested several times a day.</p>
+        <p>I had to work on two fronts: help the team reach a solution and give stakeholders a clear account of what we knew, what was still under investigation and what would happen next.</p>
+        <blockquote>I had to make the next steps clear without promising a deadline we couldn’t yet stand behind.</blockquote>
+        <p>Resolving the technical problem and communicating our progress were both part of the response. There were still uncertainties, and I needed to be transparent about them.</p>
+
+        <h2>Closing the incident.</h2>
+        <p>We eventually compiled and installed the updated version, addressed the vulnerabilities we had identified and closed the incident.</p>
+        <p>I barely got to enjoy the beach. Much of the week went into meetings, technical investigation and nights of work, in a setting that hadn’t been prepared for that routine. It became one of the most intense experiences of my career.</p>
+
+        <h2>What stayed with me.</h2>
+        <h3>Maintenance and support belong in the proposal.</h3>
+        <p>The cost of a solution needs to account for maintenance, updates and support. In this project, the choice of the Community edition created a difficulty that only became clear when we needed to respond to a crisis. If those capabilities are necessary to serve the client, they need to be part of the proposal from the start.</p>
+        <h3>Leadership means organising the whole response.</h3>
+        <p>The technical fix is only part of the job. Someone also needs to organise the response, support the team and communicate progress openly, even when there are still unanswered questions.</p>
+        <h3>Working from anywhere takes preparation.</h3>
+        <p>Being able to work from anywhere also means thinking about the conditions needed to handle the unexpected. The connection and working environment matter when a normal day turns into a crisis.</p>
+        <p>I had just stepped into management and expected a quiet week. Instead, from a beach house, I got a practical lesson in responsibility, decision-making and leadership under pressure.</p>
       </div>
     </article>
     <nav class="story-page-bottom wrap" aria-label="Return to Field Notes">
