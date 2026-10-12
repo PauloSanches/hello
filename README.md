@@ -202,4 +202,4 @@ The condensed timeline was verified in Chromium and Linux WebKit at 280, 390, 10
 
 ## Analytics
 
-Paulo’s supplied Google tag with GA4 measurement ID `G-08KVTTBZDL` is installed once in the head of the homepage and the dedicated security-incident story page. The external `gtag.js` loader is asynchronous; the inline bootstrap queues the initialisation and configuration before the loader completes. Each page uses the exact supplied configuration, with no additional custom events.
+Paulo’s supplied Google tag with GA4 measurement ID `G-1ZQYS54JD0` is installed once in the head of the homepage and the dedicated security-incident story page. The external `gtag.js` loader is asynchronous; the inline bootstrap queues the initialisation and configuration before the loader completes. Each page uses the exact supplied configuration, with no additional custom events.
