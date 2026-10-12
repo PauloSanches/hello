@@ -154,6 +154,20 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         it: 'Paulo Sanches con un casco dei Seattle Seahawks',
         en: 'Paulo Sanches holding a Seattle Seahawks helmet'
       }
+    },
+    vietnam: {
+      portrait: 'paulo-portrait-vietnam.webp',
+      colour: '#283222',
+      notice: {
+        pt: 'Good Morning, Vietnam! Digite vietnam novamente ou pressione Esc para voltar.',
+        it: 'Good Morning, Vietnam! Digita di nuovo vietnam o premi Esc per tornare al tema originale.',
+        en: 'Good Morning, Vietnam! Type vietnam again or press Esc to reset.'
+      },
+      alt: {
+        pt: 'Paulo Sanches com microfone de rádio retrô e headphones, vestindo verde-oliva',
+        it: 'Paulo Sanches con un microfono radiofonico vintage, cuffie e una maglia verde oliva',
+        en: 'Paulo Sanches with a vintage radio microphone, headphones and an olive-green shirt'
+      }
     }
   };
   const codes = Object.keys(modes);

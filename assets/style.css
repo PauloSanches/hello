@@ -1492,6 +1492,56 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 @media (max-width: 760px) {
   :root[data-theme="gameday"] .hero { --portrait-width: min(84%, calc(var(--hero-height) * 0.8)); }
 }
+
+/* Good Morning, Vietnam! pairs olive, khaki and warm earth tones. */
+:root[data-theme="vietnam"] {
+  --paper: #f2eee1;
+  --ink: #283222;
+  --muted: #62604f;
+  --line: #283222;
+  --quiet-line: #c9c2ab;
+  --icon-services: #596b40;
+  --icon-people: #945434;
+  --icon-telecom: #70603d;
+  --icon-banking: #596b40;
+  --icon-cloud: #626b59;
+  --icon-utilities: #8a671e;
+  --icon-finance: #70603d;
+  --icon-commerce: #945434;
+  --icon-digital: #626b59;
+  --icon-sun: #b5a77d;
+  --icon-water: #596b40;
+  --icon-alert: #945434;
+}
+:root[data-theme="vietnam"] .hero {
+  --paper: #283222;
+  --ink: #f2eee1;
+  --muted: #d5cfb8;
+  --portrait-width: min(64%, calc(var(--hero-height) * 0.8));
+  border-bottom: 3px solid #b5a77d;
+}
+:root[data-theme="vietnam"] .hero-cta { color: #d5c28e; }
+:root[data-theme="vietnam"] .hero-portrait { transform: none; }
+:root[data-theme="vietnam"] .portrait-photo { object-fit: contain; object-position: right center; }
+:root[data-theme="vietnam"] .hero .language-switcher a[aria-current="page"],
+:root[data-theme="vietnam"] .section-index {
+  background: #b5a77d;
+  color: #283222;
+}
+:root[data-theme="vietnam"] .section-band-muted,
+:root[data-theme="vietnam"] .story-page-conversation,
+:root[data-theme="vietnam"] .story-prose aside { background: #e6dfc9; }
+:root[data-theme="vietnam"] .explore-number { color: #b5a77d; }
+:root[data-theme="vietnam"] .explore-link:hover .explore-number,
+:root[data-theme="vietnam"] .explore-link:focus-visible .explore-number { color: #283222; }
+:root[data-theme="vietnam"] .section-heading em { color: #945434; }
+:root[data-theme="vietnam"] .journey-item.is-current::before { background: #b5a77d; }
+:root[data-theme="vietnam"] .carousel-track::-webkit-scrollbar-thumb { background: #596b40; }
+:root[data-theme="vietnam"] .contact-link:hover { color: #945434; }
+:root[data-theme="vietnam"] .story-page-linkedin:hover { background: #945434; }
+@media (max-width: 760px) {
+  :root[data-theme="vietnam"] .hero { --portrait-width: min(84%, calc(var(--hero-height) * 0.8)); }
+}
 .easter-egg-notice {
   position: fixed;
   z-index: 30;
@@ -1512,4 +1562,10 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   border-left-color: #69be28;
   background: #002244;
   box-shadow: 0 4px 20px #00224426;
+}
+:root[data-theme="vietnam"] .easter-egg-notice {
+  border-left-color: #b5a77d;
+  background: #283222;
+  color: #f2eee1;
+  box-shadow: 0 4px 20px #28322226;
 }
