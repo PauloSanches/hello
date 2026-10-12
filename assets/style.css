@@ -1442,6 +1442,56 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 @media (max-width: 760px) {
   :root[data-theme="redbull"] .hero { --portrait-width: min(78%, calc(var(--hero-height) * 1.12)); }
 }
+
+/* GameDay uses Seattle Seahawks navy, action green and wolf grey. */
+:root[data-theme="gameday"] {
+  --paper: #f4f6f7;
+  --ink: #002244;
+  --muted: #4c5f6e;
+  --line: #002244;
+  --quiet-line: #c9d1d8;
+  --icon-services: #002244;
+  --icon-people: #397600;
+  --icon-telecom: #3f647f;
+  --icon-banking: #397600;
+  --icon-cloud: #3f647f;
+  --icon-utilities: #397600;
+  --icon-finance: #002244;
+  --icon-commerce: #397600;
+  --icon-digital: #3f647f;
+  --icon-sun: #69be28;
+  --icon-water: #3f647f;
+  --icon-alert: #397600;
+}
+:root[data-theme="gameday"] .hero {
+  --paper: #002244;
+  --ink: #ffffff;
+  --muted: #d4dce3;
+  --portrait-width: min(64%, calc(var(--hero-height) * 0.8));
+  border-bottom: 3px solid #69be28;
+}
+:root[data-theme="gameday"] .hero-cta { color: #69be28; }
+:root[data-theme="gameday"] .hero-portrait { transform: none; }
+:root[data-theme="gameday"] .portrait-photo { object-fit: contain; object-position: right center; }
+:root[data-theme="gameday"] .hero .language-switcher a[aria-current="page"],
+:root[data-theme="gameday"] .section-index {
+  background: #69be28;
+  color: #002244;
+}
+:root[data-theme="gameday"] .section-band-muted,
+:root[data-theme="gameday"] .story-page-conversation,
+:root[data-theme="gameday"] .story-prose aside { background: #e3e8ed; }
+:root[data-theme="gameday"] .explore-number { color: #69be28; }
+:root[data-theme="gameday"] .explore-link:hover .explore-number,
+:root[data-theme="gameday"] .explore-link:focus-visible .explore-number { color: #002244; }
+:root[data-theme="gameday"] .section-heading em { color: #397600; }
+:root[data-theme="gameday"] .journey-item.is-current::before { background: #69be28; }
+:root[data-theme="gameday"] .carousel-track::-webkit-scrollbar-thumb { background: #397600; }
+:root[data-theme="gameday"] .contact-link:hover { color: #397600; }
+:root[data-theme="gameday"] .story-page-linkedin:hover { background: #397600; }
+@media (max-width: 760px) {
+  :root[data-theme="gameday"] .hero { --portrait-width: min(84%, calc(var(--hero-height) * 0.8)); }
+}
 .easter-egg-notice {
   position: fixed;
   z-index: 30;
@@ -1457,4 +1507,9 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   line-height: 1.5;
   box-shadow: 0 4px 20px #001e3c26;
   pointer-events: none;
+}
+:root[data-theme="gameday"] .easter-egg-notice {
+  border-left-color: #69be28;
+  background: #002244;
+  box-shadow: 0 4px 20px #00224426;
 }

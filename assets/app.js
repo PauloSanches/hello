@@ -112,27 +112,53 @@ document.querySelectorAll('.carousel').forEach(carousel => {
 // Recognise the secret code with hardware or mobile keyboards; leave other fields untouched.
 (() => {
   const root = document.documentElement;
-  const storageKey = 'paulo-redbull-mode';
+  const storageKey = 'paulo-easter-egg-mode';
+  const legacyStorageKey = 'paulo-redbull-mode';
   const portrait = document.querySelector('.portrait-photo');
   const originalPortrait = portrait?.getAttribute('src');
   const originalAlt = portrait?.getAttribute('alt');
-  const themedPortrait = originalPortrait && new URL('paulo-portrait-redbull.webp', new URL(originalPortrait, document.baseURI)).href;
+  const portraitURL = file => originalPortrait && new URL(file, new URL(originalPortrait, document.baseURI)).href;
   const themeMeta = document.querySelector('meta[name="theme-color"]');
   const originalThemeColor = themeMeta?.getAttribute('content');
-  const copy = root.lang === 'pt-BR' ? {
-    enabled: 'Modo Red Bull. Digite redbull novamente ou pressione Esc para voltar.',
-    disabled: 'Tema original restaurado.',
-    portrait: 'Paulo Sanches segurando uma lata de Red Bull'
-  } : root.lang === 'it' ? {
-    enabled: 'Modalità Red Bull. Digita di nuovo redbull o premi Esc per tornare al tema originale.',
-    disabled: 'Tema originale ripristinato.',
-    portrait: 'Paulo Sanches con una lattina di Red Bull'
-  } : {
-    enabled: 'Red Bull mode. Type redbull again or press Esc to reset.',
-    disabled: 'Original theme restored.',
-    portrait: 'Paulo Sanches holding a Red Bull can'
+  const locale = root.lang === 'pt-BR' ? 'pt' : root.lang === 'it' ? 'it' : 'en';
+  const originalNotice = {
+    pt: 'Tema original restaurado.',
+    it: 'Tema originale ripristinato.',
+    en: 'Original theme restored.'
   };
-  let active = false;
+  const modes = {
+    redbull: {
+      portrait: 'paulo-portrait-redbull.webp',
+      colour: '#001e3c',
+      notice: {
+        pt: 'Modo Red Bull. Digite redbull novamente ou pressione Esc para voltar.',
+        it: 'Modalità Red Bull. Digita di nuovo redbull o premi Esc per tornare al tema originale.',
+        en: 'Red Bull mode. Type redbull again or press Esc to reset.'
+      },
+      alt: {
+        pt: 'Paulo Sanches segurando uma lata de Red Bull',
+        it: 'Paulo Sanches con una lattina di Red Bull',
+        en: 'Paulo Sanches holding a Red Bull can'
+      }
+    },
+    gameday: {
+      portrait: 'paulo-portrait-gameday.webp',
+      colour: '#002244',
+      notice: {
+        pt: 'Modo GameDay. Digite gameday novamente ou pressione Esc para voltar.',
+        it: 'Modalità GameDay. Digita di nuovo gameday o premi Esc per tornare al tema originale.',
+        en: 'GameDay mode. Type gameday again or press Esc to reset.'
+      },
+      alt: {
+        pt: 'Paulo Sanches segurando um capacete do Seattle Seahawks',
+        it: 'Paulo Sanches con un casco dei Seattle Seahawks',
+        en: 'Paulo Sanches holding a Seattle Seahawks helmet'
+      }
+    }
+  };
+  const codes = Object.keys(modes);
+  const matchCode = value => codes.find(code => value.endsWith(code));
+  let active = '';
   let buffer = '';
   let lastKeyTime = 0;
   let notice;
@@ -152,28 +178,33 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     noticeTimer = setTimeout(() => { notice.hidden = true; }, 4000);
   };
 
-  const setMode = (enabled, notify = true) => {
-    active = enabled;
-    if (active) root.dataset.theme = 'redbull';
+  const setMode = (mode, notify = true) => {
+    active = mode;
+    const theme = active && modes[active];
+    if (active) root.dataset.theme = active;
     else delete root.dataset.theme;
     if (portrait) {
-      portrait.src = active ? themedPortrait : originalPortrait;
-      portrait.alt = active ? copy.portrait : originalAlt;
+      portrait.src = theme ? portraitURL(theme.portrait) : originalPortrait;
+      portrait.alt = theme ? theme.alt[locale] : originalAlt;
     }
-    if (themeMeta) themeMeta.content = active ? '#001e3c' : originalThemeColor;
+    if (themeMeta) themeMeta.content = theme ? theme.colour : originalThemeColor;
     try {
-      if (active) sessionStorage.setItem(storageKey, 'on');
+      if (active) sessionStorage.setItem(storageKey, active);
       else sessionStorage.removeItem(storageKey);
+      sessionStorage.removeItem(legacyStorageKey);
     } catch { /* The Easter egg also works when browser storage is unavailable. */ }
-    if (notify) announce(active ? copy.enabled : copy.disabled);
+    if (notify) announce(theme ? theme.notice[locale] : originalNotice[locale]);
   };
+  const toggleMode = code => setMode(active === code ? '' : code);
 
   try {
-    if (sessionStorage.getItem(storageKey) === 'on') setMode(true, false);
+    const saved = sessionStorage.getItem(storageKey);
+    if (codes.includes(saved)) setMode(saved, false);
+    else if (sessionStorage.getItem(legacyStorageKey) === 'on') setMode('redbull', false);
   } catch { /* Storage is optional. */ }
 
   portrait?.addEventListener('error', () => {
-    if (portrait.src === themedPortrait) {
+    if (active && portrait.src === portraitURL(modes[active].portrait)) {
       portrait.src = originalPortrait;
       portrait.alt = originalAlt;
     }
@@ -190,9 +221,10 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       if (returnFocus) keyboardToggle.focus({ preventScroll: true });
     };
     const checkCode = () => {
-      if (!codeInput.value.trim().toLowerCase().endsWith('redbull')) return;
+      const code = matchCode(codeInput.value.trim().toLowerCase());
+      if (!code) return;
       buffer = '';
-      setMode(!active);
+      toggleMode(code);
       closeKeyboard(true);
     };
     keyboardToggle.addEventListener('click', () => {
@@ -217,7 +249,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       if (event.isComposing || (event.key !== 'Escape' && event.key !== 'Enter')) return;
       event.preventDefault();
       buffer = '';
-      if (event.key === 'Escape' && active) setMode(false);
+      if (event.key === 'Escape' && active) setMode('');
       closeKeyboard(true);
     });
     keyboard.hidden = false;
@@ -233,7 +265,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     }
     if (event.key === 'Escape') {
       buffer = '';
-      if (active) setMode(false);
+      if (active) setMode('');
       return;
     }
     if (event.key === 'Shift' || event.key === 'CapsLock') return;
@@ -245,9 +277,10 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     if (now - lastKeyTime > 2000) buffer = '';
     lastKeyTime = now;
     buffer = (buffer + event.key.toLowerCase()).slice(-7);
-    if (buffer === 'redbull') {
+    const code = matchCode(buffer);
+    if (code) {
       buffer = '';
-      setMode(!active);
+      toggleMode(code);
     }
   });
   window.addEventListener('blur', () => { buffer = ''; });
