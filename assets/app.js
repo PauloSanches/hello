@@ -67,3 +67,62 @@ document.querySelectorAll('.carousel').forEach(carousel => {
   controls.hidden = false;
   updateControls();
 });
+
+
+document.querySelectorAll('[data-story-card]').forEach(card => {
+  const front = card.querySelector('.story-front');
+  const back = card.querySelector('.story-back');
+  const content = card.querySelector('.story-content');
+  const open = card.querySelector('.story-open');
+  const close = card.querySelector('.story-close');
+  const scrollHint = card.querySelector('.story-scroll-hint');
+  if (!front || !back || !content || !open || !close) return;
+
+  const updateScrollHint = () => {
+    if (!scrollHint) return;
+    const scrollable = content.scrollHeight > content.clientHeight + 1;
+    const atBottom = content.scrollTop + content.clientHeight >= content.scrollHeight - 2;
+    scrollHint.hidden = !scrollable || atBottom;
+  };
+
+  const showSide = (showBack) => {
+    card.classList.toggle('is-flipped', showBack);
+    front.inert = showBack;
+    back.inert = !showBack;
+    front.setAttribute('aria-hidden', String(showBack));
+    back.setAttribute('aria-hidden', String(!showBack));
+    open.setAttribute('aria-expanded', String(showBack));
+    if (showBack) {
+      content.scrollTop = 0;
+      updateScrollHint();
+      content.focus({ preventScroll: true });
+    } else {
+      open.focus({ preventScroll: true });
+    }
+  };
+
+  back.inert = true;
+  back.setAttribute('aria-hidden', 'true');
+  content.tabIndex = 0;
+  card.classList.add('story-enhanced');
+  open.hidden = false;
+  close.hidden = false;
+  open.addEventListener('click', () => showSide(true));
+  close.addEventListener('click', () => showSide(false));
+  content.addEventListener('scroll', updateScrollHint, { passive: true });
+  window.addEventListener('resize', updateScrollHint);
+  if ('ResizeObserver' in window) {
+    new ResizeObserver(updateScrollHint).observe(content);
+  }
+  front.addEventListener('click', event => {
+    if (event.target.closest('button, a, input, select, textarea, summary')) return;
+    if (String(window.getSelection()).trim()) return;
+    showSide(true);
+  });
+  card.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && card.classList.contains('is-flipped')) {
+      event.preventDefault();
+      showSide(false);
+    }
+  });
+});

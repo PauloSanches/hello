@@ -13,8 +13,8 @@
   <meta property="og:locale" content="en_GB">
   <link rel="canonical" href="https://paulosanches.github.io/hello/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/style.css?v=a4381a874d97">
-  <script src="assets/app.js?v=b778c4d878a6" defer></script>
+  <link rel="stylesheet" href="assets/style.css?v=5bbc45ff1f39">
+  <script src="assets/app.js?v=01863f733e6f" defer></script>
 </head>
 <body>
 <svg class="visual-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="0" height="0">
@@ -127,11 +127,65 @@
   <section class="stories-section section-band section-band-muted" id="stories" tabindex="-1" aria-labelledby="stories-title"><div class="wrap">
     <div class="section-heading"><p class="section-index">03 / FIELD NOTES</p><div><h2 id="stories-title">There’s a story<br>behind the work.</h2><p>The moments that don’t fit neatly on a CV. The unexpected turns, the conversations, and the things I learned along the way.</p></div></div>
     <div class="stories-grid">
-      <article class="story story-featured" aria-labelledby="beach-story-title">
-        <div class="story-body"><p class="story-category">01 / SECURITY &amp; THE UNEXPECTED</p><svg class="story-illustration" viewBox="0 0 240 96" aria-hidden="true" focusable="false"><use href="#icon-story-security"/></svg><h3 id="beach-story-title">A security incident.<br>And I was at the beach.</h3><p class="story-teaser">A day at the beach. An unexpected security incident. One of the experiences that stayed with me.</p><p class="story-meta">A moment beyond the ordinary working day.</p></div>
+      <article class="story story-security" id="beach-story-card" aria-labelledby="beach-story-title" data-story-card>
+        <div class="story-inner">
+          <div class="story-front" id="beach-story-front">
+            <p class="story-category">01 / SECURITY &amp; THE UNEXPECTED</p>
+            <svg class="story-illustration" viewBox="0 0 240 96" aria-hidden="true" focusable="false"><use href="#icon-story-security"/></svg>
+<h3 id="beach-story-title">A security incident.<br>And I was at the beach.</h3>
+            <p class="story-teaser">A day at the beach. An unexpected security incident. One of the experiences that stayed with me.</p>
+            <button class="story-open" type="button" aria-expanded="false" aria-controls="beach-story-back" hidden>Read the story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 7v5h-5M4 17v-5h5m11 0a8 8 0 0 0-14-5M4 12a8 8 0 0 0 14 5"/></svg><span class="sr-only"> about security and the unexpected</span></button>
+          </div>
+          <div class="story-back" id="beach-story-back">
+            <p class="story-category">01 / SECURITY &amp; THE UNEXPECTED</p>
+            <h3 class="story-back-title" id="beach-story-back-title">A security incident.<br>And I was at the beach.</h3>
+            <div class="story-content detail-content" role="region" aria-labelledby="beach-story-back-title" tabindex="-1">
+                <p class="story-meta">A moment beyond the ordinary working day.</p>
+                <p class="story-placeholder">Full story coming soon.</p>
+            </div>
+            <p class="story-scroll-hint" hidden>Scroll for more <span aria-hidden="true">↓</span></p>
+            <button class="story-close" type="button" aria-controls="beach-story-front" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5m7-7-7 7 7 7"/></svg> Back to front<span class="sr-only"> of the story about security and the unexpected</span></button>
+          </div>
+        </div>
       </article>
-      <article class="story" aria-labelledby="team-story-title"><div class="story-body"><p class="story-category">02 / PEOPLE &amp; TRUST<svg class="story-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-story-people"/></svg></p><h3 id="team-story-title">The people behind<br>the architecture.</h3><p class="story-teaser">Helping an international team find stability, shared ownership and a way forward.</p><details class="story-detail"><summary>Read the story <span class="detail-plus" aria-hidden="true">+</span><span class="sr-only"> about people and trust</span></summary><div class="detail-content"><h4>The starting point</h4><p>When I joined a public-sector modernisation programme, the international team was dealing with instability and recurring departures.</p><h4>What I worked on</h4><p>I brought coaching, shared objectives and a product mindset into the team’s day-to-day work. Alongside that, an Architecture Board and documented decisions gave people a clearer way to agree on the technical direction.</p><h4>What changed</h4><p>The team became more stable, and trust with the client grew. People and architecture moved forward together.</p></div></details></div></article>
-      <article class="story" aria-labelledby="ai-story-title"><div class="story-body"><p class="story-category">03 / APPLIED AI<svg class="story-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-ai"/></svg></p><h3 id="ai-story-title">Putting AI to work.<br>Keeping people in control.</h3><p class="story-teaser">Taking agents into a production workflow, with quality and human judgement at the centre.</p><details class="story-detail"><summary>Read the story <span class="detail-plus" aria-hidden="true">+</span><span class="sr-only"> about applied AI</span></summary><div class="detail-content"><h4>The question</h4><p>Could we speed up business-rule implementation while retaining control over quality and the decisions that mattered?</p><h4>What I worked on</h4><p>I led the adoption of agents for implementation, tests and supporting artefacts. Automated quality gates and human review were part of the workflow.</p><h4>What changed</h4><p>The workflow was adopted in production, and a complete domain was delivered within a Program Increment. AIOps adoption is also expanding to client teams.</p></div></details></div></article>
+      <article class="story story-people" id="team-story-card" aria-labelledby="team-story-title" data-story-card>
+        <div class="story-inner">
+          <div class="story-front" id="team-story-front">
+            <p class="story-category">02 / PEOPLE &amp; TRUST<svg class="story-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-story-people"/></svg></p>
+            <h3 id="team-story-title">The people behind<br>the architecture.</h3>
+            <p class="story-teaser">Helping an international team find stability, shared ownership and a way forward.</p>
+            <button class="story-open" type="button" aria-expanded="false" aria-controls="team-story-back" hidden>Read the story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 7v5h-5M4 17v-5h5m11 0a8 8 0 0 0-14-5M4 12a8 8 0 0 0 14 5"/></svg><span class="sr-only"> about people and trust</span></button>
+          </div>
+          <div class="story-back" id="team-story-back">
+            <p class="story-category">02 / PEOPLE &amp; TRUST</p>
+            <h3 class="story-back-title" id="team-story-back-title">The people behind<br>the architecture.</h3>
+            <div class="story-content detail-content" role="region" aria-labelledby="team-story-back-title" tabindex="-1">
+                <h4>The starting point</h4><p>When I joined a public-sector modernisation programme, the international team was dealing with instability and recurring departures.</p><h4>What I worked on</h4><p>I brought coaching, shared objectives and a product mindset into the team’s day-to-day work. Alongside that, an Architecture Board and documented decisions gave people a clearer way to agree on the technical direction.</p><h4>What changed</h4><p>The team became more stable, and trust with the client grew. People and architecture moved forward together.</p>
+            </div>
+            <p class="story-scroll-hint" hidden>Scroll for more <span aria-hidden="true">↓</span></p>
+            <button class="story-close" type="button" aria-controls="team-story-front" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5m7-7-7 7 7 7"/></svg> Back to front<span class="sr-only"> of the story about people and trust</span></button>
+          </div>
+        </div>
+      </article>
+      <article class="story story-ai" id="ai-story-card" aria-labelledby="ai-story-title" data-story-card>
+        <div class="story-inner">
+          <div class="story-front" id="ai-story-front">
+            <p class="story-category">03 / APPLIED AI<svg class="story-symbol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-ai"/></svg></p>
+            <h3 id="ai-story-title">Putting AI to work.<br>Keeping people in control.</h3>
+            <p class="story-teaser">Taking agents into a production workflow, with quality and human judgement at the centre.</p>
+            <button class="story-open" type="button" aria-expanded="false" aria-controls="ai-story-back" hidden>Read the story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 7v5h-5M4 17v-5h5m11 0a8 8 0 0 0-14-5M4 12a8 8 0 0 0 14 5"/></svg><span class="sr-only"> about applied AI</span></button>
+          </div>
+          <div class="story-back" id="ai-story-back">
+            <p class="story-category">03 / APPLIED AI</p>
+            <h3 class="story-back-title" id="ai-story-back-title">Putting AI to work.<br>Keeping people in control.</h3>
+            <div class="story-content detail-content" role="region" aria-labelledby="ai-story-back-title" tabindex="-1">
+                <h4>The question</h4><p>Could we speed up business-rule implementation while retaining control over quality and the decisions that mattered?</p><h4>What I worked on</h4><p>I led the adoption of agents for implementation, tests and supporting artefacts. Automated quality gates and human review were part of the workflow.</p><h4>What changed</h4><p>The workflow was adopted in production, and a complete domain was delivered within a Program Increment. AIOps adoption is also expanding to client teams.</p>
+            </div>
+            <p class="story-scroll-hint" hidden>Scroll for more <span aria-hidden="true">↓</span></p>
+            <button class="story-close" type="button" aria-controls="ai-story-front" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5m7-7-7 7 7 7"/></svg> Back to front<span class="sr-only"> of the story about applied AI</span></button>
+          </div>
+        </div>
+      </article>
     </div>
   </div></section>
 
