@@ -1191,13 +1191,9 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   .journey-more { margin-top: 0; }
   .journey-more > summary, .project-detail > summary { display: none; }
 
-  .stories-grid { grid-template-columns: minmax(0, 1fr); }
-  .story-front { display: grid; grid-template-columns: 144px minmax(0, .9fr) minmax(0, 1.1fr); gap: 16px 32px; min-height: 0; padding: 28px; }
-  .story-category { grid-column: 2 / -1; }
-  .story-illustration { grid-column: 1; grid-row: 1 / span 3; align-self: center; width: 100%; margin-top: 0; }
-  .story h3 { grid-column: 2; grid-row: 2; margin-top: 0; font-size: clamp(30px, 2.6vw, 42px); }
-  .story-teaser { grid-column: 3; grid-row: 2; align-self: center; margin-block: 0; }
-  .story-open { grid-column: 2 / -1; grid-row: 3; margin-top: 0; }
+  .stories-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .story-front { min-height: 0; padding: 24px; }
+  .story h3 { font-size: clamp(28px, 2.3vw, 36px); }
 
   .carousel-grid-desktop .carousel-track {
     grid-auto-flow: row;
@@ -1215,6 +1211,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   .certification-list { grid-template-rows: repeat(2, auto); grid-auto-columns: clamp(260px, 22vw, 320px); }
 }
 @media (min-width: 1280px) {
+  .stories-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .carousel-grid-desktop .contribution-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 @media (min-width: 1800px) {
