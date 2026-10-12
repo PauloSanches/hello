@@ -117,6 +117,9 @@ document.querySelectorAll('.carousel').forEach(carousel => {
   const portrait = document.querySelector('.portrait-photo');
   const originalPortrait = portrait?.getAttribute('src');
   const originalAlt = portrait?.getAttribute('alt');
+  const headline = document.getElementById('hello-title');
+  const originalHeadline = headline?.textContent;
+  const originalHeadlineLanguage = headline?.getAttribute('lang');
   const portraitURL = file => originalPortrait && new URL(file, new URL(originalPortrait, document.baseURI)).href;
   const themeMeta = document.querySelector('meta[name="theme-color"]');
   const originalThemeColor = themeMeta?.getAttribute('content');
@@ -156,17 +159,18 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       }
     },
     vietnam: {
-      portrait: 'paulo-portrait-vietnam.webp',
+      portrait: 'paulo-portrait-vietnam.webp?v=5895a8439be6',
       colour: '#283222',
+      headline: 'GOOOOD MOOORNING…',
       notice: {
         pt: 'Good Morning, Vietnam! Digite vietnam novamente ou pressione Esc para voltar.',
         it: 'Good Morning, Vietnam! Digita di nuovo vietnam o premi Esc per tornare al tema originale.',
         en: 'Good Morning, Vietnam! Type vietnam again or press Esc to reset.'
       },
       alt: {
-        pt: 'Paulo Sanches com microfone de rádio retrô e headphones, vestindo verde-oliva',
-        it: 'Paulo Sanches con un microfono radiofonico vintage, cuffie e una maglia verde oliva',
-        en: 'Paulo Sanches with a vintage radio microphone, headphones and an olive-green shirt'
+        pt: 'Paulo Sanches com sua camisa branca, segurando um microfone de rádio retrô',
+        it: 'Paulo Sanches con la sua camicia bianca, mentre tiene un microfono radiofonico vintage',
+        en: 'Paulo Sanches in his white shirt, holding a vintage radio microphone'
       }
     }
   };
@@ -200,6 +204,12 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     if (portrait) {
       portrait.src = theme ? portraitURL(theme.portrait) : originalPortrait;
       portrait.alt = theme ? theme.alt[locale] : originalAlt;
+    }
+    if (headline) {
+      headline.textContent = theme?.headline ?? originalHeadline;
+      if (theme?.headline) headline.lang = 'en';
+      else if (originalHeadlineLanguage) headline.lang = originalHeadlineLanguage;
+      else headline.removeAttribute('lang');
     }
     if (themeMeta) themeMeta.content = theme ? theme.colour : originalThemeColor;
     try {

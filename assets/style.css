@@ -1541,6 +1541,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 :root[data-theme="vietnam"] .story-page-linkedin:hover { background: #945434; }
 @media (max-width: 760px) {
   :root[data-theme="vietnam"] .hero { --portrait-width: min(84%, calc(var(--hero-height) * 0.8)); }
+  :root[data-theme="vietnam"] .hero-main { width: 70%; }
 }
 .easter-egg-notice {
   position: fixed;
