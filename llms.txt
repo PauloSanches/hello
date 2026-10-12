@@ -1,0 +1,27 @@
+# Paulo Sanches
+
+> Personal portfolio of Paulo Sanches, a Technology & Solution Architecture Manager based in Braga, Portugal, with 17+ years leading teams, solving complex technology challenges and stabilizing mission-critical programs.
+
+The website is primarily in English. Mindset cards preserve Paulo’s original Portuguese quotes, marked PT-BR, with English explanations. The HTML pages are the primary sources; this file is a concise guide to their public content.
+
+## Profile and experience
+
+- [Profile](https://paulosanches.github.io/hello/#profile): Business transformation through technology and AI, working with teams and AI agents from strategy to execution. Paulo manages a 60+ professional DevOps capability and provides cross-practice technical leadership to 20+ architects.
+- [Experience](https://paulosanches.github.io/hello/#journey): Current projects and a condensed earlier-career summary. The current engagements include a €7M European public-sector transformation, enterprise solutioning and AWS partnerships with contributions to €3.5M in won contracts, and an active enterprise workforce and portfolio platform. Some engagements run in parallel.
+
+## First-hand writing and mindset
+
+- [Field Notes](https://paulosanches.github.io/hello/#stories): Experiences from Paulo’s career, written from his perspective.
+- [A week at the beach. A security incident on day two.](https://paulosanches.github.io/hello/field-notes/security-at-the-beach/): A production security incident involving Liferay Portal, with lessons about maintenance and support, technical response, stakeholder communication and preparing for remote work. The incident date, client name, software version and vulnerability identifiers are not disclosed.
+- [Mindset](https://paulosanches.github.io/hello/#mindset): Approved personal principles and their context, including preparing for setbacks, learning through pressure, planning enough to act, adapting when plans meet reality, and bringing game-day energy to the team.
+
+## Contributions and certifications
+
+- [Contributions](https://paulosanches.github.io/hello/#contributions): JNation 2026 in Coimbra representing Accenture; a 2025 AI hackathon across Lisbon, Braga and Coimbra; a Cubo Tech Lead participation; and FlashCamp 2010 representing Ogilvy.
+- [Certifications](https://paulosanches.github.io/hello/#certifications): Credentials and learning from Deel, Accenture, AWS, Google Cloud, Scaled Agile and Scrum Alliance. Each card includes its issuer, description and supplied dates. The section includes historical credentials with expiry dates, rather than claiming every credential is currently valid.
+
+## Contact and discovery
+
+- [LinkedIn](https://www.linkedin.com/in/paulosanches): Paulo’s public contact channel.
+- [Sitemap](https://paulosanches.github.io/hello/sitemap.xml): Canonical public page URLs.
+- [Crawler policy](https://paulosanches.github.io/robots.txt): Domain-root robots.txt, which applies to this GitHub Pages project.

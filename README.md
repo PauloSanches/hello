@@ -203,3 +203,15 @@ The condensed timeline was verified in Chromium and Linux WebKit at 280, 390, 10
 ## Analytics
 
 Paulo’s supplied Google tag with GA4 measurement ID `G-1ZQYS54JD0` is installed once in the head of the homepage and the dedicated security-incident story page. The external `gtag.js` loader is asynchronous; the inline bootstrap queues the initialisation and configuration before the loader completes. Each page uses the exact supplied configuration, with no additional custom events.
+
+## Search and AI discovery
+
+Both public HTML pages have unique descriptive titles, descriptions, stable absolute canonical URLs, an explicit indexing directive, Open Graph image metadata and Twitter cards. The homepage uses the existing colour portrait with a summary card; Field Notes uses its supplied coastal cover with a large-image card. The approved visible copy, layout, images, contact destinations and analytics configuration are unchanged.
+
+The homepage’s JSON-LD graph connects a `ProfilePage`, `Person`, `WebSite` and portrait `ImageObject`. The person’s name, role, Braga location, public LinkedIn profile and areas of expertise come from the visible portfolio. Section references point to existing anchors. The story graph connects a `BlogPosting`, author, website, page, cover and two-level breadcrumb. Its publication date is 12 October 2026, the date of the first story-page commit and publication; this is not an inferred date for the incident. Metadata contains no phone, email, undisclosed client, vulnerability identifier or unsupported credential-validity claim.
+
+`sitemap.xml` lists only the two canonical HTML pages. Its `lastmod` values describe actual page changes, including metadata, and must be updated when those pages change. Add a sitemap entry whenever a new public story is published. Do not include fragments, tracking query strings, assets, private attachments or repository documentation in the sitemap.
+
+The effective crawler policy is at **https://paulosanches.github.io/robots.txt**, served by the separate `PauloSanches/PauloSanches.github.io` repository, branch `master`, whose existing Pages source is `/`. A file under `/hello/robots.txt` would not control crawlers for the domain. The domain-root file permits crawling and declares the portfolio sitemap. Other projects and legacy case files in that repository are unchanged. A domain-root `llms.txt` links to the portfolio and its fuller `/hello/llms.txt` guide. When the portfolio URL changes, update those two root discovery files as well as the canonical URLs, structured data and sitemap here.
+
+The `llms.txt` files are concise English indexes of public sources, not a replacement for HTML, crawling or indexation. This is an emerging convention; neither these files nor structured data guarantee inclusion or ranking in search engines or AI answers. AEO/GEO relies here on accessible static content, clear identity, first-hand writing, linked sources and consistent facts. Search Console verification or sitemap submission requires access to the corresponding Google property and is not represented as completed by publishing these files.
