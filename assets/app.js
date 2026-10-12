@@ -167,9 +167,9 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       colour: '#283222',
       phrase: 'GOOOOD MOOORNING…',
       notice: {
-        pt: 'Good Morning, Vietnam! Digite vietnam novamente ou pressione Esc para voltar.',
-        it: 'Good Morning, Vietnam! Digita di nuovo vietnam o premi Esc per tornare al tema originale.',
-        en: 'Good Morning, Vietnam! Type vietnam again or press Esc to reset.'
+        pt: 'Good Morning, Vietnam! Digite goodmorning novamente ou pressione Esc para voltar.',
+        it: 'Good Morning, Vietnam! Digita di nuovo goodmorning o premi Esc per tornare al tema originale.',
+        en: 'Good Morning, Vietnam! Type goodmorning again or press Esc to reset.'
       },
       alt: {
         pt: 'Paulo Sanches com sua camisa branca, segurando um microfone de rádio retrô',
@@ -179,6 +179,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     }
   };
   const codes = Object.keys(modes);
+  const compactCodes = new Set(['redbull', 'gameday', 'goodmorning', 'vietnam', 'nfl']);
   const aliases = new Map([
     ['redbull', 'redbull'], ['itstimetofly', 'redbull'],
     ['gameday', 'gameday'], ['nfl', 'gameday'],
@@ -294,7 +295,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       lastKeyTime = performance.now();
       recognizeCode(match);
       // Keep a phrase in the field until Done, so the rest can be typed safely.
-      if (codes.includes(raw) || raw === 'nfl') closeKeyboard(true);
+      if (compactCodes.has(raw)) closeKeyboard(true);
     };
     keyboardToggle.addEventListener('click', () => {
       if (!keyboardPanel.hidden) {
@@ -316,8 +317,13 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       setMode('');
       closeKeyboard(true);
     }));
-    keyboard.addEventListener('focusout', event => {
-      if (!keyboard.contains(event.relatedTarget)) closeKeyboard();
+    // Safari can blur the input with no relatedTarget before a button receives its click.
+    // Dismiss only when a pointer or focus actually moves outside the controls.
+    document.addEventListener('pointerdown', event => {
+      if (!keyboardPanel.hidden && !keyboard.contains(event.target)) closeKeyboard();
+    });
+    document.addEventListener('focusin', event => {
+      if (!keyboardPanel.hidden && !keyboard.contains(event.target)) closeKeyboard();
     });
     codeInput.addEventListener('keydown', event => {
       if (event.isComposing || (event.key !== 'Escape' && event.key !== 'Enter')) return;
