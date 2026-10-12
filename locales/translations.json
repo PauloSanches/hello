@@ -1222,5 +1222,17 @@
   "Pixelated aerial view of a muddy landscape surrounded by green vegetation.": {
     "pt": "Vista aérea pixelizada de uma área com lama cercada por vegetação verde.",
     "it": "Veduta aerea pixelata di un’area fangosa circondata da vegetazione verde."
+  },
+  "Open keyboard": {
+    "pt": "Abrir teclado",
+    "it": "Apri tastiera"
+  },
+  "Type a secret code": {
+    "pt": "Digite um código secreto",
+    "it": "Digita un codice segreto"
+  },
+  "Type a code": {
+    "pt": "Digite um código",
+    "it": "Digita un codice"
   }
 }

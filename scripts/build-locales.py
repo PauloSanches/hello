@@ -78,7 +78,7 @@ class Localize(HTMLParser):
                 value = original
                 if tag == "html" and name == "lang":
                     value = self.language
-                elif name in {"aria-label", "aria-roledescription", "alt", "title"} and value:
+                elif name in {"aria-label", "aria-roledescription", "alt", "title", "placeholder"} and value:
                     value = translate(value, self.locale)
                 elif tag == "meta" and name == "content":
                     key = attrs.get("name", attrs.get("property"))

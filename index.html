@@ -100,8 +100,8 @@
   }
   </script>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/style.css?v=31fc16a5bdab">
-  <script src="assets/app.js?v=cc44b88a93aa" defer></script>
+  <link rel="stylesheet" href="assets/style.css?v=9d178d6aba07">
+  <script src="assets/app.js?v=c14f299ac652" defer></script>
 </head>
 <body>
 <svg class="visual-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="0" height="0">
@@ -167,11 +167,19 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <main id="main" tabindex="-1">
   <section class="hero wrap" id="hello" aria-labelledby="hello-title">
+    <div class="hero-tools">
     <nav class="language-switcher" aria-label="Language">
       <a href="/hello/" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a>
       <a href="/hello/it/" lang="it" hreflang="it" aria-label="Italiano">ITA</a>
       <a href="/hello/pt/" lang="pt-BR" hreflang="pt-BR" aria-label="Português do Brasil">PT</a>
     </nav>
+    <div class="secret-keyboard" hidden>
+      <button class="secret-keyboard-toggle" type="button" aria-label="Open keyboard" aria-expanded="false" aria-controls="secret-code">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M6 12h.01M10 12h.01M14 12h.01M18 12h.01M7 15h10"/></svg>
+      </button>
+      <input id="secret-code" class="secret-code-input" type="text" aria-label="Type a secret code" placeholder="Type a code" inputmode="text" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" maxlength="64" enterkeyhint="done" hidden>
+    </div>
+    </div>
     <div class="hero-portrait">
       <img class="portrait-photo" src="assets/paulo-portrait-color.webp" alt="Paulo Sanches" width="1122" height="1402" fetchpriority="high" decoding="async">
     </div>

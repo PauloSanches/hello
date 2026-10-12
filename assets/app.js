@@ -109,7 +109,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
   updateControls();
 });
 
-// A keyboard-only Easter egg; keep typing in forms and browser shortcuts untouched.
+// Recognise the secret code with hardware or mobile keyboards; leave other fields untouched.
 (() => {
   const root = document.documentElement;
   const storageKey = 'paulo-redbull-mode';
@@ -120,15 +120,15 @@ document.querySelectorAll('.carousel').forEach(carousel => {
   const themeMeta = document.querySelector('meta[name="theme-color"]');
   const originalThemeColor = themeMeta?.getAttribute('content');
   const copy = root.lang === 'pt-BR' ? {
-    enabled: 'Modo Red Bull. Esc para voltar.',
+    enabled: 'Modo Red Bull. Digite redbull novamente ou pressione Esc para voltar.',
     disabled: 'Tema original restaurado.',
     portrait: 'Paulo Sanches segurando uma lata de Red Bull'
   } : root.lang === 'it' ? {
-    enabled: 'Modalità Red Bull. Esc per tornare al tema originale.',
+    enabled: 'Modalità Red Bull. Digita di nuovo redbull o premi Esc per tornare al tema originale.',
     disabled: 'Tema originale ripristinato.',
     portrait: 'Paulo Sanches con una lattina di Red Bull'
   } : {
-    enabled: 'Red Bull mode. Esc to reset.',
+    enabled: 'Red Bull mode. Type redbull again or press Esc to reset.',
     disabled: 'Original theme restored.',
     portrait: 'Paulo Sanches holding a Red Bull can'
   };
@@ -178,6 +178,50 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       portrait.alt = originalAlt;
     }
   });
+
+  const keyboard = document.querySelector('.secret-keyboard');
+  const keyboardToggle = keyboard?.querySelector('.secret-keyboard-toggle');
+  const codeInput = keyboard?.querySelector('.secret-code-input');
+  if (keyboardToggle && codeInput) {
+    const closeKeyboard = (returnFocus = false) => {
+      codeInput.hidden = true;
+      codeInput.value = '';
+      keyboardToggle.setAttribute('aria-expanded', 'false');
+      if (returnFocus) keyboardToggle.focus({ preventScroll: true });
+    };
+    const checkCode = () => {
+      if (!codeInput.value.trim().toLowerCase().endsWith('redbull')) return;
+      buffer = '';
+      setMode(!active);
+      closeKeyboard(true);
+    };
+    keyboardToggle.addEventListener('click', () => {
+      if (!codeInput.hidden) {
+        closeKeyboard(true);
+        return;
+      }
+      buffer = '';
+      codeInput.hidden = false;
+      keyboardToggle.setAttribute('aria-expanded', 'true');
+      // Keep focus synchronous with the tap so iOS can open its software keyboard.
+      codeInput.focus({ preventScroll: true });
+    });
+    codeInput.addEventListener('input', event => {
+      if (!event.isComposing) checkCode();
+    });
+    codeInput.addEventListener('compositionend', checkCode);
+    keyboard.addEventListener('focusout', event => {
+      if (!keyboard.contains(event.relatedTarget)) closeKeyboard();
+    });
+    codeInput.addEventListener('keydown', event => {
+      if (event.isComposing || (event.key !== 'Escape' && event.key !== 'Enter')) return;
+      event.preventDefault();
+      buffer = '';
+      if (event.key === 'Escape' && active) setMode(false);
+      closeKeyboard(true);
+    });
+    keyboard.hidden = false;
+  }
 
   document.addEventListener('keydown', event => {
     const editable = event.composedPath().some(target => target instanceof Element && (

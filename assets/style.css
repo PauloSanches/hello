@@ -156,13 +156,53 @@ h1, h2, h3, h4, p { margin: 0; }
   text-decoration: none;
 }
 .language-switcher a:focus-visible { outline-offset: 1px; }
-.hero > .language-switcher {
+.hero-tools {
   position: absolute;
   z-index: 3;
   top: 16px;
   right: var(--page-gutter);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.hero-tools .language-switcher {
   border-color: var(--line);
 }
+.secret-keyboard { position: relative; }
+.secret-keyboard-toggle {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  min-height: 52px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+}
+.secret-keyboard-toggle svg { width: 24px; height: 24px; }
+.secret-keyboard-toggle:hover,
+.secret-keyboard-toggle[aria-expanded="true"] { border-color: currentColor; }
+.secret-code-input {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: min(240px, calc(100vw - var(--page-gutter) * 2));
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.secret-code-input::placeholder { color: var(--muted); opacity: 1; }
+.secret-code-input:focus { outline: 2px solid var(--ink); outline-offset: 2px; }
 .hero {
   --paper: #262626;
   --ink: #f6f6f6;
