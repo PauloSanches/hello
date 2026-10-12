@@ -124,6 +124,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
   const portraitURL = file => originalPortrait && new URL(file, new URL(originalPortrait, document.baseURI)).href;
   const themeMeta = document.querySelector('meta[name="theme-color"]');
   const originalThemeColor = themeMeta?.getAttribute('content');
+  const resetButtons = Array.from(document.querySelectorAll('.theme-reset'));
   const locale = root.lang === 'pt-BR' ? 'pt' : root.lang === 'it' ? 'it' : 'en';
   const originalNotice = {
     pt: 'Tema original restaurado.',
@@ -204,6 +205,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     const theme = active && modes[active];
     if (active) root.dataset.theme = active;
     else delete root.dataset.theme;
+    resetButtons.forEach(button => { button.hidden = !active; });
     if (portrait) {
       portrait.src = theme ? portraitURL(theme.portrait) : originalPortrait;
       portrait.alt = theme ? theme.alt[locale] : originalAlt;
@@ -244,9 +246,10 @@ document.querySelectorAll('.carousel').forEach(carousel => {
   const keyboard = document.querySelector('.secret-keyboard');
   const keyboardToggle = keyboard?.querySelector('.secret-keyboard-toggle');
   const codeInput = keyboard?.querySelector('.secret-code-input');
-  if (keyboardToggle && codeInput) {
+  const keyboardPanel = keyboard?.querySelector('.secret-keyboard-panel');
+  if (keyboardToggle && codeInput && keyboardPanel) {
     const closeKeyboard = (returnFocus = false) => {
-      codeInput.hidden = true;
+      keyboardPanel.hidden = true;
       codeInput.value = '';
       keyboardToggle.setAttribute('aria-expanded', 'false');
       if (returnFocus) keyboardToggle.focus({ preventScroll: true });
@@ -259,12 +262,12 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       closeKeyboard(true);
     };
     keyboardToggle.addEventListener('click', () => {
-      if (!codeInput.hidden) {
+      if (!keyboardPanel.hidden) {
         closeKeyboard(true);
         return;
       }
       buffer = '';
-      codeInput.hidden = false;
+      keyboardPanel.hidden = false;
       keyboardToggle.setAttribute('aria-expanded', 'true');
       // Keep focus synchronous with the tap so iOS can open its software keyboard.
       codeInput.focus({ preventScroll: true });
@@ -273,6 +276,11 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       if (!event.isComposing) checkCode();
     });
     codeInput.addEventListener('compositionend', checkCode);
+    resetButtons.forEach(button => button.addEventListener('click', () => {
+      buffer = '';
+      setMode('');
+      closeKeyboard(true);
+    }));
     keyboard.addEventListener('focusout', event => {
       if (!keyboard.contains(event.relatedTarget)) closeKeyboard();
     });

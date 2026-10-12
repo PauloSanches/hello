@@ -161,18 +161,29 @@
   }
   </script>
   <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../../assets/style.css?v=3ea4e5fbd0ce">
-  <script src="../../../assets/app.js?v=acbde6a16923" defer></script>
+  <link rel="stylesheet" href="../../../assets/style.css?v=98cc383a14f7">
+  <script src="../../../assets/app.js?v=a1826bf616ca" defer></script>
 </head>
 <body class="story-page">
   <a class="skip-link" href="#story-main">Ir para a história</a>
   <nav class="story-page-nav wrap" aria-label="Navegação do portfólio">
     <a class="story-page-back" href="../../#stories"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5m7-7-7 7 7 7"/></svg> Voltar ao portfólio</a>
-    <span class="language-switcher" role="group" aria-label="Idioma">
-      <a href="/hello/field-notes/security-at-the-beach/" lang="en" hreflang="en" aria-label="English">EN</a>
-      <a href="/hello/it/field-notes/security-at-the-beach/" lang="it" hreflang="it" aria-label="Italiano">ITA</a>
-      <a href="/hello/pt/field-notes/security-at-the-beach/" lang="pt-BR" hreflang="pt-BR" aria-label="Português do Brasil" aria-current="page">PT</a>
-    </span>
+    <div class="story-page-tools">
+      <span class="language-switcher" role="group" aria-label="Idioma">
+        <a href="/hello/field-notes/security-at-the-beach/" lang="en" hreflang="en" aria-label="English">EN</a>
+        <a href="/hello/it/field-notes/security-at-the-beach/" lang="it" hreflang="it" aria-label="Italiano">ITA</a>
+        <a href="/hello/pt/field-notes/security-at-the-beach/" lang="pt-BR" hreflang="pt-BR" aria-label="Português do Brasil" aria-current="page">PT</a>
+      </span>
+      <div class="secret-keyboard" hidden>
+        <button class="secret-keyboard-toggle" type="button" aria-label="Abrir teclado" aria-expanded="false" aria-controls="secret-keyboard-panel">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M6 12h.01M10 12h.01M14 12h.01M18 12h.01M7 15h10"/></svg>
+        </button>
+        <div id="secret-keyboard-panel" class="secret-keyboard-panel" role="group" aria-label="Controles do tema" hidden>
+          <input id="secret-code" class="secret-code-input" type="text" aria-label="Digite um código secreto" placeholder="Digite um código" inputmode="text" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" maxlength="64" enterkeyhint="done">
+          <button class="theme-reset" type="button" aria-label="Restaurar tema original" hidden><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11a9 9 0 1 1 2.6 6.4M3 4v7h7"/></svg><span>Restaurar</span></button>
+        </div>
+      </div>
+    </div>
   </nav>
   <main id="story-main" tabindex="-1">
     <article aria-labelledby="story-title">

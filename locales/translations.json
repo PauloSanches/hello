@@ -1242,5 +1242,17 @@
   "and every day is game day. Let’s go!": {
     "pt": "e todo dia é dia de jogo. Vamos!",
     "it": "Ogni giorno è GAME DAY. Andiamo!"
+  },
+  "Theme controls": {
+    "pt": "Controles do tema",
+    "it": "Controlli del tema"
+  },
+  "Restore original theme": {
+    "pt": "Restaurar tema original",
+    "it": "Ripristina il tema originale"
+  },
+  "Reset": {
+    "pt": "Restaurar",
+    "it": "Ripristina"
   }
 }
