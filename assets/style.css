@@ -527,6 +527,8 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 .detail-content p + p { margin-top: 14px; }
 .project-highlights { margin: 0; padding-inline-start: 18px; list-style: disc; }
 .project-highlights li + li { margin-top: 8px; }
+.journey-summary .project-highlights strong { color: var(--ink); font-weight: 600; }
+.journey-summary .detail-content { padding-top: 0; }
 .detail-content a { color: var(--ink); text-decoration: underline; }
 .timeline-note {
   margin-top: 24px;
@@ -1154,7 +1156,6 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   .detail-content { max-width: none; padding-top: 0; }
   .journey-more { margin-top: 0; }
   .journey-more > summary, .project-detail > summary { display: none; }
-  #journey > .project-timeline > .journey-item:last-child { border-bottom: 0; }
 
   .stories-grid { grid-template-columns: minmax(0, 1fr); }
   .story-front { display: grid; grid-template-columns: 144px minmax(0, .9fr) minmax(0, 1.1fr); gap: 16px 32px; min-height: 0; padding: 28px; }
