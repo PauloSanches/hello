@@ -117,9 +117,10 @@ document.querySelectorAll('.carousel').forEach(carousel => {
   const portrait = document.querySelector('.portrait-photo');
   const originalPortrait = portrait?.getAttribute('src');
   const originalAlt = portrait?.getAttribute('alt');
-  const headline = document.getElementById('hello-title');
-  const originalHeadline = headline?.textContent;
-  const originalHeadlineLanguage = headline?.getAttribute('lang');
+  const introduction = document.querySelector('.hero-introduction');
+  const themeLine = document.querySelector('.hero-theme-line');
+  const originalThemeLine = themeLine?.textContent;
+  const themeSeparator = introduction?.textContent.trim().endsWith('.') ? ' ' : '. ';
   const portraitURL = file => originalPortrait && new URL(file, new URL(originalPortrait, document.baseURI)).href;
   const themeMeta = document.querySelector('meta[name="theme-color"]');
   const originalThemeColor = themeMeta?.getAttribute('content');
@@ -133,6 +134,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     redbull: {
       portrait: 'paulo-portrait-redbull.webp',
       colour: '#001e3c',
+      phrase: 'It’s time to fly.',
       notice: {
         pt: 'Modo Red Bull. Digite redbull novamente ou pressione Esc para voltar.',
         it: 'Modalità Red Bull. Digita di nuovo redbull o premi Esc per tornare al tema originale.',
@@ -147,6 +149,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     gameday: {
       portrait: 'paulo-portrait-gameday.webp',
       colour: '#002244',
+      phrase: 'Every day is game day.',
       notice: {
         pt: 'Modo GameDay. Digite gameday novamente ou pressione Esc para voltar.',
         it: 'Modalità GameDay. Digita di nuovo gameday o premi Esc per tornare al tema originale.',
@@ -161,7 +164,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     vietnam: {
       portrait: 'paulo-portrait-vietnam.webp?v=5895a8439be6',
       colour: '#283222',
-      headline: 'GOOOOD MOOORNING…',
+      phrase: 'GOOOOD MOOORNING…',
       notice: {
         pt: 'Good Morning, Vietnam! Digite vietnam novamente ou pressione Esc para voltar.',
         it: 'Good Morning, Vietnam! Digita di nuovo vietnam o premi Esc per tornare al tema originale.',
@@ -205,11 +208,15 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       portrait.src = theme ? portraitURL(theme.portrait) : originalPortrait;
       portrait.alt = theme ? theme.alt[locale] : originalAlt;
     }
-    if (headline) {
-      headline.textContent = theme?.headline ?? originalHeadline;
-      if (theme?.headline) headline.lang = 'en';
-      else if (originalHeadlineLanguage) headline.lang = originalHeadlineLanguage;
-      else headline.removeAttribute('lang');
+    if (themeLine) {
+      if (theme?.phrase) {
+        const phrase = document.createElement('span');
+        phrase.lang = 'en';
+        phrase.textContent = theme.phrase;
+        themeLine.replaceChildren(themeSeparator, phrase);
+      } else {
+        themeLine.textContent = originalThemeLine;
+      }
     }
     if (themeMeta) themeMeta.content = theme ? theme.colour : originalThemeColor;
     try {

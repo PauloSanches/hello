@@ -1234,5 +1234,13 @@
   "Type a code": {
     "pt": "Digite um código",
     "it": "Digita un codice"
+  },
+  "Welcome, human or agent — I’m Paulo Sanches": {
+    "pt": "Bem-vindo, humano ou agente — eu sou Paulo Sanches",
+    "it": "Benvenuto, persona o agente — sono Paulo Sanches."
+  },
+  "and every day is game day. Let’s go!": {
+    "pt": "e todo dia é dia de jogo. Vamos!",
+    "it": "Ogni giorno è GAME DAY. Andiamo!"
   }
 }
