@@ -165,6 +165,8 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     dante: {
       portrait: 'paulo-portrait-dante.webp?v=f317aa6099ec',
       colour: '#111111',
+      phrase: '& Dante Saggin - Enterprise Architect & FDE',
+      separator: ' ',
       notice: {
         pt: 'Modo Dante. Digite dante novamente ou pressione Esc para voltar.',
         it: 'Modalità Dante. Digita di nuovo dante o premi Esc per tornare al tema originale.',
@@ -246,7 +248,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         const phrase = document.createElement('span');
         phrase.lang = 'en';
         phrase.textContent = theme.phrase;
-        themeLine.replaceChildren(themeSeparator, phrase);
+        themeLine.replaceChildren(theme.separator ?? themeSeparator, phrase);
       } else {
         themeLine.textContent = originalThemeLine;
       }
