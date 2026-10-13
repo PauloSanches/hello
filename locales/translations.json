@@ -1558,5 +1558,13 @@
   "Validation was part of the delivery. Codex checked the pages in Chromium and WebKit at different viewport widths, testing images, links, translations and components. My reviews on the phone complemented those checks with adjustments to readability, framing and organisation.": {
     "pt": "A validação fez parte da entrega. O Codex verificou as páginas em Chromium e WebKit, com diferentes larguras de tela, conferindo imagens, links, traduções e componentes. Minha revisão no celular complementava essas verificações com ajustes de legibilidade, enquadramento e organização.",
     "it": "La validazione faceva parte della consegna. Codex verificava le pagine in Chromium e WebKit con diverse larghezze dello schermo, controllando immagini, link, traduzioni e componenti. Le mie revisioni sul telefono completavano questi controlli con modifiche alla leggibilità, all’inquadratura e all’organizzazione."
+  },
+  "Setup diagram showing phone instructions by text and voice, Codex implementation and checks, GitHub commits, GitHub Pages hosting, three language versions and a review loop.": {
+    "pt": "Diagrama do setup com instruções por texto e voz no celular, implementação e testes no Codex, commits no GitHub, hospedagem no GitHub Pages, três idiomas e um ciclo de revisão.",
+    "it": "Diagramma del setup con istruzioni tramite testo e voce dal telefono, implementazione e test in Codex, commit su GitHub, hosting su GitHub Pages, tre lingue e un ciclo di revisione."
+  },
+  "View full-size diagram": {
+    "pt": "Ampliar diagrama",
+    "it": "Ingrandisci il diagramma"
   }
 }
