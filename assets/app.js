@@ -194,6 +194,22 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         en: 'Child wearing white sunglasses and a Sonic T-shirt, making playful hand gestures'
       }
     },
+    bad: {
+      portrait: 'portrait-bad.webp?v=aa036e8643d5',
+      colour: '#111111',
+      phrase: 'Bora negão!',
+      phraseLanguage: 'pt-BR',
+      notice: {
+        pt: 'Modo Bad. Digite bad novamente ou pressione Esc para voltar.',
+        it: 'Modalità Bad. Digita di nuovo bad o premi Esc per tornare al tema originale.',
+        en: 'Bad mode. Type bad again or press Esc to reset.'
+      },
+      alt: {
+        pt: 'Jovem sorrindo e segurando um cachorro com óculos de sol',
+        it: 'Giovane sorridente con un cane con occhiali da sole in braccio',
+        en: 'Smiling young person holding a small dog wearing sunglasses'
+      }
+    },
     vietnam: {
       portrait: 'paulo-portrait-vietnam.webp?v=5895a8439be6',
       colour: '#283222',
@@ -211,13 +227,13 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     }
   };
   const codes = Object.keys(modes);
-  const compactCodes = new Set(['redbull', 'gameday', 'goodmorning', 'vietnam', 'nfl', 'dante', 'tubarao', 'tubarão']);
+  const compactCodes = new Set(['redbull', 'gameday', 'goodmorning', 'vietnam', 'nfl', 'dante', 'tubarao', 'tubarão', 'bad']);
   const aliases = new Map([
     ['redbull', 'redbull'], ['itstimetofly', 'redbull'],
     ['gameday', 'gameday'], ['nfl', 'gameday'],
     ['everydayisgameday', 'gameday'], ['everydayisgamedayletsgo', 'gameday'],
     ['vietnam', 'vietnam'], ['goodmorning', 'vietnam'], ['goodmorningvietnam', 'vietnam'],
-    ['dante', 'dante'], ['tubarao', 'tubarao']
+    ['dante', 'dante'], ['tubarao', 'tubarao'], ['bad', 'bad']
   ]);
   const orderedAliases = Array.from(aliases.keys()).sort((a, b) => b.length - a.length);
   const maximumCodeLength = orderedAliases[0].length;
