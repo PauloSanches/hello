@@ -1683,37 +1683,37 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   :root[data-theme="bad"] .hero { --hero-title-size: 16px; }
   :root[data-theme="bad"] .hero-main { width: 48%; }
 }
-:root[data-theme="nega"] .hero { --portrait-width: min(54%, calc(var(--hero-height) * 0.92 - 58.88px)); }
-:root[data-theme="nega"] .hero-portrait {
+:root:is([data-theme="nega"], [data-theme="cabecarosquinha"]) .hero { --portrait-width: min(54%, calc(var(--hero-height) * 0.92 - 58.88px)); }
+:root:is([data-theme="nega"], [data-theme="cabecarosquinha"]) .hero-portrait {
   top: 64px;
   height: min(calc(100% - 64px), 67.5vw);
   transform: none;
   -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 16%);
   mask-image: linear-gradient(to right, transparent 0%, #000 16%);
 }
-:root[data-theme="nega"] .portrait-photo {
+:root:is([data-theme="nega"], [data-theme="cabecarosquinha"]) .portrait-photo {
   object-fit: cover;
   object-position: right 2%;
   -webkit-mask-image: linear-gradient(to bottom, #000 90%, transparent 100%);
   mask-image: linear-gradient(to bottom, #000 90%, transparent 100%);
 }
 @media (max-width: 760px) {
-  :root[data-theme="nega"] .hero { --portrait-width: min(88%, calc(var(--hero-height) * 0.8 - 51.2px)); --hero-title-size: clamp(18px, 4.6vw, 24px); }
-  :root[data-theme="nega"] .hero-portrait {
+  :root:is([data-theme="nega"], [data-theme="cabecarosquinha"]) .hero { --portrait-width: min(88%, calc(var(--hero-height) * 0.8 - 51.2px)); --hero-title-size: clamp(18px, 4.6vw, 24px); }
+  :root:is([data-theme="nega"], [data-theme="cabecarosquinha"]) .hero-portrait {
     height: calc(100% - 64px);
     transform: translateX(8%);
     -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 30%);
     mask-image: linear-gradient(to right, transparent 0%, #000 30%);
   }
-  :root[data-theme="nega"] .portrait-photo { object-fit: contain; object-position: right top; }
-  :root[data-theme="nega"] .hero-main { width: 44%; padding: 24px 8px 24px var(--page-gutter); }
-  :root[data-theme="nega"] .hero-title { max-width: none; }
+  :root:is([data-theme="nega"], [data-theme="cabecarosquinha"]) .portrait-photo { object-fit: contain; object-position: right top; }
+  :root:is([data-theme="nega"], [data-theme="cabecarosquinha"]) .hero-main { width: 44%; padding: 24px 8px 24px var(--page-gutter); }
+  :root:is([data-theme="nega"], [data-theme="cabecarosquinha"]) .hero-title { max-width: none; }
 }
 @media (max-width: 360px) {
-  :root[data-theme="nega"] .hero { --hero-title-size: 16px; }
-  :root[data-theme="nega"] .hero-main { width: 48%; }
+  :root:is([data-theme="nega"], [data-theme="cabecarosquinha"]) .hero { --hero-title-size: 16px; }
+  :root:is([data-theme="nega"], [data-theme="cabecarosquinha"]) .hero-main { width: 48%; }
 }
-:root[data-theme="nega"] .easter-egg-notice,
+:root:is([data-theme="nega"], [data-theme="cabecarosquinha"]) .easter-egg-notice,
 :root[data-theme="bad"] .easter-egg-notice,
 :root[data-theme="dante"] .easter-egg-notice,
 :root[data-theme="tubarao"] .easter-egg-notice { border-left-color: #c9c9c9; background: #262626; box-shadow: 0 4px 20px #00000026; }

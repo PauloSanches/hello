@@ -225,6 +225,22 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         en: 'Paulo Sanches and a woman smiling together'
       }
     },
+    cabecarosquinha: {
+      portrait: 'portrait-cabecarosquinha.webp?v=ffab1611b102',
+      colour: '#111111',
+      phrase: 'Eae Mannn!! Grande cabeça de Rosquinha.',
+      phraseLanguage: 'pt-BR',
+      notice: {
+        pt: 'Modo Cabeça de Rosquinha. Digite cabecarosquinha novamente ou pressione Esc para voltar.',
+        it: 'Modalità Cabeça de Rosquinha. Digita di nuovo cabecarosquinha o premi Esc per tornare al tema originale.',
+        en: 'Cabeça de Rosquinha mode. Type cabecarosquinha again or press Esc to reset.'
+      },
+      alt: {
+        pt: 'Paulo Sanches e outro homem sorrindo, com um gesto de hang loose e um sinal de positivo',
+        it: 'Paulo Sanches e un altro uomo sorridenti, con un gesto shaka e un pollice alzato',
+        en: 'Paulo Sanches and another man smiling, with a shaka gesture and a thumbs-up'
+      }
+    },
     vietnam: {
       portrait: 'paulo-portrait-vietnam.webp?v=5895a8439be6',
       colour: '#283222',
@@ -242,13 +258,14 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     }
   };
   const codes = Object.keys(modes);
-  const compactCodes = new Set(['redbull', 'gameday', 'goodmorning', 'vietnam', 'nfl', 'dante', 'tubarao', 'tubarão', 'bad', 'nega']);
+  const compactCodes = new Set(['redbull', 'gameday', 'goodmorning', 'vietnam', 'nfl', 'dante', 'tubarao', 'tubarão', 'bad', 'nega', 'cabecarosquinha']);
   const aliases = new Map([
     ['redbull', 'redbull'], ['itstimetofly', 'redbull'],
     ['gameday', 'gameday'], ['nfl', 'gameday'],
     ['everydayisgameday', 'gameday'], ['everydayisgamedayletsgo', 'gameday'],
     ['vietnam', 'vietnam'], ['goodmorning', 'vietnam'], ['goodmorningvietnam', 'vietnam'],
-    ['dante', 'dante'], ['tubarao', 'tubarao'], ['bad', 'bad'], ['nega', 'nega']
+    ['dante', 'dante'], ['tubarao', 'tubarao'], ['bad', 'bad'], ['nega', 'nega'],
+    ['cabecarosquinha', 'cabecarosquinha']
   ]);
   const orderedAliases = Array.from(aliases.keys()).sort((a, b) => b.length - a.length);
   const maximumCodeLength = orderedAliases[0].length;
