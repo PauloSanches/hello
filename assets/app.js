@@ -178,6 +178,22 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         en: 'Paulo Sanches and Dante together'
       }
     },
+    tubarao: {
+      portrait: 'portrait-tubarao.webp?v=6fa8adedebf5',
+      colour: '#111111',
+      phrase: 'Vai TUBARÃO, vai TUBARÃO…',
+      phraseLanguage: 'pt-BR',
+      notice: {
+        pt: 'Modo Tubarão. Digite tubarao novamente ou pressione Esc para voltar.',
+        it: 'Modalità Tubarão. Digita di nuovo tubarao o premi Esc per tornare al tema originale.',
+        en: 'Tubarão mode. Type tubarao again or press Esc to reset.'
+      },
+      alt: {
+        pt: 'Criança com óculos de sol brancos e camiseta do Sonic, fazendo gestos com as mãos',
+        it: 'Bambino con occhiali da sole bianchi e una maglietta di Sonic, mentre fa gesti con le mani',
+        en: 'Child wearing white sunglasses and a Sonic T-shirt, making playful hand gestures'
+      }
+    },
     vietnam: {
       portrait: 'paulo-portrait-vietnam.webp?v=5895a8439be6',
       colour: '#283222',
@@ -195,17 +211,17 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     }
   };
   const codes = Object.keys(modes);
-  const compactCodes = new Set(['redbull', 'gameday', 'goodmorning', 'vietnam', 'nfl', 'dante']);
+  const compactCodes = new Set(['redbull', 'gameday', 'goodmorning', 'vietnam', 'nfl', 'dante', 'tubarao', 'tubarão']);
   const aliases = new Map([
     ['redbull', 'redbull'], ['itstimetofly', 'redbull'],
     ['gameday', 'gameday'], ['nfl', 'gameday'],
     ['everydayisgameday', 'gameday'], ['everydayisgamedayletsgo', 'gameday'],
     ['vietnam', 'vietnam'], ['goodmorning', 'vietnam'], ['goodmorningvietnam', 'vietnam'],
-    ['dante', 'dante']
+    ['dante', 'dante'], ['tubarao', 'tubarao']
   ]);
   const orderedAliases = Array.from(aliases.keys()).sort((a, b) => b.length - a.length);
   const maximumCodeLength = orderedAliases[0].length;
-  const normalizeCode = value => value.toLowerCase().replace(/[^a-z]/g, '')
+  const normalizeCode = value => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z]/g, '')
     .replace(/go{2,}d/g, 'good').replace(/mo+rning/g, 'morning');
   const matchCode = value => {
     const compact = normalizeCode(value);
@@ -246,7 +262,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     if (themeLine) {
       if (theme?.phrase) {
         const phrase = document.createElement('span');
-        phrase.lang = 'en';
+        phrase.lang = theme.phraseLanguage ?? 'en';
         phrase.textContent = theme.phrase;
         themeLine.replaceChildren(theme.separator ?? themeSeparator, phrase);
       } else {
@@ -370,7 +386,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       return;
     }
     if (event.key === 'Shift' || event.key === 'CapsLock') return;
-    if (event.key.length !== 1 || !/^[a-z]$/i.test(event.key)) {
+    if (event.key.length !== 1 || !/^[a-z]$/i.test(normalizeCode(event.key))) {
       if (/^[\s’'.,!?…-]$/.test(event.key)) return;
       clearSequence();
       return;
