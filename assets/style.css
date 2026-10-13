@@ -1353,7 +1353,6 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 }
 .story-page-reading-time { margin-top: 24px; color: var(--muted); font-size: 13px; line-height: 1.4; }
 .story-page-visual { margin-block: 0 36px; }
-.story-page .story-page-visual-wide { width: min(1280px, calc(100% - var(--page-gutter) * 2)); }
 .story-page-visual > a { display: block; }
 .story-page-visual img { display: block; width: 100%; height: auto; }
 .story-page-visual figcaption { margin-top: 12px; color: var(--muted); font-size: 13px; line-height: 1.5; }
