@@ -1386,5 +1386,177 @@
   "Do you use an unusual criterion in interviews or when forming your teams? Send me a message on LinkedIn. Let’s have a virtual coffee and compare experiences.": {
     "pt": "Você usa algum critério fora do padrão nas entrevistas ou na formação das suas equipes? Me chama no LinkedIn. Vamos tomar um café virtual e trocar experiências.",
     "it": "Usi un criterio fuori dagli schemi nei colloqui o nella formazione dei tuoi team? Scrivimi su LinkedIn. Prendiamoci un caffè virtuale e scambiamoci esperienze."
+  },
+  "What can you build in a weekend with a phone and AI?": {
+    "pt": "O que dá para criar em um fim de semana com um telemóvel e IA?",
+    "it": "Cosa puoi creare in un fine settimana con un telefono e l’IA?"
+  },
+  "How I used Codex through text and voice to build, test and publish my portfolio.": {
+    "pt": "Como usei o Codex por chat e voz para construir, testar e publicar meu portfólio.",
+    "it": "Come ho usato Codex tramite testo e voce per creare, testare e pubblicare il mio portfolio."
+  },
+  "Paulo Sanches built his portfolio over a weekend, guiding Codex from his phone through text and voice, with free hosting on GitHub Pages.": {
+    "pt": "Paulo Sanches construiu seu portfólio em um fim de semana, orientando o Codex pelo celular por chat e voz, com hospedagem gratuita no GitHub Pages.",
+    "it": "Paulo Sanches ha creato il suo portfolio in un fine settimana, guidando Codex dal telefono tramite testo e voce, con hosting gratuito su GitHub Pages."
+  },
+  "What can you build in a weekend with a phone and AI? | Paulo Sanches": {
+    "pt": "O que dá para criar em um fim de semana com um telemóvel e IA? | Paulo Sanches",
+    "it": "Cosa puoi creare in un fine settimana con un telefono e l’IA? | Paulo Sanches"
+  },
+  "What can you build in a weekend with a phone and AI? — Paulo Sanches": {
+    "pt": "O que dá para criar em um fim de semana com um telemóvel e IA? — Paulo Sanches",
+    "it": "Cosa puoi creare in un fine settimana con un telefono e l’IA? — Paulo Sanches"
+  },
+  "I guided Codex through text and voice to build this portfolio from my phone, with three languages, browser checks and free hosting on GitHub Pages.": {
+    "pt": "Orientei o Codex por chat e voz para construir este portfólio pelo celular, com três idiomas, testes de navegador e hospedagem gratuita no GitHub Pages.",
+    "it": "Ho guidato Codex tramite testo e voce per creare questo portfolio dal telefono, con tre lingue, test nel browser e hosting gratuito su GitHub Pages."
+  },
+  "AI & Engineering": {
+    "pt": "IA e engenharia",
+    "it": "IA e ingegneria"
+  },
+  "AI & ENGINEERING": {
+    "pt": "IA E ENGENHARIA",
+    "it": "IA E INGEGNERIA"
+  },
+  "01 / AI & ENGINEERING": {
+    "pt": "01 / IA E ENGENHARIA",
+    "it": "01 / IA E INGEGNERIA"
+  },
+  "Over a weekend, I built this portfolio by guiding Codex from my phone. I shared my CV and photos, provided visual references and defined how I wanted to present my experience. I wrote some stories and dictated others.": {
+    "pt": "Em um fim de semana, construí este portfólio orientando o Codex pelo celular. Enviei meu currículo e fotos, compartilhei referências visuais e defini como queria apresentar minha experiência. Algumas histórias eu escrevi; outras, contei por voz.",
+    "it": "In un fine settimana, ho creato questo portfolio guidando Codex dal telefono. Ho condiviso il mio CV e le foto, fornito riferimenti visivi e definito come volevo presentare la mia esperienza. Ho scritto alcune storie e ne ho dettate altre."
+  },
+  "I directed the work with short instructions and reviewed the results in the browser. Codex edited the files and ran commands in its development environment. From my phone, I reviewed the content, layout and behaviour, then guided the next changes.": {
+    "pt": "Eu conduzia o trabalho com instruções curtas e conferia o resultado no navegador. O Codex editava os arquivos e executava comandos no seu ambiente de desenvolvimento. Pelo celular, eu revisava conteúdo, layout e comportamento, depois orientava os próximos ajustes.",
+    "it": "Guidavo il lavoro con istruzioni brevi e verificavo i risultati nel browser. Codex modificava i file ed eseguiva comandi nel suo ambiente di sviluppo. Dal telefono rivedevo contenuti, layout e comportamento, poi indicavo le modifiche successive."
+  },
+  "I published the portfolio with": {
+    "pt": "Publiquei o portfólio",
+    "it": "Ho pubblicato il portfolio con"
+  },
+  "free hosting on GitHub Pages": {
+    "pt": "de graça no GitHub Pages",
+    "it": "hosting gratuito su GitHub Pages"
+  },
+  ", using": {
+    "pt": ", usando",
+    "it": ", usando"
+  },
+  "HTML, CSS and JavaScript": {
+    "pt": "HTML, CSS e JavaScript",
+    "it": "HTML, CSS e JavaScript"
+  },
+  ", without Vercel or Supabase. Static pages and browser-side interactions covered what I wanted to build. Codex committed the changes to GitHub, and the GitHub Pages build and deployment workflow published the files.": {
+    "pt": ", sem utilizar Vercel ou Supabase. Para este projeto, páginas estáticas e interações no navegador atendiam ao que eu queria construir. O Codex versionava as alterações no GitHub, e o fluxo de build e deploy do GitHub Pages publicava os arquivos.",
+    "it": ", senza Vercel o Supabase. Le pagine statiche e le interazioni nel browser rispondevano a ciò che volevo creare. Codex registrava le modifiche su GitHub, e il workflow di build e deploy di GitHub Pages pubblicava i file."
+  },
+  "To provide the content in": {
+    "pt": "Para oferecer o conteúdo em",
+    "it": "Per offrire i contenuti in"
+  },
+  "English, Italian and Brazilian Portuguese": {
+    "pt": "inglês, italiano e português do Brasil",
+    "it": "inglese, italiano e portoghese brasiliano"
+  },
+  ", we used a Python script to generate pages from the source files and translations. Each language has its own URLs, metadata and links to the other versions. We added a sitemap, canonical URLs and structured data for the profile and articles.": {
+    "pt": ", usamos um script em Python que gera as páginas a partir dos arquivos de origem e das traduções. Cada idioma tem URLs próprias, metadados e links para as outras versões. Acrescentamos sitemap, URLs canônicas e dados estruturados para o perfil e os artigos.",
+    "it": ", abbiamo usato uno script Python che genera le pagine dai file sorgente e dalle traduzioni. Ogni lingua ha URL propri, metadati e link alle altre versioni. Abbiamo aggiunto una sitemap, URL canonici e dati strutturati per il profilo e gli articoli."
+  },
+  "For the interactions, I included Easter eggs that recognise": {
+    "pt": "Nas interações, incluí Easter eggs que reconhecem",
+    "it": "Nelle interazioni ho incluso Easter egg che riconoscono"
+  },
+  "redbull": {
+    "pt": "redbull",
+    "it": "redbull"
+  },
+  ",": {
+    "pt": ",",
+    "it": ","
+  },
+  "gameday": {
+    "pt": "gameday",
+    "it": "gameday"
+  },
+  "and": {
+    "pt": "e",
+    "it": "e"
+  },
+  "goodmorning": {
+    "pt": "goodmorning",
+    "it": "goodmorning"
+  },
+  ". JavaScript switches the theme, portrait and a phrase in the banner. CSS variables apply the colours, while": {
+    "pt": ". O JavaScript troca o tema, a foto e uma frase do banner. Variáveis CSS aplicam as cores, e o",
+    "it": ". JavaScript cambia il tema, la foto e una frase nel banner. Le variabili CSS applicano i colori, mentre"
+  },
+  "sessionStorage": {
+    "pt": "sessionStorage",
+    "it": "sessionStorage"
+  },
+  "preserves the selection as visitors navigate within the same tab.": {
+    "pt": "mantém a escolha durante a navegação na mesma aba.",
+    "it": "conserva la scelta durante la navigazione nella stessa scheda."
+  },
+  "Validation was part of the delivery. Codex checked the pages in": {
+    "pt": "A validação fez parte da entrega. O Codex verificou as páginas em",
+    "it": "La validazione faceva parte della consegna. Codex verificava le pagine in"
+  },
+  "Chromium and WebKit": {
+    "pt": "Chromium e WebKit",
+    "it": "Chromium e WebKit"
+  },
+  "at different viewport widths, testing images, links, translations and components. My reviews on the phone complemented those checks with adjustments to readability, framing and organisation.": {
+    "pt": ", com diferentes larguras de tela, conferindo imagens, links, traduções e componentes. Minha revisão no celular complementava essas verificações com ajustes de legibilidade, enquadramento e organização.",
+    "it": "con diverse larghezze dello schermo, controllando immagini, link, traduzioni e componenti. Le mie revisioni sul telefono completavano questi controlli con modifiche alla leggibilità, all’inquadratura e all’organizzazione."
+  },
+  "I focused on the visitor experience: a visual identity of my own, responsive navigation, cards and dedicated story pages. With a simple architecture and free hosting, I published a portfolio with interactions tailored to my profile, directing the project through text and voice.": {
+    "pt": "Concentrei o trabalho na experiência de quem visita: uma apresentação visual própria, navegação responsiva, cards e histórias em páginas dedicadas. Com uma arquitetura simples e hospedagem gratuita, publiquei um portfólio com identidade e interações feitas para o meu perfil, conduzindo o projeto por chat e voz.",
+    "it": "Mi sono concentrato sull’esperienza di chi visita: un’identità visiva personale, navigazione responsive, card e pagine dedicate alle storie. Con un’architettura semplice e hosting gratuito, ho pubblicato un portfolio con interazioni pensate per il mio profilo, guidando il progetto tramite testo e voce."
+  },
+  "Are you using AI and agents in your projects?": {
+    "pt": "Você está usando IA e agentes nos seus projetos?",
+    "it": "Stai usando IA e agenti nei tuoi progetti?"
+  },
+  "Let’s have a virtual coffee and compare experiences.": {
+    "pt": "Vamos tomar um café virtual e trocar experiências.",
+    "it": "Prendiamoci un caffè virtuale e scambiamoci esperienze."
+  },
+  "Message me on": {
+    "pt": "Me chama no",
+    "it": "Scrivimi su"
+  },
+  "AI-assisted development": {
+    "pt": "Desenvolvimento com IA",
+    "it": "Sviluppo assistito dall’IA"
+  },
+  "Mobile workflow": {
+    "pt": "Trabalho pelo celular",
+    "it": "Lavoro dal telefono"
+  },
+  "Static website engineering": {
+    "pt": "Engenharia de sites estáticos",
+    "it": "Ingegneria dei siti statici"
+  },
+  "02 / SECURITY & LEADERSHIP": {
+    "pt": "02 / SEGURANÇA E LIDERANÇA",
+    "it": "02 / SICUREZZA E LEADERSHIP"
+  },
+  "03 / DELIVERY & EXPECTATIONS": {
+    "pt": "03 / ENTREGA E EXPECTATIVAS",
+    "it": "03 / DELIVERY E ASPETTATIVE"
+  },
+  "04 / TEAMWORK & PURPOSE": {
+    "pt": "04 / EQUIPE E PROPÓSITO",
+    "it": "04 / TEAM E SCOPO"
+  },
+  "05 / COMMUNITY & HIRING": {
+    "pt": "05 / COMUNIDADE E SELEÇÃO",
+    "it": "05 / COMUNITÀ E SELEZIONE"
+  },
+  "Validation was part of the delivery. Codex checked the pages in Chromium and WebKit at different viewport widths, testing images, links, translations and components. My reviews on the phone complemented those checks with adjustments to readability, framing and organisation.": {
+    "pt": "A validação fez parte da entrega. O Codex verificou as páginas em Chromium e WebKit, com diferentes larguras de tela, conferindo imagens, links, traduções e componentes. Minha revisão no celular complementava essas verificações com ajustes de legibilidade, enquadramento e organização.",
+    "it": "La validazione faceva parte della consegna. Codex verificava le pagine in Chromium e WebKit con diverse larghezze dello schermo, controllando immagini, link, traduzioni e componenti. Le mie revisioni sul telefono completavano questi controlli con modifiche alla leggibilità, all’inquadratura e all’organizzazione."
   }
 }

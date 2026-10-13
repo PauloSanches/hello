@@ -9,6 +9,9 @@ The website is available in English (EN), Italian (ITA) and Brazilian Portuguese
 - [English portfolio](https://paulosanches.github.io/hello/)
 - [Italian portfolio](https://paulosanches.github.io/hello/it/)
 - [Brazilian Portuguese portfolio](https://paulosanches.github.io/hello/pt/)
+- [English portfolio build story](https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/)
+- [Italian portfolio build story](https://paulosanches.github.io/hello/it/field-notes/a-weekend-a-phone-and-ai/)
+- [Brazilian Portuguese portfolio build story](https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/)
 - [English security incident story](https://paulosanches.github.io/hello/field-notes/security-at-the-beach/)
 - [Italian security incident story](https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/)
 - [Brazilian Portuguese security incident story](https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/)
@@ -30,6 +33,7 @@ The website is available in English (EN), Italian (ITA) and Brazilian Portuguese
 ## First-hand writing and mindset
 
 - [Field Notes](https://paulosanches.github.io/hello/#stories): Experiences from Paulo’s career, written from his perspective.
+- [What can you build in a weekend with a phone and AI?](https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/): Paulo’s account of building this portfolio over a weekend by guiding Codex through text and voice from his phone. The story covers supplied career materials, HTML/CSS/JavaScript, Python locale generation, GitHub versioning and deployment, browser checks, theme interactions and free GitHub Pages hosting without Vercel or Supabase. It distinguishes mobile direction and review from code execution in the agent’s development environment.
 - [A week at the beach. A security incident on day two.](https://paulosanches.github.io/hello/field-notes/security-at-the-beach/): A production security incident involving Liferay Portal, with lessons about maintenance and support, technical response, stakeholder communication and preparing for remote work. The incident date, client name, software version and vulnerability identifiers are not disclosed.
 - [I flew to Brazil’s largest bank with a few bullet points as my brief.](https://paulosanches.github.io/hello/field-notes/banking-handover-in-brasilia/): A two-week banking handover in Brasília. Paulo listened to four stakeholders, aligned their expectations and prioritised workshops, defects and training. Client workstation restrictions and a failed PC cost him a night’s unpublished work; he resumed the fixes and addressed the client’s priorities. The bank is not named, and the visit date and technical stack are not disclosed.
 - [We built a system to support families after Brumadinho.](https://paulosanches.github.io/hello/field-notes/supporting-families-after-brumadinho/): Paulo’s first-hand account of mobilising a multidisciplinary team of six after the January 2019 disaster. They built a registration and follow-up system for social workers, adapted it as requirements developed and supported it in production. The project was initially planned for two months and extended by six, totalling eight. The story credits five colleagues through the LinkedIn links he supplied and recalls the trust built on an earlier project. The client, technology stack and number of families assisted are not disclosed.

@@ -151,7 +151,7 @@
   }
   </script>
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/style.css?v=929e8a718594">
+  <link rel="stylesheet" href="../assets/style.css?v=4ba3ffddc466">
   <script src="../assets/app.js?v=788e6db5d2f7" defer></script>
 </head>
 <body>
@@ -208,6 +208,12 @@
       <g stroke="var(--icon-people)"><circle cx="32" cy="30" r="9"/><path d="M15 68v-9a17 17 0 0 1 34 0v9M52 27a8 8 0 0 1 0 16M57 49a15 15 0 0 1 11 15v4"/></g>
       <g stroke="var(--icon-cloud)"><rect x="88" y="20" width="51" height="61" rx="4"/><rect x="100" y="14" width="26" height="12" rx="3"/><path d="m98 43 4 4 7-8M116 43h13m-31 17 4 4 7-8M116 60h13"/></g>
       <g stroke="var(--icon-banking)"><path d="m166 45 25-21 25 21M172 43v34h38V43M185 77V59h13v18"/><path d="M191 17v-6M163 26l-4-4M219 26l4-4" stroke="var(--icon-sun)"/></g>
+    </symbol>
+    <symbol id="icon-story-portfolio" viewBox="0 0 240 96" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <g stroke="var(--icon-services)"><rect x="20" y="10" width="35" height="76" rx="5"/><path d="M31 17h13M33 78h9M31 35l-5 6 5 6M44 35l5 6-5 6"/></g>
+      <g stroke="var(--icon-telecom)"><path d="M82 26h38v26h-17l-11 10V52H82ZM90 35h21M90 43h14"/><path d="M130 24v32M137 32v16M123 32v16"/></g>
+      <g stroke="var(--icon-banking)"><rect x="163" y="22" width="60" height="48" rx="3"/><path d="M163 34h60M175 28h.01M182 28h.01M173 43h18M173 51h40M173 59h30"/></g>
+      <path stroke="var(--icon-sun)" d="m63 68 7-7 7 7M70 62v15h76m-7-7 7 7-7 7"/>
     </symbol>
     <symbol id="icon-story-community" viewBox="0 0 240 96" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <g stroke="var(--icon-telecom)"><path d="M13 18h57v37H42L27 68V55H13Z"/><path d="M27 30h27M27 40h18"/></g>
@@ -327,10 +333,21 @@
   <section class="stories-section section-band section-band-muted" id="stories" tabindex="-1" aria-labelledby="stories-title"><div class="wrap">
     <div class="section-heading"><p class="section-index">03 / VIVÊNCIAS</p><div><h2 id="stories-title">Há uma história<br>por trás do trabalho.</h2><p>Os momentos que não cabem em um currículo. As mudanças inesperadas, as conversas e o que aprendi pelo caminho.</p></div></div>
     <div class="stories-grid">
+      <article class="story story-portfolio" id="portfolio-build-story-card" aria-labelledby="portfolio-build-story-title">
+        <a class="story-card-link" href="field-notes/a-weekend-a-phone-and-ai/" aria-labelledby="portfolio-build-story-title portfolio-build-story-cta" aria-describedby="portfolio-build-story-teaser">
+          <div class="story-front">
+            <p class="story-category">01 / IA E ENGENHARIA</p>
+            <svg class="story-illustration" viewBox="0 0 240 96" aria-hidden="true" focusable="false"><use href="#icon-story-portfolio"/></svg>
+            <h3 id="portfolio-build-story-title">O que dá para criar em um fim de semana com um telemóvel e IA?</h3>
+            <p class="story-teaser" id="portfolio-build-story-teaser">Orientei o Codex por chat e voz para construir este portfólio pelo celular, com três idiomas, testes de navegador e hospedagem gratuita no GitHub Pages.</p>
+            <span class="story-open" id="portfolio-build-story-cta">Leia a história completa <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span>
+          </div>
+        </a>
+      </article>
       <article class="story story-security" id="beach-story-card" aria-labelledby="beach-story-title">
         <a class="story-card-link" href="field-notes/security-at-the-beach/" aria-labelledby="beach-story-title beach-story-cta" aria-describedby="beach-story-teaser">
           <div class="story-front">
-            <p class="story-category">01 / SEGURANÇA E LIDERANÇA</p>
+            <p class="story-category">02 / SEGURANÇA E LIDERANÇA</p>
             <svg class="story-illustration" viewBox="0 0 240 96" aria-hidden="true" focusable="false"><use href="#icon-story-security"/></svg>
             <h3 id="beach-story-title">Uma semana na praia.<br>Um incidente de segurança no segundo dia.</h3>
             <p class="story-teaser" id="beach-story-teaser">Esperava um projeto tranquilo e mais tempo com a família. No segundo dia, um incidente de segurança em produção colocou arquitetura, comunicação e liderança à prova.</p>
@@ -341,7 +358,7 @@
       <article class="story story-bank" id="bank-story-card" aria-labelledby="bank-story-title">
         <a class="story-card-link" href="field-notes/banking-handover-in-brasilia/" aria-labelledby="bank-story-title bank-story-cta" aria-describedby="bank-story-teaser">
           <div class="story-front">
-            <p class="story-category">02 / ENTREGA E EXPECTATIVAS</p>
+            <p class="story-category">03 / ENTREGA E EXPECTATIVAS</p>
             <svg class="story-illustration" viewBox="0 0 240 96" aria-hidden="true" focusable="false"><use href="#icon-story-bank"/></svg>
             <h3 id="bank-story-title">Embarquei para o maior banco do Brasil com um briefing de poucos tópicos.</h3>
             <p class="story-teaser" id="bank-story-teaser">Eu tinha duas semanas para ajudar um cliente do setor bancário na passagem do projeto para sua equipe, com um briefing de poucos tópicos. Alinhei as expectativas dos envolvidos e perdi uma noite de trabalho quando o computador que eu usava queimou.</p>
@@ -352,7 +369,7 @@
       <article class="story story-brumadinho" id="brumadinho-story-card" aria-labelledby="brumadinho-story-title">
         <a class="story-card-link" href="field-notes/supporting-families-after-brumadinho/" aria-labelledby="brumadinho-story-title brumadinho-story-cta" aria-describedby="brumadinho-story-teaser">
           <div class="story-front">
-            <p class="story-category">03 / EQUIPE E PROPÓSITO</p>
+            <p class="story-category">04 / EQUIPE E PROPÓSITO</p>
             <svg class="story-illustration" viewBox="0 0 240 96" aria-hidden="true" focusable="false"><use href="#icon-story-brumadinho"/></svg>
             <h3 id="brumadinho-story-title">Construímos um sistema para apoiar as famílias atingidas em Brumadinho.</h3>
             <p class="story-teaser" id="brumadinho-story-teaser">Não havia equipe disponível para assumir o projeto. Reuni seis pessoas que aceitaram trabalhar horas extras para que assistentes sociais pudessem cadastrar e acompanhar as famílias atingidas.</p>
@@ -363,7 +380,7 @@
       <article class="story story-community" id="zeno-story-card" aria-labelledby="zeno-story-title">
         <a class="story-card-link" href="field-notes/do-you-know-zeno-rocha/" aria-labelledby="zeno-story-title zeno-story-cta" aria-describedby="zeno-story-teaser">
           <div class="story-front">
-            <p class="story-category">04 / COMUNIDADE E SELEÇÃO</p>
+            <p class="story-category">05 / COMUNIDADE E SELEÇÃO</p>
             <svg class="story-illustration" viewBox="0 0 240 96" aria-hidden="true" focusable="false"><use href="#icon-story-community"/></svg>
             <h3 id="zeno-story-title">“Você conhece o Zeno Rocha?”</h3>
             <p class="story-teaser" id="zeno-story-teaser">Entre 2012 e 2016, eu encerrava as entrevistas de front-end perguntando sobre Zeno Rocha. Eu buscava pessoas interessadas na comunidade e em continuar aprendendo.</p>

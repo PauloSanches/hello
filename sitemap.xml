@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://paulosanches.github.io/hello/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/" />
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://paulosanches.github.io/hello/it/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/" />
@@ -18,15 +18,39 @@
   </url>
   <url>
     <loc>https://paulosanches.github.io/hello/pt/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://paulosanches.github.io/hello/" />
   </url>
   <url>
+    <loc>https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/a-weekend-a-phone-and-ai/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/" />
+  </url>
+  <url>
+    <loc>https://paulosanches.github.io/hello/it/field-notes/a-weekend-a-phone-and-ai/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/a-weekend-a-phone-and-ai/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/" />
+  </url>
+  <url>
+    <loc>https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/a-weekend-a-phone-and-ai/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/" />
+  </url>
+  <url>
     <loc>https://paulosanches.github.io/hello/field-notes/banking-handover-in-brasilia/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/banking-handover-in-brasilia/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/banking-handover-in-brasilia/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/banking-handover-in-brasilia/" />
@@ -34,7 +58,7 @@
   </url>
   <url>
     <loc>https://paulosanches.github.io/hello/it/field-notes/banking-handover-in-brasilia/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/banking-handover-in-brasilia/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/banking-handover-in-brasilia/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/banking-handover-in-brasilia/" />
@@ -42,7 +66,7 @@
   </url>
   <url>
     <loc>https://paulosanches.github.io/hello/pt/field-notes/banking-handover-in-brasilia/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/banking-handover-in-brasilia/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/banking-handover-in-brasilia/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/banking-handover-in-brasilia/" />
@@ -50,7 +74,7 @@
   </url>
   <url>
     <loc>https://paulosanches.github.io/hello/field-notes/do-you-know-zeno-rocha/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/do-you-know-zeno-rocha/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/do-you-know-zeno-rocha/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/do-you-know-zeno-rocha/" />
@@ -58,7 +82,7 @@
   </url>
   <url>
     <loc>https://paulosanches.github.io/hello/it/field-notes/do-you-know-zeno-rocha/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/do-you-know-zeno-rocha/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/do-you-know-zeno-rocha/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/do-you-know-zeno-rocha/" />
@@ -66,7 +90,7 @@
   </url>
   <url>
     <loc>https://paulosanches.github.io/hello/pt/field-notes/do-you-know-zeno-rocha/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/do-you-know-zeno-rocha/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/do-you-know-zeno-rocha/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/do-you-know-zeno-rocha/" />
@@ -74,7 +98,7 @@
   </url>
   <url>
     <loc>https://paulosanches.github.io/hello/field-notes/security-at-the-beach/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/security-at-the-beach/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/" />
@@ -82,7 +106,7 @@
   </url>
   <url>
     <loc>https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/security-at-the-beach/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/" />
@@ -90,7 +114,7 @@
   </url>
   <url>
     <loc>https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/security-at-the-beach/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/" />
@@ -98,7 +122,7 @@
   </url>
   <url>
     <loc>https://paulosanches.github.io/hello/field-notes/supporting-families-after-brumadinho/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/supporting-families-after-brumadinho/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/supporting-families-after-brumadinho/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/supporting-families-after-brumadinho/" />
@@ -106,7 +130,7 @@
   </url>
   <url>
     <loc>https://paulosanches.github.io/hello/it/field-notes/supporting-families-after-brumadinho/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/supporting-families-after-brumadinho/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/supporting-families-after-brumadinho/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/supporting-families-after-brumadinho/" />
@@ -114,7 +138,7 @@
   </url>
   <url>
     <loc>https://paulosanches.github.io/hello/pt/field-notes/supporting-families-after-brumadinho/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/field-notes/supporting-families-after-brumadinho/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/field-notes/supporting-families-after-brumadinho/" />
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/field-notes/supporting-families-after-brumadinho/" />
