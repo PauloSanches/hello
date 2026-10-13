@@ -1583,6 +1583,28 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 @media (max-width: 760px) {
   :root[data-theme="vietnam"] .hero { --portrait-width: min(84%, calc(var(--hero-height) * 0.8)); }
 }
+/* The two-person portrait keeps both faces clear of the banner fade. */
+:root[data-theme="dante"] .hero { --portrait-width: min(52%, calc(var(--hero-height) * 0.8 - 48px)); }
+:root[data-theme="dante"] .hero-portrait {
+  top: 60px;
+  height: calc(100% - 60px);
+  transform: none;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 16%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 16%);
+}
+:root[data-theme="dante"] .portrait-photo { object-fit: contain; object-position: right center; }
+@media (max-width: 760px) {
+  :root[data-theme="dante"] .hero { --portrait-width: min(74%, calc(var(--hero-height) * 0.8 - 48px)); --hero-title-size: clamp(18px, 5.4vw, 24px); }
+  :root[data-theme="dante"] .portrait-photo { object-position: right top; }
+  :root[data-theme="dante"] .hero-portrait::after {
+    background-image: linear-gradient(to bottom, transparent 36%, #262626 58%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  :root[data-theme="dante"] .hero-main { width: 100%; padding: 24px var(--page-gutter); }
+  :root[data-theme="dante"] .hero-title { max-width: 28ch; }
+}
+:root[data-theme="dante"] .easter-egg-notice { border-left-color: #c9c9c9; background: #262626; box-shadow: 0 4px 20px #00000026; }
 .easter-egg-notice {
   position: fixed;
   z-index: 30;

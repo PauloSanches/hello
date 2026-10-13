@@ -162,6 +162,20 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         en: 'Paulo Sanches holding a Seattle Seahawks helmet'
       }
     },
+    dante: {
+      portrait: 'paulo-portrait-dante.webp?v=f317aa6099ec',
+      colour: '#111111',
+      notice: {
+        pt: 'Modo Dante. Digite dante novamente ou pressione Esc para voltar.',
+        it: 'Modalità Dante. Digita di nuovo dante o premi Esc per tornare al tema originale.',
+        en: 'Dante mode. Type dante again or press Esc to reset.'
+      },
+      alt: {
+        pt: 'Paulo Sanches e Dante juntos',
+        it: 'Paulo Sanches e Dante insieme',
+        en: 'Paulo Sanches and Dante together'
+      }
+    },
     vietnam: {
       portrait: 'paulo-portrait-vietnam.webp?v=5895a8439be6',
       colour: '#283222',
@@ -179,12 +193,13 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     }
   };
   const codes = Object.keys(modes);
-  const compactCodes = new Set(['redbull', 'gameday', 'goodmorning', 'vietnam', 'nfl']);
+  const compactCodes = new Set(['redbull', 'gameday', 'goodmorning', 'vietnam', 'nfl', 'dante']);
   const aliases = new Map([
     ['redbull', 'redbull'], ['itstimetofly', 'redbull'],
     ['gameday', 'gameday'], ['nfl', 'gameday'],
     ['everydayisgameday', 'gameday'], ['everydayisgamedayletsgo', 'gameday'],
-    ['vietnam', 'vietnam'], ['goodmorning', 'vietnam'], ['goodmorningvietnam', 'vietnam']
+    ['vietnam', 'vietnam'], ['goodmorning', 'vietnam'], ['goodmorningvietnam', 'vietnam'],
+    ['dante', 'dante']
   ]);
   const orderedAliases = Array.from(aliases.keys()).sort((a, b) => b.length - a.length);
   const maximumCodeLength = orderedAliases[0].length;
