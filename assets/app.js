@@ -210,6 +210,21 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         en: 'Smiling young person holding a small dog wearing sunglasses'
       }
     },
+    nega: {
+      portrait: 'portrait-nega.webp?v=73a73138397b',
+      colour: '#111111',
+      phrase: 'My luck day. Love you till the end…',
+      notice: {
+        pt: 'Modo Nega. Digite nega novamente ou pressione Esc para voltar.',
+        it: 'Modalità Nega. Digita di nuovo nega o premi Esc per tornare al tema originale.',
+        en: 'Nega mode. Type nega again or press Esc to reset.'
+      },
+      alt: {
+        pt: 'Paulo Sanches e uma mulher, sorrindo juntos',
+        it: 'Paulo Sanches e una donna, sorridenti insieme',
+        en: 'Paulo Sanches and a woman smiling together'
+      }
+    },
     vietnam: {
       portrait: 'paulo-portrait-vietnam.webp?v=5895a8439be6',
       colour: '#283222',
@@ -227,13 +242,13 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     }
   };
   const codes = Object.keys(modes);
-  const compactCodes = new Set(['redbull', 'gameday', 'goodmorning', 'vietnam', 'nfl', 'dante', 'tubarao', 'tubarão', 'bad']);
+  const compactCodes = new Set(['redbull', 'gameday', 'goodmorning', 'vietnam', 'nfl', 'dante', 'tubarao', 'tubarão', 'bad', 'nega']);
   const aliases = new Map([
     ['redbull', 'redbull'], ['itstimetofly', 'redbull'],
     ['gameday', 'gameday'], ['nfl', 'gameday'],
     ['everydayisgameday', 'gameday'], ['everydayisgamedayletsgo', 'gameday'],
     ['vietnam', 'vietnam'], ['goodmorning', 'vietnam'], ['goodmorningvietnam', 'vietnam'],
-    ['dante', 'dante'], ['tubarao', 'tubarao'], ['bad', 'bad']
+    ['dante', 'dante'], ['tubarao', 'tubarao'], ['bad', 'bad'], ['nega', 'nega']
   ]);
   const orderedAliases = Array.from(aliases.keys()).sort((a, b) => b.length - a.length);
   const maximumCodeLength = orderedAliases[0].length;
