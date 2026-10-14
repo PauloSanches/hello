@@ -15,8 +15,10 @@
     header { padding-block: 20px; border-bottom: 1px solid #ccc; }
     nav { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; }
     .languages { display: flex; gap: 4px; }
-    a { color: inherit; display: inline-flex; align-items: center; min-height: 44px; padding: 8px; text-underline-offset: 4px; }
-    a:focus-visible { outline: 2px solid #171717; outline-offset: 2px; }
+    a, button { color: inherit; display: inline-flex; align-items: center; min-height: 44px; padding: 8px; text-underline-offset: 4px; }
+    button { border: 0; background: none; font: inherit; text-decoration: underline; cursor: pointer; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #171717; outline-offset: 2px; }
+    [hidden] { display: none !important; }
     [aria-current="page"] { background: #171717; color: white; }
     h1 { margin: 0; padding-block: 28px 8px; font-size: clamp(24px, 4vw, 36px); }
     .file-actions { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 20px; font-size: 14px; }
@@ -26,7 +28,7 @@
 </head>
 <body>
   <header><nav class="wrap" aria-label="AI/Agent"><a class="agent-home" href="https://paulosanches.github.io/hello/pt/agent/">← Voltar ao portfólio</a><div class="languages"><a href="https://paulosanches.github.io/hello/field-notes/security-at-the-beach/agent/" lang="en" hreflang="en">EN</a> <a href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/agent/" lang="pt-BR" hreflang="pt-BR" aria-current="page">PT</a> <a href="https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/agent/" lang="it" hreflang="it">ITA</a></div></nav></header>
-  <main class="wrap"><h1>AI/Agent</h1><div class="file-actions"><a class="file-link" href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/story.md" type="text/markdown">Abrir arquivo Markdown ↗</a><a class="website-link" href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/">Ver site ↗</a></div><pre># Uma semana na praia. Um incidente de segurança no segundo dia.
+  <main class="wrap"><h1>AI/Agent</h1><div class="file-actions"><a class="file-link" href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/story.md" type="text/markdown">Abrir arquivo Markdown ↗</a><button class="back-button" type="button" hidden>← Voltar</button><a class="back-fallback" href="https://paulosanches.github.io/hello/pt/agent/">← Voltar</a></div><pre># Uma semana na praia. Um incidente de segurança no segundo dia.
 
 [Voltar ao portfólio — AI/Agent](<a href="https://paulosanches.github.io/hello/pt/agent/">https://paulosanches.github.io/hello/pt/agent/</a>)
 
@@ -104,5 +106,15 @@ Se quiser saber mais sobre os detalhes técnicos desse incidente e acredita que 
 
 [Me chame no LinkedIn](<a href="https://www.linkedin.com/in/paulosanches">https://www.linkedin.com/in/paulosanches</a>)
 </pre></main>
+  <script>
+    const backButton = document.querySelector('.back-button');
+    const backFallback = document.querySelector('.back-fallback');
+    backButton.hidden = false;
+    backFallback.hidden = true;
+    backButton.addEventListener('click', () => {
+      if (history.length > 1 && document.referrer) history.back();
+      else location.assign(backFallback.href);
+    });
+  </script>
 </body>
 </html>

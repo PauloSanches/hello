@@ -15,8 +15,10 @@
     header { padding-block: 20px; border-bottom: 1px solid #ccc; }
     nav { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; }
     .languages { display: flex; gap: 4px; }
-    a { color: inherit; display: inline-flex; align-items: center; min-height: 44px; padding: 8px; text-underline-offset: 4px; }
-    a:focus-visible { outline: 2px solid #171717; outline-offset: 2px; }
+    a, button { color: inherit; display: inline-flex; align-items: center; min-height: 44px; padding: 8px; text-underline-offset: 4px; }
+    button { border: 0; background: none; font: inherit; text-decoration: underline; cursor: pointer; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #171717; outline-offset: 2px; }
+    [hidden] { display: none !important; }
     [aria-current="page"] { background: #171717; color: white; }
     h1 { margin: 0; padding-block: 28px 8px; font-size: clamp(24px, 4vw, 36px); }
     .file-actions { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 20px; font-size: 14px; }
@@ -26,7 +28,7 @@
 </head>
 <body>
   <header><nav class="wrap" aria-label="AI/Agent"><a class="agent-home" href="https://paulosanches.github.io/hello/agent/">Paulo Sanches · AI/Agent</a><div class="languages"><a href="https://paulosanches.github.io/hello/agent/" lang="en" hreflang="en" aria-current="page">EN</a> <a href="https://paulosanches.github.io/hello/pt/agent/" lang="pt-BR" hreflang="pt-BR">PT</a> <a href="https://paulosanches.github.io/hello/it/agent/" lang="it" hreflang="it">ITA</a></div></nav></header>
-  <main class="wrap"><h1>AI/Agent</h1><div class="file-actions"><a class="file-link" href="https://paulosanches.github.io/hello/portfolio.md" type="text/markdown">Open Markdown file ↗</a><a class="website-link" href="https://paulosanches.github.io/hello/">View website ↗</a></div><pre># Paulo Sanches
+  <main class="wrap"><h1>AI/Agent</h1><div class="file-actions"><a class="file-link" href="https://paulosanches.github.io/hello/portfolio.md" type="text/markdown">Open Markdown file ↗</a><button class="back-button" type="button" hidden>← Back</button><a class="back-fallback" href="https://paulosanches.github.io/hello/agent/">← Back</a></div><pre># Paulo Sanches
 
 Complete public portfolio, including the full text of every Field Note. Generated from the published pages and kept in sync with site updates.
 
@@ -958,5 +960,15 @@ Have you experienced a similar change in your team? Message me on LinkedIn for a
 
 ---
 </pre></main>
+  <script>
+    const backButton = document.querySelector('.back-button');
+    const backFallback = document.querySelector('.back-fallback');
+    backButton.hidden = false;
+    backFallback.hidden = true;
+    backButton.addEventListener('click', () => {
+      if (history.length > 1 && document.referrer) history.back();
+      else location.assign(backFallback.href);
+    });
+  </script>
 </body>
 </html>

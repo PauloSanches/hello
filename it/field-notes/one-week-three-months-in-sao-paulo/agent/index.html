@@ -15,8 +15,10 @@
     header { padding-block: 20px; border-bottom: 1px solid #ccc; }
     nav { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; }
     .languages { display: flex; gap: 4px; }
-    a { color: inherit; display: inline-flex; align-items: center; min-height: 44px; padding: 8px; text-underline-offset: 4px; }
-    a:focus-visible { outline: 2px solid #171717; outline-offset: 2px; }
+    a, button { color: inherit; display: inline-flex; align-items: center; min-height: 44px; padding: 8px; text-underline-offset: 4px; }
+    button { border: 0; background: none; font: inherit; text-decoration: underline; cursor: pointer; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #171717; outline-offset: 2px; }
+    [hidden] { display: none !important; }
     [aria-current="page"] { background: #171717; color: white; }
     h1 { margin: 0; padding-block: 28px 8px; font-size: clamp(24px, 4vw, 36px); }
     .file-actions { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 20px; font-size: 14px; }
@@ -26,7 +28,7 @@
 </head>
 <body>
   <header><nav class="wrap" aria-label="AI/Agent"><a class="agent-home" href="https://paulosanches.github.io/hello/it/agent/">← Torna al portfolio</a><div class="languages"><a href="https://paulosanches.github.io/hello/field-notes/one-week-three-months-in-sao-paulo/agent/" lang="en" hreflang="en">EN</a> <a href="https://paulosanches.github.io/hello/pt/field-notes/one-week-three-months-in-sao-paulo/agent/" lang="pt-BR" hreflang="pt-BR">PT</a> <a href="https://paulosanches.github.io/hello/it/field-notes/one-week-three-months-in-sao-paulo/agent/" lang="it" hreflang="it" aria-current="page">ITA</a></div></nav></header>
-  <main class="wrap"><h1>AI/Agent</h1><div class="file-actions"><a class="file-link" href="https://paulosanches.github.io/hello/it/field-notes/one-week-three-months-in-sao-paulo/story.md" type="text/markdown">Apri il file Markdown ↗</a><a class="website-link" href="https://paulosanches.github.io/hello/it/field-notes/one-week-three-months-in-sao-paulo/">Vedi il sito ↗</a></div><pre># Come ha fatto una settimana di supporto durante una crisi a diventare tre mesi a San Paolo?
+  <main class="wrap"><h1>AI/Agent</h1><div class="file-actions"><a class="file-link" href="https://paulosanches.github.io/hello/it/field-notes/one-week-three-months-in-sao-paulo/story.md" type="text/markdown">Apri il file Markdown ↗</a><button class="back-button" type="button" hidden>← Indietro</button><a class="back-fallback" href="https://paulosanches.github.io/hello/it/agent/">← Indietro</a></div><pre># Come ha fatto una settimana di supporto durante una crisi a diventare tre mesi a San Paolo?
 
 [Torna al portfolio — AI/Agent](<a href="https://paulosanches.github.io/hello/it/agent/">https://paulosanches.github.io/hello/it/agent/</a>)
 
@@ -94,5 +96,15 @@ Hai mai affrontato una crisi che ha cambiato il corso di un incarico o prolungat
 
 [Scrivimi su LinkedIn per un caffè virtuale.](<a href="https://www.linkedin.com/in/paulosanches">https://www.linkedin.com/in/paulosanches</a>)
 </pre></main>
+  <script>
+    const backButton = document.querySelector('.back-button');
+    const backFallback = document.querySelector('.back-fallback');
+    backButton.hidden = false;
+    backFallback.hidden = true;
+    backButton.addEventListener('click', () => {
+      if (history.length > 1 && document.referrer) history.back();
+      else location.assign(backFallback.href);
+    });
+  </script>
 </body>
 </html>

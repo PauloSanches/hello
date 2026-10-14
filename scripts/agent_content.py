@@ -19,9 +19,9 @@ LANGUAGES = {
     "it": {"lang": "it", "name": "Italiano", "source": "Fonte", "intro": "Portfolio pubblico completo, con il testo integrale di ogni storia. Generato dalle pagine pubblicate e sincronizzato con gli aggiornamenti del sito.", "stories": "Storie — testi completi"},
 }
 VIEW_LABELS = {
-    "": ("Back to portfolio", "Open Markdown file", "Complete portfolio in Markdown", "View website"),
-    "pt": ("Voltar ao portfólio", "Abrir arquivo Markdown", "Portfólio completo em Markdown", "Ver site"),
-    "it": ("Torna al portfolio", "Apri il file Markdown", "Portfolio completo in Markdown", "Vedi il sito"),
+    "": ("Back to portfolio", "Open Markdown file", "Complete portfolio in Markdown", "Back"),
+    "pt": ("Voltar ao portfólio", "Abrir arquivo Markdown", "Portfólio completo em Markdown", "Voltar"),
+    "it": ("Torna al portfolio", "Apri il file Markdown", "Portfolio completo in Markdown", "Indietro"),
 }
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 SKIP_TAGS = {"script", "style", "svg", "nav", "button", "input", "select", "textarea", "summary"}
@@ -273,7 +273,7 @@ def linked_markdown(document):
 
 def build_view(document, prefix, story=None):
     language = LANGUAGES[prefix]["lang"]
-    back, download, description, website = VIEW_LABELS[prefix]
+    back, download, description, browser_back = VIEW_LABELS[prefix]
     home = BASE + (prefix + "/" if prefix else "")
     suffix = f"field-notes/{story}/" if story else ""
     canonical = home + suffix
@@ -302,8 +302,10 @@ def build_view(document, prefix, story=None):
     header {{ padding-block: 20px; border-bottom: 1px solid #ccc; }}
     nav {{ display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; }}
     .languages {{ display: flex; gap: 4px; }}
-    a {{ color: inherit; display: inline-flex; align-items: center; min-height: 44px; padding: 8px; text-underline-offset: 4px; }}
-    a:focus-visible {{ outline: 2px solid #171717; outline-offset: 2px; }}
+    a, button {{ color: inherit; display: inline-flex; align-items: center; min-height: 44px; padding: 8px; text-underline-offset: 4px; }}
+    button {{ border: 0; background: none; font: inherit; text-decoration: underline; cursor: pointer; }}
+    a:focus-visible, button:focus-visible {{ outline: 2px solid #171717; outline-offset: 2px; }}
+    [hidden] {{ display: none !important; }}
     [aria-current="page"] {{ background: #171717; color: white; }}
     h1 {{ margin: 0; padding-block: 28px 8px; font-size: clamp(24px, 4vw, 36px); }}
     .file-actions {{ display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 20px; font-size: 14px; }}
@@ -313,7 +315,17 @@ def build_view(document, prefix, story=None):
 </head>
 <body>
   <header><nav class="wrap" aria-label="AI/Agent"><a class="agent-home" href="{home}agent/">{'← ' + back if story else 'Paulo Sanches · AI/Agent'}</a><div class="languages">{switches}</div></nav></header>
-  <main class="wrap"><h1>AI/Agent</h1><div class="file-actions"><a class="file-link" href="{markdown_url}" type="text/markdown">{download} ↗</a><a class="website-link" href="{canonical}">{website} ↗</a></div><pre>{linked_markdown(document)}</pre></main>
+  <main class="wrap"><h1>AI/Agent</h1><div class="file-actions"><a class="file-link" href="{markdown_url}" type="text/markdown">{download} ↗</a><button class="back-button" type="button" hidden>← {browser_back}</button><a class="back-fallback" href="{home}agent/">← {browser_back}</a></div><pre>{linked_markdown(document)}</pre></main>
+  <script>
+    const backButton = document.querySelector('.back-button');
+    const backFallback = document.querySelector('.back-fallback');
+    backButton.hidden = false;
+    backFallback.hidden = true;
+    backButton.addEventListener('click', () => {{
+      if (history.length > 1 && document.referrer) history.back();
+      else location.assign(backFallback.href);
+    }});
+  </script>
 </body>
 </html>
 '''
