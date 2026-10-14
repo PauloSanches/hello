@@ -9,7 +9,7 @@ from dataclasses import dataclass, field
 from html.parser import HTMLParser
 from pathlib import Path
 import re
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import urljoin, urlsplit, urlunsplit
 
 BASE = "https://paulosanches.github.io/hello/"
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,9 +19,9 @@ LANGUAGES = {
     "it": {"lang": "it", "name": "Italiano", "source": "Fonte", "intro": "Portfolio pubblico completo, con il testo integrale di ogni storia. Generato dalle pagine pubblicate e sincronizzato con gli aggiornamenti del sito.", "stories": "Storie — testi completi"},
 }
 VIEW_LABELS = {
-    "": ("Back to portfolio", "Open Markdown file", "Complete portfolio in Markdown"),
-    "pt": ("Voltar ao portfólio", "Abrir arquivo Markdown", "Portfólio completo em Markdown"),
-    "it": ("Torna al portfolio", "Apri il file Markdown", "Portfolio completo in Markdown"),
+    "": ("Back to portfolio", "Open Markdown file", "Complete portfolio in Markdown", "View website"),
+    "pt": ("Voltar ao portfólio", "Abrir arquivo Markdown", "Portfólio completo em Markdown", "Ver site"),
+    "it": ("Torna al portfolio", "Apri il file Markdown", "Portfolio completo in Markdown", "Vedi il sito"),
 }
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 SKIP_TAGS = {"script", "style", "svg", "nav", "button", "input", "select", "textarea", "summary"}
@@ -97,15 +97,33 @@ def escape(value):
     return re.sub(r"([\\`*\[\]<>_])", r"\\\1", value)
 
 
+def agent_url(url):
+    """Keep home/story navigation in AI mode; leave assets and external links alone."""
+    parts, base = urlsplit(url), urlsplit(BASE)
+    if (parts.scheme, parts.netloc) != (base.scheme, base.netloc):
+        return url
+    if not parts.path.startswith(base.path):
+        return url
+    relative = parts.path[len(base.path):]
+    if re.fullmatch(r"(?:(?:pt|it)/)?(?:index\.html)?", relative):
+        path = base.path + relative.removesuffix("index.html") + "agent/"
+    elif re.fullmatch(r"(?:(?:pt|it)/)?field-notes/[^/]+/(?:index\.html)?", relative):
+        path = base.path + relative.removesuffix("index.html") + "agent/"
+    else:
+        return url
+    return urlunsplit((parts.scheme, parts.netloc, path, parts.query, parts.fragment))
+
+
 class Markdown:
-    def __init__(self, url, source_label="Source", heading_offset=0):
+    def __init__(self, url, source_label="Source", heading_offset=0, skip_h1=False):
         self.url, self.source_label, self.heading_offset = url, source_label, heading_offset
+        self.skip_h1 = skip_h1
 
     def link(self, value):
         url = urljoin(self.url, value)
         if urlsplit(url).scheme not in {"https", "http"}:
             return None
-        return url.replace(" ", "%20").replace("(", "%28").replace(")", "%29")
+        return agent_url(url).replace(" ", "%20").replace("(", "%28").replace(")", "%29")
 
     def inline(self, node):
         if isinstance(node, str):
@@ -142,6 +160,8 @@ class Markdown:
         if omitted(node):
             return ""
         tag = node.tag
+        if tag == "h1" and self.skip_h1:
+            return ""
         if re.fullmatch(r"h[1-6]", tag):
             level = min(6, max(2, int(tag[1]) + self.heading_offset))
             return "#" * level + " " + self.inline(node) + "\n\n"
@@ -204,7 +224,7 @@ def build_document(root, prefix):
     folder = root / prefix if prefix else root
     home_url = BASE + (prefix + "/" if prefix else "")
     home = page_main(folder / "index.html")
-    intro = f"# Paulo Sanches\n\n{info['intro']}\n\nLanguage: {info['lang']}\n\n{info['source']}: {home_url}\n\n"
+    intro = f"# Paulo Sanches\n\n{info['intro']}\n\nLanguage: {info['lang']}\n\n{info['source']}: {agent_url(home_url)}\n\n"
     alternates = " · ".join(f"[{v['name']}]({BASE}{k + '/' if k else ''}portfolio.md)" for k, v in LANGUAGES.items())
     output = intro + alternates + "\n\n---\n\n" + Markdown(home_url, info["source"]).render(home)
     # Discover stories from the page in presentation order, then include any
@@ -222,16 +242,45 @@ def build_document(root, prefix):
     for name in order:
         url = home_url + "field-notes/" + name + "/"
         main = page_main(available[name])
-        output += f"{info['source']}: {url}\n\n" + Markdown(url, info["source"], heading_offset=1).render(main) + "---\n\n"
+        output += f"{info['source']}: {agent_url(url)}\n\nMarkdown: {url}story.md\n\n" + Markdown(url, info["source"], heading_offset=1).render(main) + "---\n\n"
     return re.sub(r"\n{3,}", "\n\n", output).strip() + "\n"
 
 
-def build_view(document, prefix):
-    language = LANGUAGES[prefix]["lang"]
-    back, download, description = VIEW_LABELS[prefix]
+def build_story_document(root, prefix, name):
+    info = LANGUAGES[prefix]
+    folder = root / prefix if prefix else root
     home = BASE + (prefix + "/" if prefix else "")
+    url = home + "field-notes/" + name + "/"
+    main = page_main(folder / "field-notes" / name / "index.html")
+    markdown = Markdown(url, info["source"], skip_h1=True)
+    title = markdown.inline(next(main.descendants("h1")))
+    languages = " · ".join(f"[{v['name']}]({BASE}{k + '/' if k else ''}field-notes/{name}/story.md)" for k, v in LANGUAGES.items())
+    intro = f"# {title}\n\n[{VIEW_LABELS[prefix][0]} — AI/Agent]({home}agent/)\n\nLanguage: {info['lang']}\n\n{info['source']}: {url}agent/\n\n{languages}\n\n---\n\n"
+    return re.sub(r"\n{3,}", "\n\n", intro + markdown.render(main)).strip() + "\n"
+
+
+def linked_markdown(document):
+    """Make URLs usable in the text view without changing the Markdown text."""
+    parts, end = [], 0
+    for match in re.finditer(r'''https?://[^\s<>()\[\]"']+''', document):
+        url = match[0].rstrip(".,;:!?")
+        parts.append(html.escape(document[end:match.start()]))
+        parts.append(f'<a href="{html.escape(url, quote=True)}">{html.escape(url)}</a>')
+        end = match.start() + len(url)
+    parts.append(html.escape(document[end:]))
+    return "".join(parts)
+
+
+def build_view(document, prefix, story=None):
+    language = LANGUAGES[prefix]["lang"]
+    back, download, description, website = VIEW_LABELS[prefix]
+    home = BASE + (prefix + "/" if prefix else "")
+    suffix = f"field-notes/{story}/" if story else ""
+    canonical = home + suffix
+    markdown_url = canonical + ("story.md" if story else "portfolio.md")
+    title = document.splitlines()[0].removeprefix("# ") if story else "Paulo Sanches"
     switches = " ".join(
-        f'<a href="{BASE}{k + "/" if k else ""}agent/" lang="{v["lang"]}" hreflang="{v["lang"]}"' + (' aria-current="page"' if k == prefix else '') + f'>{"PT" if k == "pt" else "ITA" if k == "it" else "EN"}</a>'
+        f'<a href="{BASE}{k + "/" if k else ""}{suffix}agent/" lang="{v["lang"]}" hreflang="{v["lang"]}"' + (' aria-current="page"' if k == prefix else '') + f'>{"PT" if k == "pt" else "ITA" if k == "it" else "EN"}</a>'
         for k, v in LANGUAGES.items()
     )
     # Fully static: agents and no-JavaScript browsers can read the same file
@@ -243,9 +292,9 @@ def build_view(document, prefix):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, follow">
   <meta name="description" content="{description}">
-  <title>Paulo Sanches — AI/Agent</title>
-  <link rel="canonical" href="{home}">
-  <link rel="alternate" type="text/markdown" href="{home}portfolio.md" title="AI/Agent">
+  <title>{html.escape(title)} — AI/Agent</title>
+  <link rel="canonical" href="{canonical}">
+  <link rel="alternate" type="text/markdown" href="{markdown_url}" title="AI/Agent">
   <style>
     * {{ box-sizing: border-box; }}
     body {{ margin: 0; background: #fafafa; color: #171717; font-family: system-ui, sans-serif; }}
@@ -257,13 +306,14 @@ def build_view(document, prefix):
     a:focus-visible {{ outline: 2px solid #171717; outline-offset: 2px; }}
     [aria-current="page"] {{ background: #171717; color: white; }}
     h1 {{ margin: 0; padding-block: 28px 8px; font-size: clamp(24px, 4vw, 36px); }}
-    .file-link {{ font-size: 14px; margin-bottom: 20px; }}
+    .file-actions {{ display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 20px; font-size: 14px; }}
     pre {{ margin: 0 0 40px; padding: clamp(16px, 3vw, 32px); background: white; border: 1px solid #ddd; font: 14px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; tab-size: 2; }}
+    pre a {{ display: inline; min-height: 0; padding: 0; }}
   </style>
 </head>
 <body>
-  <header><nav class="wrap" aria-label="AI/Agent"><a href="{home}">← {back}</a><div class="languages">{switches}</div></nav></header>
-  <main class="wrap"><h1>AI/Agent</h1><a class="file-link" href="{home}portfolio.md" type="text/markdown">{download} ↗</a><pre>{html.escape(document)}</pre></main>
+  <header><nav class="wrap" aria-label="AI/Agent"><a class="agent-home" href="{home}agent/">{'← ' + back if story else 'Paulo Sanches · AI/Agent'}</a><div class="languages">{switches}</div></nav></header>
+  <main class="wrap"><h1>AI/Agent</h1><div class="file-actions"><a class="file-link" href="{markdown_url}" type="text/markdown">{download} ↗</a><a class="website-link" href="{canonical}">{website} ↗</a></div><pre>{linked_markdown(document)}</pre></main>
 </body>
 </html>
 '''
@@ -274,7 +324,11 @@ def build(root=ROOT, check=False):
     for prefix in LANGUAGES:
         value = build_document(root, prefix)
         folder = root / prefix if prefix else root
-        for path, content in [(folder / "portfolio.md", value), (folder / "agent/index.html", build_view(value, prefix))]:
+        generated = [(folder / "portfolio.md", value), (folder / "agent/index.html", build_view(value, prefix))]
+        for path in sorted((folder / "field-notes").glob("*/index.html")):
+            value = build_story_document(root, prefix, path.parent.name)
+            generated.extend([(path.parent / "story.md", value), (path.parent / "agent/index.html", build_view(value, prefix, path.parent.name))])
+        for path, content in generated:
             if not path.exists() or path.read_text(encoding="utf-8") != content:
                 stale.append(str(path.relative_to(root)))
                 if not check:
@@ -290,4 +344,4 @@ if __name__ == "__main__":
     parser.add_argument("--check", action="store_true", help="Fail if committed Markdown differs from the public HTML.")
     args = parser.parse_args()
     changed = build(check=args.check)
-    print("AI/Agent Markdown is up to date." if args.check else f"Generated 3 AI/Agent files and views; {len(changed)} updated.")
+    print("AI/Agent Markdown is up to date." if args.check else f"Generated portfolio and story Markdown and views; {len(changed)} files updated.")

@@ -92,10 +92,8 @@ class Localize(HTMLParser):
                         value = translate(value, self.locale)
                 elif tag == "link" and attrs.get("rel") == "canonical" and name == "href":
                     value = self.url
-                elif name == "href" and original == BASE + "portfolio.md":
-                    value = BASE + self.locale + "/portfolio.md"
-                elif name == "href" and original == BASE + "agent/":
-                    value = BASE + self.locale + "/agent/"
+                elif name == "href" and original.startswith(BASE) and (attrs.get("type") == "text/markdown" or "agent-mode-link" in attrs.get("class", "").split()):
+                    value = BASE + self.locale + "/" + original.removeprefix(BASE)
                 if name in {"src", "href"} and re.match(r"^(?:\.\./)*assets/", value):
                     value = "../" + value
                 return name + "=" + quote + html.escape(value, quote=True) + quote

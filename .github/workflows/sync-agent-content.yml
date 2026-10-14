@@ -13,6 +13,9 @@ on:
       - 'portfolio.md'
       - 'pt/portfolio.md'
       - 'it/portfolio.md'
+      - 'field-notes/**/story.md'
+      - 'pt/field-notes/**/story.md'
+      - 'it/field-notes/**/story.md'
       - '.github/workflows/sync-agent-content.yml'
   workflow_dispatch:
 

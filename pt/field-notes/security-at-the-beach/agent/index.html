@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="Portfólio completo em Markdown">
+  <title>Uma semana na praia. Um incidente de segurança no segundo dia. — AI/Agent</title>
+  <link rel="canonical" href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/">
+  <link rel="alternate" type="text/markdown" href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/story.md" title="AI/Agent">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fafafa; color: #171717; font-family: system-ui, sans-serif; }
+    .wrap { width: min(1440px, calc(100% - 40px)); margin-inline: auto; }
+    header { padding-block: 20px; border-bottom: 1px solid #ccc; }
+    nav { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; }
+    .languages { display: flex; gap: 4px; }
+    a { color: inherit; display: inline-flex; align-items: center; min-height: 44px; padding: 8px; text-underline-offset: 4px; }
+    a:focus-visible { outline: 2px solid #171717; outline-offset: 2px; }
+    [aria-current="page"] { background: #171717; color: white; }
+    h1 { margin: 0; padding-block: 28px 8px; font-size: clamp(24px, 4vw, 36px); }
+    .file-actions { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 20px; font-size: 14px; }
+    pre { margin: 0 0 40px; padding: clamp(16px, 3vw, 32px); background: white; border: 1px solid #ddd; font: 14px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; tab-size: 2; }
+    pre a { display: inline; min-height: 0; padding: 0; }
+  </style>
+</head>
+<body>
+  <header><nav class="wrap" aria-label="AI/Agent"><a class="agent-home" href="https://paulosanches.github.io/hello/pt/agent/">← Voltar ao portfólio</a><div class="languages"><a href="https://paulosanches.github.io/hello/field-notes/security-at-the-beach/agent/" lang="en" hreflang="en">EN</a> <a href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/agent/" lang="pt-BR" hreflang="pt-BR" aria-current="page">PT</a> <a href="https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/agent/" lang="it" hreflang="it">ITA</a></div></nav></header>
+  <main class="wrap"><h1>AI/Agent</h1><div class="file-actions"><a class="file-link" href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/story.md" type="text/markdown">Abrir arquivo Markdown ↗</a><a class="website-link" href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/">Ver site ↗</a></div><pre># Uma semana na praia. Um incidente de segurança no segundo dia.
+
+[Voltar ao portfólio — AI/Agent](<a href="https://paulosanches.github.io/hello/pt/agent/">https://paulosanches.github.io/hello/pt/agent/</a>)
+
+Language: pt-BR
+
+Fonte: <a href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/agent/">https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/agent/</a>
+
+[English](<a href="https://paulosanches.github.io/hello/field-notes/security-at-the-beach/story.md">https://paulosanches.github.io/hello/field-notes/security-at-the-beach/story.md</a>) · [Português do Brasil](<a href="https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/story.md">https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/story.md</a>) · [Italiano](<a href="https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/story.md">https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/story.md</a>)
+
+---
+
+SEGURANÇA E LIDERANÇA
+
+Fui trabalhar por uma semana em uma casa de praia, esperando passar mais tempo com a família. No segundo dia, um incidente de segurança em produção mudou os planos.
+
+4 min de leitura
+
+![Vista litorânea pixelada, com palmeiras, praia de areia e água turquesa.](<a href="https://paulosanches.github.io/hello/assets/field-notes-beach.png?v=cfb755a41222">https://paulosanches.github.io/hello/assets/field-notes-beach.png?v=cfb755a41222</a>)
+
+Eu havia acabado de ser promovido a Manager. Entre minhas novas responsabilidades, assumi como Delivery Lead e Solution Architect de um projeto de marketing e CMS para uma das líderes do agronegócio no Brasil.
+
+A solução utilizava Liferay Portal e estava em produção havia três anos. A equipe tinha apenas duas pessoas, não havia registro de problemas relevantes e o cliente estava discutindo a renovação do contrato. Era um projeto pequeno em estrutura, mas importante para a conta.
+
+Com tudo aparentemente sob controle, trabalhar da casa de praia parecia simples. Esperava uma semana normal de trabalho, com mais tempo perto da família.
+
+## Quando a instabilidade virou um incidente de segurança
+
+No segundo dia, identificamos um processo suspeito no servidor de produção. O consumo de memória aumentava, sobrecarregava o ambiente e provocava reinicializações. O que parecia um problema de estabilidade se tornou um incidente de segurança.
+
+Acionamos os protocolos de incidentes da empresa, escalamos o caso e montamos um war room. Minha responsabilidade era coordenar a resposta técnica, organizar as próximas ações e manter o cliente e as lideranças informados sobre o problema e a evolução da solução.
+
+## Encontrar a correção era apenas parte do trabalho
+
+Durante a investigação, encontramos um fator que complicava a resposta. O projeto havia sido desenhado com a edição Community do Liferay na fase de venda. Naquele cenário, não contávamos com o suporte e as correções prontamente disponíveis de que precisávamos para reagir com rapidez.
+
+Identificamos vulnerabilidades conhecidas na versão utilizada, mas não encontramos um pacote de atualização pronto para instalar e corrigir o problema.
+
+Depois de pesquisar em fóruns e abrir chamados com especialistas, descobrimos que a comunidade havia disponibilizado a correção. Havia uma etapa adicional: precisávamos baixar vários gigabytes de arquivos e compilar a aplicação antes de instalar a nova versão no servidor.
+
+Foi aí que a conexão da casa de praia deixou de ser um detalhe. Os downloads e a compilação consumiram duas noites inteiras.
+
+## Mantendo todos informados
+
+Enquanto os downloads avançavam, a pressão aumentava. As lideranças da América Latina acompanhavam o incidente, com atualizações solicitadas várias vezes ao dia.
+
+Eu precisava conduzir duas frentes: ajudar a equipe a chegar à solução e dar clareza aos stakeholders sobre o que sabíamos, o que ainda estava em investigação e quais seriam os próximos passos.
+
+&gt; Precisava deixar claros os próximos passos sem prometer um prazo que ainda não conseguíamos sustentar.
+
+Resolver o problema técnico e comunicar a evolução eram partes da resposta. Ainda havia incertezas, e eu precisava ser transparente sobre elas.
+
+Finalmente compilamos e instalamos a nova versão, corrigimos as vulnerabilidades identificadas e encerramos o incidente.
+
+A praia, quase não aproveitei. Passei boa parte da semana entre reuniões, investigação técnica e noites de trabalho, em um ambiente que não estava preparado para aquela rotina. Foi uma das experiências mais intensas da minha carreira.
+
+## O que ficou comigo
+
+### Manutenção e suporte fazem parte da proposta
+
+O custo de uma solução precisa considerar manutenção, atualizações e suporte. Naquele projeto, a escolha pela edição Community criou uma dificuldade que só ficou evidente quando precisamos responder a uma crise. Se esses recursos são necessários para atender ao cliente, precisam fazer parte da proposta desde o início.
+
+### Liderar é organizar toda a resposta
+
+A correção técnica é apenas parte do trabalho. Também é preciso organizar a resposta, apoiar a equipe e comunicar a evolução com transparência, mesmo quando ainda há perguntas sem resposta.
+
+### Trabalhar de qualquer lugar exige preparação
+
+Poder trabalhar de qualquer lugar também exige pensar nas condições para lidar com o inesperado. A conexão e o ambiente de trabalho importam quando um dia normal vira uma crise.
+
+Eu havia acabado de assumir uma posição de gestão e esperava uma semana tranquila. Acabei vivendo, da casa de praia, uma aula prática sobre responsabilidade, tomada de decisão e liderança sob pressão.
+
+## Mais sobre a parte técnica
+
+Se quiser saber mais sobre os detalhes técnicos desse incidente e acredita que podem ser úteis para você, vou gostar de conversar a respeito.
+
+[Me chame no LinkedIn](<a href="https://www.linkedin.com/in/paulosanches">https://www.linkedin.com/in/paulosanches</a>)
+</pre></main>
+</body>
+</html>

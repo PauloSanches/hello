@@ -12,6 +12,8 @@ The website is available in English (EN), Italian (ITA) and Brazilian Portuguese
 
 These files include every portfolio section and the full text of all Field Notes. They are generated from the HTML and synchronized when the website changes. Use them for complete content; this file provides a concise discovery guide.
 
+Each Field Note also has an individual `story.md` file and an `agent/` text view beneath its article URL, in every language. The article's Markdown alternate and AI/Agent link open that specific story. Home and story navigation within the Markdown keeps AI/Agent mode, and language switching preserves the current story.
+
 ## Language versions
 
 - [English portfolio](https://paulosanches.github.io/hello/)

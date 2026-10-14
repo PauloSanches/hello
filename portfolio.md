@@ -4,7 +4,7 @@ Complete public portfolio, including the full text of every Field Note. Generate
 
 Language: en
 
-Source: https://paulosanches.github.io/hello/
+Source: https://paulosanches.github.io/hello/agent/
 
 [English](https://paulosanches.github.io/hello/portfolio.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/portfolio.md) · [Italiano](https://paulosanches.github.io/hello/it/portfolio.md)
 
@@ -119,7 +119,7 @@ The moments that don’t fit neatly on a CV. The unexpected turns, the conversat
 
 I guided Codex through text and voice to build this portfolio from my phone, with three languages, browser checks and free hosting on GitHub Pages.
 
-Source: https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/
+Source: https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/agent/
 
 02 / SECURITY & LEADERSHIP
 
@@ -127,7 +127,7 @@ Source: https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-a
 
 I expected a steady project and more time with family. On day two, a production security incident put architecture, communication and leadership to the test.
 
-Source: https://paulosanches.github.io/hello/field-notes/security-at-the-beach/
+Source: https://paulosanches.github.io/hello/field-notes/security-at-the-beach/agent/
 
 03 / DELIVERY & EXPECTATIONS
 
@@ -135,7 +135,7 @@ Source: https://paulosanches.github.io/hello/field-notes/security-at-the-beach/
 
 I had two weeks to help a banking client through handover, with a brief written in bullet points. I aligned the stakeholders’ expectations, then lost a night’s work when my workstation failed.
 
-Source: https://paulosanches.github.io/hello/field-notes/banking-handover-in-brasilia/
+Source: https://paulosanches.github.io/hello/field-notes/banking-handover-in-brasilia/agent/
 
 04 / TEAMWORK & PURPOSE
 
@@ -143,7 +143,7 @@ Source: https://paulosanches.github.io/hello/field-notes/banking-handover-in-bra
 
 No team was available to take on the project. I brought together six people who agreed to work extra hours so social workers could register and follow up with affected families.
 
-Source: https://paulosanches.github.io/hello/field-notes/supporting-families-after-brumadinho/
+Source: https://paulosanches.github.io/hello/field-notes/supporting-families-after-brumadinho/agent/
 
 05 / COMMUNITY & HIRING
 
@@ -151,7 +151,7 @@ Source: https://paulosanches.github.io/hello/field-notes/supporting-families-aft
 
 Between 2012 and 2016, I ended front-end interviews by asking candidates about Zeno Rocha. I wanted people who took an interest in the community and kept learning.
 
-Source: https://paulosanches.github.io/hello/field-notes/do-you-know-zeno-rocha/
+Source: https://paulosanches.github.io/hello/field-notes/do-you-know-zeno-rocha/agent/
 
 06 / CRISIS & LEADERSHIP
 
@@ -159,7 +159,7 @@ Source: https://paulosanches.github.io/hello/field-notes/do-you-know-zeno-rocha/
 
 I went to São Paulo to help with a billing crisis for one week. I took on the marketing backlog and stayed to organise the teams for a new contract.
 
-Source: https://paulosanches.github.io/hello/field-notes/one-week-three-months-in-sao-paulo/
+Source: https://paulosanches.github.io/hello/field-notes/one-week-three-months-in-sao-paulo/agent/
 
 07 / MENTORSHIP & GROWTH
 
@@ -167,7 +167,7 @@ Source: https://paulosanches.github.io/hello/field-notes/one-week-three-months-i
 
 I was the most junior developer on our Flash team. After two years learning from our senior, I could not imagine how we would carry on without him.
 
-Source: https://paulosanches.github.io/hello/field-notes/when-our-senior-developer-resigned/
+Source: https://paulosanches.github.io/hello/field-notes/when-our-senior-developer-resigned/agent/
 
 04 / MINDSET
 
@@ -517,7 +517,9 @@ Braga, Portugal
 
 ## Field Notes — full stories
 
-Source: https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/
+Source: https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/agent/
+
+Markdown: https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/story.md
 
 AI & ENGINEERING
 
@@ -555,7 +557,9 @@ Let’s have a virtual coffee and compare experiences.
 
 ---
 
-Source: https://paulosanches.github.io/hello/field-notes/security-at-the-beach/
+Source: https://paulosanches.github.io/hello/field-notes/security-at-the-beach/agent/
+
+Markdown: https://paulosanches.github.io/hello/field-notes/security-at-the-beach/story.md
 
 SECURITY & LEADERSHIP
 
@@ -627,7 +631,9 @@ If you’d like to know more about the technical details of this incident and th
 
 ---
 
-Source: https://paulosanches.github.io/hello/field-notes/banking-handover-in-brasilia/
+Source: https://paulosanches.github.io/hello/field-notes/banking-handover-in-brasilia/agent/
+
+Markdown: https://paulosanches.github.io/hello/field-notes/banking-handover-in-brasilia/story.md
 
 DELIVERY & EXPECTATIONS
 
@@ -692,7 +698,9 @@ If you’ve faced a similar situation or would like more details, send me a mess
 
 ---
 
-Source: https://paulosanches.github.io/hello/field-notes/supporting-families-after-brumadinho/
+Source: https://paulosanches.github.io/hello/field-notes/supporting-families-after-brumadinho/agent/
+
+Markdown: https://paulosanches.github.io/hello/field-notes/supporting-families-after-brumadinho/story.md
 
 TEAMWORK & PURPOSE
 
@@ -754,7 +762,9 @@ If you’d like to talk about this experience or leading teams, send me a messag
 
 ---
 
-Source: https://paulosanches.github.io/hello/field-notes/do-you-know-zeno-rocha/
+Source: https://paulosanches.github.io/hello/field-notes/do-you-know-zeno-rocha/agent/
+
+Markdown: https://paulosanches.github.io/hello/field-notes/do-you-know-zeno-rocha/story.md
 
 COMMUNITY & HIRING
 
@@ -796,7 +806,9 @@ Do you use an unusual criterion in interviews or when forming your teams? Send m
 
 ---
 
-Source: https://paulosanches.github.io/hello/field-notes/one-week-three-months-in-sao-paulo/
+Source: https://paulosanches.github.io/hello/field-notes/one-week-three-months-in-sao-paulo/agent/
+
+Markdown: https://paulosanches.github.io/hello/field-notes/one-week-three-months-in-sao-paulo/story.md
 
 CRISIS & LEADERSHIP
 
@@ -858,7 +870,9 @@ Have you faced a crisis that changed the course of an assignment or extended a t
 
 ---
 
-Source: https://paulosanches.github.io/hello/field-notes/when-our-senior-developer-resigned/
+Source: https://paulosanches.github.io/hello/field-notes/when-our-senior-developer-resigned/agent/
+
+Markdown: https://paulosanches.github.io/hello/field-notes/when-our-senior-developer-resigned/story.md
 
 MENTORSHIP & GROWTH
 

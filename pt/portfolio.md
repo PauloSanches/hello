@@ -4,7 +4,7 @@ Portfólio público completo, incluindo o texto integral de cada história. Gera
 
 Language: pt-BR
 
-Fonte: https://paulosanches.github.io/hello/pt/
+Fonte: https://paulosanches.github.io/hello/pt/agent/
 
 [English](https://paulosanches.github.io/hello/portfolio.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/portfolio.md) · [Italiano](https://paulosanches.github.io/hello/it/portfolio.md)
 
@@ -119,7 +119,7 @@ Os momentos que não cabem em um currículo. As mudanças inesperadas, as conver
 
 Orientei o Codex por chat e voz para construir este portfólio pelo celular, com três idiomas, testes de navegador e hospedagem gratuita no GitHub Pages.
 
-Fonte: https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/
+Fonte: https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/agent/
 
 02 / SEGURANÇA E LIDERANÇA
 
@@ -127,7 +127,7 @@ Fonte: https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and
 
 Esperava um projeto tranquilo e mais tempo com a família. No segundo dia, um incidente de segurança em produção colocou arquitetura, comunicação e liderança à prova.
 
-Fonte: https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/
+Fonte: https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/agent/
 
 03 / ENTREGA E EXPECTATIVAS
 
@@ -135,7 +135,7 @@ Fonte: https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach
 
 Eu tinha duas semanas para ajudar um cliente do setor bancário na passagem do projeto para sua equipe, com um briefing de poucos tópicos. Alinhei as expectativas dos envolvidos e perdi uma noite de trabalho quando o computador que eu usava queimou.
 
-Fonte: https://paulosanches.github.io/hello/pt/field-notes/banking-handover-in-brasilia/
+Fonte: https://paulosanches.github.io/hello/pt/field-notes/banking-handover-in-brasilia/agent/
 
 04 / EQUIPE E PROPÓSITO
 
@@ -143,7 +143,7 @@ Fonte: https://paulosanches.github.io/hello/pt/field-notes/banking-handover-in-b
 
 Não havia equipe disponível para assumir o projeto. Reuni seis pessoas que aceitaram trabalhar horas extras para que assistentes sociais pudessem cadastrar e acompanhar as famílias atingidas.
 
-Fonte: https://paulosanches.github.io/hello/pt/field-notes/supporting-families-after-brumadinho/
+Fonte: https://paulosanches.github.io/hello/pt/field-notes/supporting-families-after-brumadinho/agent/
 
 05 / COMUNIDADE E SELEÇÃO
 
@@ -151,7 +151,7 @@ Fonte: https://paulosanches.github.io/hello/pt/field-notes/supporting-families-a
 
 Entre 2012 e 2016, eu encerrava as entrevistas de front-end perguntando sobre Zeno Rocha. Eu buscava pessoas interessadas na comunidade e em continuar aprendendo.
 
-Fonte: https://paulosanches.github.io/hello/pt/field-notes/do-you-know-zeno-rocha/
+Fonte: https://paulosanches.github.io/hello/pt/field-notes/do-you-know-zeno-rocha/agent/
 
 06 / CRISE & LIDERANÇA
 
@@ -159,7 +159,7 @@ Fonte: https://paulosanches.github.io/hello/pt/field-notes/do-you-know-zeno-roch
 
 Fui a São Paulo ajudar numa crise de faturamento por uma semana. Assumi o backlog de marketing e fiquei para estruturar as equipes de um novo contrato.
 
-Fonte: https://paulosanches.github.io/hello/pt/field-notes/one-week-three-months-in-sao-paulo/
+Fonte: https://paulosanches.github.io/hello/pt/field-notes/one-week-three-months-in-sao-paulo/agent/
 
 07 / MENTORIA & CRESCIMENTO
 
@@ -167,7 +167,7 @@ Fonte: https://paulosanches.github.io/hello/pt/field-notes/one-week-three-months
 
 Eu era o mais júnior da equipe de Flash. Depois de dois anos aprendendo com o nosso sênior, não conseguia imaginar como continuaríamos sem ele.
 
-Fonte: https://paulosanches.github.io/hello/pt/field-notes/when-our-senior-developer-resigned/
+Fonte: https://paulosanches.github.io/hello/pt/field-notes/when-our-senior-developer-resigned/agent/
 
 04 / MINDSET
 
@@ -517,7 +517,9 @@ Braga, Portugal
 
 ## Histórias — textos completos
 
-Fonte: https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/
+Fonte: https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/agent/
+
+Markdown: https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/story.md
 
 IA E ENGENHARIA
 
@@ -555,7 +557,9 @@ Vamos tomar um café virtual e trocar experiências.
 
 ---
 
-Fonte: https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/
+Fonte: https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/agent/
+
+Markdown: https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/story.md
 
 SEGURANÇA E LIDERANÇA
 
@@ -627,7 +631,9 @@ Se quiser saber mais sobre os detalhes técnicos desse incidente e acredita que 
 
 ---
 
-Fonte: https://paulosanches.github.io/hello/pt/field-notes/banking-handover-in-brasilia/
+Fonte: https://paulosanches.github.io/hello/pt/field-notes/banking-handover-in-brasilia/agent/
+
+Markdown: https://paulosanches.github.io/hello/pt/field-notes/banking-handover-in-brasilia/story.md
 
 ENTREGA E EXPECTATIVAS
 
@@ -692,7 +698,9 @@ Se você já passou por uma situação parecida ou quer saber mais detalhes, me 
 
 ---
 
-Fonte: https://paulosanches.github.io/hello/pt/field-notes/supporting-families-after-brumadinho/
+Fonte: https://paulosanches.github.io/hello/pt/field-notes/supporting-families-after-brumadinho/agent/
+
+Markdown: https://paulosanches.github.io/hello/pt/field-notes/supporting-families-after-brumadinho/story.md
 
 EQUIPE E PROPÓSITO
 
@@ -754,7 +762,9 @@ Se quiser conversar sobre essa experiência ou sobre liderança de equipes, me m
 
 ---
 
-Fonte: https://paulosanches.github.io/hello/pt/field-notes/do-you-know-zeno-rocha/
+Fonte: https://paulosanches.github.io/hello/pt/field-notes/do-you-know-zeno-rocha/agent/
+
+Markdown: https://paulosanches.github.io/hello/pt/field-notes/do-you-know-zeno-rocha/story.md
 
 COMUNIDADE E SELEÇÃO
 
@@ -796,7 +806,9 @@ Você usa algum critério fora do padrão nas entrevistas ou na formação das s
 
 ---
 
-Fonte: https://paulosanches.github.io/hello/pt/field-notes/one-week-three-months-in-sao-paulo/
+Fonte: https://paulosanches.github.io/hello/pt/field-notes/one-week-three-months-in-sao-paulo/agent/
+
+Markdown: https://paulosanches.github.io/hello/pt/field-notes/one-week-three-months-in-sao-paulo/story.md
 
 CRISE & LIDERANÇA
 
@@ -858,7 +870,9 @@ Você já passou por uma crise que mudou o rumo de uma missão ou prolongou uma 
 
 ---
 
-Fonte: https://paulosanches.github.io/hello/pt/field-notes/when-our-senior-developer-resigned/
+Fonte: https://paulosanches.github.io/hello/pt/field-notes/when-our-senior-developer-resigned/agent/
+
+Markdown: https://paulosanches.github.io/hello/pt/field-notes/when-our-senior-developer-resigned/story.md
 
 MENTORIA & CRESCIMENTO
 
