@@ -4,6 +4,14 @@
 
 The website is available in English (EN), Italian (ITA) and Brazilian Portuguese (PT), with English as the default. Mindset cards preserve Paulo’s original Portuguese and English quotes, with explanations in the selected language. Official credential names remain in English. The HTML pages are the primary sources; this file is a concise guide to their public content.
 
+## Complete AI/Agent content
+
+- [Complete portfolio in English (Markdown)](https://paulosanches.github.io/hello/portfolio.md)
+- [Portfólio completo em português do Brasil (Markdown)](https://paulosanches.github.io/hello/pt/portfolio.md)
+- [Portfolio completo in italiano (Markdown)](https://paulosanches.github.io/hello/it/portfolio.md)
+
+These files include every portfolio section and the full text of all Field Notes. They are generated from the HTML and synchronized when the website changes. Use them for complete content; this file provides a concise discovery guide.
+
 ## Language versions
 
 - [English portfolio](https://paulosanches.github.io/hello/)

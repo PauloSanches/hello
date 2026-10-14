@@ -13,6 +13,7 @@ import re
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from zoneinfo import ZoneInfo
+from agent_content import build as build_agent_content
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://paulosanches.github.io/hello/"
@@ -25,7 +26,7 @@ MONTHS = {
 }
 EN_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 PRESERVE = {
-    "Paulo Sanches", "English", "Italiano", "Português do Brasil", "EN", "ITA", "PT",
+    "Paulo Sanches", "English", "Italiano", "Português do Brasil", "EN", "ITA", "PT", "AI/Agent",
     "AWS", "GCP / Terraform", "Microsoft Entra ID", "Portugal", "Braga, Portugal",
     "Accenture · Coimbra, Portugal", "JNation", "FlashCamp", "Cubo", "for Devs.",
     "Cubo Itaú · Masterclass #2", "MASTERCLASS / 02", "Mindset", "LinkedIn",
@@ -91,6 +92,10 @@ class Localize(HTMLParser):
                         value = translate(value, self.locale)
                 elif tag == "link" and attrs.get("rel") == "canonical" and name == "href":
                     value = self.url
+                elif name == "href" and original == BASE + "portfolio.md":
+                    value = BASE + self.locale + "/portfolio.md"
+                elif name == "href" and original == BASE + "agent/":
+                    value = BASE + self.locale + "/agent/"
                 if name in {"src", "href"} and re.match(r"^(?:\.\./)*assets/", value):
                     value = "../" + value
                 return name + "=" + quote + html.escape(value, quote=True) + quote
@@ -212,6 +217,7 @@ def main():
                 ET.SubElement(entry, f"{{{alternate}}}link", rel="alternate", hreflang=language, href=variant)
     ET.indent(sitemap, space="  ")
     (ROOT / "sitemap.xml").write_bytes(ET.tostring(sitemap, encoding="UTF-8", xml_declaration=True) + b"\n")
+    build_agent_content(ROOT)
     print(f"Built {len(generated)} localized pages; shared CSS {versions['css']}, JS {versions['js']}.")
 
 

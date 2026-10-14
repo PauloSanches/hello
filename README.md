@@ -14,6 +14,20 @@ Open http://127.0.0.1:8000/. No build step or runtime dependencies are required.
 
 In **Settings → Pages**, choose **Deploy from a branch**, branch **main**, folder **/ (root)**. Pushing to `main` triggers GitHub’s **pages build and deployment** workflow. The `.nojekyll` file enables direct static publishing; relative asset URLs support the `/hello/` project path.
 
+## AI/Agent mode
+
+The **AI/Agent** link beside the language controls opens a static text view of the complete portfolio in the selected language, with a link to its Markdown file: `portfolio.md`, `pt/portfolio.md` or `it/portfolio.md`. Each file contains all homepage sections, every experience contribution, certification descriptions and dates, mindset cards, and the full text of every Field Note with its cover and conversation CTA. URLs are absolute. Navigation, carousel controls and decorative icons are omitted. Both the link and the text view work without JavaScript; every HTML page also advertises the Markdown alternative, and `llms.txt` links to all three files. The text views under `agent/` are generated from those exact Markdown contents.
+
+HTML and `locales/translations.json` remain the editing sources. Do not edit the generated Markdown directly. Running the existing locale build also refreshes all Markdown files:
+
+```sh
+python3 scripts/build-locales.py
+python3 scripts/agent_content.py --check
+python3 -m unittest discover -s tests -v
+```
+
+The `Sync AI and Agent content` workflow runs after content changes on `main`, regenerates localized pages and Markdown, tests completeness and commits generated differences. It explicitly requests the existing branch-based Pages build after an automated commit, because a `GITHUB_TOKEN` commit does not trigger that deployment itself. Workflow concurrency and ordinary non-forced pushes avoid overwriting concurrent edits. Manual runs are available through `workflow_dispatch`. Future stories are discovered automatically rather than maintained in a fixed export list. The generator is deterministic, uses Python’s standard library and adds no runtime service.
+
 ## Design and accessibility
 
 The layout uses a white and black palette, large sans-serif opening text, serif section headings, monospaced labels and fine rules. Its visual direction follows [Lucas Montano's website](https://lucasmontano.com/). System font stacks require no font downloads. The page opens directly with a full-width dark banner occupying 56% of the viewport height. Paulo's colourised portrait appears against a dark charcoal-grey (#262626) background and shifts to the right, with his chosen game-day statement on the left. The image fills the banner height. A continuous linear mask fades from transparent at the photo's left edge to opaque at its right edge, proportional to the photo's own width; the mask uses both standard and WebKit properties. A subtle grid shares the portrait mask. The decorative ruler starts below the banner and becomes the project timeline. It is 20px wide on desktop and 12px on mobile. Flexible grid tracks and text wrapping keep headings and navigation inside the viewport; project rows stack into one column at 600px and below. A shared viewport-height variable keeps the banner and ruler aligned, with small viewport units enabled only when supported. On mobile, the statement sits at the lower left. Short viewports use smaller type and vertical spacing to keep the statement inside the banner.

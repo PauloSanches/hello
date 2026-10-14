@@ -1,0 +1,61 @@
+name: Sync AI and Agent content
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.html'
+      - 'locales/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'assets/style.css'
+      - 'assets/app.js'
+      - 'portfolio.md'
+      - 'pt/portfolio.md'
+      - 'it/portfolio.md'
+      - '.github/workflows/sync-agent-content.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: agent-content-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate localized pages and complete Markdown
+        run: python3 scripts/build-locales.py
+      - name: Verify content export
+        run: |
+          python3 -m unittest discover -s tests -v
+          python3 scripts/agent_content.py --check
+      - name: Commit generated updates
+        id: sync
+        run: |
+          git add -- portfolio.md agent pt/portfolio.md it/portfolio.md index.html field-notes pt it sitemap.xml
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Sync localized portfolio and AI/Agent Markdown'
+          git push origin HEAD:main
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+      # Commits made with GITHUB_TOKEN do not trigger a Pages build by
+      # themselves. Explicitly request the existing branch-based deployment.
+      - name: Publish synchronized content on GitHub Pages
+        if: steps.sync.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"
