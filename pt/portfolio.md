@@ -1,6 +1,5 @@
 # Paulo Sanches
 
-
 Portfólio público completo, incluindo o texto integral de cada história. Gerado a partir das páginas publicadas e sincronizado com as atualizações do site.
 
 Language: pt-BR
