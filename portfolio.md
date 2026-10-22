@@ -107,7 +107,25 @@ Hands-on engineering, team leadership and architecture across digital products, 
 
 Selected projects, with some engagements running in parallel.
 
-03 / FIELD NOTES
+03 / PORTFOLIO
+
+## Portfolio/Side Quests
+
+Personal projects and experiments, from idea to working software.
+
+![Screenshot of Jogo da Vida - Magnólia, showing the illustrated board at its final space.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
+
+### Jogo da Vida - Magnólia
+
+A browser-based narrative game with 12 spaces, illustrated characters and 10 questions along the way. Built with Hermes Agent and Codex, with human oversight.
+
+- [Open the game](https://paulosanches.github.io/magnolia-jogo-da-vida/)
+- [Behind the scenes](https://paulosanches.github.io/magnolia-jogo-da-vida/backstage/)
+- [Code on GitHub](https://github.com/PauloSanches/magnolia-jogo-da-vida)
+
+Game and backstage in Portuguese.
+
+04 / FIELD NOTES
 
 ## There’s a story behind the work.
 
@@ -169,7 +187,7 @@ I was the most junior developer on our Flash team. After two years learning from
 
 Source: https://paulosanches.github.io/hello/field-notes/when-our-senior-developer-resigned/agent/
 
-04 / MINDSET
+05 / MINDSET
 
 ## My philosophy.
 
@@ -235,7 +253,7 @@ I prefer to deliver something people can try, get feedback early and improve it.
 
 I once heard a leader say: “The longer you take to deliver, the higher the expectations.”
 
-05 / CONTRIBUTIONS
+06 / CONTRIBUTIONS
 
 ## Talks, events & contributions.
 
@@ -281,7 +299,7 @@ Community event
 
 Representing Ogilvy at FlashCamp 2010, Brazil’s largest Adobe community event.
 
-06 / CERTIFICATIONS
+07 / CERTIFICATIONS
 
 ## Certifications.
 
@@ -503,7 +521,7 @@ Issued Jul 2023
 
 Expiry: Aug 2024
 
-07 / KEEP THE CONVERSATION GOING
+08 / KEEP THE CONVERSATION GOING
 
 ## Wow, you made it *this far!*
 

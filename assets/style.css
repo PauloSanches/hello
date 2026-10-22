@@ -1267,7 +1267,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 
   .explore-nav { padding-block: 12px; }
   .explore-kicker { display: none; }
-  .explore-links { grid-template-columns: repeat(5, minmax(0, 1fr)); margin-top: 0; border: 0; }
+  .explore-links { grid-template-columns: repeat(6, minmax(0, 1fr)); margin-top: 0; border: 0; }
   .explore-links li:nth-child(n) { grid-column: auto; border: 0; }
   .explore-links li:last-child:nth-child(odd) { grid-column: auto; }
   .explore-links li:nth-child(n + 2) { border-inline-start: 1px solid #555; }
@@ -1767,4 +1767,29 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   background: #283222;
   color: #f2eee1;
   box-shadow: 0 4px 20px #28322226;
+}
+
+/* Side quests extend the existing portfolio, without changing other sections. */
+.side-quests-section .section-index { font-size: 11px; }
+.side-quests-section .section-heading h2 { letter-spacing: -.035em; }
+.side-quest { display: grid; gap: clamp(28px, 4vw, 64px); align-items: center; }
+.side-quest > * { min-width: 0; }
+.side-quest-visual { margin: 0; }
+.side-quest-visual img { display: block; width: 100%; height: auto; border: 1px solid var(--quiet-line); }
+.side-quest-content h3 { max-width: 22ch; font-family: var(--serif); font-size: clamp(32px, 3.1vw, 48px); font-weight: 400; line-height: 1.08; letter-spacing: -.025em; }
+.side-quest-content > p { max-width: 52ch; margin-top: 20px; font-size: 18px; line-height: 1.6; color: var(--muted); }
+.side-quest-actions { display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 0; margin: 24px 0 0; list-style: none; }
+.side-quest-actions a { position: relative; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding-block: 8px; font-size: 16px; font-weight: 600; text-decoration: underline; }
+.side-quest-actions a:hover { text-decoration-thickness: 2px; }
+.side-quest-actions svg { flex: 0 0 18px; width: 18px; height: 18px; }
+.side-quest-content > .side-quest-language { margin-top: 16px; font-size: 14px; }
+@media (min-width: 900px) {
+  .side-quest { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .explore-links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .explore-links li:nth-child(4) { border-left: 0; }
+}
+@media (max-width: 600px) {
+  .side-quest-actions { display: grid; justify-items: start; gap: 4px; }
 }

@@ -1886,5 +1886,61 @@
   "Read this story in Markdown": {
     "pt": "Ler esta história em Markdown",
     "it": "Leggi questa storia in Markdown"
+  },
+  "Portfolio/Side Quests": {
+    "pt": "Portfolio/Side Quests",
+    "it": "Portfolio/Side Quests"
+  },
+  "03 / PORTFOLIO": {
+    "pt": "03 / PORTFÓLIO",
+    "it": "03 / PORTFOLIO"
+  },
+  "Personal projects and experiments, from idea to working software.": {
+    "pt": "Projetos pessoais e experimentos, da ideia à aplicação.",
+    "it": "Progetti personali ed esperimenti, dall’idea al software funzionante."
+  },
+  "A browser-based narrative game with 12 spaces, illustrated characters and 10 questions along the way. Built with Hermes Agent and Codex, with human oversight.": {
+    "pt": "Um jogo narrativo para navegador, com 12 casas, personagens ilustrados e 10 perguntas ao longo do percurso. Desenvolvido com Hermes Agent e Codex, com supervisão humana.",
+    "it": "Un gioco narrativo per browser con 12 caselle, personaggi illustrati e 10 domande lungo il percorso. Sviluppato con Hermes Agent e Codex, con supervisione umana."
+  },
+  "Screenshot of Jogo da Vida - Magnólia, showing the illustrated board at its final space.": {
+    "pt": "Captura de tela do Jogo da Vida - Magnólia, mostrando o tabuleiro ilustrado na casa final.",
+    "it": "Schermata di Jogo da Vida - Magnólia, con il tabellone illustrato nella casella finale."
+  },
+  "Open the game": {
+    "pt": "Abrir jogo",
+    "it": "Apri il gioco"
+  },
+  "Behind the scenes": {
+    "pt": "Ver bastidores",
+    "it": "Dietro le quinte"
+  },
+  "Code on GitHub": {
+    "pt": "Código no GitHub",
+    "it": "Codice su GitHub"
+  },
+  "Game and backstage in Portuguese.": {
+    "pt": "Jogo e bastidores em português.",
+    "it": "Gioco e retroscena in portoghese."
+  },
+  "08 / KEEP THE CONVERSATION GOING": {
+    "pt": "08 / VAMOS CONTINUAR A CONVERSA",
+    "it": "08 / CONTINUIAMO LA CONVERSAZIONE"
+  },
+  "07 / CERTIFICATIONS": {
+    "pt": "07 / CERTIFICAÇÕES",
+    "it": "07 / CERTIFICAZIONI"
+  },
+  "06 / CONTRIBUTIONS": {
+    "pt": "06 / CONTRIBUIÇÕES",
+    "it": "06 / CONTRIBUTI"
+  },
+  "05 / MINDSET": {
+    "pt": "05 / MINDSET",
+    "it": "05 / MINDSET"
+  },
+  "04 / FIELD NOTES": {
+    "pt": "04 / VIVÊNCIAS",
+    "it": "04 / APPUNTI"
   }
 }

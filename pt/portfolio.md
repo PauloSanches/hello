@@ -107,7 +107,25 @@ Engenharia prática, liderança de equipes e arquitetura em produtos digitais, i
 
 Projetos selecionados, com algumas atuações em paralelo.
 
-03 / VIVÊNCIAS
+03 / PORTFÓLIO
+
+## Portfolio/Side Quests
+
+Projetos pessoais e experimentos, da ideia à aplicação.
+
+![Captura de tela do Jogo da Vida - Magnólia, mostrando o tabuleiro ilustrado na casa final.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
+
+### Jogo da Vida - Magnólia
+
+Um jogo narrativo para navegador, com 12 casas, personagens ilustrados e 10 perguntas ao longo do percurso. Desenvolvido com Hermes Agent e Codex, com supervisão humana.
+
+- [Abrir jogo](https://paulosanches.github.io/magnolia-jogo-da-vida/)
+- [Ver bastidores](https://paulosanches.github.io/magnolia-jogo-da-vida/backstage/)
+- [Código no GitHub](https://github.com/PauloSanches/magnolia-jogo-da-vida)
+
+Jogo e bastidores em português.
+
+04 / VIVÊNCIAS
 
 ## Há uma história por trás do trabalho.
 
@@ -169,7 +187,7 @@ Eu era o mais júnior da equipe de Flash. Depois de dois anos aprendendo com o n
 
 Fonte: https://paulosanches.github.io/hello/pt/field-notes/when-our-senior-developer-resigned/agent/
 
-04 / MINDSET
+05 / MINDSET
 
 ## Minha filosofia.
 
@@ -235,7 +253,7 @@ Prefiro entregar algo que as pessoas possam testar, receber feedback rápido e m
 
 Uma vez ouvi um líder dizer: “Quanto mais tempo você leva para entregar alguma coisa, maiores são as expectativas.”
 
-05 / CONTRIBUIÇÕES
+06 / CONTRIBUIÇÕES
 
 ## Palestras, eventos e contribuições.
 
@@ -281,7 +299,7 @@ Evento da comunidade
 
 Representando a Ogilvy no FlashCamp 2010, o maior evento da comunidade Adobe no Brasil.
 
-06 / CERTIFICAÇÕES
+07 / CERTIFICAÇÕES
 
 ## Certificações.
 
@@ -503,7 +521,7 @@ Emitida em jul 2023
 
 Validade: ago 2024
 
-07 / VAMOS CONTINUAR A CONVERSA
+08 / VAMOS CONTINUAR A CONVERSA
 
 ## Uau, você chegou *até aqui!*
 
