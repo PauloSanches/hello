@@ -2026,5 +2026,65 @@
   "04 / FIELD NOTES": {
     "pt": "04 / VIVÊNCIAS",
     "it": "04 / APPUNTI"
+  },
+  "Runtime architecture": {
+    "pt": "Arquitetura em execução",
+    "it": "Architettura in esecuzione"
+  },
+  "HTML, CSS and SVG define the interface and illustrated board. JavaScript manages the active space, story/question state and transitions in the browser. GitHub Pages serves the static application; the game requires no application backend or database.": {
+    "pt": "HTML, CSS e SVG definem a interface e o tabuleiro ilustrado. O JavaScript gerencia a casa ativa, o estado da história e da pergunta e as transições no navegador. O GitHub Pages hospeda a aplicação estática; o jogo não exige um backend de aplicação nem um banco de dados.",
+    "it": "HTML, CSS e SVG definiscono l’interfaccia e il tabellone illustrato. JavaScript gestisce la casella attiva, lo stato della storia e della domanda e le transizioni nel browser. GitHub Pages ospita l’applicazione statica; il gioco non richiede un backend applicativo né un database."
+  },
+  "Playback and navigation": {
+    "pt": "Reprodução e navegação",
+    "it": "Riproduzione e navigazione"
+  },
+  "A dedicated playback controller manages the current job, timer and typing, waiting and paused states. It uses a 24 ms timer step and a 3,000 ms reading delay before presenting a question. Automatic presentation waits while text is selected, the reading panel has keyboard focus or unread content remains below the scroll position.": {
+    "pt": "Um controlador dedicado gerencia a tarefa de reprodução atual, o temporizador e os estados de escrita, espera e pausa. Ele usa um intervalo de 24 ms e uma espera de leitura de 3.000 ms antes de apresentar uma pergunta. A apresentação automática aguarda enquanto há texto selecionado, o painel de leitura está com foco de teclado ou ainda há conteúdo não lido abaixo da posição de rolagem.",
+    "it": "Un controller dedicato gestisce il job di riproduzione corrente, il timer e gli stati di scrittura, attesa e pausa. Utilizza un intervallo di 24 ms e un’attesa di lettura di 3.000 ms prima di presentare una domanda. La presentazione automatica attende mentre è selezionato del testo, il pannello di lettura ha il focus da tastiera o rimane contenuto non letto sotto la posizione di scorrimento."
+  },
+  "Navigation cancels pending playback work, while busy-state guards prevent overlapping transitions. Pausing or hiding the tab suspends scheduling. Moving between board spaces remains manual.": {
+    "pt": "A navegação cancela tarefas de reprodução pendentes, enquanto verificações do estado de transição impedem movimentos sobrepostos. Pausar ou ocultar a aba suspende o agendamento. O avanço entre as casas do tabuleiro continua manual.",
+    "it": "La navigazione annulla le operazioni di riproduzione in sospeso, mentre i controlli sullo stato di transizione impediscono movimenti sovrapposti. La pausa o il passaggio della scheda in secondo piano sospendono la pianificazione. Il passaggio tra le caselle del tabellone rimane manuale."
+  },
+  "Reading layout and accessibility": {
+    "pt": "Layout de leitura e acessibilidade",
+    "it": "Layout di lettura e accessibilità"
+  },
+  "The full text reserves its layout space before the typing effect begins, rather than resizing the bubble with each character. A separate visual layer handles the reveal while the complete text remains available to assistive technology.": {
+    "pt": "O texto completo reserva seu espaço no layout antes do início do efeito de escrita, em vez de redimensionar o balão a cada caractere. Uma camada visual separada controla a revelação, enquanto o texto completo permanece disponível para tecnologias assistivas.",
+    "it": "Il testo completo riserva il proprio spazio nel layout prima dell’inizio dell’effetto di scrittura, invece di ridimensionare il fumetto a ogni carattere. Un livello visivo separato gestisce la rivelazione, mentre il testo completo rimane disponibile alle tecnologie assistive."
+  },
+  "The interface supports keyboard navigation and prefers-reduced-motion. Story and question remain visible together.": {
+    "pt": "A interface oferece navegação por teclado e suporte a prefers-reduced-motion. A história e a pergunta permanecem visíveis juntas.",
+    "it": "L’interfaccia supporta la navigazione da tastiera e prefers-reduced-motion. La storia e la domanda rimangono visibili insieme."
+  },
+  "Content and versioning": {
+    "pt": "Conteúdo e versionamento",
+    "it": "Contenuti e versionamento"
+  },
+  "Google Sheets supported collaborative editing during preparation. After editorial approval, that dependency was removed and the final content was published alongside the code. This keeps the narrative tied to a release, at the cost of requiring a new deployment for content changes.": {
+    "pt": "O Google Sheets apoiou a edição colaborativa durante a preparação. Após a aprovação editorial, essa dependência foi removida e o conteúdo final foi publicado junto com o código. Isso mantém a narrativa vinculada a uma versão, mas exige uma nova publicação para alterações de conteúdo.",
+    "it": "Google Sheets ha supportato la modifica collaborativa durante la preparazione. Dopo l’approvazione editoriale, questa dipendenza è stata rimossa e i contenuti definitivi sono stati pubblicati insieme al codice. La narrazione resta così legata a una versione, ma ogni modifica ai contenuti richiede una nuova pubblicazione."
+  },
+  "Testing and releases": {
+    "pt": "Testes e publicações",
+    "it": "Test e pubblicazioni"
+  },
+  "Automated checks cover content, navigation, images and layout, complemented by browser verification at different viewport sizes.": {
+    "pt": "Verificações automatizadas cobrem conteúdo, navegação, imagens e layout, complementadas por validação no navegador em diferentes tamanhos de tela.",
+    "it": "I controlli automatizzati coprono contenuti, navigazione, immagini e layout, integrati da verifiche nel browser a diverse dimensioni dello schermo."
+  },
+  "A release script writes the same UTC timestamp into the page and version.json, and adds SHA-256-derived version parameters to JavaScript and CSS URLs. Its check mode verifies timestamp consistency; it does not recalculate asset hashes. Published files and browser behavior are checked separately to confirm the delivered revision.": {
+    "pt": "Um script de publicação grava o mesmo timestamp UTC na página e em version.json, e adiciona parâmetros de versão derivados de SHA-256 às URLs de JavaScript e CSS. Seu modo de verificação confere a consistência dos timestamps; ele não recalcula os hashes dos arquivos. Os arquivos publicados e o comportamento no navegador são verificados separadamente para confirmar a versão entregue.",
+    "it": "Uno script di pubblicazione scrive lo stesso timestamp UTC nella pagina e in version.json e aggiunge parametri di versione derivati da SHA-256 agli URL di JavaScript e CSS. La modalità di verifica controlla la coerenza dei timestamp; non ricalcola gli hash dei file. I file pubblicati e il comportamento nel browser vengono verificati separatamente per confermare la versione distribuita."
+  },
+  "Development tooling": {
+    "pt": "Ferramentas de desenvolvimento",
+    "it": "Strumenti di sviluppo"
+  },
+  "Hermes Agent and Codex supported implementation and testing on a MacBook Air M1, with requests and reviews through Telegram. ChatGPT generated character illustrations from supplied photographs; Hermes prepared and integrated the assets. Reusable skills guided design, testing, debugging and review. These tools belong to the development workflow, not the game's runtime.": {
+    "pt": "Hermes Agent e Codex apoiaram a implementação e os testes em um MacBook Air M1, com solicitações e revisões pelo Telegram. O ChatGPT gerou as ilustrações dos personagens a partir de fotografias fornecidas; o Hermes preparou e integrou os arquivos. Skills reutilizáveis orientaram design, testes, depuração e revisão. Essas ferramentas pertencem ao fluxo de desenvolvimento, não à execução do jogo.",
+    "it": "Hermes Agent e Codex hanno supportato l’implementazione e i test su un MacBook Air M1, con richieste e revisioni tramite Telegram. ChatGPT ha generato le illustrazioni dei personaggi a partire dalle fotografie fornite; Hermes ha preparato e integrato i file. Skill riutilizzabili hanno guidato design, test, debug e revisione. Questi strumenti appartengono al flusso di sviluppo, non all’esecuzione del gioco."
   }
 }

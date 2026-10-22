@@ -557,9 +557,35 @@ Os jogadores podem avançar, voltar a uma casa anterior, pausar a revelação do
 
 ### Projeto técnico
 
-A aplicação usa HTML, CSS, JavaScript e SVG, com navegação e reprodução controladas no navegador. O conteúdo é distribuído com a aplicação em arquivos estáticos. O GitHub Pages hospeda o site; o jogo não requer backend de aplicação nem banco de dados.
+#### Arquitetura em execução
 
-A navegação cancela as tarefas de reprodução pendentes antes de mudar de casa. Controles de teclado e suporte a movimento reduzido oferecem alternativas à interação com o ponteiro e ao texto animado.
+HTML, CSS e SVG definem a interface e o tabuleiro ilustrado. O JavaScript gerencia a casa ativa, o estado da história e da pergunta e as transições no navegador. O GitHub Pages hospeda a aplicação estática; o jogo não exige um backend de aplicação nem um banco de dados.
+
+#### Reprodução e navegação
+
+Um controlador dedicado gerencia a tarefa de reprodução atual, o temporizador e os estados de escrita, espera e pausa. Ele usa um intervalo de 24 ms e uma espera de leitura de 3.000 ms antes de apresentar uma pergunta. A apresentação automática aguarda enquanto há texto selecionado, o painel de leitura está com foco de teclado ou ainda há conteúdo não lido abaixo da posição de rolagem.
+
+A navegação cancela tarefas de reprodução pendentes, enquanto verificações do estado de transição impedem movimentos sobrepostos. Pausar ou ocultar a aba suspende o agendamento. O avanço entre as casas do tabuleiro continua manual.
+
+#### Layout de leitura e acessibilidade
+
+O texto completo reserva seu espaço no layout antes do início do efeito de escrita, em vez de redimensionar o balão a cada caractere. Uma camada visual separada controla a revelação, enquanto o texto completo permanece disponível para tecnologias assistivas.
+
+A interface oferece navegação por teclado e suporte a prefers-reduced-motion. A história e a pergunta permanecem visíveis juntas.
+
+#### Conteúdo e versionamento
+
+O Google Sheets apoiou a edição colaborativa durante a preparação. Após a aprovação editorial, essa dependência foi removida e o conteúdo final foi publicado junto com o código. Isso mantém a narrativa vinculada a uma versão, mas exige uma nova publicação para alterações de conteúdo.
+
+#### Testes e publicações
+
+Verificações automatizadas cobrem conteúdo, navegação, imagens e layout, complementadas por validação no navegador em diferentes tamanhos de tela.
+
+Um script de publicação grava o mesmo timestamp UTC na página e em version.json, e adiciona parâmetros de versão derivados de SHA-256 às URLs de JavaScript e CSS. Seu modo de verificação confere a consistência dos timestamps; ele não recalcula os hashes dos arquivos. Os arquivos publicados e o comportamento no navegador são verificados separadamente para confirmar a versão entregue.
+
+#### Ferramentas de desenvolvimento
+
+Hermes Agent e Codex apoiaram a implementação e os testes em um MacBook Air M1, com solicitações e revisões pelo Telegram. O ChatGPT gerou as ilustrações dos personagens a partir de fotografias fornecidas; o Hermes preparou e integrou os arquivos. Skills reutilizáveis orientaram design, testes, depuração e revisão. Essas ferramentas pertencem ao fluxo de desenvolvimento, não à execução do jogo.
 
 ### Explore o projeto
 

@@ -557,9 +557,35 @@ I giocatori possono avanzare, tornare a una casella precedente, mettere in pausa
 
 ### Progettazione tecnica
 
-L’applicazione usa HTML, CSS, JavaScript e SVG, con navigazione e riproduzione gestite nel browser. Il contenuto è distribuito con l’applicazione sotto forma di file statici. GitHub Pages ospita il sito; il gioco non richiede un backend applicativo né un database.
+#### Architettura in esecuzione
 
-La navigazione annulla le attività di riproduzione in sospeso prima di cambiare casella. I comandi da tastiera e il supporto alla riduzione del movimento offrono alternative all’interazione con il puntatore e al testo animato.
+HTML, CSS e SVG definiscono l’interfaccia e il tabellone illustrato. JavaScript gestisce la casella attiva, lo stato della storia e della domanda e le transizioni nel browser. GitHub Pages ospita l’applicazione statica; il gioco non richiede un backend applicativo né un database.
+
+#### Riproduzione e navigazione
+
+Un controller dedicato gestisce il job di riproduzione corrente, il timer e gli stati di scrittura, attesa e pausa. Utilizza un intervallo di 24 ms e un’attesa di lettura di 3.000 ms prima di presentare una domanda. La presentazione automatica attende mentre è selezionato del testo, il pannello di lettura ha il focus da tastiera o rimane contenuto non letto sotto la posizione di scorrimento.
+
+La navigazione annulla le operazioni di riproduzione in sospeso, mentre i controlli sullo stato di transizione impediscono movimenti sovrapposti. La pausa o il passaggio della scheda in secondo piano sospendono la pianificazione. Il passaggio tra le caselle del tabellone rimane manuale.
+
+#### Layout di lettura e accessibilità
+
+Il testo completo riserva il proprio spazio nel layout prima dell’inizio dell’effetto di scrittura, invece di ridimensionare il fumetto a ogni carattere. Un livello visivo separato gestisce la rivelazione, mentre il testo completo rimane disponibile alle tecnologie assistive.
+
+L’interfaccia supporta la navigazione da tastiera e prefers-reduced-motion. La storia e la domanda rimangono visibili insieme.
+
+#### Contenuti e versionamento
+
+Google Sheets ha supportato la modifica collaborativa durante la preparazione. Dopo l’approvazione editoriale, questa dipendenza è stata rimossa e i contenuti definitivi sono stati pubblicati insieme al codice. La narrazione resta così legata a una versione, ma ogni modifica ai contenuti richiede una nuova pubblicazione.
+
+#### Test e pubblicazioni
+
+I controlli automatizzati coprono contenuti, navigazione, immagini e layout, integrati da verifiche nel browser a diverse dimensioni dello schermo.
+
+Uno script di pubblicazione scrive lo stesso timestamp UTC nella pagina e in version.json e aggiunge parametri di versione derivati da SHA-256 agli URL di JavaScript e CSS. La modalità di verifica controlla la coerenza dei timestamp; non ricalcola gli hash dei file. I file pubblicati e il comportamento nel browser vengono verificati separatamente per confermare la versione distribuita.
+
+#### Strumenti di sviluppo
+
+Hermes Agent e Codex hanno supportato l’implementazione e i test su un MacBook Air M1, con richieste e revisioni tramite Telegram. ChatGPT ha generato le illustrazioni dei personaggi a partire dalle fotografie fornite; Hermes ha preparato e integrato i file. Skill riutilizzabili hanno guidato design, test, debug e revisione. Questi strumenti appartengono al flusso di sviluppo, non all’esecuzione del gioco.
 
 ### Esplora il progetto
 

@@ -20,8 +20,15 @@ PARAGRAPHS = [
     "Jogo da Vida - Magnólia brings together 12 illustrated spaces, character stories and 10 reflection prompts in a browser-based game for desktop and mobile. Players control the pace. There is no scoring or answer form; the questions are intended for discussion outside the application.",
     "Each space connects a position on the board to a story. The text appears progressively, followed by a question that keeps the story visible for reference.",
     "Players can move forward, return to an earlier space, pause the text reveal or restart the game. Moving to the next space is always a manual choice.",
-    "The application uses HTML, CSS, JavaScript and SVG, with navigation and playback handled in the browser. Content ships with the application as static files. GitHub Pages hosts the site; the game requires no application backend or database.",
-    "Navigation cancels pending playback work before changing spaces. Keyboard controls and reduced-motion support provide alternatives to pointer interaction and animated text.",
+    "HTML, CSS and SVG define the interface and illustrated board. JavaScript manages the active space, story/question state and transitions in the browser. GitHub Pages serves the static application; the game requires no application backend or database.",
+    "A dedicated playback controller manages the current job, timer and typing, waiting and paused states. It uses a 24 ms timer step and a 3,000 ms reading delay before presenting a question. Automatic presentation waits while text is selected, the reading panel has keyboard focus or unread content remains below the scroll position.",
+    "Navigation cancels pending playback work, while busy-state guards prevent overlapping transitions. Pausing or hiding the tab suspends scheduling. Moving between board spaces remains manual.",
+    "The full text reserves its layout space before the typing effect begins, rather than resizing the bubble with each character. A separate visual layer handles the reveal while the complete text remains available to assistive technology.",
+    "The interface supports keyboard navigation and prefers-reduced-motion. Story and question remain visible together.",
+    "Google Sheets supported collaborative editing during preparation. After editorial approval, that dependency was removed and the final content was published alongside the code. This keeps the narrative tied to a release, at the cost of requiring a new deployment for content changes.",
+    "Automated checks cover content, navigation, images and layout, complemented by browser verification at different viewport sizes.",
+    "A release script writes the same UTC timestamp into the page and version.json, and adds SHA-256-derived version parameters to JavaScript and CSS URLs. Its check mode verifies timestamp consistency; it does not recalculate asset hashes. Published files and browser behavior are checked separately to confirm the delivered revision.",
+    "Hermes Agent and Codex supported implementation and testing on a MacBook Air M1, with requests and reviews through Telegram. ChatGPT generated character illustrations from supplied photographs; Hermes prepared and integrated the assets. Reusable skills guided design, testing, debugging and review. These tools belong to the development workflow, not the game's runtime."
 ]
 ALT = "Screenshot of Jogo da Vida - Magnólia, showing the illustrated board at its final space."
 CAPTION = "The illustrated board at the end of the game."
@@ -50,7 +57,7 @@ class PortfolioCaseTests(unittest.TestCase):
         text = normalise(plain(main))
         for value in [LEAD, "Portfolio / Side Quests", CAPTION, "View full-size screenshot", "Game and backstage in Portuguese."]:
             self.assertIn(value, text)
-        self.assertNotRegex(text, r"Field Notes|Hermes|Codex|Continue the conversation|weekend|commits")
+        self.assertNotRegex(text, r"Field Notes|Continue the conversation|weekend|commits")
         image = next(main.descendants("img"))
         self.assertEqual(image.attrs["alt"], ALT)
         self.assertEqual((image.attrs["width"], image.attrs["height"]), ("1440", "1000"))
@@ -145,7 +152,7 @@ class PortfolioCaseTests(unittest.TestCase):
                 self.assertEqual(output.count("# " + TITLE + "\n"), 1)
                 self.assertIn("](" + BASE + prefix + "agent/)", output)
                 self.assertNotIn("story.md", output)
-                self.assertNotRegex(output, r"Field Notes|Hermes|Codex|mailto:|tel:|<script|/Users/")
+                self.assertNotRegex(output, r"Field Notes|mailto:|tel:|<script|/Users/")
                 for destination in DESTINATIONS.values():
                     self.assertIn(destination, output)
                     self.assertEqual(agent_url(destination), destination)
@@ -164,6 +171,18 @@ class PortfolioCaseTests(unittest.TestCase):
                     self.assertEqual(agent_url(url + suffix), url + "agent/" + expected_suffix)
                 self.assertEqual(agent_url(url + "case.md"), url + "case.md")
                 self.assertEqual(agent_url(BASE + "assets/side-quest-magnolia.png"), BASE + "assets/side-quest-magnolia.png")
+
+    def test_technical_details_have_ordered_subsections(self):
+        translations = json.loads((ROOT / "locales/translations.json").read_text())
+        headings = ['Runtime architecture', 'Playback and navigation', 'Reading layout and accessibility', 'Content and versioning', 'Testing and releases', 'Development tooling']
+        for prefix in ["", "pt/", "it/"]:
+            with self.subTest(locale=prefix or "en"):
+                doc = Document((ROOT / prefix / CASE / "index.html").read_text()).root
+                actual = [normalise(plain(n)) for n in doc.descendants("h3")]
+                expected = [translations[h][prefix.rstrip("/")] for h in headings] if prefix else headings
+                self.assertEqual(actual, expected)
+        self.assertNotRegex(" ".join(PARAGRAPHS[:3]), r"Hermes|Codex")
+        self.assertIn("not the game's runtime", PARAGRAPHS[-1])
 
     def test_home_card_is_concise_and_opens_local_case_in_same_tab(self):
         summaries = {
