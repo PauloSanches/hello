@@ -1919,6 +1919,90 @@
     "pt": "Código no GitHub",
     "it": "Codice su GitHub"
   },
+  "Jogo da Vida - Magnólia": {
+    "pt": "Jogo da Vida - Magnólia",
+    "it": "Jogo da Vida - Magnólia"
+  },
+  "Jogo da Vida - Magnólia | Paulo Sanches": {
+    "pt": "Jogo da Vida - Magnólia | Paulo Sanches",
+    "it": "Jogo da Vida - Magnólia | Paulo Sanches"
+  },
+  "Jogo da Vida - Magnólia — Paulo Sanches": {
+    "pt": "Jogo da Vida - Magnólia — Paulo Sanches",
+    "it": "Jogo da Vida - Magnólia — Paulo Sanches"
+  },
+  "An interactive board game built around storytelling and reflection.": {
+    "pt": "Um jogo de tabuleiro interativo baseado em histórias e reflexão.",
+    "it": "Un gioco da tavolo interattivo basato su storie e riflessione."
+  },
+  "Portfolio / Side Quests": {
+    "pt": "Portfolio / Side Quests",
+    "it": "Portfolio / Side Quests"
+  },
+  "The product": {
+    "pt": "O produto",
+    "it": "Il prodotto"
+  },
+  "The experience": {
+    "pt": "A experiência",
+    "it": "L’esperienza"
+  },
+  "Technical design": {
+    "pt": "Projeto técnico",
+    "it": "Progettazione tecnica"
+  },
+  "Explore the project": {
+    "pt": "Explore o projeto",
+    "it": "Esplora il progetto"
+  },
+  "Skip to the case study": {
+    "pt": "Ir para o estudo de caso",
+    "it": "Vai al caso di studio"
+  },
+  "Read this case study in Markdown": {
+    "pt": "Ler este estudo de caso em Markdown",
+    "it": "Leggi questo caso di studio in Markdown"
+  },
+  "Return to portfolio": {
+    "pt": "Voltar ao portfólio",
+    "it": "Torna al portfolio"
+  },
+  "View full-size screenshot": {
+    "pt": "Ver captura de tela em tamanho original",
+    "it": "Visualizza la schermata a dimensione intera"
+  },
+  "The illustrated board at the end of the game.": {
+    "pt": "O tabuleiro ilustrado ao final do jogo.",
+    "it": "Il tabellone illustrato alla fine del gioco."
+  },
+  "Jogo da Vida - Magnólia brings together 12 illustrated spaces, character stories and 10 reflection prompts in a browser-based game for desktop and mobile. Players control the pace. There is no scoring or answer form; the questions are intended for discussion outside the application.": {
+    "pt": "Jogo da Vida - Magnólia reúne 12 casas ilustradas, histórias de personagens e 10 perguntas para reflexão em um jogo de navegador para computador e celular. Os jogadores controlam o ritmo. Não há pontuação nem formulário de respostas; as perguntas são destinadas à discussão fora da aplicação.",
+    "it": "Jogo da Vida - Magnólia riunisce 12 caselle illustrate, storie di personaggi e 10 domande di riflessione in un gioco per browser su computer e dispositivi mobili. I giocatori controllano il ritmo. Non ci sono punteggi né moduli di risposta; le domande sono pensate per essere discusse al di fuori dell’applicazione."
+  },
+  "Each space connects a position on the board to a story. The text appears progressively, followed by a question that keeps the story visible for reference.": {
+    "pt": "Cada casa conecta uma posição no tabuleiro a uma história. O texto aparece progressivamente, seguido por uma pergunta que mantém a história visível para consulta.",
+    "it": "Ogni casella collega una posizione sul tabellone a una storia. Il testo appare progressivamente, seguito da una domanda che lascia la storia visibile come riferimento."
+  },
+  "Players can move forward, return to an earlier space, pause the text reveal or restart the game. Moving to the next space is always a manual choice.": {
+    "pt": "Os jogadores podem avançar, voltar a uma casa anterior, pausar a revelação do texto ou reiniciar o jogo. Avançar para a próxima casa é sempre uma escolha manual.",
+    "it": "I giocatori possono avanzare, tornare a una casella precedente, mettere in pausa la comparsa del testo o ricominciare il gioco. Passare alla casella successiva è sempre una scelta manuale."
+  },
+  "The application uses HTML, CSS, JavaScript and SVG, with navigation and playback handled in the browser. Content ships with the application as static files. GitHub Pages hosts the site; the game requires no application backend or database.": {
+    "pt": "A aplicação usa HTML, CSS, JavaScript e SVG, com navegação e reprodução controladas no navegador. O conteúdo é distribuído com a aplicação em arquivos estáticos. O GitHub Pages hospeda o site; o jogo não requer backend de aplicação nem banco de dados.",
+    "it": "L’applicazione usa HTML, CSS, JavaScript e SVG, con navigazione e riproduzione gestite nel browser. Il contenuto è distribuito con l’applicazione sotto forma di file statici. GitHub Pages ospita il sito; il gioco non richiede un backend applicativo né un database."
+  },
+  "Navigation cancels pending playback work before changing spaces. Keyboard controls and reduced-motion support provide alternatives to pointer interaction and animated text.": {
+    "pt": "A navegação cancela as tarefas de reprodução pendentes antes de mudar de casa. Controles de teclado e suporte a movimento reduzido oferecem alternativas à interação com o ponteiro e ao texto animado.",
+    "it": "La navigazione annulla le attività di riproduzione in sospeso prima di cambiare casella. I comandi da tastiera e il supporto alla riduzione del movimento offrono alternative all’interazione con il puntatore e al testo animato."
+  },
+  "An interactive board game with illustrated stories and reflection prompts, explored at the player's own pace.": {
+    "pt": "Um jogo de tabuleiro interativo com histórias ilustradas e perguntas para reflexão, explorado no ritmo de cada jogador.",
+    "it": "Un gioco da tavolo interattivo con storie illustrate e domande di riflessione, da esplorare al proprio ritmo."
+  },
+  "Read case study": {
+    "pt": "Ler estudo de caso",
+    "it": "Leggi il caso di studio"
+  },
   "Game and backstage in Portuguese.": {
     "pt": "Jogo e bastidores em português.",
     "it": "Gioco e retroscena in portoghese."

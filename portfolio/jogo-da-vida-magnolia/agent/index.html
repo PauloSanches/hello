@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="Case study in Markdown: Jogo da Vida - Magnólia">
+  <title>Jogo da Vida - Magnólia — AI/Agent</title>
+  <link rel="canonical" href="https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/">
+  <link rel="alternate" type="text/markdown" href="https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/case.md" title="AI/Agent">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fafafa; color: #171717; font-family: system-ui, sans-serif; }
+    .wrap { width: min(1440px, calc(100% - 40px)); margin-inline: auto; }
+    header { padding-block: 20px; border-bottom: 1px solid #ccc; }
+    nav { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; }
+    .languages { display: flex; gap: 4px; }
+    a, button { color: inherit; display: inline-flex; align-items: center; min-height: 44px; padding: 8px; text-underline-offset: 4px; }
+    button { border: 0; background: none; font: inherit; text-decoration: underline; cursor: pointer; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #171717; outline-offset: 2px; }
+    [hidden] { display: none !important; }
+    [aria-current="page"] { background: #171717; color: white; }
+    h1 { margin: 0; padding-block: 28px 8px; font-size: clamp(24px, 4vw, 36px); }
+    .file-actions { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 20px; font-size: 14px; }
+    pre { margin: 0 0 40px; padding: clamp(16px, 3vw, 32px); background: white; border: 1px solid #ddd; font: 14px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; tab-size: 2; }
+    pre a { display: inline; min-height: 0; padding: 0; }
+  </style>
+</head>
+<body>
+  <header><nav class="wrap" aria-label="AI/Agent"><a class="agent-home" href="https://paulosanches.github.io/hello/agent/">← Back to portfolio</a><div class="languages"><a href="https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/agent/" lang="en" hreflang="en" aria-current="page">EN</a> <a href="https://paulosanches.github.io/hello/pt/portfolio/jogo-da-vida-magnolia/agent/" lang="pt-BR" hreflang="pt-BR">PT</a> <a href="https://paulosanches.github.io/hello/it/portfolio/jogo-da-vida-magnolia/agent/" lang="it" hreflang="it">ITA</a></div></nav></header>
+  <main class="wrap"><h1>AI/Agent</h1><div class="file-actions"><a class="file-link" href="https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/case.md" type="text/markdown">Open Markdown file ↗</a><button class="back-button" type="button" hidden>← Back</button><a class="back-fallback" href="https://paulosanches.github.io/hello/agent/">← Back</a></div><pre># Jogo da Vida - Magnólia
+
+[Back to portfolio — AI/Agent](<a href="https://paulosanches.github.io/hello/agent/">https://paulosanches.github.io/hello/agent/</a>)
+
+Language: en
+
+Source: <a href="https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/agent/">https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/agent/</a>
+
+[English](<a href="https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/case.md">https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/case.md</a>) · [Português do Brasil](<a href="https://paulosanches.github.io/hello/pt/portfolio/jogo-da-vida-magnolia/case.md">https://paulosanches.github.io/hello/pt/portfolio/jogo-da-vida-magnolia/case.md</a>) · [Italiano](<a href="https://paulosanches.github.io/hello/it/portfolio/jogo-da-vida-magnolia/case.md">https://paulosanches.github.io/hello/it/portfolio/jogo-da-vida-magnolia/case.md</a>)
+
+---
+
+Portfolio / Side Quests
+
+An interactive board game built around storytelling and reflection.
+
+[![Screenshot of Jogo da Vida - Magnólia, showing the illustrated board at its final space.](<a href="https://paulosanches.github.io/hello/assets/side-quest-magnolia.png">https://paulosanches.github.io/hello/assets/side-quest-magnolia.png</a>)](<a href="https://paulosanches.github.io/hello/assets/side-quest-magnolia.png">https://paulosanches.github.io/hello/assets/side-quest-magnolia.png</a>)
+
+The illustrated board at the end of the game. [View full-size screenshot](<a href="https://paulosanches.github.io/hello/assets/side-quest-magnolia.png">https://paulosanches.github.io/hello/assets/side-quest-magnolia.png</a>)
+
+## The product
+
+Jogo da Vida - Magnólia brings together 12 illustrated spaces, character stories and 10 reflection prompts in a browser-based game for desktop and mobile. Players control the pace. There is no scoring or answer form; the questions are intended for discussion outside the application.
+
+## The experience
+
+Each space connects a position on the board to a story. The text appears progressively, followed by a question that keeps the story visible for reference.
+
+Players can move forward, return to an earlier space, pause the text reveal or restart the game. Moving to the next space is always a manual choice.
+
+## Technical design
+
+The application uses HTML, CSS, JavaScript and SVG, with navigation and playback handled in the browser. Content ships with the application as static files. GitHub Pages hosts the site; the game requires no application backend or database.
+
+Navigation cancels pending playback work before changing spaces. Keyboard controls and reduced-motion support provide alternatives to pointer interaction and animated text.
+
+## Explore the project
+
+- [Open the game](<a href="https://paulosanches.github.io/magnolia-jogo-da-vida/">https://paulosanches.github.io/magnolia-jogo-da-vida/</a>)
+- [Code on GitHub](<a href="https://github.com/PauloSanches/magnolia-jogo-da-vida">https://github.com/PauloSanches/magnolia-jogo-da-vida</a>)
+- [Behind the scenes](<a href="https://paulosanches.github.io/magnolia-jogo-da-vida/backstage/">https://paulosanches.github.io/magnolia-jogo-da-vida/backstage/</a>)
+
+Game and backstage in Portuguese.
+</pre></main>
+  <script>
+    const backButton = document.querySelector('.back-button');
+    const backFallback = document.querySelector('.back-fallback');
+    backButton.hidden = false;
+    backFallback.hidden = true;
+    backButton.addEventListener('click', () => {
+      if (history.length > 1 && document.referrer) history.back();
+      else location.assign(backFallback.href);
+    });
+  </script>
+</body>
+</html>

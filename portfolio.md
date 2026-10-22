@@ -1,6 +1,6 @@
 # Paulo Sanches
 
-Complete public portfolio, including the full text of every Field Note. Generated from the published pages and kept in sync with site updates.
+Complete public portfolio, including the full text of every case study and Field Note. Generated from the published pages and kept in sync with site updates.
 
 Language: en
 
@@ -117,13 +117,9 @@ Personal projects and experiments, from idea to working software.
 
 ### Jogo da Vida - Magnólia
 
-A browser-based narrative game with 12 spaces, illustrated characters and 10 questions along the way. Built with Hermes Agent and Codex, with human oversight.
+An interactive board game with illustrated stories and reflection prompts, explored at the player's own pace.
 
-- [Open the game](https://paulosanches.github.io/magnolia-jogo-da-vida/)
-- [Behind the scenes](https://paulosanches.github.io/magnolia-jogo-da-vida/backstage/)
-- [Code on GitHub](https://github.com/PauloSanches/magnolia-jogo-da-vida)
-
-Game and backstage in Portuguese.
+- [Read case study](https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/agent/)
 
 04 / FIELD NOTES
 
@@ -530,6 +526,50 @@ I hope you enjoyed what you saw. Let’s have a virtual coffee — I’d love to
 [Let’s have a virtual coffee](https://www.linkedin.com/in/paulosanches)
 
 Braga, Portugal
+
+---
+
+## Portfolio / Side Quests — full case studies
+
+Source: https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/agent/
+
+Markdown: https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/case.md
+
+Portfolio / Side Quests
+
+## Jogo da Vida - Magnólia
+
+An interactive board game built around storytelling and reflection.
+
+[![Screenshot of Jogo da Vida - Magnólia, showing the illustrated board at its final space.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
+
+The illustrated board at the end of the game. [View full-size screenshot](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
+
+### The product
+
+Jogo da Vida - Magnólia brings together 12 illustrated spaces, character stories and 10 reflection prompts in a browser-based game for desktop and mobile. Players control the pace. There is no scoring or answer form; the questions are intended for discussion outside the application.
+
+### The experience
+
+Each space connects a position on the board to a story. The text appears progressively, followed by a question that keeps the story visible for reference.
+
+Players can move forward, return to an earlier space, pause the text reveal or restart the game. Moving to the next space is always a manual choice.
+
+### Technical design
+
+The application uses HTML, CSS, JavaScript and SVG, with navigation and playback handled in the browser. Content ships with the application as static files. GitHub Pages hosts the site; the game requires no application backend or database.
+
+Navigation cancels pending playback work before changing spaces. Keyboard controls and reduced-motion support provide alternatives to pointer interaction and animated text.
+
+### Explore the project
+
+- [Open the game](https://paulosanches.github.io/magnolia-jogo-da-vida/)
+- [Code on GitHub](https://github.com/PauloSanches/magnolia-jogo-da-vida)
+- [Behind the scenes](https://paulosanches.github.io/magnolia-jogo-da-vida/backstage/)
+
+Game and backstage in Portuguese.
+
+---
 
 ---
 

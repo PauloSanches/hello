@@ -18,7 +18,9 @@ from agent_content import build as build_agent_content
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://paulosanches.github.io/hello/"
 LOCALES = {"pt": ("pt-BR", "pt_BR"), "it": ("it", "it_IT")}
-SOURCES = ["index.html", *sorted(str(path.relative_to(ROOT)) for path in (ROOT / "field-notes").glob("*/index.html"))]
+SOURCES = ["index.html", *(str(path.relative_to(ROOT))
+           for section in ("field-notes", "portfolio")
+           for path in sorted((ROOT / section).glob("*/index.html")))]
 DATA = json.loads((ROOT / "locales/translations.json").read_text())
 MONTHS = {
     "pt": ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"],
@@ -163,8 +165,8 @@ class Localize(HTMLParser):
                     fragment = value[len(page_base):]
                     if fragment not in {"#person", "#website", "#portrait"}:
                         return self.url + fragment
-                if page and value == BASE:
-                    return BASE + self.locale + "/"
+                if page and (value == BASE or (value.startswith(BASE + "#") and value[len(BASE):] not in {"#person", "#website", "#portrait"})):
+                    return BASE + self.locale + "/" + value[len(BASE):]
                 return translate(value, self.locale, strict=False)
             return value
 

@@ -1,7 +1,7 @@
 """Export public portfolio content to Markdown using only the standard library.
 
 HTML remains the content source. Navigation and decorative controls are omitted;
-disclosures, carousel items and the full text of every story are always included.
+disclosures, carousel items and the full text of every story and case are included.
 """
 import argparse
 import html
@@ -14,10 +14,11 @@ from urllib.parse import urljoin, urlsplit, urlunsplit
 BASE = "https://paulosanches.github.io/hello/"
 ROOT = Path(__file__).resolve().parents[1]
 LANGUAGES = {
-    "": {"lang": "en", "name": "English", "source": "Source", "intro": "Complete public portfolio, including the full text of every Field Note. Generated from the published pages and kept in sync with site updates.", "stories": "Field Notes — full stories"},
-    "pt": {"lang": "pt-BR", "name": "Português do Brasil", "source": "Fonte", "intro": "Portfólio público completo, incluindo o texto integral de cada história. Gerado a partir das páginas publicadas e sincronizado com as atualizações do site.", "stories": "Histórias — textos completos"},
-    "it": {"lang": "it", "name": "Italiano", "source": "Fonte", "intro": "Portfolio pubblico completo, con il testo integrale di ogni storia. Generato dalle pagine pubblicate e sincronizzato con gli aggiornamenti del sito.", "stories": "Storie — testi completi"},
+    "": {"lang": "en", "name": "English", "source": "Source", "intro": "Complete public portfolio, including the full text of every case study and Field Note. Generated from the published pages and kept in sync with site updates.", "stories": "Field Notes — full stories", "cases": "Portfolio / Side Quests — full case studies"},
+    "pt": {"lang": "pt-BR", "name": "Português do Brasil", "source": "Fonte", "intro": "Portfólio público completo, incluindo o texto integral de cada estudo de caso e história. Gerado a partir das páginas publicadas e sincronizado com as atualizações do site.", "stories": "Histórias — textos completos", "cases": "Portfolio / Side Quests — estudos de caso completos"},
+    "it": {"lang": "it", "name": "Italiano", "source": "Fonte", "intro": "Portfolio pubblico completo, con il testo integrale di ogni caso di studio e storia. Generato dalle pagine pubblicate e sincronizzato con gli aggiornamenti del sito.", "stories": "Storie — testi completi", "cases": "Portfolio / Side Quests — casi di studio completi"},
 }
+COLLECTIONS = {"portfolio": ("cases", "case.md"), "field-notes": ("stories", "story.md")}
 VIEW_LABELS = {
     "": ("Back to portfolio", "Open Markdown file", "Complete portfolio in Markdown", "Back"),
     "pt": ("Voltar ao portfólio", "Abrir arquivo Markdown", "Portfólio completo em Markdown", "Voltar"),
@@ -98,7 +99,7 @@ def escape(value):
 
 
 def agent_url(url):
-    """Keep home/story navigation in AI mode; leave assets and external links alone."""
+    """Keep home/story/case navigation in AI mode; leave assets and external links alone."""
     parts, base = urlsplit(url), urlsplit(BASE)
     if (parts.scheme, parts.netloc) != (base.scheme, base.netloc):
         return url
@@ -107,7 +108,7 @@ def agent_url(url):
     relative = parts.path[len(base.path):]
     if re.fullmatch(r"(?:(?:pt|it)/)?(?:index\.html)?", relative):
         path = base.path + relative.removesuffix("index.html") + "agent/"
-    elif re.fullmatch(r"(?:(?:pt|it)/)?field-notes/[^/]+/(?:index\.html)?", relative):
+    elif re.fullmatch(r"(?:(?:pt|it)/)?(?:field-notes|portfolio)/[^/]+/(?:index\.html)?", relative):
         path = base.path + relative.removesuffix("index.html") + "agent/"
     else:
         return url
@@ -227,34 +228,43 @@ def build_document(root, prefix):
     intro = f"# Paulo Sanches\n\n{info['intro']}\n\nLanguage: {info['lang']}\n\n{info['source']}: {agent_url(home_url)}\n\n"
     alternates = " · ".join(f"[{v['name']}]({BASE}{k + '/' if k else ''}portfolio.md)" for k, v in LANGUAGES.items())
     output = intro + alternates + "\n\n---\n\n" + Markdown(home_url, info["source"]).render(home)
-    # Discover stories from the page in presentation order, then include any
-    # newly published story not yet linked on the homepage. Never rely on a
-    # fixed count or hide the remainder of a carousel/disclosure.
-    available = {p.parent.name: p for p in (folder / "field-notes").glob("*/index.html")}
-    order = []
-    for node in home.descendants("a"):
-        path = urlsplit(urljoin(home_url, node.attrs.get("href", ""))).path
-        match = re.search(r"/field-notes/([^/]+)/?(?:index\.html)?$", path)
-        if match and match[1] in available and match[1] not in order:
-            order.append(match[1])
-    order.extend(sorted(set(available) - set(order)))
-    output += f"---\n\n## {info['stories']}\n\n"
-    for name in order:
-        url = home_url + "field-notes/" + name + "/"
-        main = page_main(available[name])
-        output += f"{info['source']}: {agent_url(url)}\n\nMarkdown: {url}story.md\n\n" + Markdown(url, info["source"], heading_offset=1).render(main) + "---\n\n"
+    # Presentation order first, then unlinked published pages; never a fixed list.
+    for section, (label, filename) in COLLECTIONS.items():
+        available = {p.parent.name: p for p in (folder / section).glob("*/index.html")}
+        if not available:
+            continue
+        order = []
+        for node in home.descendants("a"):
+            target = urlsplit(urljoin(home_url, node.attrs.get("href", "")))
+            home_parts = urlsplit(home_url)
+            if (target.scheme, target.netloc) != (home_parts.scheme, home_parts.netloc):
+                continue
+            match = re.fullmatch(re.escape(home_parts.path + section + "/") + r"([^/]+)/?(?:index\.html)?", target.path)
+            if match and match[1] in available and match[1] not in order:
+                order.append(match[1])
+        order.extend(sorted(set(available) - set(order)))
+        output += f"---\n\n## {info[label]}\n\n"
+        for name in order:
+            url = home_url + section + "/" + name + "/"
+            main = page_main(available[name])
+            output += f"{info['source']}: {agent_url(url)}\n\nMarkdown: {url}{filename}\n\n" + Markdown(url, info["source"], heading_offset=1).render(main) + "---\n\n"
     return re.sub(r"\n{3,}", "\n\n", output).strip() + "\n"
 
 
 def build_story_document(root, prefix, name):
+    return build_detail_document(root, prefix, name, "field-notes")
+
+
+def build_detail_document(root, prefix, name, section):
     info = LANGUAGES[prefix]
     folder = root / prefix if prefix else root
     home = BASE + (prefix + "/" if prefix else "")
-    url = home + "field-notes/" + name + "/"
-    main = page_main(folder / "field-notes" / name / "index.html")
+    url = home + section + "/" + name + "/"
+    filename = COLLECTIONS[section][1]
+    main = page_main(folder / section / name / "index.html")
     markdown = Markdown(url, info["source"], skip_h1=True)
     title = markdown.inline(next(main.descendants("h1")))
-    languages = " · ".join(f"[{v['name']}]({BASE}{k + '/' if k else ''}field-notes/{name}/story.md)" for k, v in LANGUAGES.items())
+    languages = " · ".join(f"[{v['name']}]({BASE}{k + '/' if k else ''}{section}/{name}/{filename})" for k, v in LANGUAGES.items())
     intro = f"# {title}\n\n[{VIEW_LABELS[prefix][0]} — AI/Agent]({home}agent/)\n\nLanguage: {info['lang']}\n\n{info['source']}: {url}agent/\n\n{languages}\n\n---\n\n"
     return re.sub(r"\n{3,}", "\n\n", intro + markdown.render(main)).strip() + "\n"
 
@@ -271,14 +281,17 @@ def linked_markdown(document):
     return "".join(parts)
 
 
-def build_view(document, prefix, story=None):
+def build_view(document, prefix, story=None, section="field-notes"):
     language = LANGUAGES[prefix]["lang"]
     back, download, description, browser_back = VIEW_LABELS[prefix]
     home = BASE + (prefix + "/" if prefix else "")
-    suffix = f"field-notes/{story}/" if story else ""
+    suffix = f"{section}/{story}/" if story else ""
     canonical = home + suffix
-    markdown_url = canonical + ("story.md" if story else "portfolio.md")
+    markdown_url = canonical + (COLLECTIONS[section][1] if story else "portfolio.md")
     title = document.splitlines()[0].removeprefix("# ") if story else "Paulo Sanches"
+    if story and section == "portfolio":
+        label = {"": "Case study in Markdown", "pt": "Estudo de caso em Markdown", "it": "Caso di studio in Markdown"}[prefix]
+        description = html.escape(f"{label}: {title}", quote=True)
     switches = " ".join(
         f'<a href="{BASE}{k + "/" if k else ""}{suffix}agent/" lang="{v["lang"]}" hreflang="{v["lang"]}"' + (' aria-current="page"' if k == prefix else '') + f'>{"PT" if k == "pt" else "ITA" if k == "it" else "EN"}</a>'
         for k, v in LANGUAGES.items()
@@ -337,9 +350,10 @@ def build(root=ROOT, check=False):
         value = build_document(root, prefix)
         folder = root / prefix if prefix else root
         generated = [(folder / "portfolio.md", value), (folder / "agent/index.html", build_view(value, prefix))]
-        for path in sorted((folder / "field-notes").glob("*/index.html")):
-            value = build_story_document(root, prefix, path.parent.name)
-            generated.extend([(path.parent / "story.md", value), (path.parent / "agent/index.html", build_view(value, prefix, path.parent.name))])
+        for section, (_, filename) in COLLECTIONS.items():
+            for path in sorted((folder / section).glob("*/index.html")):
+                value = build_detail_document(root, prefix, path.parent.name, section)
+                generated.extend([(path.parent / filename, value), (path.parent / "agent/index.html", build_view(value, prefix, path.parent.name, section))])
         for path, content in generated:
             if not path.exists() or path.read_text(encoding="utf-8") != content:
                 stale.append(str(path.relative_to(root)))
@@ -356,4 +370,4 @@ if __name__ == "__main__":
     parser.add_argument("--check", action="store_true", help="Fail if committed Markdown differs from the public HTML.")
     args = parser.parse_args()
     changed = build(check=args.check)
-    print("AI/Agent Markdown is up to date." if args.check else f"Generated portfolio and story Markdown and views; {len(changed)} files updated.")
+    print("AI/Agent Markdown is up to date." if args.check else f"Generated portfolio, story and case Markdown and views; {len(changed)} files updated.")

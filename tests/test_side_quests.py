@@ -18,11 +18,7 @@ class SideQuestsTests(unittest.TestCase):
         self.assertEqual(len(list(section.descendants("article"))), 1)
         self.assertIn("Jogo da Vida - Magnólia", normalise(plain(section)))
         links = {node.attrs.get("href") for node in section.descendants("a")}
-        self.assertEqual(links, {
-            "https://paulosanches.github.io/magnolia-jogo-da-vida/",
-            "https://paulosanches.github.io/magnolia-jogo-da-vida/backstage/",
-            "https://github.com/PauloSanches/magnolia-jogo-da-vida",
-        })
+        self.assertEqual(links, {"portfolio/jogo-da-vida-magnolia/"})
         nav = next(node for node in doc.descendants("nav") if "explore-nav" in node.classes)
         self.assertIn("#side-quests", [node.attrs.get("href") for node in nav.descendants("a")])
 
@@ -50,7 +46,7 @@ class SideQuestsTests(unittest.TestCase):
                 cards = list(collections[0].descendants("article"))
                 self.assertEqual(len(cards), 1)
                 self.assertIn("side-quest-card", cards[0].classes)
-                self.assertEqual(len(list(cards[0].descendants("a"))), 3)
+                self.assertEqual(len(list(cards[0].descendants("a"))), 1)
 
 if __name__ == "__main__":
     unittest.main()
