@@ -40,5 +40,17 @@ class SideQuestsTests(unittest.TestCase):
                 agent = (ROOT / prefix / "agent/index.html").read_text()
                 self.assertIn("Jogo da Vida - Magnólia", agent)
 
+    def test_project_is_presented_as_a_card_in_a_collection(self):
+        for prefix in ["", "pt/", "it/"]:
+            with self.subTest(language=prefix or "en"):
+                doc = Document((ROOT / prefix / "index.html").read_text()).root
+                section = next(n for n in doc.descendants("section") if n.attrs.get("id") == "side-quests")
+                collections = [n for n in section.descendants("div") if "side-quests-grid" in n.classes]
+                self.assertEqual(len(collections), 1, "Use a project-card collection instead of a full-width feature")
+                cards = list(collections[0].descendants("article"))
+                self.assertEqual(len(cards), 1)
+                self.assertIn("side-quest-card", cards[0].classes)
+                self.assertEqual(len(list(cards[0].descendants("a"))), 3)
+
 if __name__ == "__main__":
     unittest.main()
