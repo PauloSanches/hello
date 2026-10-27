@@ -523,6 +523,8 @@ Scadenza: ago 2024
 
 Gli strumenti che uso alla scrivania e in movimento.
 
+![Panoramica del setup di Paulo, con gli strumenti identificati su una scrivania.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
+
 01 / SETUP
 
 ### Il mio setup
@@ -1041,6 +1043,8 @@ SETUP E PRODUTTIVITÀ
 ## Il mio setup
 
 Gli strumenti che fanno parte della mia giornata, dalla scrivania allo zaino.
+
+![Panoramica del setup di Paulo, con gli strumenti identificati su una scrivania.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
 
 Cerco ottimizzazione e prestazioni elevate in ciò che faccio, e scelgo i miei strumenti con la stessa attenzione.
 

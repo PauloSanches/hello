@@ -14,6 +14,8 @@ SETUP & PRODUCTIVITY
 
 The equipment behind my workday, from my desk to my bag.
 
+![Overview of Paulo’s setup, with labelled equipment on a desk.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
+
 I look for optimisation and high performance in what I do, and I take the same approach to my equipment.
 
 Before buying each item, I researched its features, weighed the pros and cons, watched reviews on YouTube and considered the trade-offs. I wanted to understand whether the higher price was justified.

@@ -1824,3 +1824,8 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   .setup-table td:nth-child(3) { color: var(--muted); font-size: 14px; }
   .setup-table img { width: 80px; height: 96px; }
 }
+
+/* Show the complete supplied setup overview in both card and article. */
+.setup-card-cover { display: block; width: 100%; height: auto; }
+.story-setup .story-card-link { display: flex; flex-direction: column; }
+.story-setup .story-front { flex: 1; height: auto; min-height: 0; }

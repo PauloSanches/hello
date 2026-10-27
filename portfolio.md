@@ -523,6 +523,8 @@ Expiry: Aug 2024
 
 The gear I use, at my desk and on the go.
 
+![Overview of Paulo’s setup, with labelled equipment on a desk.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
+
 01 / SETUP
 
 ### My Setup
@@ -1041,6 +1043,8 @@ SETUP & PRODUCTIVITY
 ## My Setup
 
 The equipment behind my workday, from my desk to my bag.
+
+![Overview of Paulo’s setup, with labelled equipment on a desk.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
 
 I look for optimisation and high performance in what I do, and I take the same approach to my equipment.
 

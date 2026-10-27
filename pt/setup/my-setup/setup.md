@@ -14,6 +14,8 @@ SETUP E PRODUTIVIDADE
 
 Os equipamentos que fazem parte do meu dia, da mesa à mochila.
 
+![Visão geral do setup de Paulo, com os equipamentos identificados sobre uma mesa.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
+
 Busco otimização e alto desempenho no que faço, e escolho meus equipamentos com o mesmo cuidado.
 
 Antes de comprar cada item, pesquisei seus recursos, avaliei os prós e contras, assisti a análises no YouTube e considerei os trade-offs. Queria entender se o preço mais alto justificava a compra.

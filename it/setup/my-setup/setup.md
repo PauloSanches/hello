@@ -14,6 +14,8 @@ SETUP E PRODUTTIVITÀ
 
 Gli strumenti che fanno parte della mia giornata, dalla scrivania allo zaino.
 
+![Panoramica del setup di Paulo, con gli strumenti identificati su una scrivania.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
+
 Cerco ottimizzazione e prestazioni elevate in ciò che faccio, e scelgo i miei strumenti con la stessa attenzione.
 
 Prima di acquistare ogni prodotto, ho studiato le funzionalità, valutato i pro e i contro, guardato recensioni su YouTube e considerato i compromessi. Volevo capire se il prezzo più alto fosse giustificato.

@@ -523,6 +523,8 @@ Validade: ago 2024
 
 Os equipamentos que uso à mesa e em movimento.
 
+![Visão geral do setup de Paulo, com os equipamentos identificados sobre uma mesa.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
+
 01 / SETUP
 
 ### Meu setup
@@ -1041,6 +1043,8 @@ SETUP E PRODUTIVIDADE
 ## Meu setup
 
 Os equipamentos que fazem parte do meu dia, da mesa à mochila.
+
+![Visão geral do setup de Paulo, com os equipamentos identificados sobre uma mesa.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
 
 Busco otimização e alto desempenho no que faço, e escolho meus equipamentos com o mesmo cuidado.
 

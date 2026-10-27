@@ -18,7 +18,8 @@ class SetupTests(unittest.TestCase):
    folder=ROOT/prefix if prefix else ROOT
    main=Document((folder/'setup/my-setup/index.html').read_text())
    output=build_detail_document(ROOT,prefix,'my-setup','setup')
-   images=[n for n in main.root.descendants('img') if '/assets/setup/' in n.attrs.get('src','')]
+   table=next(main.root.descendants('table'))
+   images=list(table.descendants('img'))
    self.assertEqual(len(images),8)
    for image in images:
     self.assertIn('assets/'+image.attrs['src'].split('assets/',1)[1],output)
