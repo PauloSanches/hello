@@ -1054,16 +1054,16 @@ Cada equipamento tem um papel no meu dia de trabalho. Abaixo, vou explicar como 
 
 ### Os equipamentos em resumo
 
-| Foto | Equipamento | Categoria | Link |
-| --- | --- | --- | --- |
-| ![Logitech MX Brio](https://paulosanches.github.io/hello/assets/setup/mx-brio.webp) | [Logitech MX Brio](https://paulosanches.github.io/hello/pt/setup/my-setup/agent/#use-mx-brio) | Webcam | [Ver item](https://link.amazon/B03zvay7g) |
-| ![Logitech MX Keys](https://paulosanches.github.io/hello/assets/setup/mx-keys.webp) | [Logitech MX Keys](https://paulosanches.github.io/hello/pt/setup/my-setup/agent/#use-mx-keys) | Teclado completo | [Ver item](https://link.amazon/B02quZak0) |
-| ![Logitech MX Master 3S](https://paulosanches.github.io/hello/assets/setup/mx-master-3s.webp) | [Logitech MX Master 3S](https://paulosanches.github.io/hello/pt/setup/my-setup/agent/#use-mx-master-3s) | Mouse sem fio | [Ver item](https://link.amazon/B0f3b1CkG) |
-| ![Logitech G PRO X 2 LIGHTSPEED](https://paulosanches.github.io/hello/assets/setup/pro-x-2.webp) | [Logitech G PRO X 2 LIGHTSPEED](https://paulosanches.github.io/hello/pt/setup/my-setup/agent/#use-pro-x-2) | Headset sem fio | [Ver item](https://link.amazon/B0aIAviog) |
-| ![DJI Osmo Mobile 6](https://paulosanches.github.io/hello/assets/setup/osmo-mobile-6.webp) | [DJI Osmo Mobile 6](https://paulosanches.github.io/hello/pt/setup/my-setup/agent/#use-osmo-mobile-6) | Estabilizador para smartphone | [Ver item](https://link.amazon/B0cdfebGN) |
-| ![Apple Watch Ultra](https://paulosanches.github.io/hello/assets/setup/watch-ultra.webp) | [Apple Watch Ultra](https://paulosanches.github.io/hello/pt/setup/my-setup/agent/#use-watch-ultra) | Smartwatch | [Ver item](https://link.amazon/B0gtPCbJI) |
-| ![Mous × Mercedes-AMG Backpack](https://paulosanches.github.io/hello/assets/setup/mous-backpack.webp) | [Mous × Mercedes-AMG Backpack](https://paulosanches.github.io/hello/pt/setup/my-setup/agent/#use-mous-backpack) | Mochila | [Ver item](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack) |
-| ![Infinitebook Daily Goal Digger](https://paulosanches.github.io/hello/assets/setup/infinitebook.webp) | [Infinitebook Daily Goal Digger](https://paulosanches.github.io/hello/pt/setup/my-setup/agent/#use-infinitebook) | Caderno reutilizável | [Ver item](https://link.amazon/B07upEVUQ) |
+| Foto | Equipamento | Link |
+| --- | --- | --- |
+| ![Logitech MX Brio](https://paulosanches.github.io/hello/assets/setup/mx-brio.webp) | Logitech MX Brio | [Ver item](https://link.amazon/B03zvay7g) |
+| ![Logitech MX Keys](https://paulosanches.github.io/hello/assets/setup/mx-keys.webp) | Logitech MX Keys | [Ver item](https://link.amazon/B02quZak0) |
+| ![Logitech MX Master 3S](https://paulosanches.github.io/hello/assets/setup/mx-master-3s.webp) | Logitech MX Master 3S | [Ver item](https://link.amazon/B0f3b1CkG) |
+| ![Logitech G PRO X 2 LIGHTSPEED](https://paulosanches.github.io/hello/assets/setup/pro-x-2.webp) | Logitech G PRO X 2 LIGHTSPEED | [Ver item](https://link.amazon/B0aIAviog) |
+| ![DJI Osmo Mobile 6](https://paulosanches.github.io/hello/assets/setup/osmo-mobile-6.webp) | DJI Osmo Mobile 6 | [Ver item](https://link.amazon/B0cdfebGN) |
+| ![Apple Watch Ultra](https://paulosanches.github.io/hello/assets/setup/watch-ultra.webp) | Apple Watch Ultra | [Ver item](https://link.amazon/B0gtPCbJI) |
+| ![Mous × Mercedes-AMG Backpack](https://paulosanches.github.io/hello/assets/setup/mous-backpack.webp) | Mous × Mercedes-AMG Backpack | [Ver item](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack) |
+| ![Infinitebook Daily Goal Digger](https://paulosanches.github.io/hello/assets/setup/infinitebook.webp) | Infinitebook Daily Goal Digger | [Ver item](https://link.amazon/B07upEVUQ) |
 
 Fotos de produto dos fabricantes. Cores, layouts de teclado e acessórios exibidos podem diferir dos meus equipamentos.
 
