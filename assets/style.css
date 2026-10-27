@@ -1797,8 +1797,8 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   .explore-links li:last-child:nth-child(odd) { grid-column: span 2; }
 }
 
-/* Setup pages keep the reading column and give the equipment table more room. */
-.setup-page .setup-inventory { width: min(1100px, calc(100% - var(--page-gutter) * 2)); margin-block: 40px; }
+/* Setup equipment stays aligned with the article reading column. */
+.setup-page .setup-inventory { margin-block: 40px; }
 .setup-inventory h2 { margin-bottom: 24px; font-family: var(--serif); font-size: clamp(28px, 4vw, 38px); font-weight: 400; }
 .setup-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-family: var(--sans); font-size: 16px; }
 .setup-table th, .setup-table td { padding: 16px; text-align: left; vertical-align: middle; border-bottom: 1px solid var(--quiet-line); overflow-wrap: anywhere; }
