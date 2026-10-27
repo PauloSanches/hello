@@ -45,7 +45,8 @@
     "image_url": "https://www.apple.com/newsroom/images/product/watch/standard/Apple-Watch-Ultra-Midnight-Ocean-band-Oceanic-Plus-app-220907_inline.jpg.small_2x.jpg",
     "width": 480,
     "height": 480,
-    "bytes": 9840
+    "bytes": 17866,
+    "processing": "Background removed using AI; transparent WebP derived from the supplied Apple product photograph."
   },
   {
     "name": "mous-backpack",

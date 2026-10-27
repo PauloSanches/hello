@@ -1061,7 +1061,7 @@ Each piece has a role in my working day. Below, I’ll explain how I use them an
 | ![Logitech MX Master 3S](https://paulosanches.github.io/hello/assets/setup/mx-master-3s.webp) | Logitech MX Master 3S | [View item](https://link.amazon/B0f3b1CkG) |
 | ![Logitech G PRO X 2 LIGHTSPEED](https://paulosanches.github.io/hello/assets/setup/pro-x-2.webp) | Logitech G PRO X 2 LIGHTSPEED | [View item](https://link.amazon/B0aIAviog) |
 | ![DJI Osmo Mobile 6](https://paulosanches.github.io/hello/assets/setup/osmo-mobile-6.webp) | DJI Osmo Mobile 6 | [View item](https://link.amazon/B0cdfebGN) |
-| ![Apple Watch Ultra](https://paulosanches.github.io/hello/assets/setup/watch-ultra-single.webp) | Apple Watch Ultra | [View item](https://link.amazon/B0gtPCbJI) |
+| ![Apple Watch Ultra](https://paulosanches.github.io/hello/assets/setup/watch-ultra-transparent.webp) | Apple Watch Ultra | [View item](https://link.amazon/B0gtPCbJI) |
 | ![Mous × Mercedes-AMG Backpack](https://paulosanches.github.io/hello/assets/setup/mous-backpack.webp) | Mous × Mercedes-AMG Backpack | [View item](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack) |
 | ![Infinitebook Daily Goal Digger](https://paulosanches.github.io/hello/assets/setup/infinitebook.webp) | Infinitebook Daily Goal Digger | [View item](https://link.amazon/B07upEVUQ) |
 
