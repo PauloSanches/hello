@@ -517,7 +517,63 @@ Rilasciata: lug 2023
 
 Scadenza: ago 2024
 
-08 / CONTINUIAMO LA CONVERSAZIONE
+08 / SETUP E PRODUTTIVITÀ
+
+## Il mio setup e consigli di produttività
+
+Gli strumenti che uso alla scrivania e in movimento.
+
+### Logitech MX Brio
+
+Webcam
+
+- [Vedi articolo](https://link.amazon/B03zvay7g)
+
+### Logitech MX Keys
+
+Tastiera completa
+
+- [Vedi articolo](https://link.amazon/B02quZak0)
+
+### Logitech MX Master 3S
+
+Mouse wireless
+
+- [Vedi articolo](https://link.amazon/B0f3b1CkG)
+
+### Logitech G PRO X 2 LIGHTSPEED
+
+Cuffie wireless
+
+- [Vedi articolo](https://link.amazon/B0aIAviog)
+
+### DJI Osmo Mobile 6
+
+Stabilizzatore per smartphone
+
+- [Vedi articolo](https://link.amazon/B0cdfebGN)
+
+### Apple Watch Ultra
+
+Smartwatch
+
+- [Vedi articolo](https://link.amazon/B0gtPCbJI)
+
+### Mous × Mercedes-AMG Backpack
+
+Zaino
+
+- [Vedi articolo](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack)
+
+### Infinitebook Daily Goal Digger
+
+Quaderno riutilizzabile
+
+- [Vedi articolo](https://link.amazon/B07upEVUQ)
+
+Presto, di più sulle mie abitudini di produttività e sui miei flussi di lavoro.
+
+09 / CONTINUIAMO LA CONVERSAZIONE
 
 ## Wow, sei arrivato *fino a qui!*
 

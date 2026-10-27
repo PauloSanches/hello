@@ -517,7 +517,63 @@ Issued Jul 2023
 
 Expiry: Aug 2024
 
-08 / KEEP THE CONVERSATION GOING
+08 / SETUP & PRODUCTIVITY
+
+## My Setup & Productivity Hacks
+
+The gear I use, at my desk and on the go.
+
+### Logitech MX Brio
+
+Webcam
+
+- [View item](https://link.amazon/B03zvay7g)
+
+### Logitech MX Keys
+
+Full-size keyboard
+
+- [View item](https://link.amazon/B02quZak0)
+
+### Logitech MX Master 3S
+
+Wireless mouse
+
+- [View item](https://link.amazon/B0f3b1CkG)
+
+### Logitech G PRO X 2 LIGHTSPEED
+
+Wireless headset
+
+- [View item](https://link.amazon/B0aIAviog)
+
+### DJI Osmo Mobile 6
+
+Smartphone gimbal
+
+- [View item](https://link.amazon/B0cdfebGN)
+
+### Apple Watch Ultra
+
+Smartwatch
+
+- [View item](https://link.amazon/B0gtPCbJI)
+
+### Mous × Mercedes-AMG Backpack
+
+Backpack
+
+- [View item](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack)
+
+### Infinitebook Daily Goal Digger
+
+Reusable notebook
+
+- [View item](https://link.amazon/B07upEVUQ)
+
+More on my productivity habits and workflows soon.
+
+09 / KEEP THE CONVERSATION GOING
 
 ## Wow, you made it *this far!*
 

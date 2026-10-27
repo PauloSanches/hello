@@ -517,7 +517,63 @@ Emitida em jul 2023
 
 Validade: ago 2024
 
-08 / VAMOS CONTINUAR A CONVERSA
+08 / SETUP E PRODUTIVIDADE
+
+## Meu setup e dicas de produtividade
+
+Os equipamentos que uso à mesa e em movimento.
+
+### Logitech MX Brio
+
+Webcam
+
+- [Ver item](https://link.amazon/B03zvay7g)
+
+### Logitech MX Keys
+
+Teclado completo
+
+- [Ver item](https://link.amazon/B02quZak0)
+
+### Logitech MX Master 3S
+
+Mouse sem fio
+
+- [Ver item](https://link.amazon/B0f3b1CkG)
+
+### Logitech G PRO X 2 LIGHTSPEED
+
+Headset sem fio
+
+- [Ver item](https://link.amazon/B0aIAviog)
+
+### DJI Osmo Mobile 6
+
+Estabilizador para smartphone
+
+- [Ver item](https://link.amazon/B0cdfebGN)
+
+### Apple Watch Ultra
+
+Smartwatch
+
+- [Ver item](https://link.amazon/B0gtPCbJI)
+
+### Mous × Mercedes-AMG Backpack
+
+Mochila
+
+- [Ver item](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack)
+
+### Infinitebook Daily Goal Digger
+
+Caderno reutilizável
+
+- [Ver item](https://link.amazon/B07upEVUQ)
+
+Em breve, mais sobre meus hábitos de produtividade e fluxos de trabalho.
+
+09 / VAMOS CONTINUAR A CONVERSA
 
 ## Uau, você chegou *até aqui!*
 
