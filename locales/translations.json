@@ -2146,5 +2146,145 @@
   "09 / KEEP THE CONVERSATION GOING": {
     "pt": "09 / VAMOS CONTINUAR A CONVERSA",
     "it": "09 / CONTINUIAMO LA CONVERSAZIONE"
+  },
+  "Logitech MX Brio": {
+    "pt": "Logitech MX Brio",
+    "it": "Logitech MX Brio"
+  },
+  "Logitech MX Keys": {
+    "pt": "Logitech MX Keys",
+    "it": "Logitech MX Keys"
+  },
+  "Logitech MX Master 3S": {
+    "pt": "Logitech MX Master 3S",
+    "it": "Logitech MX Master 3S"
+  },
+  "Logitech G PRO X 2 LIGHTSPEED": {
+    "pt": "Logitech G PRO X 2 LIGHTSPEED",
+    "it": "Logitech G PRO X 2 LIGHTSPEED"
+  },
+  "DJI Osmo Mobile 6": {
+    "pt": "DJI Osmo Mobile 6",
+    "it": "DJI Osmo Mobile 6"
+  },
+  "Apple Watch Ultra": {
+    "pt": "Apple Watch Ultra",
+    "it": "Apple Watch Ultra"
+  },
+  "Mous × Mercedes-AMG Backpack": {
+    "pt": "Mous × Mercedes-AMG Backpack",
+    "it": "Mous × Mercedes-AMG Backpack"
+  },
+  "Infinitebook Daily Goal Digger": {
+    "pt": "Infinitebook Daily Goal Digger",
+    "it": "Infinitebook Daily Goal Digger"
+  },
+  "My Setup": {
+    "pt": "Meu setup",
+    "it": "Il mio setup"
+  },
+  "The equipment behind my workday, from my desk to my bag.": {
+    "pt": "Os equipamentos que fazem parte do meu dia, da mesa à mochila.",
+    "it": "Gli strumenti che fanno parte della mia giornata, dalla scrivania allo zaino."
+  },
+  "Explore Paulo Sanches’s setup: eight gadgets, product photos and space for the habits and workflows behind their everyday use.": {
+    "pt": "Conheça o setup de Paulo Sanches: oito gadgets, fotos dos produtos e um espaço para os hábitos e fluxos de trabalho do dia a dia.",
+    "it": "Scopri il setup di Paulo Sanches: otto gadget, foto dei prodotti e spazio per abitudini e flussi di lavoro quotidiani."
+  },
+  "My setup brings together the equipment I use for calls, writing, planning and recording on the move. This page keeps the gear in one place, alongside a space for the settings, shortcuts and everyday habits that make it useful.": {
+    "pt": "Meu setup reúne os equipamentos que uso para chamadas, escrita, planejamento e gravações em movimento. Esta página organiza os itens e reserva um espaço para as configurações, os atalhos e os hábitos que fazem a diferença no uso.",
+    "it": "Il mio setup riunisce gli strumenti che uso per chiamate, scrittura, pianificazione e riprese in movimento. Questa pagina raccoglie gli strumenti e lascia spazio alle impostazioni, alle scorciatoie e alle abitudini che li rendono utili."
+  },
+  "SETUP & PRODUCTIVITY": {
+    "pt": "SETUP E PRODUTIVIDADE",
+    "it": "SETUP E PRODUTTIVITÀ"
+  },
+  "Photo": {
+    "pt": "Foto",
+    "it": "Foto"
+  },
+  "Equipment": {
+    "pt": "Equipamento",
+    "it": "Strumento"
+  },
+  "Category": {
+    "pt": "Categoria",
+    "it": "Categoria"
+  },
+  "Link": {
+    "pt": "Link",
+    "it": "Link"
+  },
+  "What makes a difference": {
+    "pt": "O que faz a diferença",
+    "it": "Cosa fa la differenza"
+  },
+  "A place for my personal notes: the functions I use, the settings I keep and the small improvements each gadget brings to my routine.": {
+    "pt": "Um espaço para minhas anotações pessoais: as funções que uso, as configurações que mantenho e as pequenas melhorias que cada gadget traz à minha rotina.",
+    "it": "Uno spazio per i miei appunti personali: le funzioni che uso, le impostazioni che mantengo e i piccoli miglioramenti che ogni gadget porta nella mia routine."
+  },
+  "Personal notes coming soon.": {
+    "pt": "Em breve, minhas anotações de uso.",
+    "it": "Presto, i miei appunti di utilizzo."
+  },
+  "Product photo sources": {
+    "pt": "Fontes das fotos dos produtos",
+    "it": "Fonti delle foto dei prodotti"
+  },
+  "Manufacturer product photos. Finishes, keyboard layouts and accessories shown may differ from my own equipment.": {
+    "pt": "Fotos de produto dos fabricantes. Cores, layouts de teclado e acessórios exibidos podem diferir dos meus equipamentos.",
+    "it": "Foto dei prodotti dei produttori. Colori, layout delle tastiere e accessori mostrati possono differire dai miei strumenti."
+  },
+  "The gear at a glance": {
+    "pt": "Os equipamentos em resumo",
+    "it": "Gli strumenti in breve"
+  },
+  "My equipment and product links": {
+    "pt": "Meus equipamentos e links dos produtos",
+    "it": "I miei strumenti e i link ai prodotti"
+  },
+  "Read this setup in Markdown": {
+    "pt": "Ler este setup em Markdown",
+    "it": "Leggi questo setup in Markdown"
+  },
+  "The gear on my desk and in my bag, with product photos, links and notes on everyday use.": {
+    "pt": "Os equipamentos da minha mesa e da minha mochila, com fotos, links e anotações de uso.",
+    "it": "Gli strumenti sulla mia scrivania e nel mio zaino, con foto, link e appunti di utilizzo."
+  },
+  "Explore my setup": {
+    "pt": "Conheça meu setup",
+    "it": "Scopri il mio setup"
+  },
+  "01 / SETUP": {
+    "pt": "01 / SETUP",
+    "it": "01 / SETUP"
+  },
+  "Explore my setup →": {
+    "pt": "Conheça meu setup →",
+    "it": "Scopri il mio setup →"
+  },
+  "I look for optimisation and high performance in what I do, and I take the same approach to my equipment.": {
+    "pt": "Busco otimização e alto desempenho no que faço, e escolho meus equipamentos com o mesmo cuidado.",
+    "it": "Cerco ottimizzazione e prestazioni elevate in ciò che faccio, e scelgo i miei strumenti con la stessa attenzione."
+  },
+  "Before buying each item, I researched its features, weighed the pros and cons, watched reviews on YouTube and considered the trade-offs. I wanted to understand whether the higher price was justified.": {
+    "pt": "Antes de comprar cada item, pesquisei seus recursos, avaliei os prós e contras, assisti a análises no YouTube e considerei os trade-offs. Queria entender se o preço mais alto justificava a compra.",
+    "it": "Prima di acquistare ogni prodotto, ho studiato le funzionalità, valutato i pro e i contro, guardato recensioni su YouTube e considerato i compromessi. Volevo capire se il prezzo più alto fosse giustificato."
+  },
+  "Each piece has a role in my working day. Below, I’ll explain how I use them and what difference they make.": {
+    "pt": "Cada equipamento tem um papel no meu dia de trabalho. Abaixo, vou explicar como os uso e a diferença que fazem.",
+    "it": "Ogni strumento ha un ruolo nella mia giornata di lavoro. Qui sotto spiegherò come li uso e quale differenza fanno."
+  },
+  "My Setup — Paulo Sanches": {
+    "pt": "Meu setup — Paulo Sanches",
+    "it": "Il mio setup — Paulo Sanches"
+  },
+  "My Setup | Paulo Sanches": {
+    "pt": "Meu setup | Paulo Sanches",
+    "it": "Il mio setup | Paulo Sanches"
+  },
+  "Skip to setup": {
+    "pt": "Ir para o setup",
+    "it": "Vai al setup"
   }
 }

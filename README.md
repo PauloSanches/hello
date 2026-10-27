@@ -464,3 +464,9 @@ The PNG from `images-canvas.zip` is preserved byte for byte at `assets/mindset-d
 The mobile carousel retains its introduction first and now counts seven cards; desktop retains the established grid. Existing JavaScript and earlier cards/content remain unchanged. The discovery guide includes the new principle. Shared CSS fingerprints are refreshed across twenty-four HTML pages, with previous article bodies and metadata preserved.
 
 Chromium and Linux WebKit each checked eighteen language/width combinations at 280, 390, 800, 1024, 1440 and 1920px. Approved copy, the PT-BR title/label, English saying, complete original image, carousel counters and Home/End/arrow controls, independent tracks, desktop grid, no horizontal overflow, language anchors, direct-card access and reading without JavaScript passed. Mobile and desktop card screenshots were reviewed. Static checks verified original image bytes, unchanged prior translations/article content/JavaScript and idempotent locale generation.
+
+## Setup and productivity pages
+
+The Setup section uses the same card-to-detail navigation as Field Notes. Its first page is `setup/my-setup/`, with a responsive eight-item equipment table, locally hosted WebP product photos and native disclosures for personal usage notes. Manufacturer image sources and original URLs are recorded in `assets/setup/sources.json` and linked on the page. The introduction follows Paulo’s supplied account of researching features, pros and cons, trade-offs and price before buying. Device-specific notes await his text; the supplied overview image still needs its original downloadable file.
+
+Locale generation, the sitemap and AI/Agent exports include `setup/*/index.html`. Each detail page has a `setup.md` file and an `agent/` view. Markdown table rendering preserves product pictures and links; the sync workflow stages generated setup files as well as localized pages.

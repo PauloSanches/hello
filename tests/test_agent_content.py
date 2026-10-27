@@ -92,8 +92,8 @@ class AgentContentTests(unittest.TestCase):
                 home = page_main(folder / "index.html")
                 for node in home.descendants("a"):
                     if "story-card-link" in node.classes:
-                        slug = urlsplit(node.attrs["href"]).path.strip("/").split("/")[-1]
-                        self.assertIn(f"field-notes/{slug}/", output)
+                        target = BASE + (prefix + "/" if prefix else "") + node.attrs["href"]
+                        self.assertIn(agent_url(target), output)
                 for url in re.findall(r"\]\(([^)]+)\)", output):
                     self.assertTrue(url.startswith(("https://", "http://")), url)
                     if url.startswith(BASE):

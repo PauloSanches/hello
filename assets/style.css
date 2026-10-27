@@ -1796,3 +1796,31 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   .explore-links li:nth-child(5) { border-left: 0; }
   .explore-links li:last-child:nth-child(odd) { grid-column: span 2; }
 }
+
+/* Setup pages keep the reading column and give the equipment table more room. */
+.setup-page .setup-inventory { width: min(1100px, calc(100% - var(--page-gutter) * 2)); margin-block: 40px; }
+.setup-inventory h2 { margin-bottom: 24px; font-family: var(--serif); font-size: clamp(28px, 4vw, 38px); font-weight: 400; }
+.setup-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-family: var(--sans); font-size: 16px; }
+.setup-table th, .setup-table td { padding: 16px; text-align: left; vertical-align: middle; border-bottom: 1px solid var(--quiet-line); overflow-wrap: anywhere; }
+.setup-table thead th { font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
+.setup-table th:first-child { width: 22%; }
+.setup-table th:nth-child(2) { width: 36%; }
+.setup-table th:nth-child(3) { width: 24%; }
+.setup-table img { display: block; width: 100%; max-width: 160px; height: 120px; object-fit: contain; background: white; }
+.setup-table a { display: inline-flex; min-height: 44px; align-items: center; text-decoration: underline; text-underline-offset: 4px; }
+.setup-photo-credit { margin-top: 16px; font-size: 13px; line-height: 1.6; color: var(--muted); }
+.setup-usage, .setup-sources { margin-block: 40px; }
+.setup-note { margin-top: 12px; padding: 18px 0; border-top: 1px solid var(--quiet-line); }
+.setup-note summary, .setup-sources summary { min-height: 44px; cursor: pointer; font-family: var(--sans); font-size: 17px; line-height: 1.5; font-weight: 600; }
+.setup-note p { font-size: 16px; }
+@media (max-width: 600px) {
+  .setup-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .setup-table tbody { display: block; }
+  .setup-table tr { display: grid; grid-template-columns: 80px minmax(0, 1fr); column-gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--quiet-line); }
+  .setup-table th, .setup-table td { display: block; padding: 0; border: 0; width: auto; }
+  .setup-table th:nth-child(n) { width: auto; }
+  .setup-table td:first-child { grid-column: 1; grid-row: 1 / 4; }
+  .setup-table th, .setup-table td:nth-child(n + 3) { grid-column: 2; }
+  .setup-table td:nth-child(3) { color: var(--muted); font-size: 14px; }
+  .setup-table img { width: 80px; height: 96px; }
+}

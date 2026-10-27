@@ -1,0 +1,66 @@
+[
+  {
+    "name": "mx-brio",
+    "source": "https://www.logitech.com/en-us/shop/p/mx-brio-4k-webcam",
+    "image_url": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/mx-brio/buy/migration-assets-for-delorean-2025/gallery/mx-brio-3qtr-front-right-pale-gray.png",
+    "width": 556,
+    "height": 480,
+    "bytes": 17844
+  },
+  {
+    "name": "mx-keys",
+    "source": "https://www.logitech.com/en-us/business/shop/p/mx-keys-for-business",
+    "image_url": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/mx-keys-for-business/gallery/mx-keys-business-keyboard-s-gallery-us-graphite-1.png",
+    "width": 640,
+    "height": 320,
+    "bytes": 17448
+  },
+  {
+    "name": "mx-master-3s",
+    "source": "https://www.logitech.com/en-us/shop/p/mx-master-3s",
+    "image_url": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/2025-update/mx-master-3s-bluetooth-edition-left-front-view-graphite-new-8.png",
+    "width": 556,
+    "height": 480,
+    "bytes": 10624
+  },
+  {
+    "name": "pro-x-2",
+    "source": "https://www.logitechg.com/en-us/shop/p/pro-x-2-wireless-headset",
+    "image_url": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-2-lightspeed/gallery/gallery-1-pro-x-2-lightspeed-gaming-headset-black.png",
+    "width": 640,
+    "height": 480,
+    "bytes": 14642
+  },
+  {
+    "name": "osmo-mobile-6",
+    "source": "https://www.dji.com/osmo-mobile-6",
+    "image_url": "https://www-cdn.djiits.com/cms/uploads/28952eeed68fa1d6a29d27990c7e83f7@374*374.png",
+    "width": 374,
+    "height": 374,
+    "bytes": 7228
+  },
+  {
+    "name": "watch-ultra",
+    "source": "https://support.apple.com/en-us/111852",
+    "image_url": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111852_apple-watch-ultra.png",
+    "width": 480,
+    "height": 341,
+    "bytes": 46750
+  },
+  {
+    "name": "mous-backpack",
+    "source": "https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack",
+    "image_url": "https://cdn.shopify.com/s/files/1/0049/5514/4307/files/KansasUltratexMercedes_Whitebackground_4x5_FrontNEWEDIT_1000x.jpg",
+    "width": 384,
+    "height": 480,
+    "bytes": 12790
+  },
+  {
+    "name": "infinitebook",
+    "source": "https://infinitebook.com/en/blogs/news/infinitebook-the-infinite-planner-designed-for-success",
+    "image_url": "https://cdn.shopify.com/s/files/1/1978/1659/files/planner_1_cd89d715-1d67-46d7-8457-5a50c0f42783_1024x1024.jpg?v=1600280806",
+    "width": 640,
+    "height": 427,
+    "bytes": 8964
+  }
+]

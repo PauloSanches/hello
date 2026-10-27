@@ -19,6 +19,9 @@ LANGUAGES = {
     "it": {"lang": "it", "name": "Italiano", "source": "Fonte", "intro": "Portfolio pubblico completo, con il testo integrale di ogni caso di studio e storia. Generato dalle pagine pubblicate e sincronizzato con gli aggiornamenti del sito.", "stories": "Storie — testi completi", "cases": "Portfolio / Side Quests — casi di studio completi"},
 }
 COLLECTIONS = {"portfolio": ("cases", "case.md"), "field-notes": ("stories", "story.md")}
+COLLECTIONS["setup"] = ("setups", "setup.md")
+for prefix, label in {"": "Setup & Productivity — full pages", "pt": "Setup e produtividade — páginas completas", "it": "Setup e produttività — pagine complete"}.items():
+    LANGUAGES[prefix]["setups"] = label
 VIEW_LABELS = {
     "": ("Back to portfolio", "Open Markdown file", "Complete portfolio in Markdown", "Back"),
     "pt": ("Voltar ao portfólio", "Abrir arquivo Markdown", "Portfólio completo em Markdown", "Voltar"),
@@ -108,7 +111,7 @@ def agent_url(url):
     relative = parts.path[len(base.path):]
     if re.fullmatch(r"(?:(?:pt|it)/)?(?:index\.html)?", relative):
         path = base.path + relative.removesuffix("index.html") + "agent/"
-    elif re.fullmatch(r"(?:(?:pt|it)/)?(?:field-notes|portfolio)/[^/]+/(?:index\.html)?", relative):
+    elif re.fullmatch(r"(?:(?:pt|it)/)?(?:field-notes|portfolio|setup)/[^/]+/(?:index\.html)?", relative):
         path = base.path + relative.removesuffix("index.html") + "agent/"
     else:
         return url
@@ -174,6 +177,19 @@ class Markdown:
         if tag == "blockquote":
             value = self.children(node).strip()
             return "\n".join("> " + line for line in value.splitlines()) + "\n\n"
+        if tag == "table":
+            rows = []
+            for row in node.descendants("tr"):
+                cells = [self.inline(c).replace("|", r"\|") for c in row.children if isinstance(c, Node) and c.tag in {"th", "td"}]
+                if cells:
+                    rows.append("| " + " | ".join(cells) + " |")
+                    if len(rows) == 1:
+                        rows.append("| " + " | ".join("---" for _ in cells) + " |")
+            return "\n".join(rows) + "\n\n"
+        if tag == "details" and node.classes & {"setup-note", "setup-source-list"}:
+            summary = next((c for c in node.children if isinstance(c, Node) and c.tag == "summary"), None)
+            title = normalise(" ".join(self.inline(c) for c in summary.children)) if summary else ""
+            return "#" * min(6, 3 + self.heading_offset) + " " + title + "\n\n" + self.children(node)
         if tag in {"ul", "ol"}:
             if "project-timeline" in node.classes or "carousel-track" in node.classes:
                 return self.children(node)

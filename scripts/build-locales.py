@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://paulosanches.github.io/hello/"
 LOCALES = {"pt": ("pt-BR", "pt_BR"), "it": ("it", "it_IT")}
 SOURCES = ["index.html", *(str(path.relative_to(ROOT))
-           for section in ("field-notes", "portfolio")
+           for section in ("field-notes", "portfolio", "setup")
            for path in sorted((ROOT / section).glob("*/index.html")))]
 DATA = json.loads((ROOT / "locales/translations.json").read_text())
 MONTHS = {

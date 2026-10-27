@@ -13,6 +13,9 @@ on:
       - 'portfolio.md'
       - 'pt/portfolio.md'
       - 'it/portfolio.md'
+      - 'setup/**/setup.md'
+      - 'pt/setup/**/setup.md'
+      - 'it/setup/**/setup.md'
       - 'portfolio/**/case.md'
       - 'pt/portfolio/**/case.md'
       - 'it/portfolio/**/case.md'
@@ -49,7 +52,7 @@ jobs:
       - name: Commit generated updates
         id: sync
         run: |
-          git add -- portfolio.md portfolio agent pt/portfolio.md it/portfolio.md index.html field-notes pt it sitemap.xml
+          git add -- portfolio.md portfolio setup agent pt/portfolio.md it/portfolio.md index.html field-notes pt it sitemap.xml
           if git diff --cached --quiet; then
             exit 0
           fi

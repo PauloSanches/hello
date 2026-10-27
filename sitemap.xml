@@ -216,4 +216,28 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/portfolio/jogo-da-vida-magnolia/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/" />
   </url>
+  <url>
+    <loc>https://paulosanches.github.io/hello/setup/my-setup/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/setup/my-setup/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/setup/my-setup/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/setup/my-setup/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paulosanches.github.io/hello/setup/my-setup/" />
+  </url>
+  <url>
+    <loc>https://paulosanches.github.io/hello/it/setup/my-setup/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/setup/my-setup/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/setup/my-setup/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/setup/my-setup/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paulosanches.github.io/hello/setup/my-setup/" />
+  </url>
+  <url>
+    <loc>https://paulosanches.github.io/hello/pt/setup/my-setup/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paulosanches.github.io/hello/setup/my-setup/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://paulosanches.github.io/hello/it/setup/my-setup/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://paulosanches.github.io/hello/pt/setup/my-setup/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paulosanches.github.io/hello/setup/my-setup/" />
+  </url>
 </urlset>
