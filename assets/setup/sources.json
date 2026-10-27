@@ -41,11 +41,11 @@
   },
   {
     "name": "watch-ultra",
-    "source": "https://support.apple.com/en-us/111852",
-    "image_url": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111852_apple-watch-ultra.png",
+    "source": "https://www.apple.com/newsroom/2022/09/introducing-apple-watch-ultra/",
+    "image_url": "https://www.apple.com/newsroom/images/product/watch/standard/Apple-Watch-Ultra-Midnight-Ocean-band-Oceanic-Plus-app-220907_inline.jpg.small_2x.jpg",
     "width": 480,
-    "height": 341,
-    "bytes": 46750
+    "height": 480,
+    "bytes": 9840
   },
   {
     "name": "mous-backpack",
