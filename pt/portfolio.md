@@ -1061,7 +1061,7 @@ Cada equipamento tem um papel no meu dia de trabalho. Abaixo, vou explicar como 
 | ![Logitech MX Master 3S](https://paulosanches.github.io/hello/assets/setup/mx-master-3s.webp) | Logitech MX Master 3S | [Ver item](https://link.amazon/B0f3b1CkG) |
 | ![Logitech G PRO X 2 LIGHTSPEED](https://paulosanches.github.io/hello/assets/setup/pro-x-2.webp) | Logitech G PRO X 2 LIGHTSPEED | [Ver item](https://link.amazon/B0aIAviog) |
 | ![DJI Osmo Mobile 6](https://paulosanches.github.io/hello/assets/setup/osmo-mobile-6.webp) | DJI Osmo Mobile 6 | [Ver item](https://link.amazon/B0cdfebGN) |
-| ![Apple Watch Ultra](https://paulosanches.github.io/hello/assets/setup/watch-ultra.webp) | Apple Watch Ultra | [Ver item](https://link.amazon/B0gtPCbJI) |
+| ![Apple Watch Ultra](https://paulosanches.github.io/hello/assets/setup/watch-ultra-single.webp) | Apple Watch Ultra | [Ver item](https://link.amazon/B0gtPCbJI) |
 | ![Mous × Mercedes-AMG Backpack](https://paulosanches.github.io/hello/assets/setup/mous-backpack.webp) | Mous × Mercedes-AMG Backpack | [Ver item](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack) |
 | ![Infinitebook Daily Goal Digger](https://paulosanches.github.io/hello/assets/setup/infinitebook.webp) | Infinitebook Daily Goal Digger | [Ver item](https://link.amazon/B07upEVUQ) |
 
@@ -1110,7 +1110,7 @@ Em breve, minhas anotações de uso.
 - [Logitech MX Master 3S](https://www.logitech.com/en-us/shop/p/mx-master-3s)
 - [Logitech G PRO X 2 LIGHTSPEED](https://www.logitechg.com/en-us/shop/p/pro-x-2-wireless-headset)
 - [DJI Osmo Mobile 6](https://www.dji.com/osmo-mobile-6)
-- [Apple Watch Ultra](https://support.apple.com/en-us/111852)
+- [Apple Watch Ultra](https://www.apple.com/newsroom/2022/09/introducing-apple-watch-ultra/)
 - [Mous × Mercedes-AMG Backpack](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack)
 - [Infinitebook Daily Goal Digger](https://infinitebook.com/en/blogs/news/infinitebook-the-infinite-planner-designed-for-success)
 
