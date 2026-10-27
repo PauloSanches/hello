@@ -1267,7 +1267,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 
   .explore-nav { padding-block: 12px; }
   .explore-kicker { display: none; }
-  .explore-links { grid-template-columns: repeat(6, minmax(0, 1fr)); margin-top: 0; border: 0; }
+  .explore-links { grid-template-columns: repeat(7, minmax(0, 1fr)); margin-top: 0; border: 0; }
   .explore-links li:nth-child(n) { grid-column: auto; border: 0; }
   .explore-links li:last-child:nth-child(odd) { grid-column: auto; }
   .explore-links li:nth-child(n + 2) { border-inline-start: 1px solid #555; }
@@ -1792,6 +1792,7 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   .side-quests-grid { grid-template-columns: repeat(3, minmax(0, 440px)); }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
-  .explore-links { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .explore-links li:nth-child(4) { border-left: 0; }
+  .explore-links { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .explore-links li:nth-child(5) { border-left: 0; }
+  .explore-links li:last-child:nth-child(odd) { grid-column: span 2; }
 }

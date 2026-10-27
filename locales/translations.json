@@ -2086,5 +2086,65 @@
   "Hermes Agent and Codex supported implementation and testing on a MacBook Air M1, with requests and reviews through Telegram. ChatGPT generated character illustrations from supplied photographs; Hermes prepared and integrated the assets. Reusable skills guided design, testing, debugging and review. These tools belong to the development workflow, not the game's runtime.": {
     "pt": "Hermes Agent e Codex apoiaram a implementação e os testes em um MacBook Air M1, com solicitações e revisões pelo Telegram. O ChatGPT gerou as ilustrações dos personagens a partir de fotografias fornecidas; o Hermes preparou e integrou os arquivos. Skills reutilizáveis orientaram design, testes, depuração e revisão. Essas ferramentas pertencem ao fluxo de desenvolvimento, não à execução do jogo.",
     "it": "Hermes Agent e Codex hanno supportato l’implementazione e i test su un MacBook Air M1, con richieste e revisioni tramite Telegram. ChatGPT ha generato le illustrazioni dei personaggi a partire dalle fotografie fornite; Hermes ha preparato e integrato i file. Skill riutilizzabili hanno guidato design, test, debug e revisione. Questi strumenti appartengono al flusso di sviluppo, non all’esecuzione del gioco."
+  },
+  "Setup & Productivity": {
+    "pt": "Setup e produtividade",
+    "it": "Setup e produttività"
+  },
+  "08 / SETUP & PRODUCTIVITY": {
+    "pt": "08 / SETUP E PRODUTIVIDADE",
+    "it": "08 / SETUP E PRODUTTIVITÀ"
+  },
+  "My Setup & Productivity Hacks": {
+    "pt": "Meu setup e dicas de produtividade",
+    "it": "Il mio setup e consigli di produttività"
+  },
+  "The gear I use, at my desk and on the go.": {
+    "pt": "Os equipamentos que uso à mesa e em movimento.",
+    "it": "Gli strumenti che uso alla scrivania e in movimento."
+  },
+  "Webcam": {
+    "pt": "Webcam",
+    "it": "Webcam"
+  },
+  "Full-size keyboard": {
+    "pt": "Teclado completo",
+    "it": "Tastiera completa"
+  },
+  "Wireless mouse": {
+    "pt": "Mouse sem fio",
+    "it": "Mouse wireless"
+  },
+  "Wireless headset": {
+    "pt": "Headset sem fio",
+    "it": "Cuffie wireless"
+  },
+  "Smartphone gimbal": {
+    "pt": "Estabilizador para smartphone",
+    "it": "Stabilizzatore per smartphone"
+  },
+  "Smartwatch": {
+    "pt": "Smartwatch",
+    "it": "Smartwatch"
+  },
+  "Backpack": {
+    "pt": "Mochila",
+    "it": "Zaino"
+  },
+  "Reusable notebook": {
+    "pt": "Caderno reutilizável",
+    "it": "Quaderno riutilizzabile"
+  },
+  "View item": {
+    "pt": "Ver item",
+    "it": "Vedi articolo"
+  },
+  "More on my productivity habits and workflows soon.": {
+    "pt": "Em breve, mais sobre meus hábitos de produtividade e fluxos de trabalho.",
+    "it": "Presto, di più sulle mie abitudini di produttività e sui miei flussi di lavoro."
+  },
+  "09 / KEEP THE CONVERSATION GOING": {
+    "pt": "09 / VAMOS CONTINUAR A CONVERSA",
+    "it": "09 / CONTINUIAMO LA CONVERSAZIONE"
   }
 }
