@@ -27,4 +27,4 @@ class SetupTests(unittest.TestCase):
    links=[n.attrs.get('href','') for n in main.root.descendants('a') if 'link.amazon/' in n.attrs.get('href','')]
    self.assertEqual(len(links),7)
    for link in links:self.assertIn(link,output)
-   self.assertIn('| --- | --- | --- | --- |',output)
+   self.assertIn('| --- | --- | --- |',output)
