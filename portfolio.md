@@ -1117,19 +1117,6 @@ Before buying each item, I researched its features, weighed the pros and cons, w
 
   Client visits and events mean plenty of travel, so I need a discreet backpack with room to organize and protect my equipment. I've used sporty bags, nerdy Google Cloud ones and a Victorinox that was my favorite until it wore out after many hours of flying. The Mous has the finish and compartment layout I want for carrying my gear. This isn't the UltraTex model, but I have no plans to throw it out of a helicopter.
 
-Manufacturer product photos. Finishes, keyboard layouts and accessories shown may differ from my own equipment.
-
-#### Product photo sources
-
-- [Logitech MX Brio](https://www.logitech.com/en-us/shop/p/mx-brio-4k-webcam)
-- [Logitech MX Keys](https://www.logitech.com/en-us/business/shop/p/mx-keys-for-business)
-- [Logitech MX Master 3S](https://www.logitech.com/en-us/shop/p/mx-master-3s)
-- [Logitech G PRO X 2 LIGHTSPEED](https://www.logitechg.com/en-us/shop/p/pro-x-2-wireless-headset)
-- [DJI Osmo Mobile 6](https://www.dji.com/osmo-mobile-6)
-- [Apple Watch Ultra](https://www.apple.com/newsroom/2022/09/introducing-apple-watch-ultra/)
-- [Mous × Mercedes-AMG Backpack](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack)
-- [Infinitebook Daily Goal Digger](https://infinitebook.com/en/blogs/news/infinitebook-the-infinite-planner-designed-for-success)
-
 ---
 
 Source: https://paulosanches.github.io/hello/setup/tools-and-apps/agent/

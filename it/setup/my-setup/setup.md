@@ -72,16 +72,3 @@ Prima di acquistare ogni prodotto, ho studiato le funzionalità, valutato i pro 
   [Mous × Mercedes-AMG Backpack](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack) · Zaino
 
   Le visite ai clienti e gli eventi comportano molti viaggi, quindi mi serve uno zaino discreto, con spazio per organizzare e proteggere l'attrezzatura. Ho avuto modelli sportivi, quelli da nerd di Google Cloud e un Victorinox che è stato il mio preferito finché non si è consumato dopo tante ore di volo. Il Mous ha le finiture e la disposizione degli scomparti che cerco per trasportare il mio setup. Questo non è il modello UltraTex, ma non ho neanche intenzione di lanciare lo zaino da un elicottero.
-
-Foto dei prodotti dei produttori. Colori, layout delle tastiere e accessori mostrati possono differire dai miei strumenti.
-
-### Fonti delle foto dei prodotti
-
-- [Logitech MX Brio](https://www.logitech.com/en-us/shop/p/mx-brio-4k-webcam)
-- [Logitech MX Keys](https://www.logitech.com/en-us/business/shop/p/mx-keys-for-business)
-- [Logitech MX Master 3S](https://www.logitech.com/en-us/shop/p/mx-master-3s)
-- [Logitech G PRO X 2 LIGHTSPEED](https://www.logitechg.com/en-us/shop/p/pro-x-2-wireless-headset)
-- [DJI Osmo Mobile 6](https://www.dji.com/osmo-mobile-6)
-- [Apple Watch Ultra](https://www.apple.com/newsroom/2022/09/introducing-apple-watch-ultra/)
-- [Mous × Mercedes-AMG Backpack](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack)
-- [Infinitebook Daily Goal Digger](https://infinitebook.com/en/blogs/news/infinitebook-the-infinite-planner-designed-for-success)

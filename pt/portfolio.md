@@ -1117,19 +1117,6 @@ Antes de comprar cada item, pesquisei seus recursos, avaliei os prós e contras,
 
   Visitas a clientes e eventos envolvem muitas viagens, então preciso de uma mochila discreta, com espaço para organizar e proteger os equipamentos. Já tive modelos esportivos, os nerds da Google Cloud e uma Victorinox que foi minha favorita até chegar ao fim da vida depois de muitas horas de voo. A Mous tem o acabamento e a divisão dos compartimentos que procuro para carregar meu setup. Este não é o modelo UltraTex, mas também não tenho planos de jogar a mochila de um helicóptero.
 
-Fotos de produto dos fabricantes. Cores, layouts de teclado e acessórios exibidos podem diferir dos meus equipamentos.
-
-#### Fontes das fotos dos produtos
-
-- [Logitech MX Brio](https://www.logitech.com/en-us/shop/p/mx-brio-4k-webcam)
-- [Logitech MX Keys](https://www.logitech.com/en-us/business/shop/p/mx-keys-for-business)
-- [Logitech MX Master 3S](https://www.logitech.com/en-us/shop/p/mx-master-3s)
-- [Logitech G PRO X 2 LIGHTSPEED](https://www.logitechg.com/en-us/shop/p/pro-x-2-wireless-headset)
-- [DJI Osmo Mobile 6](https://www.dji.com/osmo-mobile-6)
-- [Apple Watch Ultra](https://www.apple.com/newsroom/2022/09/introducing-apple-watch-ultra/)
-- [Mous × Mercedes-AMG Backpack](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack)
-- [Infinitebook Daily Goal Digger](https://infinitebook.com/en/blogs/news/infinitebook-the-infinite-planner-designed-for-success)
-
 ---
 
 Fonte: https://paulosanches.github.io/hello/pt/setup/tools-and-apps/agent/
