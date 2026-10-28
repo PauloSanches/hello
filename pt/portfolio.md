@@ -28,8 +28,6 @@ Responsável por uma transformação de €7 milhões no setor público europeu 
 
 ## Os projetos que me formaram.
 
-Todo projeto deixa algo. Uma nova perspectiva, uma pergunta melhor ou um aprendizado que levo para o próximo.
-
 2023–hoje Em andamento Europa · Portugal e Grécia
 
 TRANSFORMAÇÃO DO SETOR PÚBLICO EUROPEU
@@ -111,8 +109,6 @@ Projetos selecionados, com algumas atuações em paralelo.
 
 ## Portfolio/Side Quests
 
-Projetos pessoais e experimentos, da ideia à aplicação.
-
 ![Captura de tela do Jogo da Vida - Magnólia, mostrando o tabuleiro ilustrado na casa final.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
 
 ### Jogo da Vida - Magnólia
@@ -124,8 +120,6 @@ Um jogo de tabuleiro interativo com histórias ilustradas e perguntas para refle
 04 / VIVÊNCIAS
 
 ## Há uma história por trás do trabalho.
-
-Os momentos que não cabem em um currículo. As mudanças inesperadas, as conversas e o que aprendi pelo caminho.
 
 01 / IA E ENGENHARIA
 
@@ -298,8 +292,6 @@ Representando a Ogilvy no FlashCamp 2010, o maior evento da comunidade Adobe no 
 07 / CERTIFICAÇÕES
 
 ## Certificações.
-
-Certificações, cursos e reconhecimentos profissionais.
 
 ### Global Leader | Certified by Deel
 
@@ -520,8 +512,6 @@ Validade: ago 2024
 08 / SETUP E PRODUTIVIDADE
 
 ## Meu setup e dicas de produtividade
-
-Os equipamentos que uso à mesa e em movimento.
 
 ![Visão geral do setup de Paulo, com os equipamentos identificados sobre uma mesa.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
 

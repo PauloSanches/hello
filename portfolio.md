@@ -28,8 +28,6 @@ Accountable for a €7M European public-sector transformation and contributed to
 
 ## The projects that shaped me.
 
-Every project leaves something behind. A new perspective, a better question, or a lesson I take into the next one.
-
 2023–today Ongoing Europe · Portugal & Greece
 
 EU PUBLIC-SECTOR TRANSFORMATION
@@ -111,8 +109,6 @@ Selected projects, with some engagements running in parallel.
 
 ## Portfolio/Side Quests
 
-Personal projects and experiments, from idea to working software.
-
 ![Screenshot of Jogo da Vida - Magnólia, showing the illustrated board at its final space.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
 
 ### Jogo da Vida - Magnólia
@@ -124,8 +120,6 @@ An interactive board game with illustrated stories and reflection prompts, explo
 04 / FIELD NOTES
 
 ## There’s a story behind the work.
-
-The moments that don’t fit neatly on a CV. The unexpected turns, the conversations, and the things I learned along the way.
 
 01 / AI & ENGINEERING
 
@@ -298,8 +292,6 @@ Representing Ogilvy at FlashCamp 2010, Brazil’s largest Adobe community event.
 07 / CERTIFICATIONS
 
 ## Certifications.
-
-Certifications, courses and professional recognition.
 
 ### Global Leader | Certified by Deel
 
@@ -520,8 +512,6 @@ Expiry: Aug 2024
 08 / SETUP & PRODUCTIVITY
 
 ## My Setup & Productivity Hacks
-
-The gear I use, at my desk and on the go.
 
 ![Overview of Paulo’s setup, with labelled equipment on a desk.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
 
