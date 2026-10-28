@@ -14,64 +14,48 @@ SETUP & PRODUCTIVITY
 
 The equipment behind my workday, from my desk to my bag.
 
-![Overview of Paulo’s setup, with labelled equipment on a desk.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
-
 I look for optimisation and high performance in what I do, and I take the same approach to my equipment.
 
 Before buying each item, I researched its features, weighed the pros and cons, watched reviews on YouTube and considered the trade-offs. I wanted to understand whether the higher price was justified.
 
-Each piece has a role in my working day. Below, I’ll explain how I use them and what difference they make.
+![Overview of Paulo’s setup, with labelled equipment on a desk.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
 
-## The gear at a glance
+Personal notes coming soon.
 
-| Photo | Equipment | Link |
-| --- | --- | --- |
-| ![Logitech MX Brio](https://paulosanches.github.io/hello/assets/setup/mx-brio.webp) | Logitech MX Brio | [View item](https://link.amazon/B03zvay7g) |
-| ![Logitech MX Keys](https://paulosanches.github.io/hello/assets/setup/mx-keys.webp) | Logitech MX Keys | [View item](https://link.amazon/B02quZak0) |
-| ![Logitech MX Master 3S](https://paulosanches.github.io/hello/assets/setup/mx-master-3s.webp) | Logitech MX Master 3S | [View item](https://link.amazon/B0f3b1CkG) |
-| ![Logitech G PRO X 2 LIGHTSPEED](https://paulosanches.github.io/hello/assets/setup/pro-x-2.webp) | Logitech G PRO X 2 LIGHTSPEED | [View item](https://link.amazon/B0aIAviog) |
-| ![DJI Osmo Mobile 6](https://paulosanches.github.io/hello/assets/setup/osmo-mobile-6.webp) | DJI Osmo Mobile 6 | [View item](https://link.amazon/B0cdfebGN) |
-| ![Apple Watch Ultra](https://paulosanches.github.io/hello/assets/setup/watch-ultra-transparent.webp) | Apple Watch Ultra | [View item](https://link.amazon/B0gtPCbJI) |
-| ![Mous × Mercedes-AMG Backpack](https://paulosanches.github.io/hello/assets/setup/mous-backpack.webp) | Mous × Mercedes-AMG Backpack | [View item](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack) |
-| ![Infinitebook Daily Goal Digger](https://paulosanches.github.io/hello/assets/setup/infinitebook.webp) | Infinitebook Daily Goal Digger | [View item](https://link.amazon/B07upEVUQ) |
+## Desk
+
+- ![Logitech MX Keys](https://paulosanches.github.io/hello/assets/setup/mx-keys.webp)
+
+  [Logitech MX Keys](https://link.amazon/B02quZak0) · Full-size keyboard
+- ![Logitech MX Master 3S](https://paulosanches.github.io/hello/assets/setup/mx-master-3s.webp)
+
+  [Logitech MX Master 3S](https://link.amazon/B0f3b1CkG) · Wireless mouse
+- ![Infinitebook Daily Goal Digger](https://paulosanches.github.io/hello/assets/setup/infinitebook.webp)
+
+  [Infinitebook Daily Goal Digger](https://link.amazon/B07upEVUQ) · Reusable notebook
+
+## Audio & Video
+
+- ![Logitech MX Brio](https://paulosanches.github.io/hello/assets/setup/mx-brio.webp)
+
+  [Logitech MX Brio](https://link.amazon/B03zvay7g) · Webcam
+- ![Logitech G PRO X 2 LIGHTSPEED](https://paulosanches.github.io/hello/assets/setup/pro-x-2.webp)
+
+  [Logitech G PRO X 2 LIGHTSPEED](https://link.amazon/B0aIAviog) · Wireless headset
+
+## On the Go
+
+- ![DJI Osmo Mobile 6](https://paulosanches.github.io/hello/assets/setup/osmo-mobile-6.webp)
+
+  [DJI Osmo Mobile 6](https://link.amazon/B0cdfebGN) · Smartphone gimbal
+- ![Apple Watch Ultra](https://paulosanches.github.io/hello/assets/setup/watch-ultra-transparent.webp)
+
+  [Apple Watch Ultra](https://link.amazon/B0gtPCbJI) · Smartwatch
+- ![Mous × Mercedes-AMG Backpack](https://paulosanches.github.io/hello/assets/setup/mous-backpack.webp)
+
+  [Mous × Mercedes-AMG Backpack](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack) · Backpack
 
 Manufacturer product photos. Finishes, keyboard layouts and accessories shown may differ from my own equipment.
-
-## What makes a difference
-
-A place for my personal notes: the functions I use, the settings I keep and the small improvements each gadget brings to my routine.
-
-### Logitech MX Brio
-
-Personal notes coming soon.
-
-### Logitech MX Keys
-
-Personal notes coming soon.
-
-### Logitech MX Master 3S
-
-Personal notes coming soon.
-
-### Logitech G PRO X 2 LIGHTSPEED
-
-Personal notes coming soon.
-
-### DJI Osmo Mobile 6
-
-Personal notes coming soon.
-
-### Apple Watch Ultra
-
-Personal notes coming soon.
-
-### Mous × Mercedes-AMG Backpack
-
-Personal notes coming soon.
-
-### Infinitebook Daily Goal Digger
-
-Personal notes coming soon.
 
 ### Product photo sources
 

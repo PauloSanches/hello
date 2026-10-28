@@ -1,10 +1,10 @@
-"""Check that equipment images and links survive the setup's Markdown export."""
+"""Check that categorized equipment and links survive the setup's Markdown export."""
 from pathlib import Path
 import sys
 import unittest
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from agent_content import build_detail_document,Document,Markdown,BASE
+from agent_content import build_detail_document,Document,Markdown,BASE,normalise,plain
 class SetupTests(unittest.TestCase):
  def test_table_keeps_headers_images_and_product_links(self):
   doc=Document('<table><thead><tr><th>Photo</th><th>Item</th></tr></thead><tbody><tr><td><img src="assets/test.webp" alt="Keyboard"></td><td><a href="https://example.com/item">MX Keys</a></td></tr></tbody></table>')
@@ -13,18 +13,24 @@ class SetupTests(unittest.TestCase):
   self.assertIn('| --- | --- |',output)
   self.assertIn('![Keyboard]('+BASE+'assets/test.webp)',output)
   self.assertIn('[MX Keys](https://example.com/item)',output)
- def test_setup_exports_all_equipment_and_named_notes(self):
+ def test_setup_exports_all_categorized_equipment_and_product_links(self):
   for prefix in ['', 'pt','it']:
    folder=ROOT/prefix if prefix else ROOT
    main=Document((folder/'setup/my-setup/index.html').read_text())
    output=build_detail_document(ROOT,prefix,'my-setup','setup')
-   table=next(main.root.descendants('table'))
-   images=list(table.descendants('img'))
+   sections=[n for n in main.root.descendants('section') if 'setup-uses' in n.classes]
+   self.assertEqual(len(sections),3)
+   self.assertEqual(len(list(main.root.descendants('table'))),0)
+   items=[n for section in sections for n in section.descendants('li')]
+   self.assertEqual(len(items),8)
+   images=[image for item in items for image in item.descendants('img')]
    self.assertEqual(len(images),8)
    for image in images:
     self.assertIn('assets/'+image.attrs['src'].split('assets/',1)[1],output)
-    self.assertIn('### '+image.attrs['alt'],output)
-   links=[n.attrs.get('href','') for n in main.root.descendants('a') if 'link.amazon/' in n.attrs.get('href','')]
-   self.assertEqual(len(links),7)
+   links=[n.attrs.get('href','') for item in items for n in item.descendants('a')]
+   self.assertEqual(len(links),8)
+   self.assertEqual(sum('link.amazon/' in link for link in links),7)
    for link in links:self.assertIn(link,output)
-   self.assertIn('| --- | --- | --- |',output)
+   for section in sections:
+    heading=next(section.descendants('h2'))
+    self.assertIn('## '+normalise(plain(heading)),output)

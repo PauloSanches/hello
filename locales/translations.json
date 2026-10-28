@@ -2382,5 +2382,49 @@
   "Read how I built this portfolio": {
     "pt": "Leia como construí este portfólio",
     "it": "Leggi come ho realizzato questo portfolio"
+  },
+  "Desk": {
+    "pt": "Mesa de trabalho",
+    "it": "Scrivania"
+  },
+  "Audio & Video": {
+    "pt": "Áudio e vídeo",
+    "it": "Audio e video"
+  },
+  "On the Go": {
+    "pt": "Fora da mesa",
+    "it": "In mobilità"
+  },
+  "· Full-size keyboard": {
+    "pt": "· Teclado completo",
+    "it": "· Tastiera completa"
+  },
+  "· Wireless mouse": {
+    "pt": "· Mouse sem fio",
+    "it": "· Mouse wireless"
+  },
+  "· Reusable notebook": {
+    "pt": "· Caderno reutilizável",
+    "it": "· Quaderno riutilizzabile"
+  },
+  "· Webcam": {
+    "pt": "· Webcam",
+    "it": "· Webcam"
+  },
+  "· Wireless headset": {
+    "pt": "· Headset sem fio",
+    "it": "· Cuffie wireless"
+  },
+  "· Smartphone gimbal": {
+    "pt": "· Estabilizador para smartphone",
+    "it": "· Stabilizzatore per smartphone"
+  },
+  "· Smartwatch": {
+    "pt": "· Smartwatch",
+    "it": "· Smartwatch"
+  },
+  "· Backpack": {
+    "pt": "· Mochila",
+    "it": "· Zaino"
   }
 }

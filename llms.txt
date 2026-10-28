@@ -72,7 +72,7 @@ Each Field Note also has an individual `story.md` file and an `agent/` text view
 ## Setup and productivity
 
 - The homepage has four topic cards: Setup & Gadgets, Tools & Apps, Work Routine and AI. Each links to a dedicated page, with equivalent English, Italian and Brazilian Portuguese versions and AI/Agent views.
-- [My Setup](https://paulosanches.github.io/hello/setup/my-setup/): Paulo’s equipment inventory, with eight product photographs, the links he supplied and an introduction explaining how he evaluates features, pros and cons, reviews, trade-offs and price. Device-specific personal notes are marked as forthcoming.
+- [My Setup](https://paulosanches.github.io/hello/setup/my-setup/): Eight equipment entries organized under Desk, Audio & Video, and On the Go, with linked product names, compact photos and device types. The supplied overview and introduction remain; personal usage notes are forthcoming.
 - [Setup in Markdown — English](https://paulosanches.github.io/hello/setup/my-setup/setup.md)
 - [Setup em Markdown — português do Brasil](https://paulosanches.github.io/hello/pt/setup/my-setup/setup.md)
 - [Setup in Markdown — italiano](https://paulosanches.github.io/hello/it/setup/my-setup/setup.md)
