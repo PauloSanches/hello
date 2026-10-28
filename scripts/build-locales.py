@@ -13,7 +13,7 @@ import re
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from zoneinfo import ZoneInfo
-from agent_content import build as build_agent_content
+from agent_content import Document, build as build_agent_content
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://paulosanches.github.io/hello/"
@@ -206,6 +206,12 @@ def main():
     ET.register_namespace("xhtml", alternate)
     sitemap = ET.Element(f"{{{namespace}}}urlset")
     for path in SOURCES:
+        # Prepared pages remain reachable, but stay out of search until filled in.
+        robots = [node.attrs.get("content", "").lower()
+                  for node in Document(sources[path]).root.descendants("meta")
+                  if node.attrs.get("name", "").lower() == "robots"]
+        if any("noindex" in re.split(r"[\s,]+", value) for value in robots):
+            continue
         suffix = "" if path == "index.html" else path.removesuffix("index.html")
         variants = {"en": BASE + suffix, "it": BASE + "it/" + suffix, "pt-BR": BASE + "pt/" + suffix}
         for url in variants.values():

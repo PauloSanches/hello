@@ -1828,3 +1828,27 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
 .setup-card-cover { display: block; width: 100%; height: auto; }
 .story-setup .story-card-link { display: flex; flex-direction: column; }
 .story-setup .story-front { flex: 1; height: auto; min-height: 0; }
+
+/* Four setup topics share a two-column collection and matching visual frames. */
+.setup-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
+.setup-grid .story { --story-accent: var(--icon-services); }
+.setup-grid .story-tools { --story-accent: var(--icon-telecom); }
+.setup-grid .story-routine { --story-accent: var(--icon-banking); }
+.setup-grid .story-ai { --story-accent: var(--icon-people); }
+.setup-grid .story-card-link { display: flex; flex-direction: column; }
+.setup-card-visual { position: relative; aspect-ratio: 1672 / 941; display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden; border-bottom: 1px solid var(--quiet-line); background: #eef2f9; color: var(--story-accent); }
+.setup-card-visual .setup-card-cover { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.story-tools .setup-card-visual { background: #f2eef7; }
+.story-routine .setup-card-visual { background: #edf5f0; }
+.story-ai .setup-card-visual { background: #faf0eb; }
+.setup-card-visual svg { width: 100px; height: 100px; max-width: 40%; }
+.setup-grid .story-front { flex: 1; height: auto; min-height: 0; padding: 24px; }
+.setup-grid .story h3 { margin-top: 20px; }
+.setup-grid .story-teaser { margin-bottom: 28px; }
+.setup-grid .story-open { margin-top: auto; }
+.setup-preparing { margin-top: 32px; }
+.setup-related-link a { display: inline-flex; align-items: center; min-height: 44px; }
+@media (max-width: 680px) {
+  .setup-grid { grid-template-columns: minmax(0, 1fr); }
+  .setup-grid .story-front { padding: 22px; }
+}

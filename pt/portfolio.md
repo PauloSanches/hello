@@ -515,13 +515,37 @@ Validade: ago 2024
 
 ![Visão geral do setup de Paulo, com os equipamentos identificados sobre uma mesa.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
 
-01 / SETUP
+01 / SETUP E GADGETS
 
-### Meu setup
+### Setup e Gadgets
 
-Os equipamentos da minha mesa e da minha mochila, com fotos, links e anotações de uso.
+Os equipamentos que uso na mesa de trabalho e fora dela, pensando em produtividade e alta performance.
 
 Fonte: https://paulosanches.github.io/hello/pt/setup/my-setup/agent/
+
+02 / FERRAMENTAS E APPS
+
+### Ferramentas e Apps
+
+Os softwares que uso no dia a dia de trabalho.
+
+Fonte: https://paulosanches.github.io/hello/pt/setup/tools-and-apps/agent/
+
+03 / ROTINA DE TRABALHO
+
+### Rotina de Trabalho
+
+Como organizo meu calendário e planejo minha semana de trabalho.
+
+Fonte: https://paulosanches.github.io/hello/pt/setup/work-routine/agent/
+
+04 / IA
+
+### IA
+
+Como uso IA e agentes, incluindo a criação deste portfólio com o Codex, por chat e voz.
+
+Fonte: https://paulosanches.github.io/hello/pt/setup/ai/agent/
 
 09 / VAMOS CONTINUAR A CONVERSA
 
@@ -1103,5 +1127,49 @@ Em breve, minhas anotações de uso.
 - [Apple Watch Ultra](https://www.apple.com/newsroom/2022/09/introducing-apple-watch-ultra/)
 - [Mous × Mercedes-AMG Backpack](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack)
 - [Infinitebook Daily Goal Digger](https://infinitebook.com/en/blogs/news/infinitebook-the-infinite-planner-designed-for-success)
+
+---
+
+Fonte: https://paulosanches.github.io/hello/pt/setup/tools-and-apps/agent/
+
+Markdown: https://paulosanches.github.io/hello/pt/setup/tools-and-apps/setup.md
+
+SETUP E PRODUTIVIDADE
+
+## Ferramentas e Apps
+
+Os softwares que uso no dia a dia de trabalho.
+
+Mais detalhes em breve.
+
+---
+
+Fonte: https://paulosanches.github.io/hello/pt/setup/work-routine/agent/
+
+Markdown: https://paulosanches.github.io/hello/pt/setup/work-routine/setup.md
+
+SETUP E PRODUTIVIDADE
+
+## Rotina de Trabalho
+
+Como organizo meu calendário e planejo minha semana de trabalho.
+
+Mais detalhes em breve.
+
+---
+
+Fonte: https://paulosanches.github.io/hello/pt/setup/ai/agent/
+
+Markdown: https://paulosanches.github.io/hello/pt/setup/ai/setup.md
+
+SETUP E PRODUTIVIDADE
+
+## IA
+
+Como uso IA e agentes, incluindo a criação deste portfólio com o Codex, por chat e voz.
+
+Mais detalhes em breve.
+
+[Leia como construí este portfólio](https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/agent/)
 
 ---

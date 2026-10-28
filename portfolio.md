@@ -515,13 +515,37 @@ Expiry: Aug 2024
 
 ![Overview of Paulo’s setup, with labelled equipment on a desk.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
 
-01 / SETUP
+01 / SETUP & GADGETS
 
-### My Setup
+### Setup & Gadgets
 
-The gear on my desk and in my bag, with product photos, links and notes on everyday use.
+The gear I use at my desk and on the go, with productivity and high performance in mind.
 
 Source: https://paulosanches.github.io/hello/setup/my-setup/agent/
+
+02 / TOOLS & APPS
+
+### Tools & Apps
+
+The software I use in my day-to-day work.
+
+Source: https://paulosanches.github.io/hello/setup/tools-and-apps/agent/
+
+03 / WORK ROUTINE
+
+### Work Routine
+
+How I organize my calendar and plan my workweek.
+
+Source: https://paulosanches.github.io/hello/setup/work-routine/agent/
+
+04 / AI
+
+### AI
+
+How I use AI and agents, including building this portfolio with Codex through chat and voice.
+
+Source: https://paulosanches.github.io/hello/setup/ai/agent/
 
 09 / KEEP THE CONVERSATION GOING
 
@@ -1103,5 +1127,49 @@ Personal notes coming soon.
 - [Apple Watch Ultra](https://www.apple.com/newsroom/2022/09/introducing-apple-watch-ultra/)
 - [Mous × Mercedes-AMG Backpack](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack)
 - [Infinitebook Daily Goal Digger](https://infinitebook.com/en/blogs/news/infinitebook-the-infinite-planner-designed-for-success)
+
+---
+
+Source: https://paulosanches.github.io/hello/setup/tools-and-apps/agent/
+
+Markdown: https://paulosanches.github.io/hello/setup/tools-and-apps/setup.md
+
+SETUP & PRODUCTIVITY
+
+## Tools & Apps
+
+The software I use in my day-to-day work.
+
+More details coming soon.
+
+---
+
+Source: https://paulosanches.github.io/hello/setup/work-routine/agent/
+
+Markdown: https://paulosanches.github.io/hello/setup/work-routine/setup.md
+
+SETUP & PRODUCTIVITY
+
+## Work Routine
+
+How I organize my calendar and plan my workweek.
+
+More details coming soon.
+
+---
+
+Source: https://paulosanches.github.io/hello/setup/ai/agent/
+
+Markdown: https://paulosanches.github.io/hello/setup/ai/setup.md
+
+SETUP & PRODUCTIVITY
+
+## AI
+
+How I use AI and agents, including building this portfolio with Codex through chat and voice.
+
+More details coming soon.
+
+[Read how I built this portfolio](https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/agent/)
 
 ---

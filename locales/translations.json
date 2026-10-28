@@ -2260,8 +2260,8 @@
     "it": "01 / SETUP"
   },
   "Explore my setup →": {
-    "pt": "Conheça meu setup →",
-    "it": "Scopri il mio setup →"
+    "pt": "Explore meu setup →",
+    "it": "Esplora il mio setup →"
   },
   "I look for optimisation and high performance in what I do, and I take the same approach to my equipment.": {
     "pt": "Busco otimização e alto desempenho no que faço, e escolho meus equipamentos com o mesmo cuidado.",
@@ -2290,5 +2290,97 @@
   "Overview of Paulo’s setup, with labelled equipment on a desk.": {
     "pt": "Visão geral do setup de Paulo, com os equipamentos identificados sobre uma mesa.",
     "it": "Panoramica del setup di Paulo, con gli strumenti identificati su una scrivania."
+  },
+  "Setup & Gadgets": {
+    "pt": "Setup e Gadgets",
+    "it": "Setup e gadget"
+  },
+  "The gear I use at my desk and on the go, with productivity and high performance in mind.": {
+    "pt": "Os equipamentos que uso na mesa de trabalho e fora dela, pensando em produtividade e alta performance.",
+    "it": "I dispositivi che uso alla scrivania e quando sono in giro, pensando alla produttività e alle alte prestazioni."
+  },
+  "01 / SETUP & GADGETS": {
+    "pt": "01 / SETUP E GADGETS",
+    "it": "01 / SETUP E GADGET"
+  },
+  "Tools & Apps": {
+    "pt": "Ferramentas e Apps",
+    "it": "Strumenti e app"
+  },
+  "The software I use in my day-to-day work.": {
+    "pt": "Os softwares que uso no dia a dia de trabalho.",
+    "it": "I software che uso nel lavoro quotidiano."
+  },
+  "Explore my tools →": {
+    "pt": "Conheça minhas ferramentas →",
+    "it": "Scopri i miei strumenti →"
+  },
+  "02 / TOOLS & APPS": {
+    "pt": "02 / FERRAMENTAS E APPS",
+    "it": "02 / STRUMENTI E APP"
+  },
+  "Tools & Apps | Paulo Sanches": {
+    "pt": "Ferramentas e Apps | Paulo Sanches",
+    "it": "Strumenti e app | Paulo Sanches"
+  },
+  "Tools & Apps — Paulo Sanches": {
+    "pt": "Ferramentas e Apps — Paulo Sanches",
+    "it": "Strumenti e app — Paulo Sanches"
+  },
+  "Work Routine": {
+    "pt": "Rotina de Trabalho",
+    "it": "Routine di lavoro"
+  },
+  "How I organize my calendar and plan my workweek.": {
+    "pt": "Como organizo meu calendário e planejo minha semana de trabalho.",
+    "it": "Come organizzo il calendario e pianifico la mia settimana lavorativa."
+  },
+  "See my work routine →": {
+    "pt": "Conheça minha rotina →",
+    "it": "Scopri la mia routine di lavoro →"
+  },
+  "03 / WORK ROUTINE": {
+    "pt": "03 / ROTINA DE TRABALHO",
+    "it": "03 / ROUTINE DI LAVORO"
+  },
+  "Work Routine | Paulo Sanches": {
+    "pt": "Rotina de Trabalho | Paulo Sanches",
+    "it": "Routine di lavoro | Paulo Sanches"
+  },
+  "Work Routine — Paulo Sanches": {
+    "pt": "Rotina de Trabalho — Paulo Sanches",
+    "it": "Routine di lavoro — Paulo Sanches"
+  },
+  "AI": {
+    "pt": "IA",
+    "it": "IA"
+  },
+  "How I use AI and agents, including building this portfolio with Codex through chat and voice.": {
+    "pt": "Como uso IA e agentes, incluindo a criação deste portfólio com o Codex, por chat e voz.",
+    "it": "Come uso l’IA e gli agenti, anche per creare questo portfolio con Codex tramite chat e voce."
+  },
+  "See how I use AI →": {
+    "pt": "Veja como uso IA →",
+    "it": "Scopri come uso l’IA →"
+  },
+  "04 / AI": {
+    "pt": "04 / IA",
+    "it": "04 / IA"
+  },
+  "AI | Paulo Sanches": {
+    "pt": "IA | Paulo Sanches",
+    "it": "IA | Paulo Sanches"
+  },
+  "AI — Paulo Sanches": {
+    "pt": "IA — Paulo Sanches",
+    "it": "IA — Paulo Sanches"
+  },
+  "More details coming soon.": {
+    "pt": "Mais detalhes em breve.",
+    "it": "Maggiori dettagli in arrivo."
+  },
+  "Read how I built this portfolio": {
+    "pt": "Leia como construí este portfólio",
+    "it": "Leggi come ho realizzato questo portfolio"
   }
 }
