@@ -22,9 +22,9 @@ Antes de comprar cada item, pesquisei seus recursos, avaliei os prós e contras,
 
 ## Mesa de trabalho
 
-- ![FLEXISPOT EC5 Plus Electric Dual](https://paulosanches.github.io/hello/assets/setup/flexispot-ec5-plus.jpg)
+- ![FLEXISPOT EC5 Plus Electric Dual](https://paulosanches.github.io/hello/assets/setup/flexispot-ec5-plus-frame.webp)
 
-  [FLEXISPOT EC5 Plus Electric Dual](https://www.amazon.es/dp/B0FDPYLTQ4)
+  [FLEXISPOT EC5 Plus Electric Dual](https://www.amazon.es/dp/B0DN1HMXHX)
 
   Com a FLEXISPOT, consigo fazer reuniões e ter momentos de foco em pé. Gosto da qualidade dos materiais e da potência dos dois motores. Os comandos e os presets de altura são muito úteis no meu dia a dia.
 - ![Logitech MX Keys](https://paulosanches.github.io/hello/assets/setup/mx-keys.webp)
