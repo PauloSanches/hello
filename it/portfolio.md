@@ -531,8 +531,6 @@ I software che uso nel lavoro quotidiano.
 
 In arrivo
 
-Fonte: https://paulosanches.github.io/hello/it/setup/tools-and-apps/agent/
-
 03 / ROUTINE DI LAVORO
 
 ### Routine di lavoro
@@ -541,8 +539,6 @@ Come organizzo il calendario e pianifico la mia settimana lavorativa.
 
 In arrivo
 
-Fonte: https://paulosanches.github.io/hello/it/setup/work-routine/agent/
-
 04 / WORKFLOW E AGENTI IA
 
 ### Workflow e agenti IA
@@ -550,8 +546,6 @@ Fonte: https://paulosanches.github.io/hello/it/setup/work-routine/agent/
 Come uso l’IA e gli agenti, anche per creare questo portfolio con Codex tramite chat e voce.
 
 In arrivo
-
-Fonte: https://paulosanches.github.io/hello/it/setup/ai/agent/
 
 09 / CONTINUIAMO LA CONVERSAZIONE
 
@@ -1122,49 +1116,5 @@ Prima di acquistare ogni prodotto, ho studiato le funzionalità, valutato i pro 
   [Mous × Mercedes-AMG Backpack](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack) · Zaino
 
   Le visite ai clienti e gli eventi comportano molti viaggi, quindi mi serve uno zaino discreto, con spazio per organizzare e proteggere l'attrezzatura. Ho avuto modelli sportivi, quelli da nerd di Google Cloud e un Victorinox che è stato il mio preferito finché non si è consumato dopo tante ore di volo. Il Mous ha le finiture e la disposizione degli scomparti che cerco per trasportare il mio setup. Questo non è il modello UltraTex, ma non ho neanche intenzione di lanciare lo zaino da un elicottero.
-
----
-
-Fonte: https://paulosanches.github.io/hello/it/setup/tools-and-apps/agent/
-
-Markdown: https://paulosanches.github.io/hello/it/setup/tools-and-apps/setup.md
-
-SETUP E PRODUTTIVITÀ
-
-## Strumenti e app
-
-I software che uso nel lavoro quotidiano.
-
-Maggiori dettagli in arrivo.
-
----
-
-Fonte: https://paulosanches.github.io/hello/it/setup/work-routine/agent/
-
-Markdown: https://paulosanches.github.io/hello/it/setup/work-routine/setup.md
-
-SETUP E PRODUTTIVITÀ
-
-## Routine di lavoro
-
-Come organizzo il calendario e pianifico la mia settimana lavorativa.
-
-Maggiori dettagli in arrivo.
-
----
-
-Fonte: https://paulosanches.github.io/hello/it/setup/ai/agent/
-
-Markdown: https://paulosanches.github.io/hello/it/setup/ai/setup.md
-
-SETUP E PRODUTTIVITÀ
-
-## Workflow e agenti IA
-
-Come uso l’IA e gli agenti, anche per creare questo portfolio con Codex tramite chat e voce.
-
-Maggiori dettagli in arrivo.
-
-[Leggi come ho realizzato questo portfolio](https://paulosanches.github.io/hello/it/field-notes/a-weekend-a-phone-and-ai/agent/)
 
 ---

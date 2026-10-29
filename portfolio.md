@@ -531,8 +531,6 @@ The software I use in my day-to-day work.
 
 Coming soon
 
-Source: https://paulosanches.github.io/hello/setup/tools-and-apps/agent/
-
 03 / WORK ROUTINE
 
 ### Work Routine
@@ -541,8 +539,6 @@ How I organize my calendar and plan my workweek.
 
 Coming soon
 
-Source: https://paulosanches.github.io/hello/setup/work-routine/agent/
-
 04 / AI WORKFLOWS & AGENTS
 
 ### AI Workflows & Agents
@@ -550,8 +546,6 @@ Source: https://paulosanches.github.io/hello/setup/work-routine/agent/
 How I use AI and agents, including building this portfolio with Codex through chat and voice.
 
 Coming soon
-
-Source: https://paulosanches.github.io/hello/setup/ai/agent/
 
 09 / KEEP THE CONVERSATION GOING
 
@@ -1122,49 +1116,5 @@ Before buying each item, I researched its features, weighed the pros and cons, w
   [Mous × Mercedes-AMG Backpack](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack) · Backpack
 
   Client visits and events mean plenty of travel, so I need a discreet backpack with room to organize and protect my equipment. I've used sporty bags, nerdy Google Cloud ones and a Victorinox that was my favorite until it wore out after many hours of flying. The Mous has the finish and compartment layout I want for carrying my gear. This isn't the UltraTex model, but I have no plans to throw it out of a helicopter.
-
----
-
-Source: https://paulosanches.github.io/hello/setup/tools-and-apps/agent/
-
-Markdown: https://paulosanches.github.io/hello/setup/tools-and-apps/setup.md
-
-SETUP & PRODUCTIVITY
-
-## Tools & Apps
-
-The software I use in my day-to-day work.
-
-More details coming soon.
-
----
-
-Source: https://paulosanches.github.io/hello/setup/work-routine/agent/
-
-Markdown: https://paulosanches.github.io/hello/setup/work-routine/setup.md
-
-SETUP & PRODUCTIVITY
-
-## Work Routine
-
-How I organize my calendar and plan my workweek.
-
-More details coming soon.
-
----
-
-Source: https://paulosanches.github.io/hello/setup/ai/agent/
-
-Markdown: https://paulosanches.github.io/hello/setup/ai/setup.md
-
-SETUP & PRODUCTIVITY
-
-## AI Workflows & Agents
-
-How I use AI and agents, including building this portfolio with Codex through chat and voice.
-
-More details coming soon.
-
-[Read how I built this portfolio](https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/agent/)
 
 ---
