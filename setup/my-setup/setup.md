@@ -22,6 +22,11 @@ Before buying each item, I researched its features, weighed the pros and cons, w
 
 ## Desk
 
+- ![FLEXISPOT EC5 Plus Electric Dual](https://paulosanches.github.io/hello/assets/setup/flexispot-ec5-plus.jpg)
+
+  [FLEXISPOT EC5 Plus Electric Dual](https://www.amazon.es/dp/B0FDPYLTQ4)
+
+  The FLEXISPOT lets me take meetings and spend focused work sessions standing up. I like the material quality and the power of its two motors. The controls and height presets are useful in my day-to-day work.
 - ![Logitech MX Keys](https://paulosanches.github.io/hello/assets/setup/mx-keys.webp)
 
   [Logitech MX Keys](https://link.amazon/B02quZak0)

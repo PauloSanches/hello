@@ -1066,6 +1066,11 @@ Prima di acquistare ogni prodotto, ho studiato le funzionalità, valutato i pro 
 
 ### Scrivania
 
+- ![FLEXISPOT EC5 Plus Electric Dual](https://paulosanches.github.io/hello/assets/setup/flexispot-ec5-plus.jpg)
+
+  [FLEXISPOT EC5 Plus Electric Dual](https://www.amazon.es/dp/B0FDPYLTQ4)
+
+  Con la FLEXISPOT posso partecipare alle riunioni e lavorare in piedi nei momenti di concentrazione. Apprezzo la qualità dei materiali e la potenza dei due motori. I comandi e le altezze preimpostate sono molto utili nella mia giornata.
 - ![Logitech MX Keys](https://paulosanches.github.io/hello/assets/setup/mx-keys.webp)
 
   [Logitech MX Keys](https://link.amazon/B02quZak0)

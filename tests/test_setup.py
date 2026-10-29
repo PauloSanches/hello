@@ -27,13 +27,13 @@ class SetupTests(unittest.TestCase):
    self.assertEqual(len(sections),3)
    self.assertEqual(len(list(main.root.descendants('table'))),0)
    items=[n for section in sections for n in section.descendants('li')]
-   self.assertEqual(len(items),8)
+   self.assertEqual(len(items),9)
    images=[image for item in items for image in item.descendants('img')]
-   self.assertEqual(len(images),8)
+   self.assertEqual(len(images),9)
    for image in images:
     self.assertIn('assets/'+image.attrs['src'].split('assets/',1)[1],output)
    links=[n.attrs.get('href','') for item in items for n in item.descendants('a')]
-   self.assertEqual(len(links),8)
+   self.assertEqual(len(links),9)
    self.assertEqual(sum('link.amazon/' in link for link in links),7)
    for link in links:self.assertIn(link,output)
    for section in sections:
