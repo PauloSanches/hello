@@ -529,6 +529,8 @@ Source: https://paulosanches.github.io/hello/setup/my-setup/agent/
 
 The software I use in my day-to-day work.
 
+Coming soon
+
 Source: https://paulosanches.github.io/hello/setup/tools-and-apps/agent/
 
 03 / WORK ROUTINE
@@ -537,13 +539,17 @@ Source: https://paulosanches.github.io/hello/setup/tools-and-apps/agent/
 
 How I organize my calendar and plan my workweek.
 
+Coming soon
+
 Source: https://paulosanches.github.io/hello/setup/work-routine/agent/
 
-04 / AI
+04 / AI WORKFLOWS & AGENTS
 
-### AI
+### AI Workflows & Agents
 
 How I use AI and agents, including building this portfolio with Codex through chat and voice.
+
+Coming soon
 
 Source: https://paulosanches.github.io/hello/setup/ai/agent/
 
@@ -1153,7 +1159,7 @@ Markdown: https://paulosanches.github.io/hello/setup/ai/setup.md
 
 SETUP & PRODUCTIVITY
 
-## AI
+## AI Workflows & Agents
 
 How I use AI and agents, including building this portfolio with Codex through chat and voice.
 

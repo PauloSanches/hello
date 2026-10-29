@@ -71,12 +71,12 @@ Each Field Note also has an individual `story.md` file and an `agent/` text view
 
 ## Setup and productivity
 
-- The homepage has four topic cards: Setup & Gadgets, Tools & Apps, Work Routine and AI. Each links to a dedicated page, with equivalent English, Italian and Brazilian Portuguese versions and AI/Agent views.
+- The homepage has four topic cards: Setup & Gadgets, Tools & Apps, Work Routine and AI Workflows & Agents. The latter three are marked Coming soon. Each links to a dedicated page, with equivalent English, Italian and Brazilian Portuguese versions and AI/Agent views.
 - [My Setup](https://paulosanches.github.io/hello/setup/my-setup/): Eight equipment entries organized under Desk, Audio & Video, and On the Go, with linked product names, compact photos and personal notes on everyday use, productivity and purchase trade-offs.
 - [Setup in Markdown — English](https://paulosanches.github.io/hello/setup/my-setup/setup.md)
 - [Setup em Markdown — português do Brasil](https://paulosanches.github.io/hello/pt/setup/my-setup/setup.md)
 - [Setup in Markdown — italiano](https://paulosanches.github.io/hello/it/setup/my-setup/setup.md)
 - [Tools & Apps](https://paulosanches.github.io/hello/setup/tools-and-apps/): Prepared page for Paulo’s software choices; details are forthcoming.
 - [Work Routine](https://paulosanches.github.io/hello/setup/work-routine/): Prepared page for his calendar and weekly planning; details are forthcoming.
-- [AI](https://paulosanches.github.io/hello/setup/ai/): Prepared page for his use of AI and agents, with a link to the published account of building this portfolio with Codex.
+- [AI Workflows & Agents](https://paulosanches.github.io/hello/setup/ai/): Prepared page for his use of AI and agents, with a link to the published account of building this portfolio with Codex.
 - Each topic also has `setup.md` and `agent/` alongside its page, with the same locale prefixes as the rest of the site. Prepared pages stay out of the sitemap and search index until they have their full content.

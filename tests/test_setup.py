@@ -6,6 +6,11 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from agent_content import build_detail_document,Document,Markdown,BASE,normalise,plain
 class SetupTests(unittest.TestCase):
+ def test_markdown_keeps_availability_status_but_omits_decorative_cta(self):
+  doc=Document('<div><span class="story-open">Explore my setup →</span><span class="story-open setup-card-status">Coming soon</span></div>')
+  output=Markdown(BASE).render(next(doc.root.descendants('div')))
+  self.assertIn('Coming soon',output)
+  self.assertNotIn('Explore my setup',output)
  def test_table_keeps_headers_images_and_product_links(self):
   doc=Document('<table><thead><tr><th>Photo</th><th>Item</th></tr></thead><tbody><tr><td><img src="assets/test.webp" alt="Keyboard"></td><td><a href="https://example.com/item">MX Keys</a></td></tr></tbody></table>')
   output=Markdown(BASE).render(next(doc.root.descendants('table')))

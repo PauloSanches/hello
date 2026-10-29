@@ -80,7 +80,10 @@ class Document(HTMLParser):
 
 
 def omitted(node):
-    return node.tag in SKIP_TAGS or node.attrs.get("aria-hidden") == "true" or bool(node.classes & SKIP_CLASSES)
+    skipped_classes = node.classes & SKIP_CLASSES
+    if "setup-card-status" in node.classes:
+        skipped_classes.discard("story-open")
+    return node.tag in SKIP_TAGS or node.attrs.get("aria-hidden") == "true" or bool(skipped_classes)
 
 
 def plain(node):

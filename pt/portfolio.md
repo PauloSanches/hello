@@ -529,6 +529,8 @@ Fonte: https://paulosanches.github.io/hello/pt/setup/my-setup/agent/
 
 Os softwares que uso no dia a dia de trabalho.
 
+Em breve
+
 Fonte: https://paulosanches.github.io/hello/pt/setup/tools-and-apps/agent/
 
 03 / ROTINA DE TRABALHO
@@ -537,13 +539,17 @@ Fonte: https://paulosanches.github.io/hello/pt/setup/tools-and-apps/agent/
 
 Como organizo meu calendário e planejo minha semana de trabalho.
 
+Em breve
+
 Fonte: https://paulosanches.github.io/hello/pt/setup/work-routine/agent/
 
-04 / IA
+04 / WORKFLOWS E AGENTES DE IA
 
-### IA
+### Workflows e Agentes de IA
 
 Como uso IA e agentes, incluindo a criação deste portfólio com o Codex, por chat e voz.
+
+Em breve
 
 Fonte: https://paulosanches.github.io/hello/pt/setup/ai/agent/
 
@@ -1153,7 +1159,7 @@ Markdown: https://paulosanches.github.io/hello/pt/setup/ai/setup.md
 
 SETUP E PRODUTIVIDADE
 
-## IA
+## Workflows e Agentes de IA
 
 Como uso IA e agentes, incluindo a criação deste portfólio com o Codex, por chat e voz.
 

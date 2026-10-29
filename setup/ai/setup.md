@@ -1,4 +1,4 @@
-# AI
+# AI Workflows & Agents
 
 [Back to portfolio — AI/Agent](https://paulosanches.github.io/hello/agent/)
 
