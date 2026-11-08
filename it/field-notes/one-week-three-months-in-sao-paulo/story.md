@@ -6,7 +6,7 @@ Language: it
 
 Fonte: https://paulosanches.github.io/hello/it/field-notes/one-week-three-months-in-sao-paulo/agent/
 
-[English](https://paulosanches.github.io/hello/field-notes/one-week-three-months-in-sao-paulo/story.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/field-notes/one-week-three-months-in-sao-paulo/story.md) · [Italiano](https://paulosanches.github.io/hello/it/field-notes/one-week-three-months-in-sao-paulo/story.md)
+[English](https://paulosanches.github.io/hello/field-notes/one-week-three-months-in-sao-paulo/story.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/field-notes/one-week-three-months-in-sao-paulo/story.md) · [Italiano](https://paulosanches.github.io/hello/it/field-notes/one-week-three-months-in-sao-paulo/story.md) · [Español](https://paulosanches.github.io/hello/es/field-notes/one-week-three-months-in-sao-paulo/story.md)
 
 ---
 

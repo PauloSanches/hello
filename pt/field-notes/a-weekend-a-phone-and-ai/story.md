@@ -6,7 +6,7 @@ Language: pt-BR
 
 Fonte: https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/agent/
 
-[English](https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/story.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/story.md) · [Italiano](https://paulosanches.github.io/hello/it/field-notes/a-weekend-a-phone-and-ai/story.md)
+[English](https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/story.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/story.md) · [Italiano](https://paulosanches.github.io/hello/it/field-notes/a-weekend-a-phone-and-ai/story.md) · [Español](https://paulosanches.github.io/hello/es/field-notes/a-weekend-a-phone-and-ai/story.md)
 
 ---
 

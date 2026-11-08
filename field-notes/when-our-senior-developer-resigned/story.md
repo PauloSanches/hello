@@ -6,7 +6,7 @@ Language: en
 
 Source: https://paulosanches.github.io/hello/field-notes/when-our-senior-developer-resigned/agent/
 
-[English](https://paulosanches.github.io/hello/field-notes/when-our-senior-developer-resigned/story.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/field-notes/when-our-senior-developer-resigned/story.md) · [Italiano](https://paulosanches.github.io/hello/it/field-notes/when-our-senior-developer-resigned/story.md)
+[English](https://paulosanches.github.io/hello/field-notes/when-our-senior-developer-resigned/story.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/field-notes/when-our-senior-developer-resigned/story.md) · [Italiano](https://paulosanches.github.io/hello/it/field-notes/when-our-senior-developer-resigned/story.md) · [Español](https://paulosanches.github.io/hello/es/field-notes/when-our-senior-developer-resigned/story.md)
 
 ---
 

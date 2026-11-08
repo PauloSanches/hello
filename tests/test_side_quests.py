@@ -23,7 +23,7 @@ class SideQuestsTests(unittest.TestCase):
         self.assertIn("#side-quests", [node.attrs.get("href") for node in nav.descendants("a")])
 
     def test_localized_pages_and_agent_exports_include_the_selected_project(self):
-        for prefix in ["", "pt/", "it/"]:
+        for prefix in ["", "pt/", "it/", "es/"]:
             with self.subTest(language=prefix or "en"):
                 document = Document((ROOT / prefix / "index.html").read_text()).root
                 sections = [n for n in document.descendants("section") if n.attrs.get("id") == "side-quests"]
@@ -37,7 +37,7 @@ class SideQuestsTests(unittest.TestCase):
                 self.assertIn("Jogo da Vida - Magnólia", agent)
 
     def test_project_is_presented_as_a_card_in_a_collection(self):
-        for prefix in ["", "pt/", "it/"]:
+        for prefix in ["", "pt/", "it/", "es/"]:
             with self.subTest(language=prefix or "en"):
                 doc = Document((ROOT / prefix / "index.html").read_text()).root
                 section = next(n for n in doc.descendants("section") if n.attrs.get("id") == "side-quests")

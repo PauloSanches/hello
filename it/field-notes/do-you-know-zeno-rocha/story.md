@@ -6,7 +6,7 @@ Language: it
 
 Fonte: https://paulosanches.github.io/hello/it/field-notes/do-you-know-zeno-rocha/agent/
 
-[English](https://paulosanches.github.io/hello/field-notes/do-you-know-zeno-rocha/story.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/field-notes/do-you-know-zeno-rocha/story.md) · [Italiano](https://paulosanches.github.io/hello/it/field-notes/do-you-know-zeno-rocha/story.md)
+[English](https://paulosanches.github.io/hello/field-notes/do-you-know-zeno-rocha/story.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/field-notes/do-you-know-zeno-rocha/story.md) · [Italiano](https://paulosanches.github.io/hello/it/field-notes/do-you-know-zeno-rocha/story.md) · [Español](https://paulosanches.github.io/hello/es/field-notes/do-you-know-zeno-rocha/story.md)
 
 ---
 

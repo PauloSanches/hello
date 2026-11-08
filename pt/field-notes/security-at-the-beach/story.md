@@ -6,7 +6,7 @@ Language: pt-BR
 
 Fonte: https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/agent/
 
-[English](https://paulosanches.github.io/hello/field-notes/security-at-the-beach/story.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/story.md) · [Italiano](https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/story.md)
+[English](https://paulosanches.github.io/hello/field-notes/security-at-the-beach/story.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/field-notes/security-at-the-beach/story.md) · [Italiano](https://paulosanches.github.io/hello/it/field-notes/security-at-the-beach/story.md) · [Español](https://paulosanches.github.io/hello/es/field-notes/security-at-the-beach/story.md)
 
 ---
 

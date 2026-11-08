@@ -6,7 +6,7 @@ Language: it
 
 Fonte: https://paulosanches.github.io/hello/it/portfolio/jogo-da-vida-magnolia/agent/
 
-[English](https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/case.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/portfolio/jogo-da-vida-magnolia/case.md) · [Italiano](https://paulosanches.github.io/hello/it/portfolio/jogo-da-vida-magnolia/case.md)
+[English](https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/case.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/portfolio/jogo-da-vida-magnolia/case.md) · [Italiano](https://paulosanches.github.io/hello/it/portfolio/jogo-da-vida-magnolia/case.md) · [Español](https://paulosanches.github.io/hello/es/portfolio/jogo-da-vida-magnolia/case.md)
 
 ---
 

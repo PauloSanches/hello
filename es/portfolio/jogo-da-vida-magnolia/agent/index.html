@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="Caso de estudio en Markdown: Jogo da Vida - Magnólia">
+  <title>Jogo da Vida - Magnólia — AI/Agent</title>
+  <link rel="canonical" href="https://paulosanches.github.io/hello/es/portfolio/jogo-da-vida-magnolia/">
+  <link rel="alternate" type="text/markdown" href="https://paulosanches.github.io/hello/es/portfolio/jogo-da-vida-magnolia/case.md" title="AI/Agent">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fafafa; color: #171717; font-family: system-ui, sans-serif; }
+    .wrap { width: min(1440px, calc(100% - 40px)); margin-inline: auto; }
+    header { padding-block: 20px; border-bottom: 1px solid #ccc; }
+    nav { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; }
+    .languages { display: flex; gap: 4px; }
+    a, button { color: inherit; display: inline-flex; align-items: center; min-height: 44px; padding: 8px; text-underline-offset: 4px; }
+    button { border: 0; background: none; font: inherit; text-decoration: underline; cursor: pointer; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #171717; outline-offset: 2px; }
+    [hidden] { display: none !important; }
+    [aria-current="page"] { background: #171717; color: white; }
+    h1 { margin: 0; padding-block: 28px 8px; font-size: clamp(24px, 4vw, 36px); }
+    .file-actions { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 20px; font-size: 14px; }
+    pre { margin: 0 0 40px; padding: clamp(16px, 3vw, 32px); background: white; border: 1px solid #ddd; font: 14px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; tab-size: 2; }
+    pre a { display: inline; min-height: 0; padding: 0; }
+  </style>
+</head>
+<body>
+  <header><nav class="wrap" aria-label="AI/Agent"><a class="agent-home" href="https://paulosanches.github.io/hello/es/agent/">← Volver al portafolio</a><div class="languages"><a href="https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/agent/" lang="en" hreflang="en">EN</a> <a href="https://paulosanches.github.io/hello/pt/portfolio/jogo-da-vida-magnolia/agent/" lang="pt-BR" hreflang="pt-BR">PT</a> <a href="https://paulosanches.github.io/hello/it/portfolio/jogo-da-vida-magnolia/agent/" lang="it" hreflang="it">ITA</a> <a href="https://paulosanches.github.io/hello/es/portfolio/jogo-da-vida-magnolia/agent/" lang="es" hreflang="es" aria-current="page">ES</a></div></nav></header>
+  <main class="wrap"><h1>AI/Agent</h1><div class="file-actions"><a class="file-link" href="https://paulosanches.github.io/hello/es/portfolio/jogo-da-vida-magnolia/case.md" type="text/markdown">Abrir archivo Markdown ↗</a><button class="back-button" type="button" hidden>← Volver</button><a class="back-fallback" href="https://paulosanches.github.io/hello/es/agent/">← Volver</a></div><pre># Jogo da Vida - Magnólia
+
+[Volver al portafolio — AI/Agent](<a href="https://paulosanches.github.io/hello/es/agent/">https://paulosanches.github.io/hello/es/agent/</a>)
+
+Language: es
+
+Fuente: <a href="https://paulosanches.github.io/hello/es/portfolio/jogo-da-vida-magnolia/agent/">https://paulosanches.github.io/hello/es/portfolio/jogo-da-vida-magnolia/agent/</a>
+
+[English](<a href="https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/case.md">https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/case.md</a>) · [Português do Brasil](<a href="https://paulosanches.github.io/hello/pt/portfolio/jogo-da-vida-magnolia/case.md">https://paulosanches.github.io/hello/pt/portfolio/jogo-da-vida-magnolia/case.md</a>) · [Italiano](<a href="https://paulosanches.github.io/hello/it/portfolio/jogo-da-vida-magnolia/case.md">https://paulosanches.github.io/hello/it/portfolio/jogo-da-vida-magnolia/case.md</a>) · [Español](<a href="https://paulosanches.github.io/hello/es/portfolio/jogo-da-vida-magnolia/case.md">https://paulosanches.github.io/hello/es/portfolio/jogo-da-vida-magnolia/case.md</a>)
+
+---
+
+Portfolio / Side Quests
+
+Un juego de mesa interactivo basado en historias y reflexión.
+
+[![Captura de pantalla de Jogo da Vida - Magnólia, con el tablero ilustrado en la casilla final.](<a href="https://paulosanches.github.io/hello/assets/side-quest-magnolia.png">https://paulosanches.github.io/hello/assets/side-quest-magnolia.png</a>)](<a href="https://paulosanches.github.io/hello/assets/side-quest-magnolia.png">https://paulosanches.github.io/hello/assets/side-quest-magnolia.png</a>)
+
+El tablero ilustrado al final del juego. [Ver la captura a tamaño completo](<a href="https://paulosanches.github.io/hello/assets/side-quest-magnolia.png">https://paulosanches.github.io/hello/assets/side-quest-magnolia.png</a>)
+
+## El producto
+
+Jogo da Vida - Magnólia reúne 12 casillas ilustradas, historias de personajes y 10 preguntas para reflexionar en un juego de navegador para ordenador y móvil. Los jugadores controlan el ritmo. No hay puntuación ni formulario de respuestas; las preguntas están pensadas para debatir fuera de la aplicación.
+
+## La experiencia
+
+Cada casilla conecta una posición del tablero con una historia. El texto aparece de forma progresiva, seguido de una pregunta que mantiene la historia visible como referencia.
+
+Los jugadores pueden avanzar, volver a una casilla anterior, pausar la aparición del texto o reiniciar el juego. Pasar a la siguiente casilla es siempre una decisión manual.
+
+## Diseño técnico
+
+### Arquitectura en ejecución
+
+HTML, CSS y SVG definen la interfaz y el tablero ilustrado. JavaScript gestiona la casilla activa, el estado de la historia y la pregunta y las transiciones en el navegador. GitHub Pages sirve la aplicación estática; el juego no necesita un backend de aplicación ni una base de datos.
+
+### Reproducción y navegación
+
+Un controlador de reproducción dedicado gestiona la tarea actual, el temporizador y los estados de escritura, espera y pausa. Utiliza un intervalo de 24 ms y una espera de lectura de 3.000 ms antes de presentar una pregunta. La presentación automática espera mientras hay texto seleccionado, el panel de lectura tiene el foco del teclado o queda contenido sin leer por debajo de la posición de desplazamiento.
+
+La navegación cancela el trabajo de reproducción pendiente, mientras que las comprobaciones del estado de ejecución evitan transiciones superpuestas. Pausar u ocultar la pestaña suspende la programación de tareas. El avance entre las casillas sigue siendo manual.
+
+### Diseño de lectura y accesibilidad
+
+El texto completo reserva su espacio en el diseño antes de que empiece el efecto de escritura, en lugar de cambiar el tamaño del globo con cada carácter. Una capa visual separada controla la aparición progresiva, mientras el texto completo sigue disponible para las tecnologías de asistencia.
+
+La interfaz admite navegación con teclado y prefers-reduced-motion. La historia y la pregunta permanecen visibles a la vez.
+
+### Contenido y control de versiones
+
+Google Sheets permitió la edición colaborativa durante la preparación. Tras la aprobación editorial, se eliminó esa dependencia y el contenido final se publicó junto con el código. Esto mantiene la narrativa vinculada a una versión, pero exige un nuevo despliegue para cambiar el contenido.
+
+### Pruebas y publicaciones
+
+Las comprobaciones automatizadas cubren contenido, navegación, imágenes y diseño, y se complementan con verificaciones en el navegador con distintos tamaños de pantalla.
+
+Un script de publicación escribe la misma marca de tiempo UTC en la página y en version.json, y añade parámetros de versión derivados de SHA-256 a las URL de JavaScript y CSS. Su modo de comprobación verifica la coherencia de las marcas de tiempo; no vuelve a calcular los hashes de los archivos. Los archivos publicados y el comportamiento en el navegador se comprueban por separado para confirmar la versión entregada.
+
+### Herramientas de desarrollo
+
+Hermes Agent y Codex apoyaron la implementación y las pruebas en un MacBook Air M1, con solicitudes y revisiones a través de Telegram. ChatGPT generó las ilustraciones de los personajes a partir de las fotografías proporcionadas; Hermes preparó e integró los archivos. Skills reutilizables guiaron el diseño, las pruebas, la depuración y la revisión. Estas herramientas forman parte del flujo de desarrollo, no de la ejecución del juego.
+
+## Explora el proyecto
+
+- [Abrir el juego](<a href="https://paulosanches.github.io/magnolia-jogo-da-vida/">https://paulosanches.github.io/magnolia-jogo-da-vida/</a>)
+- [Código en GitHub](<a href="https://github.com/PauloSanches/magnolia-jogo-da-vida">https://github.com/PauloSanches/magnolia-jogo-da-vida</a>)
+- [Ver cómo se hizo](<a href="https://paulosanches.github.io/magnolia-jogo-da-vida/backstage/">https://paulosanches.github.io/magnolia-jogo-da-vida/backstage/</a>)
+
+Juego y detalles de su creación en portugués.
+</pre></main>
+  <script>
+    const backButton = document.querySelector('.back-button');
+    const backFallback = document.querySelector('.back-fallback');
+    backButton.hidden = false;
+    backFallback.hidden = true;
+    backButton.addEventListener('click', () => {
+      if (history.length > 1 && document.referrer) history.back();
+      else location.assign(backFallback.href);
+    });
+  </script>
+</body>
+</html>

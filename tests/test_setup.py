@@ -19,7 +19,7 @@ class SetupTests(unittest.TestCase):
   self.assertIn('![Keyboard]('+BASE+'assets/test.webp)',output)
   self.assertIn('[MX Keys](https://example.com/item)',output)
  def test_setup_exports_all_categorized_equipment_and_product_links(self):
-  for prefix in ['', 'pt','it']:
+  for prefix in ['', 'pt','it','es']:
    folder=ROOT/prefix if prefix else ROOT
    main=Document((folder/'setup/my-setup/index.html').read_text())
    output=build_detail_document(ROOT,prefix,'my-setup','setup')

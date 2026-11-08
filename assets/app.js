@@ -2,8 +2,8 @@
 const year = document.getElementById('year');
 if (year) year.textContent = String(new Date().getFullYear());
 const language = document.documentElement.lang;
-const carouselRole = language === 'it' ? 'carosello' : language === 'pt-BR' ? 'carrossel' : 'carousel';
-const counterJoin = language === 'it' ? 'di' : language === 'pt-BR' ? 'de' : 'of';
+const carouselRole = language === 'it' ? 'carosello' : language === 'pt-BR' ? 'carrossel' : language === 'es' ? 'carrusel' : 'carousel';
+const counterJoin = language === 'it' ? 'di' : language === 'pt-BR' || language === 'es' ? 'de' : 'of';
 document.querySelectorAll('.language-switcher a').forEach(link => {
   link.addEventListener('click', () => {
     if (!window.location.hash) return;
@@ -125,10 +125,11 @@ document.querySelectorAll('.carousel').forEach(carousel => {
   const themeMeta = document.querySelector('meta[name="theme-color"]');
   const originalThemeColor = themeMeta?.getAttribute('content');
   const resetButtons = Array.from(document.querySelectorAll('.theme-reset'));
-  const locale = root.lang === 'pt-BR' ? 'pt' : root.lang === 'it' ? 'it' : 'en';
+  const locale = root.lang === 'pt-BR' ? 'pt' : root.lang === 'it' ? 'it' : root.lang === 'es' ? 'es' : 'en';
   const originalNotice = {
     pt: 'Tema original restaurado.',
     it: 'Tema originale ripristinato.',
+    es: 'Tema original restaurado.',
     en: 'Original theme restored.'
   };
   const modes = {
@@ -139,11 +140,13 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       notice: {
         pt: 'Modo Red Bull. Digite redbull novamente ou pressione Esc para voltar.',
         it: 'Modalità Red Bull. Digita di nuovo redbull o premi Esc per tornare al tema originale.',
+        es: 'Modo Red Bull. Escribe redbull de nuevo o pulsa Esc para volver.',
         en: 'Red Bull mode. Type redbull again or press Esc to reset.'
       },
       alt: {
         pt: 'Paulo Sanches segurando uma lata de Red Bull',
         it: 'Paulo Sanches con una lattina di Red Bull',
+        es: 'Paulo Sanches sosteniendo una lata de Red Bull',
         en: 'Paulo Sanches holding a Red Bull can'
       }
     },
@@ -154,11 +157,13 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       notice: {
         pt: 'Modo GameDay. Digite gameday novamente ou pressione Esc para voltar.',
         it: 'Modalità GameDay. Digita di nuovo gameday o premi Esc per tornare al tema originale.',
+        es: 'Modo GameDay. Escribe gameday de nuevo o pulsa Esc para volver.',
         en: 'GameDay mode. Type gameday again or press Esc to reset.'
       },
       alt: {
         pt: 'Paulo Sanches segurando um capacete do Seattle Seahawks',
         it: 'Paulo Sanches con un casco dei Seattle Seahawks',
+        es: 'Paulo Sanches sosteniendo un casco de los Seattle Seahawks',
         en: 'Paulo Sanches holding a Seattle Seahawks helmet'
       }
     },
@@ -170,11 +175,13 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       notice: {
         pt: 'Modo Dante. Digite dante novamente ou pressione Esc para voltar.',
         it: 'Modalità Dante. Digita di nuovo dante o premi Esc per tornare al tema originale.',
+        es: 'Modo Dante. Escribe dante de nuevo o pulsa Esc para volver.',
         en: 'Dante mode. Type dante again or press Esc to reset.'
       },
       alt: {
         pt: 'Paulo Sanches e Dante juntos',
         it: 'Paulo Sanches e Dante insieme',
+        es: 'Paulo Sanches y Dante juntos',
         en: 'Paulo Sanches and Dante together'
       }
     },
@@ -186,11 +193,13 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       notice: {
         pt: 'Modo Tubarão. Digite tubarao novamente ou pressione Esc para voltar.',
         it: 'Modalità Tubarão. Digita di nuovo tubarao o premi Esc per tornare al tema originale.',
+        es: 'Modo Tubarão. Escribe tubarao de nuevo o pulsa Esc para volver.',
         en: 'Tubarão mode. Type tubarao again or press Esc to reset.'
       },
       alt: {
         pt: 'Criança com óculos de sol brancos e camiseta do Sonic, fazendo gestos com as mãos',
         it: 'Bambino con occhiali da sole bianchi e una maglietta di Sonic, mentre fa gesti con le mani',
+        es: 'Niño con gafas de sol blancas y camiseta de Sonic, haciendo gestos con las manos',
         en: 'Child wearing white sunglasses and a Sonic T-shirt, making playful hand gestures'
       }
     },
@@ -202,11 +211,13 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       notice: {
         pt: 'Modo Bad. Digite bad novamente ou pressione Esc para voltar.',
         it: 'Modalità Bad. Digita di nuovo bad o premi Esc per tornare al tema originale.',
+        es: 'Modo Bad. Escribe bad de nuevo o pulsa Esc para volver.',
         en: 'Bad mode. Type bad again or press Esc to reset.'
       },
       alt: {
         pt: 'Jovem sorrindo e segurando um cachorro com óculos de sol',
         it: 'Giovane sorridente con un cane con occhiali da sole in braccio',
+        es: 'Joven sonriendo y sosteniendo un perro pequeño con gafas de sol',
         en: 'Smiling young person holding a small dog wearing sunglasses'
       }
     },
@@ -217,11 +228,13 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       notice: {
         pt: 'Modo Nega. Digite nega novamente ou pressione Esc para voltar.',
         it: 'Modalità Nega. Digita di nuovo nega o premi Esc per tornare al tema originale.',
+        es: 'Modo Nega. Escribe nega de nuevo o pulsa Esc para volver.',
         en: 'Nega mode. Type nega again or press Esc to reset.'
       },
       alt: {
         pt: 'Paulo Sanches e uma mulher, sorrindo juntos',
         it: 'Paulo Sanches e una donna, sorridenti insieme',
+        es: 'Paulo Sanches y una mujer sonriendo juntos',
         en: 'Paulo Sanches and a woman smiling together'
       }
     },
@@ -233,11 +246,13 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       notice: {
         pt: 'Modo Cabeça de Rosquinha. Digite cabecarosquinha novamente ou pressione Esc para voltar.',
         it: 'Modalità Cabeça de Rosquinha. Digita di nuovo cabecarosquinha o premi Esc per tornare al tema originale.',
+        es: 'Modo Cabeça de Rosquinha. Escribe cabecarosquinha de nuevo o pulsa Esc para volver.',
         en: 'Cabeça de Rosquinha mode. Type cabecarosquinha again or press Esc to reset.'
       },
       alt: {
         pt: 'Paulo Sanches e outro homem sorrindo, com um gesto de hang loose e um sinal de positivo',
         it: 'Paulo Sanches e un altro uomo sorridenti, con un gesto shaka e un pollice alzato',
+        es: 'Paulo Sanches y otro hombre sonriendo, con un gesto shaka y el pulgar hacia arriba',
         en: 'Paulo Sanches and another man smiling, with a shaka gesture and a thumbs-up'
       }
     },
@@ -249,11 +264,13 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       notice: {
         pt: 'Modo Vasco. Digite vasco novamente ou pressione Esc para voltar.',
         it: 'Modalità Vasco. Digita di nuovo vasco o premi Esc per tornare al tema originale.',
+        es: 'Modo Vasco. Escribe vasco de nuevo o pulsa Esc para volver.',
         en: 'Vasco mode. Type vasco again or press Esc to reset.'
       },
       alt: {
         pt: 'Homem de óculos usando uma camisa preta e branca do Vasco da Gama',
         it: 'Uomo con occhiali e una maglia bianconera del Vasco da Gama',
+        es: 'Hombre con gafas y una camiseta blanca y negra del Vasco da Gama',
         en: 'Man wearing glasses and a black-and-white Vasco da Gama shirt'
       }
     },
@@ -264,11 +281,13 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       notice: {
         pt: 'Good Morning, Vietnam! Digite goodmorning novamente ou pressione Esc para voltar.',
         it: 'Good Morning, Vietnam! Digita di nuovo goodmorning o premi Esc per tornare al tema originale.',
+        es: 'Good Morning, Vietnam! Escribe goodmorning de nuevo o pulsa Esc para volver.',
         en: 'Good Morning, Vietnam! Type goodmorning again or press Esc to reset.'
       },
       alt: {
         pt: 'Paulo Sanches com sua camisa branca, segurando um microfone de rádio retrô',
         it: 'Paulo Sanches con la sua camicia bianca, mentre tiene un microfono radiofonico vintage',
+        es: 'Paulo Sanches con su camisa blanca, sosteniendo un micrófono de radio de estilo retro',
         en: 'Paulo Sanches in his white shirt, holding a vintage radio microphone'
       }
     }

@@ -17,15 +17,17 @@ LANGUAGES = {
     "": {"lang": "en", "name": "English", "source": "Source", "intro": "Complete public portfolio, including the full text of every case study and Field Note. Generated from the published pages and kept in sync with site updates.", "stories": "Field Notes — full stories", "cases": "Portfolio / Side Quests — full case studies"},
     "pt": {"lang": "pt-BR", "name": "Português do Brasil", "source": "Fonte", "intro": "Portfólio público completo, incluindo o texto integral de cada estudo de caso e história. Gerado a partir das páginas publicadas e sincronizado com as atualizações do site.", "stories": "Histórias — textos completos", "cases": "Portfolio / Side Quests — estudos de caso completos"},
     "it": {"lang": "it", "name": "Italiano", "source": "Fonte", "intro": "Portfolio pubblico completo, con il testo integrale di ogni caso di studio e storia. Generato dalle pagine pubblicate e sincronizzato con gli aggiornamenti del sito.", "stories": "Storie — testi completi", "cases": "Portfolio / Side Quests — casi di studio completi"},
+    "es": {"lang": "es", "name": "Español", "source": "Fuente", "intro": "Portafolio público completo, con el texto íntegro de cada caso de estudio e historia. Generado a partir de las páginas publicadas y sincronizado con las actualizaciones del sitio.", "stories": "Historias — textos completos", "cases": "Portafolio / Proyectos personales — casos de estudio completos"},
 }
 COLLECTIONS = {"portfolio": ("cases", "case.md"), "field-notes": ("stories", "story.md")}
 COLLECTIONS["setup"] = ("setups", "setup.md")
-for prefix, label in {"": "Setup & Productivity — full pages", "pt": "Setup e produtividade — páginas completas", "it": "Setup e produttività — pagine complete"}.items():
+for prefix, label in {"": "Setup & Productivity — full pages", "pt": "Setup e produtividade — páginas completas", "it": "Setup e produttività — pagine complete", "es": "Mi setup y productividad — páginas completas"}.items():
     LANGUAGES[prefix]["setups"] = label
 VIEW_LABELS = {
     "": ("Back to portfolio", "Open Markdown file", "Complete portfolio in Markdown", "Back"),
     "pt": ("Voltar ao portfólio", "Abrir arquivo Markdown", "Portfólio completo em Markdown", "Voltar"),
     "it": ("Torna al portfolio", "Apri il file Markdown", "Portfolio completo in Markdown", "Indietro"),
+    "es": ("Volver al portafolio", "Abrir archivo Markdown", "Portafolio completo en Markdown", "Volver"),
 }
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 SKIP_TAGS = {"script", "style", "svg", "nav", "button", "input", "select", "textarea", "summary"}
@@ -112,9 +114,9 @@ def agent_url(url):
     if not parts.path.startswith(base.path):
         return url
     relative = parts.path[len(base.path):]
-    if re.fullmatch(r"(?:(?:pt|it)/)?(?:index\.html)?", relative):
+    if re.fullmatch(r"(?:(?:pt|it|es)/)?(?:index\.html)?", relative):
         path = base.path + relative.removesuffix("index.html") + "agent/"
-    elif re.fullmatch(r"(?:(?:pt|it)/)?(?:field-notes|portfolio|setup)/[^/]+/(?:index\.html)?", relative):
+    elif re.fullmatch(r"(?:(?:pt|it|es)/)?(?:field-notes|portfolio|setup)/[^/]+/(?:index\.html)?", relative):
         path = base.path + relative.removesuffix("index.html") + "agent/"
     else:
         return url
@@ -309,10 +311,10 @@ def build_view(document, prefix, story=None, section="field-notes"):
     markdown_url = canonical + (COLLECTIONS[section][1] if story else "portfolio.md")
     title = document.splitlines()[0].removeprefix("# ") if story else "Paulo Sanches"
     if story and section == "portfolio":
-        label = {"": "Case study in Markdown", "pt": "Estudo de caso em Markdown", "it": "Caso di studio in Markdown"}[prefix]
+        label = {"": "Case study in Markdown", "pt": "Estudo de caso em Markdown", "it": "Caso di studio in Markdown", "es": "Caso de estudio en Markdown"}[prefix]
         description = html.escape(f"{label}: {title}", quote=True)
     switches = " ".join(
-        f'<a href="{BASE}{k + "/" if k else ""}{suffix}agent/" lang="{v["lang"]}" hreflang="{v["lang"]}"' + (' aria-current="page"' if k == prefix else '') + f'>{"PT" if k == "pt" else "ITA" if k == "it" else "EN"}</a>'
+        f'<a href="{BASE}{k + "/" if k else ""}{suffix}agent/" lang="{v["lang"]}" hreflang="{v["lang"]}"' + (' aria-current="page"' if k == prefix else '') + f'>{ {"pt": "PT", "it": "ITA", "es": "ES", "": "EN"}[k] }</a>'
         for k, v in LANGUAGES.items()
     )
     # Fully static: agents and no-JavaScript browsers can read the same file

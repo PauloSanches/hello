@@ -81,10 +81,10 @@ class PortfolioCaseTests(unittest.TestCase):
     def test_localized_case_metadata_navigation_and_sitemap(self):
         import xml.etree.ElementTree as ET
         translations = json.loads((ROOT / "locales/translations.json").read_text())
-        variants = {"en": BASE + CASE, "it": BASE + "it/" + CASE, "pt-BR": BASE + "pt/" + CASE, "x-default": BASE + CASE}
+        variants = {"en": BASE + CASE, "it": BASE + "it/" + CASE, "pt-BR": BASE + "pt/" + CASE, "es": BASE + "es/" + CASE, "x-default": BASE + CASE}
         ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9", "x": "http://www.w3.org/1999/xhtml"}
         sitemap = ET.parse(ROOT / "sitemap.xml").getroot()
-        for prefix, language in [("", "en"), ("pt/", "pt-BR"), ("it/", "it")]:
+        for prefix, language in [("", "en"), ("pt/", "pt-BR"), ("it/", "it"), ("es/", "es")]:
             with self.subTest(locale=language):
                 path = ROOT / prefix / CASE / "index.html"
                 self.assertTrue(path.exists(), "Build the case in every supported locale")
@@ -135,7 +135,7 @@ class PortfolioCaseTests(unittest.TestCase):
     def test_case_exports_are_complete_localized_and_keep_agent_navigation(self):
         from agent_content import agent_url
         from test_agent_content import text_nodes
-        case_headings = {"": "Portfolio / Side Quests — full case studies", "pt/": "Portfolio / Side Quests — estudos de caso completos", "it/": "Portfolio / Side Quests — casi di studio completi"}
+        case_headings = {"": "Portfolio / Side Quests — full case studies", "pt/": "Portfolio / Side Quests — estudos de caso completos", "it/": "Portfolio / Side Quests — casi di studio completi", "es/": "Portafolio / Proyectos personales — casos de estudio completos"}
         for prefix in case_headings:
             with self.subTest(locale=prefix or "en"):
                 folder = ROOT / prefix / CASE
@@ -156,7 +156,7 @@ class PortfolioCaseTests(unittest.TestCase):
                 for destination in DESTINATIONS.values():
                     self.assertIn(destination, output)
                     self.assertEqual(agent_url(destination), destination)
-                for locale in ["", "it/", "pt/"]:
+                for locale in ["", "it/", "pt/", "es/"]:
                     self.assertIn(BASE + locale + CASE + "case.md", output)
                 view = Document((folder / "agent/index.html").read_text()).root
                 pre = next(view.descendants("pre"))
@@ -165,7 +165,7 @@ class PortfolioCaseTests(unittest.TestCase):
                 self.assertEqual(raw_text(pre), output)
                 self.assertEqual(next(n.attrs["href"] for n in view.descendants("link") if n.attrs.get("rel") == "canonical"), url)
                 self.assertEqual(next(n.attrs["href"] for n in view.descendants("a") if "file-link" in n.classes), url + "case.md")
-                self.assertEqual({n.attrs["href"] for n in view.descendants("a") if n.attrs.get("hreflang")}, {BASE + locale + CASE + "agent/" for locale in ["", "it/", "pt/"]})
+                self.assertEqual({n.attrs["href"] for n in view.descendants("a") if n.attrs.get("hreflang")}, {BASE + locale + CASE + "agent/" for locale in ["", "it/", "pt/", "es/"]})
                 for suffix in ["", "index.html", "?reader=1#technical", "index.html?reader=1#technical"]:
                     expected_suffix = suffix.removeprefix("index.html")
                     self.assertEqual(agent_url(url + suffix), url + "agent/" + expected_suffix)
@@ -175,7 +175,7 @@ class PortfolioCaseTests(unittest.TestCase):
     def test_technical_details_have_ordered_subsections(self):
         translations = json.loads((ROOT / "locales/translations.json").read_text())
         headings = ['Runtime architecture', 'Playback and navigation', 'Reading layout and accessibility', 'Content and versioning', 'Testing and releases', 'Development tooling']
-        for prefix in ["", "pt/", "it/"]:
+        for prefix in ["", "pt/", "it/", "es/"]:
             with self.subTest(locale=prefix or "en"):
                 doc = Document((ROOT / prefix / CASE / "index.html").read_text()).root
                 actual = [normalise(plain(n)) for n in doc.descendants("h3")]
@@ -189,8 +189,9 @@ class PortfolioCaseTests(unittest.TestCase):
             "": SUMMARY,
             "pt/": "Um jogo de tabuleiro interativo com histórias ilustradas e perguntas para reflexão, explorado no ritmo de cada jogador.",
             "it/": "Un gioco da tavolo interattivo con storie illustrate e domande di riflessione, da esplorare al proprio ritmo.",
+            "es/": "Un juego de tablero interactivo con historias ilustradas y preguntas para reflexionar, que se explora al ritmo de cada jugador.",
         }
-        labels = {"": "Read case study", "pt/": "Ler estudo de caso", "it/": "Leggi il caso di studio"}
+        labels = {"": "Read case study", "pt/": "Ler estudo de caso", "it/": "Leggi il caso di studio", "es/": "Leer caso de estudio"}
         for prefix, summary in summaries.items():
             with self.subTest(locale=prefix or "en"):
                 doc = Document((ROOT / prefix / "index.html").read_text()).root
@@ -209,7 +210,7 @@ class PortfolioCaseTests(unittest.TestCase):
                 self.assertIn(f"[{labels[prefix]}]({BASE}{prefix}{CASE}agent/)", exported)
 
     def test_case_text_view_uses_case_metadata_and_separates_caption_action(self):
-        descriptions = {"": "Case study in Markdown", "pt/": "Estudo de caso em Markdown", "it/": "Caso di studio in Markdown"}
+        descriptions = {"": "Case study in Markdown", "pt/": "Estudo de caso em Markdown", "it/": "Caso di studio in Markdown", "es/": "Caso de estudio en Markdown"}
         translations = json.loads((ROOT / "locales/translations.json").read_text())
         for prefix, label in descriptions.items():
             with self.subTest(locale=prefix or "en"):
@@ -225,7 +226,7 @@ class PortfolioCaseTests(unittest.TestCase):
         import shlex
         workflow = (ROOT / ".github/workflows/sync-agent-content.yml").read_text()
         watched = re.findall(r"^\s+- '([^']+)'$", workflow, re.M)
-        for pattern in ["portfolio/**/case.md", "pt/portfolio/**/case.md", "it/portfolio/**/case.md"]:
+        for pattern in ["portfolio/**/case.md", "pt/portfolio/**/case.md", "it/portfolio/**/case.md", "es/portfolio/**/case.md"]:
             self.assertIn(pattern, watched, "Case exports must stay synchronized after edits")
         staged = shlex.split(next(line.strip() for line in workflow.splitlines() if line.strip().startswith("git add --")))
         self.assertIn("portfolio", staged, "Stage generated English cases as well as localized outputs")

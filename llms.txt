@@ -2,13 +2,14 @@
 
 > Personal portfolio of Paulo Sanches, a Technology & Solution Architecture Manager based in Braga, Portugal, with 17+ years leading teams, solving complex technology challenges and stabilizing mission-critical programs.
 
-The website is available in English (EN), Italian (ITA) and Brazilian Portuguese (PT), with English as the default. Mindset cards preserve Paulo’s original Portuguese and English quotes, with explanations in the selected language. Official credential names remain in English. The HTML pages are the primary sources; this file is a concise guide to their public content.
+The website is available in English (EN), Italian (ITA), Brazilian Portuguese (PT) and Spanish (ES), with English as the default. Mindset cards preserve Paulo’s original Portuguese and English quotes, with explanations in the selected language. Official credential names remain in English. The HTML pages are the primary sources; this file is a concise guide to their public content.
 
 ## Complete AI/Agent content
 
 - [Complete portfolio in English (Markdown)](https://paulosanches.github.io/hello/portfolio.md)
 - [Portfólio completo em português do Brasil (Markdown)](https://paulosanches.github.io/hello/pt/portfolio.md)
 - [Portfolio completo in italiano (Markdown)](https://paulosanches.github.io/hello/it/portfolio.md)
+- [Portafolio completo en español (Markdown)](https://paulosanches.github.io/hello/es/portfolio.md)
 
 These files include every portfolio section and the full text of all Field Notes. They are generated from the HTML and synchronized when the website changes. Use them for complete content; this file provides a concise discovery guide.
 
@@ -19,6 +20,7 @@ Each Field Note also has an individual `story.md` file and an `agent/` text view
 - [English portfolio](https://paulosanches.github.io/hello/)
 - [Italian portfolio](https://paulosanches.github.io/hello/it/)
 - [Brazilian Portuguese portfolio](https://paulosanches.github.io/hello/pt/)
+- [Spanish portfolio](https://paulosanches.github.io/hello/es/)
 - [English portfolio build story](https://paulosanches.github.io/hello/field-notes/a-weekend-a-phone-and-ai/)
 - [Italian portfolio build story](https://paulosanches.github.io/hello/it/field-notes/a-weekend-a-phone-and-ai/)
 - [Brazilian Portuguese portfolio build story](https://paulosanches.github.io/hello/pt/field-notes/a-weekend-a-phone-and-ai/)
@@ -71,9 +73,10 @@ Each Field Note also has an individual `story.md` file and an `agent/` text view
 
 ## Setup and productivity
 
-- The homepage has four topic cards: Setup & Gadgets, Tools & Apps, Work Routine and AI Workflows & Agents. Only Setup & Gadgets links to a dedicated page. The other three are non-interactive Coming soon cards with no internal pages. English, Italian and Brazilian Portuguese versions and AI/Agent views reflect the same status.
+- The homepage has four topic cards: Setup & Gadgets, Tools & Apps, Work Routine and AI Workflows & Agents. Only Setup & Gadgets links to a dedicated page. The other three are non-interactive Coming soon cards with no internal pages. English, Italian, Brazilian Portuguese and Spanish versions and AI/Agent views reflect the same status.
 - [My Setup](https://paulosanches.github.io/hello/setup/my-setup/): Nine equipment entries organized under Desk, Audio & Video, and On the Go, with linked product names, compact photos and personal notes on everyday use, productivity and purchase trade-offs.
 - [Setup in Markdown — English](https://paulosanches.github.io/hello/setup/my-setup/setup.md)
 - [Setup em Markdown — português do Brasil](https://paulosanches.github.io/hello/pt/setup/my-setup/setup.md)
 - [Setup in Markdown — italiano](https://paulosanches.github.io/hello/it/setup/my-setup/setup.md)
+- [Setup en Markdown — español](https://paulosanches.github.io/hello/es/setup/my-setup/setup.md)
 - Each topic also has `setup.md` and `agent/` alongside its page, with the same locale prefixes as the rest of the site. Prepared pages stay out of the sitemap and search index until they have their full content.

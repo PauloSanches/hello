@@ -1,0 +1,1125 @@
+# Paulo Sanches
+
+Portafolio público completo, con el texto íntegro de cada caso de estudio e historia. Generado a partir de las páginas publicadas y sincronizado con las actualizaciones del sitio.
+
+Language: es
+
+Fuente: https://paulosanches.github.io/hello/es/agent/
+
+[English](https://paulosanches.github.io/hello/portfolio.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/portfolio.md) · [Italiano](https://paulosanches.github.io/hello/it/portfolio.md) · [Español](https://paulosanches.github.io/hello/es/portfolio.md)
+
+---
+
+![Paulo Sanches](https://paulosanches.github.io/hello/assets/paulo-portrait-color.webp)
+
+## Bienvenido, humano o agente — soy Paulo Sanches y cada día es día de partido. ¡Vamos!
+
+[Conversemos](https://www.linkedin.com/in/paulosanches)
+
+01 / PERFIL
+
+## Ayudo a las empresas a transformar su negocio mediante la tecnología y la IA, trabajando con sus equipos y agentes de IA, desde la estrategia hasta la ejecución.
+
+Gerente de Tecnología y Arquitectura de Soluciones, con más de 17 años liderando equipos, resolviendo desafíos tecnológicos complejos y estabilizando programas de misión crítica. Dirige un área de DevOps con más de 60 profesionales y ofrece liderazgo técnico transversal a más de 20 arquitectos de distintas áreas.
+
+Responsable de una transformación de 7 millones de euros en el sector público europeo; contribuyó a conseguir 3,5 millones de euros en contratos empresariales. Combina resolución práctica de problemas, asesoramiento de confianza al cliente y adopción de IA lista para producción para ofrecer resultados duraderos.
+
+02 / EXPERIENCIA
+
+## Los proyectos que me formaron.
+
+2023–actualidad En curso Europa · Portugal y Grecia
+
+TRANSFORMACIÓN DEL SECTOR PÚBLICO EUROPEO
+
+### Servicios públicos europeos.
+
+Modernización de siete aplicaciones de pesca, control marítimo y gestión de cuotas en AWS, con responsabilidad sobre la entrega, la calidad del servicio y las relaciones con el cliente.
+
+- AWS
+- IA agéntica y AIOps
+- Responsabilidad del servicio
+
+#### Responsabilidades y logros
+
+- Responsable de un programa de transformación de 7 millones de euros en el sector público europeo y de liderar un equipo de 15 personas entre Portugal y Grecia, con responsabilidad sobre el cumplimiento del contrato, las finanzas, las relaciones con el cliente y la calidad.
+- Creó un Architecture Board y una gobernanza basada en ADR para orientar la evolución de siete aplicaciones heredadas hacia servicios desacoplados, serverless y orientados a eventos.
+- Obtuvo aprobación ejecutiva para cambios de FinOps, copias de seguridad y recuperación ante desastres, logrando una reducción del 31 % en el gasto mensual de AWS.
+- Introdujo flujos de desarrollo con agentes y puntos de control de calidad humanos, reduciendo en un 78 % el tiempo de desarrollo de reglas de negocio, además de agentes operativos de AIOps que ahora se están extendiendo a los equipos de clientes.
+- Estabilizó un equipo multinacional de entrega y mantuvo una baja rotación durante más de dos años mediante el acompañamiento y la responsabilidad compartida.
+
+En paralelo En curso Portugal · Alianza AWS
+
+PREVENTA ESTRATÉGICA Y ALIANZA AWS
+
+### Soluciones empresariales y alianza con AWS.
+
+Diseño de soluciones empresariales, propuestas técnicas e iniciativas conjuntas con AWS para los clientes.
+
+- Diseño de soluciones empresariales
+- Preventa técnica
+- Go-to-market
+
+#### Responsabilidades y logros
+
+- Lidero los frentes técnicos de las RFP, el análisis de alternativas de arquitectura, la planificación de equipos y las estimaciones de esfuerzo, así como las presentaciones de soluciones a ejecutivos, contribuyendo a conseguir contratos por 3,5 millones de euros. Los equipos comerciales son responsables de los precios finales y las negociaciones.
+- Diseñé una propuesta de conciliación de facturas basada en Kubernetes para un grupo minorista portugués, liderando el análisis de la arquitectura y el traspaso al equipo de entrega.
+- Actúa como punto de contacto técnico para la alianza Accenture Portugal–AWS, desarrollando iniciativas conjuntas de salida al mercado, talleres con clientes y hackathons de IA agéntica y AIOps.
+
+2021–actualidad En curso Portugal
+
+PLATAFORMA DE PERSONAL Y PORTAFOLIO
+
+### Personas y portafolio empresarial.
+
+Integración de datos de personas y proyectos en una plataforma empresarial segura para planificar la capacidad y apoyar decisiones sobre el portafolio.
+
+- GCP / Terraform
+- Microsoft Entra ID
+- Datos empresariales
+
+#### Responsabilidades y logros
+
+- Diseñó la arquitectura de la plataforma y lideró un equipo multidisciplinar de ingeniería de 15 personas, con integraciones empresariales, GCP, Terraform, pipelines de Azure DevOps y SSO de Microsoft Entra ID.
+- Adoptada por ocho áreas de especialización de Accenture Portugal, con datos de más de 1.500 personas y más de 500 proyectos para más de 100 usuarios de dirección y PMO.
+- Permitió tomar decisiones basadas en datos sobre contratación, asignación de recursos, previsión de proyectos y control de costes, con una plataforma diseñada para una posible implantación global.
+
+Trayectoria anterior Brasil y Europa
+
+INGENIERÍA Y LIDERAZGO TÉCNICO
+
+### Experiencia anterior.
+
+Ingeniería práctica, liderazgo de equipos y arquitectura en productos digitales, integración empresarial, modernización en la nube y programas de transformación.
+
+- Ingeniería
+- Arquitectura
+- Liderazgo de equipos
+
+#### Responsabilidades y logros
+
+- **Telecomunicaciones (2021–2023):** Lideró la capacitación técnica de diez squads y más de 100 ingenieros, facilitando la incorporación de más de 90 ingenieros en cuatro meses.
+- **Consultoría de nube:** Revisó diseños de soluciones en un comité conjunto de arquitectura de una institución europea de inversión.
+- **Banca, servicios públicos y finanzas (entre 2014 y 2021):** Gestionó equipos de banca móvil, integró Azure, AWS, SAP y Salesforce, y lideró la automatización de procesos de financiación de automóviles asociada a un aumento del 35 % en ventas y aprobaciones de crédito.
+- **Productos digitales (2009–2014):** Lideré equipos multidisciplinares en Ogilvy, desarrollando productos y campañas para marcas globales de tecnología, automoción, telecomunicaciones y bienes de consumo.
+
+Proyectos seleccionados, con algunas colaboraciones en paralelo.
+
+03 / PORTFOLIO
+
+## Portfolio/Side Quests
+
+![Captura de pantalla de Jogo da Vida - Magnólia, con el tablero ilustrado en la casilla final.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
+
+### Jogo da Vida - Magnólia
+
+Un juego de tablero interactivo con historias ilustradas y preguntas para reflexionar, que se explora al ritmo de cada jugador.
+
+- [Leer caso de estudio](https://paulosanches.github.io/hello/es/portfolio/jogo-da-vida-magnolia/agent/)
+
+04 / VIVENCIAS
+
+## Hay una historia detrás del trabajo.
+
+01 / IA E INGENIERÍA
+
+### ¿Qué puedes crear en un fin de semana con un teléfono e IA?
+
+Dirigí a Codex por texto y voz para construir este portafolio desde el móvil, con tres idiomas, comprobaciones en el navegador y alojamiento gratuito en GitHub Pages.
+
+Fuente: https://paulosanches.github.io/hello/es/field-notes/a-weekend-a-phone-and-ai/agent/
+
+02 / SEGURIDAD Y LIDERAZGO
+
+### Una semana en la playa. Un incidente de seguridad el segundo día.
+
+Esperaba un proyecto estable y más tiempo con mi familia. El segundo día, un incidente de seguridad en producción puso a prueba la arquitectura, la comunicación y el liderazgo.
+
+Fuente: https://paulosanches.github.io/hello/es/field-notes/security-at-the-beach/agent/
+
+03 / ENTREGA Y EXPECTATIVAS
+
+### Viajé al mayor banco de Brasil con un briefing de apenas unos puntos.
+
+Tenía dos semanas para ayudar a un cliente bancario con el traspaso del proyecto, con un briefing de unos pocos puntos. Alineé las expectativas de las partes interesadas y después perdí una noche de trabajo cuando falló mi estación de trabajo.
+
+Fuente: https://paulosanches.github.io/hello/es/field-notes/banking-handover-in-brasilia/agent/
+
+04 / EQUIPO Y PROPÓSITO
+
+### Creamos un sistema para apoyar a las familias tras el desastre de Brumadinho.
+
+No había ningún equipo disponible para asumir el proyecto. Reuní a seis personas que aceptaron trabajar horas extra para que los trabajadores sociales pudieran registrar a las familias afectadas y hacer su seguimiento.
+
+Fuente: https://paulosanches.github.io/hello/es/field-notes/supporting-families-after-brumadinho/agent/
+
+05 / COMUNIDAD Y SELECCIÓN
+
+### «¿Conoces a Zeno Rocha?»
+
+Entre 2012 y 2016, terminaba las entrevistas de front-end preguntando a los candidatos por Zeno Rocha. Buscaba personas que se interesaran por la comunidad y siguieran aprendiendo.
+
+Fuente: https://paulosanches.github.io/hello/es/field-notes/do-you-know-zeno-rocha/agent/
+
+06 / CRISIS Y LIDERAZGO
+
+### ¿Cómo se convirtió una semana para ayudar en una crisis en tres meses en São Paulo?
+
+Fui a São Paulo para ayudar durante una semana con una crisis de facturación. Asumí el backlog de marketing y me quedé para organizar los equipos de un nuevo contrato.
+
+Fuente: https://paulosanches.github.io/hello/es/field-notes/one-week-three-months-in-sao-paulo/agent/
+
+07 / MENTORÍA Y CRECIMIENTO
+
+### El día en que pensé que la empresa se iba a parar porque nuestro desarrollador sénior había dimitido
+
+Yo era el desarrollador más júnior de nuestro equipo de Flash. Después de dos años aprendiendo del sénior, no podía imaginar cómo seguiríamos sin él.
+
+Fuente: https://paulosanches.github.io/hello/es/field-notes/when-our-senior-developer-resigned/agent/
+
+05 / MENTALIDAD
+
+## Mi filosofía.
+
+### Lo que me forma.
+
+Son frases, pensamientos y reflexiones que he encontrado en libros, películas, series y música, y que he escuchado de líderes y compañeros a lo largo de mi carrera. Se han quedado conmigo porque expresan lo que creo y ayudan a definir quién soy, tanto en la vida como en el trabajo.
+
+![Imagen pixelada de un entrenador preparando una jugada de fútbol americano en una pizarra de estrategia.](https://paulosanches.github.io/hello/assets/mindset-strategy-pixelated.png?v=c0cb6ebb4280)
+
+### “Tudo certo para dar errado?” (PT-BR)
+
+En inglés, la idea es:
+
+“Hope for the best, prepare for the worst.”
+
+Suelo hacer esta pregunta al empezar el día. Espero que las cosas salgan bien y quiero que estemos preparados si no es así. Pensar con antelación nos da confianza para afrontar lo inesperado y seguir adelante.
+
+![Un velero lejano navegando por un mar agitado, en blanco y negro.](https://paulosanches.github.io/hello/assets/mindset-sea.png)
+
+### “Mar calmo não faz bom marinheiro.” (PT-BR)
+
+En inglés, la idea es:
+
+“No pressure, no diamonds.”
+
+Los desafíos me impulsan a aprender, adaptarme y mejorar. Quedarme en mi zona de confort no me lleva más lejos.
+
+![Fotografía pixelada de una conversación de grupo en una oficina.](https://paulosanches.github.io/hello/assets/mindset-planejacao-pixelated.png?v=2ad9316cd7c6)
+
+### “Planejação” (PT-BR)
+
+Con la idea de hacer que las cosas sucedan:
+
+“Plan just enough. Then act.”
+
+Escuché esta palabra de un gran líder con el que trabajé. Une planificación y acción: planificar lo suficiente para avanzar y, después, ejecutar. Cuando la planificación se convierte en una fase independiente, todo puede ralentizarse y, a veces, la acción nunca llega.
+
+![Fotografía pixelada de una escultura colorida de un cangrejo junto a un río, con edificios de la ciudad al fondo.](https://paulosanches.github.io/hello/assets/mindset-planning-reality-pixelated.png?v=d3d14f935e49)
+
+### “Todo planejamento foi feito para dar errado.” (PT-BR)
+
+En inglés, la idea es:
+
+“In theory, there is no difference between theory and practice. In practice, there is.”
+
+Por mucho cuidado que pongamos al planificar, algo se saldrá del plan. No podemos controlarlo todo. Aceptarlo me ayuda a tomarme los cambios con calma y a mantenerme abierto a lo inesperado.
+
+![Imagen pixelada de un jugador de fútbol americano levantando los brazos, con las palabras It’s game day.](https://paulosanches.github.io/hello/assets/mindset-game-day.png?v=404f4582b9f4)
+
+### “Today is GAME DAY! VAMOOOSSSS. ”
+
+Lo digo para dar energía al equipo y centrarnos en nuestro propósito y nuestra misión. Los atletas entrenan para el día del partido, el momento de poner en práctica esa preparación. Nos recuerda que debemos llegar preparados, concentrados y comprometidos.
+
+![Imagen azul pixelada con las palabras The Lean Startup.](https://paulosanches.github.io/hello/assets/mindset-done-better-than-perfect.png?v=181d10165d90)
+
+### “Feito é melhor que perfeito.” (PT-BR)
+
+En inglés, la idea es:
+
+“Done is better than perfect.”
+
+Prefiero entregar algo que las personas puedan probar, recibir comentarios pronto y mejorarlo. Puedo seguir puliéndolo durante más tiempo y aun así encontrar cosas que cambiar.
+
+Una vez oí a un líder decir: “Cuanto más tardas en entregar algo, mayores son las expectativas”.
+
+06 / CONTRIBUCIONES
+
+## Charlas, eventos y contribuciones.
+
+![Conversaciones en el stand de Accenture durante JNation en Coimbra.](https://paulosanches.github.io/hello/assets/jnation-2026.jpg)
+
+Accenture · Coimbra, Portugal
+
+### JNation 2026 .
+
+Representando a Accenture en JNation 2026, en Coimbra, conectando con la comunidad tecnológica y compartiendo nuestro trabajo en transformación de negocios en Portugal y en los mercados internacionales.
+
+Ver foto
+
+Fuente: https://paulosanches.github.io/hello/assets/jnation-2026.jpg
+
+![Selfie en el hackathon de IA, con participantes trabajando en portátiles al fondo.](https://paulosanches.github.io/hello/assets/ai-hackathon-2025.jpg)
+
+Accenture · Lisboa, Braga y Coimbra
+
+### Hackathon de IA 2025 .
+
+Un hackathon de IA celebrado simultáneamente en Lisboa, Braga y Coimbra, que reunió a más de 40 estudiantes universitarios y colegas de Accenture para explorar casos de uso, colaborar y desarrollar nuevas ideas.
+
+Ver foto
+
+Fuente: https://paulosanches.github.io/hello/assets/ai-hackathon-2025.jpg
+
+Cubo Itaú · Masterclass #2
+
+### Cómo convertirse en Tech Lead.
+
+Mi participación en la segunda masterclass de Cubo for Devs, centrada en el camino hacia el liderazgo técnico.
+
+Ver en YouTube
+
+Fuente: https://www.youtube.com/watch?v=1hOnAOXTUeM
+
+![Foto de grupo frente al panel del evento FlashCamp.](https://paulosanches.github.io/hello/assets/flashcamp-2010.jpg)
+
+Evento de la comunidad
+
+### FlashCamp 2010 .
+
+Representando a Ogilvy en FlashCamp 2010, el mayor evento de la comunidad Adobe en Brasil.
+
+07 / CERTIFICACIONES
+
+## Certificaciones.
+
+### Global Leader | Certified by Deel
+
+Deel
+
+Reconocimiento al liderazgo de equipos globales, la colaboración multicultural, la estrategia en distintos mercados y los sistemas que apoyan a los equipos distribuidos.
+
+Emitida sep 2026
+
+### Senior Technology Architect
+
+Accenture
+
+Reconocimiento avanzado en arquitectura que abarca el liderazgo técnico en proyectos complejos, las decisiones tecnológicas con clientes, la gobernanza de arquitectura y el intercambio de conocimientos profesionales.
+
+Emitida jul 2025
+
+### AWS Certified Solutions Architect – Associate
+
+Amazon Web Services (AWS)
+
+Diseño de soluciones en AWS que equilibran resiliencia, seguridad, rendimiento y coste mediante principios consolidados de arquitectura en la nube.
+
+Emitida oct 2023
+
+Vencimiento: oct 2026
+
+### Cloud Solution Architect Certified
+
+Accenture
+
+Planificación de soluciones en la nube que integra arquitectura, casos de negocio, estructuración comercial de ofertas, estimaciones de costos y precios.
+
+Emitida sep 2026
+
+### Certified Delivery Professional
+
+Accenture
+
+Certificación en gestión de entregas que abarca gobernanza, contratos, gestión financiera y calidad, con énfasis en las expectativas del cliente y el valor de negocio.
+
+Emitida jul 2024
+
+### AWS Certified Developer – Associate
+
+Amazon Web Services (AWS)
+
+Desarrollo, pruebas y despliegue de aplicaciones AWS, con flujos de entrega continua y resolución de problemas durante todo el ciclo de vida de la aplicación.
+
+Emitida may 2024
+
+Vencimiento: may 2027
+
+### Technology Architect
+
+Accenture
+
+Certificación en arquitectura que abarca el diseño de soluciones, la gobernanza, el liderazgo de equipos tecnológicos y la colaboración con arquitectos del cliente durante la entrega.
+
+Emitida sep 2023
+
+### Reinvention with Agentic AI
+
+Accenture
+
+Aprendizaje práctico de IA agéntica que combina conceptos fundamentales y talleres para aplicar agentes de IA a retos empresariales y flujos de trabajo.
+
+Emitida dic 2025
+
+### AWS Certified AI Practitioner
+
+Amazon Web Services (AWS)
+
+Fundamentos de IA, aprendizaje automático e IA generativa, y su uso en servicios de AWS y escenarios empresariales.
+
+Emitida nov 2025
+
+Vencimiento: nov 2028
+
+### Well-Architected Proficient
+
+Amazon Web Services (AWS)
+
+Revisión de arquitecturas en la nube con AWS Well-Architected Framework y Tool para identificar riesgos y orientar mejoras.
+
+Emitida feb 2026
+
+### SAFe Agilist Certification
+
+SAFe by Scaled Agile, Inc.
+
+Liderazgo Lean-Agile a escala empresarial, que abarca los principios de SAFe, la coordinación de entregas mediante Agile Release Trains y la gestión de portafolios con presupuestos Lean-Agile.
+
+Emitida oct 2020
+
+Vencimiento: oct 2021
+
+### Certified ScrumMaster
+
+Scrum Alliance
+
+Fundamentos de Scrum para apoyar a equipos eficaces: roles, eventos y artefactos, facilitación, coaching y eliminación de obstáculos para avanzar.
+
+Emitida mar 2015
+
+Vencimiento: mar 2017
+
+### Cloud Digital Leader
+
+Google Cloud
+
+Fundamentos de la nube y valor empresarial de Google Cloud, que abarcan transformación digital, datos, modernización de la infraestructura, seguridad y operaciones.
+
+Emitida may 2023
+
+Vencimiento: may 2026
+
+### AWS Certified Cloud Practitioner
+
+Amazon Web Services (AWS)
+
+Fundamentos de computación en la nube, principales servicios de AWS y terminología común para hablar de soluciones en la nube con equipos técnicos y de negocio.
+
+Emitida ago 2023
+
+Vencimiento: ago 2026
+
+### Accenture Cloud Native College – Node.js Associate Developer
+
+Accenture
+
+Credencial de desarrollo Node.js de la Cloud Native College de Accenture, un programa centrado en la ingeniería de software cloud-native.
+
+Emitida oct 2023
+
+### Reliable Google Cloud Infrastructure: Design and Process
+
+Google Cloud Skills Boost for Partners
+
+Patrones de diseño para soluciones fiables en Google Cloud, que equilibran los requisitos empresariales con la disponibilidad, la seguridad, el rendimiento y el coste.
+
+Emitida jul 2022
+
+### Elastic Google Cloud Infrastructure: Scaling and Automation
+
+Google Cloud Skills Boost for Partners
+
+Conexión y escalado de la infraestructura de Google Cloud mediante balanceo de carga, escalado automático, despliegues automatizados y servicios gestionados, con ejercicios prácticos de configuración.
+
+Emitida jun 2022
+
+### Migrating to Google Cloud
+
+Google Cloud Skills Boost for Partners
+
+Estrategias para trasladar cargas de trabajo a Google Cloud, con máquinas virtuales, redes, gestión de acceso y planificación de migraciones mediante Migrate for Compute Engine.
+
+Emitida jun 2022
+
+### Essential Google Cloud Infrastructure: Core Services
+
+Google Cloud Skills Boost for Partners
+
+Gestión de infraestructura de Google Cloud mediante controles de acceso, cifrado, monitorización de recursos, cuotas y facturación, con especial atención a Compute Engine.
+
+Emitida jun 2022
+
+### Getting Started with Google Kubernetes Engine
+
+Google Cloud Skills Boost for Partners
+
+Introducción a los contenedores y Kubernetes, que abarca la arquitectura de GKE, las operaciones básicas y la ejecución de aplicaciones en contenedores en Google Cloud.
+
+Emitida jul 2022
+
+### Essential Google Cloud Infrastructure: Foundation
+
+Google Cloud Skills Boost for Partners
+
+Diseño e implementación de infraestructura de Compute Engine, con máquinas virtuales, redes VPC, rutas y reglas de firewall gestionadas mediante herramientas de Google Cloud.
+
+Emitida jul 2022
+
+### Google Cloud Fundamentals: Core Infrastructure
+
+Google Cloud Skills Boost for Partners
+
+Introducción a los servicios de computación y almacenamiento de Google Cloud, con fundamentos prácticos de conceptos de nube, gestión de recursos y políticas.
+
+Emitida jun 2022
+
+### FY25 IS Elite Advocate
+
+Accenture
+
+Reconocimiento por promover prácticas de trabajo seguras, apoyar la concienciación de los colegas y demostrar buenas prácticas de seguridad de la información.
+
+Emitida ago 2025
+
+### FY24 IS Elite Advocate
+
+Accenture
+
+Reconocimiento por los conocimientos de seguridad de la información, por liderar con el ejemplo y por ayudar a los compañeros a adoptar prácticas de trabajo seguras.
+
+Emitida jun 2024
+
+### Accenture Information Security Elite Advocate
+
+Accenture
+
+Reconocimiento dentro del programa Information Security Advocate de Accenture, que promueve la concienciación sobre seguridad y la adopción de prácticas de trabajo más seguras en el día a día.
+
+Emitida jul 2023
+
+Vencimiento: ago 2024
+
+08 / SETUP Y PRODUCTIVIDAD
+
+## Mi setup y consejos de productividad
+
+![Vista general del setup de Paulo, con los equipos identificados sobre un escritorio.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
+
+01 / SETUP Y GADGETS
+
+### Setup y gadgets
+
+Los equipos que uso en mi escritorio y fuera de él, pensando en la productividad y el alto rendimiento.
+
+Fuente: https://paulosanches.github.io/hello/es/setup/my-setup/agent/
+
+02 / HERRAMIENTAS Y APPS
+
+### Herramientas y aplicaciones
+
+El software que utilizo en mi trabajo cotidiano.
+
+Próximamente
+
+03 / RUTINA DE TRABAJO
+
+### Rutina de trabajo
+
+Cómo organizo mi calendario y planifico mi semana de trabajo.
+
+Próximamente
+
+04 / FLUJOS DE TRABAJO Y AGENTES DE IA
+
+### Flujos de trabajo y agentes de IA
+
+Cómo uso la IA y los agentes, incluida la creación de este portafolio con Codex mediante chat y voz.
+
+Próximamente
+
+09 / SIGAMOS CONVERSANDO
+
+## ¡Vaya, has llegado *hasta aquí!*
+
+Espero que te haya gustado lo que has visto. Tomemos un café virtual: me encantará contarte un poco más.
+
+[Tomemos un café virtual](https://www.linkedin.com/in/paulosanches)
+
+Braga, Portugal
+
+---
+
+## Portafolio / Proyectos personales — casos de estudio completos
+
+Fuente: https://paulosanches.github.io/hello/es/portfolio/jogo-da-vida-magnolia/agent/
+
+Markdown: https://paulosanches.github.io/hello/es/portfolio/jogo-da-vida-magnolia/case.md
+
+Portfolio / Side Quests
+
+## Jogo da Vida - Magnólia
+
+Un juego de mesa interactivo basado en historias y reflexión.
+
+[![Captura de pantalla de Jogo da Vida - Magnólia, con el tablero ilustrado en la casilla final.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
+
+El tablero ilustrado al final del juego. [Ver la captura a tamaño completo](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
+
+### El producto
+
+Jogo da Vida - Magnólia reúne 12 casillas ilustradas, historias de personajes y 10 preguntas para reflexionar en un juego de navegador para ordenador y móvil. Los jugadores controlan el ritmo. No hay puntuación ni formulario de respuestas; las preguntas están pensadas para debatir fuera de la aplicación.
+
+### La experiencia
+
+Cada casilla conecta una posición del tablero con una historia. El texto aparece de forma progresiva, seguido de una pregunta que mantiene la historia visible como referencia.
+
+Los jugadores pueden avanzar, volver a una casilla anterior, pausar la aparición del texto o reiniciar el juego. Pasar a la siguiente casilla es siempre una decisión manual.
+
+### Diseño técnico
+
+#### Arquitectura en ejecución
+
+HTML, CSS y SVG definen la interfaz y el tablero ilustrado. JavaScript gestiona la casilla activa, el estado de la historia y la pregunta y las transiciones en el navegador. GitHub Pages sirve la aplicación estática; el juego no necesita un backend de aplicación ni una base de datos.
+
+#### Reproducción y navegación
+
+Un controlador de reproducción dedicado gestiona la tarea actual, el temporizador y los estados de escritura, espera y pausa. Utiliza un intervalo de 24 ms y una espera de lectura de 3.000 ms antes de presentar una pregunta. La presentación automática espera mientras hay texto seleccionado, el panel de lectura tiene el foco del teclado o queda contenido sin leer por debajo de la posición de desplazamiento.
+
+La navegación cancela el trabajo de reproducción pendiente, mientras que las comprobaciones del estado de ejecución evitan transiciones superpuestas. Pausar u ocultar la pestaña suspende la programación de tareas. El avance entre las casillas sigue siendo manual.
+
+#### Diseño de lectura y accesibilidad
+
+El texto completo reserva su espacio en el diseño antes de que empiece el efecto de escritura, en lugar de cambiar el tamaño del globo con cada carácter. Una capa visual separada controla la aparición progresiva, mientras el texto completo sigue disponible para las tecnologías de asistencia.
+
+La interfaz admite navegación con teclado y prefers-reduced-motion. La historia y la pregunta permanecen visibles a la vez.
+
+#### Contenido y control de versiones
+
+Google Sheets permitió la edición colaborativa durante la preparación. Tras la aprobación editorial, se eliminó esa dependencia y el contenido final se publicó junto con el código. Esto mantiene la narrativa vinculada a una versión, pero exige un nuevo despliegue para cambiar el contenido.
+
+#### Pruebas y publicaciones
+
+Las comprobaciones automatizadas cubren contenido, navegación, imágenes y diseño, y se complementan con verificaciones en el navegador con distintos tamaños de pantalla.
+
+Un script de publicación escribe la misma marca de tiempo UTC en la página y en version.json, y añade parámetros de versión derivados de SHA-256 a las URL de JavaScript y CSS. Su modo de comprobación verifica la coherencia de las marcas de tiempo; no vuelve a calcular los hashes de los archivos. Los archivos publicados y el comportamiento en el navegador se comprueban por separado para confirmar la versión entregada.
+
+#### Herramientas de desarrollo
+
+Hermes Agent y Codex apoyaron la implementación y las pruebas en un MacBook Air M1, con solicitudes y revisiones a través de Telegram. ChatGPT generó las ilustraciones de los personajes a partir de las fotografías proporcionadas; Hermes preparó e integró los archivos. Skills reutilizables guiaron el diseño, las pruebas, la depuración y la revisión. Estas herramientas forman parte del flujo de desarrollo, no de la ejecución del juego.
+
+### Explora el proyecto
+
+- [Abrir el juego](https://paulosanches.github.io/magnolia-jogo-da-vida/)
+- [Código en GitHub](https://github.com/PauloSanches/magnolia-jogo-da-vida)
+- [Ver cómo se hizo](https://paulosanches.github.io/magnolia-jogo-da-vida/backstage/)
+
+Juego y detalles de su creación en portugués.
+
+---
+
+---
+
+## Historias — textos completos
+
+Fuente: https://paulosanches.github.io/hello/es/field-notes/a-weekend-a-phone-and-ai/agent/
+
+Markdown: https://paulosanches.github.io/hello/es/field-notes/a-weekend-a-phone-and-ai/story.md
+
+IA E INGENIERÍA
+
+## ¿Qué puedes crear en un fin de semana con un teléfono e IA?
+
+Cómo utilicé Codex por texto y voz para construir, probar y publicar mi portafolio.
+
+2 min de lectura
+
+[![Diagrama del setup que muestra las instrucciones por texto y voz desde el teléfono, la implementación y las comprobaciones con Codex, los commits de GitHub, el alojamiento en GitHub Pages, tres versiones de idioma y un ciclo de revisión.](https://paulosanches.github.io/hello/assets/portfolio-build-setup.webp?v=f8526c37b759)](https://paulosanches.github.io/hello/assets/portfolio-build-setup.webp?v=f8526c37b759)
+
+[Ver el diagrama a tamaño completo](https://paulosanches.github.io/hello/assets/portfolio-build-setup.webp?v=f8526c37b759)
+
+En un fin de semana construí este portafolio guiando a Codex desde mi teléfono. Compartí mi currículum y mis fotos, aporté referencias visuales y definí cómo quería presentar mi experiencia. Algunas historias las escribí y otras las dicté.
+
+Dirigía el trabajo con instrucciones breves y comprobaba el resultado en el navegador. Codex editaba los archivos y ejecutaba comandos en su entorno de desarrollo. Desde el teléfono revisaba el contenido, el diseño y el comportamiento, y después indicaba los siguientes ajustes.
+
+Publiqué el portafolio con **alojamiento gratuito en GitHub Pages**, usando **HTML, CSS y JavaScript**, sin utilizar Vercel ni Supabase. Las páginas estáticas y las interacciones en el navegador cubrían lo que quería construir. Codex registraba los cambios en GitHub, y el flujo de compilación y despliegue de GitHub Pages publicaba los archivos.
+
+Para ofrecer el contenido en **inglés, italiano y portugués de Brasil**, usamos un script de Python para generar las páginas a partir de los archivos de origen y las traducciones. Cada idioma tiene sus propias URL, metadatos y enlaces a las otras versiones. Añadimos un mapa del sitio, URL canónicas y datos estructurados para el perfil y los artículos.
+
+Para las interacciones, incluí Easter eggs que reconocen `redbull`, `gameday` y `goodmorning`. JavaScript cambia el tema, la foto y una frase del banner. Las variables CSS aplican los colores, mientras que `sessionStorage` mantiene la selección mientras los visitantes navegan en la misma pestaña.
+
+La validación formó parte de la entrega. Codex comprobó las páginas en Chromium y WebKit con distintos anchos de pantalla, verificando imágenes, enlaces, traducciones y componentes. Mis revisiones desde el móvil complementaban esas comprobaciones con ajustes de legibilidad, encuadre y organización.
+
+Me centré en la experiencia de quien visita el sitio: una identidad visual propia, navegación adaptable, tarjetas y páginas dedicadas a las historias. Con una arquitectura sencilla y alojamiento gratuito, publiqué un portafolio con interacciones pensadas para mi perfil, dirigiendo el proyecto por texto y voz.
+
+### Sigamos conversando
+
+¿Estás usando IA y agentes en tus proyectos?
+
+[Escríbeme por LinkedIn](https://www.linkedin.com/in/paulosanches)
+
+Tomemos un café virtual para intercambiar experiencias.
+
+---
+
+Fuente: https://paulosanches.github.io/hello/es/field-notes/security-at-the-beach/agent/
+
+Markdown: https://paulosanches.github.io/hello/es/field-notes/security-at-the-beach/story.md
+
+SEGURIDAD Y LIDERAZGO
+
+## Una semana en la playa. Un incidente de seguridad el segundo día.
+
+Fui a trabajar una semana en una casa de playa, con la idea de pasar más tiempo con mi familia. El segundo día, un incidente de seguridad en producción cambió los planes.
+
+4 min de lectura
+
+![Vista costera pixelada con palmeras, una playa de arena y agua turquesa.](https://paulosanches.github.io/hello/assets/field-notes-beach.png?v=cfb755a41222)
+
+Acababan de ascenderme a Manager. Entre mis nuevas responsabilidades, había asumido los roles de Delivery Lead y Solution Architect de un proyecto de marketing y CMS para una de las principales empresas del agronegocio de Brasil.
+
+La solución utilizaba Liferay Portal y llevaba tres años en producción. El equipo del proyecto tenía solo dos personas, no había problemas relevantes registrados y el cliente estaba negociando la renovación del contrato. Era un proyecto pequeño por el tamaño del equipo, pero importante para la cuenta.
+
+Con todo aparentemente bajo control, trabajar desde la casa de la playa parecía sencillo. Esperaba una semana normal de trabajo con más tiempo cerca de mi familia.
+
+### Cuando la inestabilidad se convirtió en un incidente de seguridad
+
+El segundo día identificamos un proceso sospechoso en el servidor de producción. El consumo de memoria seguía aumentando, sobrecargaba el entorno y provocaba reinicios. Lo que al principio parecía un problema de estabilidad se convirtió en un incidente de seguridad.
+
+Activamos los protocolos de incidentes de la empresa, escalamos el caso y organizamos una sala de crisis. Mi responsabilidad era coordinar la respuesta técnica, organizar las siguientes acciones y mantener al cliente y a los responsables informados sobre el problema y nuestros avances.
+
+### Encontrar la corrección era solo una parte del trabajo
+
+Durante la investigación encontramos algo que complicaba la respuesta. En la fase de venta, el proyecto se había diseñado con la edición Community de Liferay. En ese contexto, no contábamos con el soporte ni con las correcciones disponibles que necesitábamos para responder con rapidez.
+
+Identificamos vulnerabilidades conocidas en la versión que utilizábamos, pero no encontramos un paquete de actualización listo para instalar que las corrigiera.
+
+Después de buscar en foros y abrir solicitudes de soporte con especialistas, descubrimos que la comunidad había publicado una corrección. Pero había un paso adicional: teníamos que descargar varios gigabytes de archivos y compilar la aplicación antes de instalar la versión actualizada en el servidor.
+
+Fue entonces cuando la conexión de la casa de playa dejó de ser un detalle menor. Las descargas y la compilación nos llevaron dos noches completas.
+
+### Mantener a todos informados
+
+A medida que avanzaban las descargas, aumentaba la presión. El incidente ya estaba siendo seguido por líderes de toda América Latina, que solicitaban actualizaciones varias veces al día.
+
+Tenía que trabajar en dos frentes: ayudar al equipo a llegar a una solución y explicar con claridad a las partes interesadas lo que sabíamos, lo que seguía en investigación y cuáles serían los siguientes pasos.
+
+> Tenía que dejar claros los siguientes pasos sin prometer un plazo que todavía no podíamos respaldar.
+
+Resolver el problema técnico y comunicar nuestros avances formaban parte de la respuesta. Todavía había incertidumbres y necesitaba ser transparente al respecto.
+
+Finalmente compilamos e instalamos la versión actualizada, corregimos las vulnerabilidades que habíamos identificado y cerramos el incidente.
+
+Apenas pude disfrutar de la playa. Gran parte de la semana transcurrió entre reuniones, investigación técnica y noches de trabajo, en un entorno que no estaba preparado para esa rutina. Fue una de las experiencias más intensas de mi carrera.
+
+### Lo que me llevé
+
+#### El mantenimiento y el soporte forman parte de la propuesta
+
+El coste de una solución debe contemplar el mantenimiento, las actualizaciones y el soporte. En este proyecto, la elección de la edición Community creó una dificultad que solo se hizo evidente cuando tuvimos que responder a una crisis. Si esas capacidades son necesarias para atender al cliente, deben formar parte de la propuesta desde el principio.
+
+#### Liderar es organizar toda la respuesta
+
+La solución técnica es solo una parte del trabajo. También hay que organizar la respuesta, apoyar al equipo y comunicar los avances con transparencia, incluso cuando aún quedan preguntas sin respuesta.
+
+#### Trabajar desde cualquier lugar exige preparación
+
+Poder trabajar desde cualquier lugar también exige pensar en las condiciones necesarias para afrontar lo inesperado. La conexión y el entorno de trabajo importan cuando un día normal se convierte en una crisis.
+
+Acababa de asumir un puesto de gestión y esperaba una semana tranquila. En cambio, desde una casa de playa, recibí una lección práctica sobre responsabilidad, toma de decisiones y liderazgo bajo presión.
+
+### Más sobre la parte técnica
+
+Si te gustaría conocer los detalles técnicos de este incidente y crees que podrían serte útiles, estaré encantado de conversar sobre ellos.
+
+[Escríbeme en LinkedIn](https://www.linkedin.com/in/paulosanches)
+
+---
+
+Fuente: https://paulosanches.github.io/hello/es/field-notes/banking-handover-in-brasilia/agent/
+
+Markdown: https://paulosanches.github.io/hello/es/field-notes/banking-handover-in-brasilia/story.md
+
+ENTREGA Y EXPECTATIVAS
+
+## Viajé al mayor banco de Brasil con un briefing de apenas unos puntos.
+
+Acepté una visita de dos semanas a un cliente bancario en Brasília con un briefing de unos pocos puntos. Pasé el vuelo preparándome para problemas que todavía no había visto.
+
+3 min de lectura
+
+![Vista urbana pixelada con edificios de oficinas y caminos entre zonas verdes.](https://paulosanches.github.io/hello/assets/field-notes-banking.png?v=4ca980b52159)
+
+Durante mis primeros años en consultoría viajé para conocer a los equipos de los clientes y ayudar a resolver problemas. En aquellas visitas creé contactos y aprendí del trabajo que hacíamos.
+
+Estaba trabajando en mi oficina de Recife, con mi proyecto bajo control, cuando me llamó un líder de la empresa. Me pidió ayuda con un cliente en Brasília para facilitar talleres y resolver defectos críticos. También formaría al equipo del cliente durante el traspaso y el periodo de soporte intensivo posterior a la entrega.
+
+Acepté. Dos días después, estaba preparando la maleta para pasar dos semanas fuera de casa. La persona responsable de ponerme al tanto consiguió enviarme un correo con algunos puntos generales. Tenía poco contexto sobre el proyecto, el cliente y los problemas que encontraría.
+
+Pasé el vuelo preparándome para distintos escenarios. En el banco encontré una situación que requería más información que el resumen que había recibido.
+
+### Cuatro expectativas diferentes
+
+Estaba en el mayor banco de Brasil, una institución pública. Cada persona esperaba algo distinto de aquella visita:
+
+- **El superintendente (VP)** quería todos los defectos resueltos y el sistema funcionando en producción.
+- **El gerente** quería talleres y formación del equipo para garantizar la continuidad del trabajo por parte del cliente.
+- **El desarrollador** quería material paso a paso de toda la solución para facilitar el trabajo cotidiano.
+- **La dirección de Accenture** quería cumplir el contrato y mejorar la satisfacción del cliente. Sabía que no podríamos resolver todos los problemas.
+
+### Acordar el trabajo de las dos semanas siguientes
+
+Empecé por escuchar a las personas involucradas y entender sus necesidades. Identifiqué al punto de contacto del cliente y acordamos las expectativas para las dos semanas.
+
+Con ese acuerdo organicé los talleres y prioricé los problemas. Dedicaríamos el tiempo restante a la formación del equipo.
+
+Aprendí el contexto y los objetivos del proyecto mientras trabajaba con el cliente y seguí estudiando por las noches en el hotel. Necesitaba entender la solución y su valor para preparar el día siguiente.
+
+### Compartiendo un único PC
+
+Tuve que usar un PC del cliente por los requisitos de configuración y seguridad de red. Un desarrollador del cliente y yo nos turnábamos en ese puesto de trabajo a lo largo del día.
+
+El banco aplicaba normas de horario y programaba el apagado de sus estaciones de trabajo al final de la jornada. No podía quedarme por la noche para avanzar en la resolución de los defectos.
+
+En la segunda semana, la dirección del departamento autorizó una excepción para una noche. Trabajé solo en el PC del desarrollador hasta las once de la noche y después volví al hotel.
+
+No había podido subir mis cambios por un problema con las credenciales disponibles. Los dejé guardados en el PC para publicarlos al día siguiente.
+
+### Una noche de trabajo perdida
+
+Llegué a la oficina a la mañana siguiente y encontré sin corriente todas las estaciones de trabajo de nuestro grupo. El PC que había utilizado se había quemado y perdí el trabajo que había dejado en él.
+
+Volví a corregir los problemas y abordé los que el cliente había priorizado. El director estaba satisfecho con nuestros avances y tenía más confianza en la solución.
+
+Volví a casa al final de la segunda semana, con las partes interesadas alineadas y satisfechas con el trabajo.
+
+Al recordar aquella visita, veo cuánto dependió de las primeras conversaciones. Necesitaba entender las expectativas de cada persona y acordar nuestras prioridades antes de organizar el trabajo de las dos semanas.
+
+### Sigamos conversando
+
+Si has vivido una situación similar o quieres saber más, escríbeme por LinkedIn. Podemos tomar un café virtual.
+
+[Tomemos un café virtual](https://www.linkedin.com/in/paulosanches)
+
+---
+
+Fuente: https://paulosanches.github.io/hello/es/field-notes/supporting-families-after-brumadinho/agent/
+
+Markdown: https://paulosanches.github.io/hello/es/field-notes/supporting-families-after-brumadinho/story.md
+
+EQUIPO Y PROPÓSITO
+
+## Creamos un sistema para apoyar a las familias tras el desastre de Brumadinho.
+
+Tras el colapso de la presa de Brumadinho en enero de 2019, reuní a un equipo de seis personas para desarrollar un sistema destinado a los trabajadores sociales que apoyaban a las familias afectadas.
+
+3 min de lectura
+
+![Vista aérea pixelada de una zona con barro rodeada de vegetación verde.](https://paulosanches.github.io/hello/assets/field-notes-brumadinho.png?v=d115b773c1b3)
+
+En enero de 2019 seguimos las noticias de la rotura de la presa de Brumadinho, uno de los mayores desastres socioambientales de la historia de Brasil. Vimos en la televisión y en los periódicos los esfuerzos de búsqueda y de apoyo a las familias afectadas.
+
+La alta dirección de la empresa me pidió que movilizara un equipo técnico para un proyecto urgente. Los trabajadores sociales necesitaban un sistema para registrar y hacer seguimiento de las personas a las que atendían.
+
+### Un encargo sencillo, sin equipo disponible
+
+Los requisitos iniciales del equipo responsable de la cuenta eran sencillos: sustituir una hoja de cálculo de Excel por un sistema de registro coherente y seguro.
+
+Encontrar personas para desarrollarlo fue más difícil. No había nadie disponible para incorporarse al proyecto ni se esperaban nuevas incorporaciones a la empresa en ese período. En circunstancias normales, habríamos rechazado la solicitud o acordado empezar más adelante.
+
+Las familias necesitaban apoyo y quienes las ayudaban trabajaban a contrarreloj. Hablé con compañeros de confianza y reuní un equipo multidisciplinar de seis personas. Acordamos trabajar horas extra para entregar el sistema.
+
+### Nuevas necesidades durante las pruebas
+
+Preveíamos dos meses para el desarrollo y las pruebas. A medida que los trabajadores sociales probaban el sistema, solicitaban cambios para atender las necesidades de las distintas partes implicadas.
+
+El cliente debía responder a las solicitudes de los organismos competentes a medida que avanzaban sus procedimientos. Seguimos adaptando el sistema a esas necesidades, lo que prolongó el proyecto seis meses más, hasta un total de ocho.
+
+Queríamos dar a los trabajadores sociales lo que necesitaban para apoyar a las familias. Seguimos con el trabajo a través de aquellos cambios porque queríamos hacerlo bien.
+
+Este fue uno de los mejores equipos con los que he trabajado, tanto por su capacidad técnica como por su compromiso. Se notaba su orgullo cuando los equipos de apoyo a las familias probaban y utilizaban el sistema.
+
+### La confianza construida antes de este proyecto
+
+Creo que el equipo aceptó el desafío porque ya habíamos trabajado juntos en otro proyecto. Habíamos creado un entorno colaborativo en el que nos centrábamos en los resultados para el cliente y disfrutábamos de trabajar juntos.
+
+En aquel proyecto anterior, el equipo decidió hacerse el mismo tatuaje: la fecha en que se habían incorporado al proyecto, escrita en binario. Yo no me lo hice porque me dan miedo las agujas, pero sigo valorando la experiencia de liderar a aquel equipo y ayudar a crear ese ambiente.
+
+### Soporte al sistema en producción
+
+En el proyecto de Brumadinho, seguimos dando soporte a la aplicación en producción hasta las últimas etapas de nuestro trabajo. Fue muy significativo ver que el sistema ayudaba a los equipos que apoyaban a las familias.
+
+### Gracias al equipo
+
+Un agradecimiento especial a los compañeros que aceptaron este proyecto:
+
+- [Ruan Morais](https://www.linkedin.com/in/ruan-morais-dev/)
+- [Giovana Andrade](https://www.linkedin.com/in/andradeglc/)
+- [Wilton Junior](https://www.linkedin.com/in/wilton-junior/)
+- [Mercia Oliveira](https://www.linkedin.com/in/merciaoliveira/)
+- [Lucas Medeiros](https://www.linkedin.com/in/lucasmatosm/)
+
+### Sigamos conversando
+
+Si quieres conversar sobre esta experiencia o sobre cómo liderar equipos, escríbeme por LinkedIn. Podemos tomar un café virtual.
+
+[Tomemos un café virtual](https://www.linkedin.com/in/paulosanches)
+
+---
+
+Fuente: https://paulosanches.github.io/hello/es/field-notes/do-you-know-zeno-rocha/agent/
+
+Markdown: https://paulosanches.github.io/hello/es/field-notes/do-you-know-zeno-rocha/story.md
+
+COMUNIDAD Y SELECCIÓN
+
+## «¿Conoces a Zeno Rocha?»
+
+La pregunta con la que cerraba las entrevistas de front-end y lo que significó el trabajo de Zeno Rocha para los equipos que quería formar.
+
+2 min de lectura
+
+![Fotografía pixelada de un grupo en un evento de tecnología, con iluminación verde de fondo.](https://paulosanches.github.io/hello/assets/field-notes-zeno-rocha.png?v=b7f9d0549db3)
+
+Entre 2012 y 2016 lideré equipos de front-end y realicé entrevistas técnicas. Terminaba las entrevistas preguntando al candidato:
+
+> **“Você conhece o Zeno Rocha?”**
+
+Tenía en cuenta la respuesta al contratar. Conocer el trabajo de Zeno indicaba interés por la comunidad front-end, algo que valoraba en mis equipos.
+
+### Seguir a las personas detrás del trabajo
+
+Me gustaba seguir a personas que creaban cosas y compartían lo que sabían. Encontraba el nombre de un autor en un libro técnico y buscaba sus proyectos, artículos y publicaciones en foros. Así descubrí el trabajo de [Addy Osmani](https://addyosmani.com/bio/) y empecé a seguir a otras personas del sector.
+
+En 2016, compré [The Sketch Handbook](https://www.smashingmagazine.com/printed-books/the-sketch-handbook/), publicado por Smashing Magazine, cuando salió a la venta. Seguía el sitio por sus contenidos de desarrollo y diseño y quería profundizar en lo que aprendía allí.
+
+Con [Zeno Rocha](https://zenorocha.com/about), me pasó algo parecido. Lo escuché hablar en un evento en Recife cuyo nombre no recuerdo. Trabajaba en Globo.com y habló de su trayectoria, sus proyectos personales y sus contribuciones a la comunidad front-end. Me interesaban lo que construía y su disposición a compartir ese trabajo.
+
+Buscaba personas que encontraran referentes por iniciativa propia, experimentaran y quisieran aprender más allá de las necesidades de un proyecto. Saber a quién seguía un candidato me ayudaba a entender esa parte de su perfil.
+
+### Sigue siendo un referente para mí
+
+Sigo a Zeno, ahora como fundador de [Resend](https://resend.com/about). Admiro el cuidado del equipo por los detalles del producto y la experiencia del desarrollador. Valoro ese cuidado tanto en lo que entrega un equipo como en su forma de trabajar.
+
+Zeno, gracias por compartir lo que creas. Tu trabajo me ayudó a elegir personas con las que quería trabajar y aprender. Espero que tengamos la oportunidad de conversar para poder contarte esta historia.
+
+### Sigamos conversando
+
+¿Usas algún criterio poco habitual en las entrevistas o al formar tus equipos? Escríbeme por LinkedIn. Tomemos un café virtual y compartamos experiencias.
+
+[Tomemos un café virtual](https://www.linkedin.com/in/paulosanches)
+
+---
+
+Fuente: https://paulosanches.github.io/hello/es/field-notes/one-week-three-months-in-sao-paulo/agent/
+
+Markdown: https://paulosanches.github.io/hello/es/field-notes/one-week-three-months-in-sao-paulo/story.md
+
+CRISIS Y LIDERAZGO
+
+## ¿Cómo se convirtió una semana para ayudar en una crisis en tres meses en São Paulo?
+
+Fui a São Paulo para ayudar durante una semana con una crisis de facturación. Asumí el backlog de marketing y me quedé para organizar los equipos de un nuevo contrato.
+
+4 min de lectura
+
+![Fotografía pixelada de una calle con farolas esféricas, toldos rojos y edificios.](https://paulosanches.github.io/hello/assets/field-notes-three-months-in-sao-paulo.png?v=a9c90cca0153)
+
+En abril de 2017 estaba terminando un proyecto para un cliente del sector financiero en Brasil. El equipo había reducido el tiempo de análisis y aprobación de créditos para automóviles de horas, a veces días, a minutos.
+
+Lo conseguimos mejorando la interfaz que utilizaban los analistas. Necesitaban revisar documentos PDF e imágenes, añadir anotaciones y aprobar o rechazar archivos. Desarrollamos una solución con atajos de teclado y componentes que mostraban los documentos según su tipo de archivo. Nuestro objetivo era facilitar el trabajo de quienes pasaban el día haciendo esas revisiones.
+
+Pasé una semana en São Paulo acompañando el despliegue con el equipo de BPO del cliente, impartiendo formación y haciendo correcciones. Vi a los equipos competir por el mayor número de aprobaciones al día, a la semana y al mes. Pude observar los resultados de nuestro trabajo junto a las personas que utilizaban la solución.
+
+Unas semanas antes de que terminara el proyecto, el Managing Director me llamó a su despacho. Quería saber si estaba disponible para ayudar en una crisis en São Paulo, en un cliente de telecomunicaciones que mantenía una relación de muchos años con nuestra empresa.
+
+Acepté. A la semana siguiente llegué al cliente para una asignación que, en principio, iba a durar cinco días.
+
+Había varios líderes de nuestra empresa, incluido el presidente. «Sin presión».
+
+Me dirigieron a una sala con una mesa para más de veinte personas. Parecía una escena de una película de guerra: profesionales convocados de distintas áreas, cada uno con una experiencia que explicaba por qué estaba allí. Mis “galones” eran el trabajo con PDF del proyecto anterior y la trayectoria que había construido en la empresa.
+
+Un Manager entró para explicar los problemas. El principal era que el sistema no generaba los PDF de las facturas. Los clientes no podían pagarlas y la empresa de telecomunicaciones estaba perdiendo dinero.
+
+Me di cuenta de que mi experiencia con documentos en una interfaz de usuario tenía poco que ver con aquel fallo en la generación de facturas. Sospeché de un problema de infraestructura o de red, o de una nueva versión del sistema que generaba los PDF en segundo plano. Eran hipótesis; aún necesitaba entender la situación.
+
+Los profesionales con esa experiencia estaban investigando el problema. Me acerqué a algunos de los líderes que estaban allí y me ofrecí a ayudar en otros frentes.
+
+En esas conversaciones supe que el equipo de marketing del cliente tenía una gran lista de problemas y mejoras pendientes. Como la atención se centraba en la crisis de facturación, esas solicitudes quedaban sin atender.
+
+Acepté ayudar al departamento. Tras revisar el backlog, vi que necesitaríamos más personas y más de una semana. Preparé un plan de trabajo y lo presenté a la dirección de nuestra empresa y al cliente. Lo aprobaron y empezamos a trabajar.
+
+El jueves por la noche, el director al que había buscado el primer día me pidió que regresara la semana siguiente y me quedara otras dos semanas. Así tendríamos tiempo para reducir el backlog y encontrar personas que reforzaran el equipo.
+
+Acepté. Durante las semanas siguientes, trabajé en las solicitudes y en la organización necesaria para incorporar a esas personas.
+
+Cerca de fin de mes, el mismo director me llamó para darme las gracias. El cliente estaba satisfecho con las entregas y el área había firmado un nuevo contrato con nuestra empresa. Quería que liderara la organización de los equipos de ese contrato, ampliando mi responsabilidad más allá del frente de trabajo que llevaba.
+
+Llevaba casi un mes fuera de casa. Volví un fin de semana y hablé con mi esposa sobre la posibilidad de que pasara unos días conmigo en São Paulo. El lunes por la mañana estaba de vuelta con el cliente.
+
+Durante esa etapa trabajé con profesionales de una empresa que habíamos adquirido. Eran especialistas en desarrollo front-end, usabilidad y experiencia de usuario. Aprendí de ellos e hice amistades mientras organizábamos el trabajo y los equipos.
+
+Dediqué otros dos meses a esa organización. Al terminar mi participación, dejé la operación en marcha, con los equipos organizados para seguir ejecutando el contrato.
+
+Había llegado para ayudar durante una semana en una crisis de generación de facturas. A lo largo de tres meses trabajé con otra área del cliente y asumí la responsabilidad de estructurar una operación mayor.
+
+También conocí de cerca a responsables a quienes hasta entonces seguía a través de reuniones y de las herramientas de comunicación de la empresa. Regresé con nuevos amigos, experiencia en otros frentes y algunas “estrellas” más en el pecho.
+
+Estar lejos de casa tuvo su costo. Y São Paulo contribuyó con algunos kilos de más: entre las visitas a Famiglia Mancini y mi misión de conocer los diez mejores establecimientos del Guia do Hambúrguer, disfruté de la ciudad entre jornadas de trabajo.
+
+### Sigamos conversando
+
+¿Has vivido una crisis que cambiara el rumbo de una asignación o alargara un viaje? Me gustaría conocer esa historia.
+
+[Escríbeme en LinkedIn para tomar un café virtual.](https://www.linkedin.com/in/paulosanches)
+
+---
+
+Fuente: https://paulosanches.github.io/hello/es/field-notes/when-our-senior-developer-resigned/agent/
+
+Markdown: https://paulosanches.github.io/hello/es/field-notes/when-our-senior-developer-resigned/story.md
+
+MENTORÍA Y CRECIMIENTO
+
+## El día en que pensé que la empresa se iba a parar porque nuestro desarrollador sénior había dimitido
+
+Yo era el desarrollador más júnior de nuestro equipo de Flash. Después de dos años aprendiendo del sénior, no podía imaginar cómo seguiríamos sin él.
+
+3 min de lectura
+
+![Fotografía pixelada de un edificio alto con árboles y un cielo nublado.](https://paulosanches.github.io/hello/assets/field-notes-porto-digital.png?v=1c692ebd4768)
+
+En 2009 acababa de terminar la universidad y empezaba mi carrera en una empresa que admiraba: una agencia de publicidad global que había abierto una oficina en el Porto Digital de Recife.
+
+Mi entrevista se celebró en una sala donde las personas veían un partido de la Champions League, bebían cerveza y trabajaban. Por entonces conocía pocos entornos laborales y aquel era distinto de los que había visto.
+
+Superé la entrevista, pero la cuenta en la que iba a trabajar quedó congelada. La contratación se suspendió durante dos meses y yo ya había renunciado a la empresa donde hacía mis prácticas.
+
+Acabé teniendo dos meses de vacaciones que no había previsto. Después de compaginar el final de la escuela con un curso técnico de diseño web y, después, empezar la universidad y trabajar, aproveché el descanso. Llevaba dos años intentando seguir el ritmo de los estudios y el trabajo.
+
+La empresa volvió a llamarme y la contratación siguió adelante. Me incorporé como desarrollador de ActionScript, en la época de Adobe Flash.
+
+Yo era la persona más júnior del equipo. Tenía cuatro compañeros: tres desarrolladores de nivel intermedio y uno sénior. Cada uno atendía una cuenta o un cliente, y el sénior supervisaba las entregas y orientaba los trabajos más complejos.
+
+Tenía muchos años de experiencia en ingeniería de software. Lo conocíamos como «El Hombre de Serra Talhada».
+
+Observaba cómo resolvía problemas técnicos y trabajaba con las personas. Nos orientaba, seguía el trabajo y nos pedía cuentas cuando hacía falta. Yo quería aprender de todo aquello y seguramente le hice más preguntas que nadie en su vida.
+
+Durante dos años aprendí de él y fui ganando autonomía. Incluso cuando asumía más responsabilidades, seguía viéndolo como una pieza esencial para que el equipo funcionara.
+
+Entonces anunció que había recibido una oferta de una empresa en la que siempre había soñado trabajar. Era una oportunidad que quería aprovechar.
+
+Pasé unos días intentando entender cómo seguiríamos sin él. En mi cabeza, nadie estaba preparado para ocupar su lugar. Miraba al equipo e imaginaba todo lo que podía dejar de funcionar.
+
+Me sentí abandonado e incapaz de manejar la situación. Fue la primera y la última vez que viví así la salida de alguien.
+
+Nos reorganizamos y seguimos trabajando. Con los años, otros compañeros se marcharon y fui teniendo espacio para asumir más responsabilidades, hasta convertirme en el líder del equipo.
+
+Al mirar atrás, veo cuánto había aprendido de él antes de que se marchara. Fui ganando confianza para aplicar esos conocimientos al enfrentarme a situaciones que antes le habría llevado para que las resolviera.
+
+Al ver *Jurassic Park*, me quedé con la frase “Life finds a way” . Todavía asocio esas palabras con aquella etapa de mi carrera.
+
+Desde entonces, he visto marcharse a líderes, compañeros y personas de mis equipos. Siento el impacto de esos cambios e intento mostrar a quienes se quedan las oportunidades de aprender y asumir nuevas responsabilidades. Tuve que vivirlo para poder verlo de esa manera.
+
+El Hombre de Serra Talhada es [Tairone César](https://www.linkedin.com/in/tairone-c%C3%A9sar-5129057/).
+
+Gracias por las enseñanzas y las conversaciones profundas, maestro. Llevo conmigo mucho de lo que aprendí de ti.
+
+Por aquella época, mis compañeros me grabaron dormido durante el almuerzo. Me gastaron una broma y publicaron el vídeo en YouTube. [Aquí está el vídeo de aquellos días](https://youtu.be/QDJcwSda1lM?si=GKLr67HOOlJgC7gr).
+
+### Sigamos conversando
+
+¿Has vivido un cambio similar en tu equipo? Escríbeme por LinkedIn para tomar un café virtual.
+
+[Tomemos un café virtual](https://www.linkedin.com/in/paulosanches)
+
+---
+
+---
+
+## Mi setup y productividad — páginas completas
+
+Fuente: https://paulosanches.github.io/hello/es/setup/my-setup/agent/
+
+Markdown: https://paulosanches.github.io/hello/es/setup/my-setup/setup.md
+
+SETUP Y PRODUCTIVIDAD
+
+## Mi setup
+
+Los equipos que forman parte de mi jornada, del escritorio a la mochila.
+
+Busco la optimización y el alto rendimiento en lo que hago, y sigo el mismo criterio con mi equipamiento.
+
+Antes de comprar cada equipo, investigué sus funciones, sopesé los pros y los contras, vi reseñas en YouTube y consideré las concesiones que implicaba cada opción. Quería entender si el precio más alto estaba justificado.
+
+![Vista general del setup de Paulo, con los equipos identificados sobre un escritorio.](https://paulosanches.github.io/hello/assets/setup/overview.webp)
+
+### Escritorio
+
+- ![FLEXISPOT EC5 Plus Electric Dual](https://paulosanches.github.io/hello/assets/setup/flexispot-ec5-plus-frame.webp)
+
+  [FLEXISPOT EC5 Plus Electric Dual](https://www.amazon.es/dp/B0DN1HMXHX)
+
+  Con la FLEXISPOT puedo hacer reuniones y trabajar de pie en los momentos de concentración. Me gustan la calidad de los materiales y la potencia de sus dos motores. Los controles y las alturas predefinidas son muy útiles en mi día a día.
+- ![Logitech MX Keys](https://paulosanches.github.io/hello/assets/setup/mx-keys.webp)
+
+  [Logitech MX Keys](https://link.amazon/B02quZak0)
+
+  La disposición y la respuesta de las teclas hacen que escribir sea un placer. Uso el teclado numérico cuando trabajo con números y aprovecho mucho los atajos para abrir aplicaciones, bloquear el PC, hacer capturas de pantalla y cambiar entre escritorios virtuales.
+- ![Logitech MX Master 3S](https://paulosanches.github.io/hello/assets/setup/mx-master-3s.webp)
+
+  [Logitech MX Master 3S](https://link.amazon/B0f3b1CkG)
+
+  Uso todos los botones del ratón para abrir programas y activar flujos de trabajo, y personalizo Actions Ring en Logi Options+ con atajos para distintas tareas. El desplazamiento horizontal marca la diferencia al navegar por hojas de cálculo de Excel y líneas de tiempo de vídeo.
+- ![Infinitebook Daily Goal Digger](https://paulosanches.github.io/hello/assets/setup/infinitebook.webp)
+
+  [Infinitebook Daily Goal Digger](https://link.amazon/B07upEVUQ)
+
+  Sigo prefiriendo el papel y el bolígrafo para tener las tareas y las prioridades a la vista. Antes usaba varios cuadernos y agendas: buscaba páginas, copiaba las tareas pendientes y dibujaba círculos, estrellas y asteriscos cuando cambiaban las prioridades. Investigué el reMarkable 2 y el iPad Pro, pero depender de una batería, la posibilidad de usarlos para otras cosas y el precio me hicieron descartar esas opciones.
+
+  Con Infinitebook puedo borrar y reorganizar mi día tantas veces como necesite. En los modelos que he usado, he tenido páginas para listas, notas con renglones y espacios en blanco para dibujar soluciones y arquitecturas. La idea de comprarlo una sola vez no se ha cumplido en mi caso: ya voy por el cuarto modelo, porque he ido descubriendo formatos distintos a medida que cambiaban mis necesidades.
+
+### Audio y vídeo
+
+- ![Logitech MX Brio](https://paulosanches.github.io/hello/assets/setup/mx-brio.webp)
+
+  [Logitech MX Brio](https://link.amazon/B03zvay7g)
+
+  Durante años trabajé desde cualquier lugar con un MacBook de 13 pulgadas y sin equipos adicionales. Cuando empecé a usar un monitor externo, me fijé en cuántas personas aparecen de lado en las videollamadas, mirando hacia otro lugar mientras hablan.
+
+  Un curso de liderazgo y comunicación me hizo pensar también en la postura y el contacto visual en las reuniones a distancia. Compré una webcam básica y después pasé a la MX Brio 4K. Sus colores, el ajuste con poca luz y los controles de imagen marcan una gran diferencia en mi presencia en las reuniones online.
+- ![Logitech G PRO X 2 LIGHTSPEED](https://paulosanches.github.io/hello/assets/setup/pro-x-2.webp)
+
+  [Logitech G PRO X 2 LIGHTSPEED](https://link.amazon/B0aIAviog)
+
+  He tenido muchos equipos de audio en busca de buenos graves y de un sonido que me guste. Me llevó mucho tiempo encontrar unos auriculares que combinaran el sonido que quería para la música con un buen micrófono y un aspecto discreto para las reuniones ejecutivas. Los PRO X 2 me ofrecen esa combinación, con una aplicación para ajustar el sonido y los efectos.
+
+### Fuera del escritorio
+
+- ![DJI Osmo Mobile 6](https://paulosanches.github.io/hello/assets/setup/osmo-mobile-6.webp)
+
+  [DJI Osmo Mobile 6](https://link.amazon/B0cdfebGN)
+
+  Estoy empezando a crear contenido y el Osmo facilita la grabación. Me ayuda a conseguir vídeos más estables, me permite apoyar el teléfono en el trípode y es fácil de transportar.
+- ![Apple Watch Ultra](https://paulosanches.github.io/hello/assets/setup/watch-ultra-transparent.webp)
+
+  [Apple Watch Ultra](https://link.amazon/B0gtPCbJI)
+
+  Puedo no darme cuenta de una llamada cuando el teléfono vibra en el bolsillo. El Watch me ayuda a notarla, además de los avisos, alarmas y temporizadores que uso a lo largo del día. Todavía no he encontrado muchas apps o funciones específicas para smartwatch que me resulten útiles y bien diseñadas para un reloj.
+- ![Mous × Mercedes-AMG Backpack](https://paulosanches.github.io/hello/assets/setup/mous-backpack.webp)
+
+  [Mous × Mercedes-AMG Backpack](https://eu.mous.co/en-eu/products/mous-mercedes-protective-lid-backpack)
+
+  Las visitas a clientes y los eventos implican muchos viajes, así que necesito una mochila discreta, con espacio para organizar y proteger mis equipos. He tenido modelos deportivos, los más nerds de Google Cloud y una Victorinox que fue mi favorita hasta que llegó al final de su vida después de muchas horas de vuelo. La Mous tiene el acabado y la distribución de compartimentos que busco para llevar mis equipos. Este no es el modelo UltraTex, pero tampoco tengo planes de lanzar la mochila desde un helicóptero.
+
+---

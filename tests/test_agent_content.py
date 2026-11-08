@@ -68,7 +68,7 @@ class AgentContentTests(unittest.TestCase):
                     controls = list(view.root.descendants("a"))
                     self.assertEqual(next(n for n in controls if "agent-home" in n.classes).attrs["href"], home + "agent/")
                     language_controls = [n for n in controls if n.attrs.get("hreflang")]
-                    self.assertEqual(len(language_controls), 3)
+                    self.assertEqual(len(language_controls), len(LANGUAGES))
                     for control in language_controls:
                         self.assertTrue(control.attrs["href"].endswith(f"field-notes/{path.parent.name}/agent/"))
                     self.assertNotRegex(output, r"(?i)mailto:|tel:|<script|dataLayer")
@@ -111,7 +111,7 @@ class AgentContentTests(unittest.TestCase):
                 story = folder / "field-notes/a/index.html"
                 story.parent.mkdir(parents=True)
                 story.write_text('<main><article><h1>Story A</h1><p>Entire first story.</p></article><section><p>Conversation CTA.</p></section></main>')
-            self.assertEqual(len(build(root)), 12)
+            self.assertEqual(len(build(root)), 4 * len(LANGUAGES))
             self.assertEqual(build(root), [])
             self.assertEqual(build(root, check=True), [])
             (root / "index.html").write_text('<main><h1>Changed headline</h1></main>')

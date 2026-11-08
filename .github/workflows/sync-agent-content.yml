@@ -13,15 +13,19 @@ on:
       - 'portfolio.md'
       - 'pt/portfolio.md'
       - 'it/portfolio.md'
+      - 'es/portfolio.md'
       - 'setup/**/setup.md'
       - 'pt/setup/**/setup.md'
       - 'it/setup/**/setup.md'
+      - 'es/setup/**/setup.md'
       - 'portfolio/**/case.md'
       - 'pt/portfolio/**/case.md'
       - 'it/portfolio/**/case.md'
+      - 'es/portfolio/**/case.md'
       - 'field-notes/**/story.md'
       - 'pt/field-notes/**/story.md'
       - 'it/field-notes/**/story.md'
+      - 'es/field-notes/**/story.md'
       - '.github/workflows/sync-agent-content.yml'
   workflow_dispatch:
 
@@ -52,7 +56,7 @@ jobs:
       - name: Commit generated updates
         id: sync
         run: |
-          git add -- portfolio.md portfolio setup agent pt/portfolio.md it/portfolio.md index.html field-notes pt it sitemap.xml
+          git add -- portfolio.md portfolio setup agent pt/portfolio.md it/portfolio.md es/portfolio.md index.html field-notes pt it es sitemap.xml
           if git diff --cached --quiet; then
             exit 0
           fi

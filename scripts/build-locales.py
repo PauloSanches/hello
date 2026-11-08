@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build static Portuguese and Italian pages from the English HTML and translations.
+"""Build static Portuguese, Italian and Spanish pages from English and translations.
 
 Run from any directory with Python 3; only the standard library is required.
 The generated pages are committed so GitHub Pages needs no runtime translation.
@@ -17,7 +17,7 @@ from agent_content import Document, build as build_agent_content
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://paulosanches.github.io/hello/"
-LOCALES = {"pt": ("pt-BR", "pt_BR"), "it": ("it", "it_IT")}
+LOCALES = {"pt": ("pt-BR", "pt_BR"), "it": ("it", "it_IT"), "es": ("es", "es_ES")}
 SOURCES = ["index.html", *(str(path.relative_to(ROOT))
            for section in ("field-notes", "portfolio", "setup")
            for path in sorted((ROOT / section).glob("*/index.html")))]
@@ -25,10 +25,11 @@ DATA = json.loads((ROOT / "locales/translations.json").read_text())
 MONTHS = {
     "pt": ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"],
     "it": ["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"],
+    "es": ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"],
 }
 EN_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 PRESERVE = {
-    "Paulo Sanches", "English", "Italiano", "Português do Brasil", "EN", "ITA", "PT", "AI/Agent",
+    "Paulo Sanches", "English", "Italiano", "Português do Brasil", "Español", "EN", "ITA", "PT", "ES", "AI/Agent",
     "AWS", "GCP / Terraform", "Microsoft Entra ID", "Portugal", "Braga, Portugal",
     "Accenture · Coimbra, Portugal", "JNation", "FlashCamp", "Cubo", "for Devs.",
     "Cubo Itaú · Masterclass #2", "MASTERCLASS / 02", "Mindset", "LinkedIn",
@@ -175,6 +176,46 @@ class Localize(HTMLParser):
         return result
 
 
+def locale_variants(path):
+    suffix = "" if path == "index.html" else path.removesuffix("index.html")
+    return {"en": BASE + suffix, "it": BASE + "it/" + suffix,
+            "pt-BR": BASE + "pt/" + suffix, "es": BASE + "es/" + suffix}
+
+
+def update_language_links(source, path):
+    """Keep canonical controls and language discovery synchronized with the build."""
+    variants = locale_variants(path)
+    source = re.sub(r'  <link rel="alternate" hreflang="[^"]+" href="[^"]+">\n', "", source)
+    alternates = "\n".join(f'  <link rel="alternate" hreflang="{lang}" href="{url}">'
+                           for lang, url in {**variants, "x-default": variants["en"]}.items())
+    source = re.sub(r'(  <link rel="canonical" href="[^"]+">)',
+                    lambda m: m[1] + "\n" + alternates, source, count=1)
+    labels = {"en": ("EN", "English"), "it": ("ITA", "Italiano"),
+              "pt-BR": ("PT", "Português do Brasil"), "es": ("ES", "Español")}
+    anchors = []
+    for lang, url in variants.items():
+        label, name = labels[lang]
+        current = ' aria-current="page"' if lang == "en" else ""
+        anchors.append(f'      <a href="{url.removeprefix("https://paulosanches.github.io")}" lang="{lang}" hreflang="{lang}" aria-label="{name}"{current}>{label}</a>')
+    source = re.sub(r'(<(nav|span)\b[^>]*class="language-switcher"[^>]*>).*?(</\2>)',
+                    lambda m: m[1] + "\n" + "\n".join(anchors) + "\n    " + m[3], source, flags=re.S)
+    match = re.search(r'(<script type="application/ld\+json">)(.*?)(</script>)', source, re.S)
+    if match:
+        graph = json.loads(match[2])
+        def update_websites(value):
+            if isinstance(value, dict):
+                if value.get("@type") == "WebSite":
+                    value["inLanguage"] = list(variants)
+                for child in value.values():
+                    update_websites(child)
+            elif isinstance(value, list):
+                for child in value:
+                    update_websites(child)
+        update_websites(graph)
+        source = source[:match.start(2)] + "\n" + json.dumps(graph, ensure_ascii=False, indent=2) + "\n" + source[match.end(2):]
+    return source
+
+
 def main():
     namespace = "http://www.sitemaps.org/schemas/sitemap/0.9"
     existing_dates = {}
@@ -187,7 +228,7 @@ def main():
                 for kind, name in [("css", "style.css"), ("js", "app.js")]}
     sources = {}
     for path in SOURCES:
-        source = (ROOT / path).read_text()
+        source = update_language_links((ROOT / path).read_text(), path)
         for kind, name in [("css", "style.css"), ("js", "app.js")]:
             source = re.sub(r"(assets/" + re.escape(name) + r"\?v=)[a-f0-9]+", lambda m: m[1] + versions[kind], source)
         sources[path] = source
@@ -212,8 +253,7 @@ def main():
                   if node.attrs.get("name", "").lower() == "robots"]
         if any("noindex" in re.split(r"[\s,]+", value) for value in robots):
             continue
-        suffix = "" if path == "index.html" else path.removesuffix("index.html")
-        variants = {"en": BASE + suffix, "it": BASE + "it/" + suffix, "pt-BR": BASE + "pt/" + suffix}
+        variants = locale_variants(path)
         for url in variants.values():
             entry = ET.SubElement(sitemap, f"{{{namespace}}}url")
             ET.SubElement(entry, f"{{{namespace}}}loc").text = url

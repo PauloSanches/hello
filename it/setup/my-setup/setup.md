@@ -6,7 +6,7 @@ Language: it
 
 Fonte: https://paulosanches.github.io/hello/it/setup/my-setup/agent/
 
-[English](https://paulosanches.github.io/hello/setup/my-setup/setup.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/setup/my-setup/setup.md) · [Italiano](https://paulosanches.github.io/hello/it/setup/my-setup/setup.md)
+[English](https://paulosanches.github.io/hello/setup/my-setup/setup.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/setup/my-setup/setup.md) · [Italiano](https://paulosanches.github.io/hello/it/setup/my-setup/setup.md) · [Español](https://paulosanches.github.io/hello/es/setup/my-setup/setup.md)
 
 ---
 

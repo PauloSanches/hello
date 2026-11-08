@@ -6,7 +6,7 @@ Language: it
 
 Fonte: https://paulosanches.github.io/hello/it/field-notes/supporting-families-after-brumadinho/agent/
 
-[English](https://paulosanches.github.io/hello/field-notes/supporting-families-after-brumadinho/story.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/field-notes/supporting-families-after-brumadinho/story.md) · [Italiano](https://paulosanches.github.io/hello/it/field-notes/supporting-families-after-brumadinho/story.md)
+[English](https://paulosanches.github.io/hello/field-notes/supporting-families-after-brumadinho/story.md) · [Português do Brasil](https://paulosanches.github.io/hello/pt/field-notes/supporting-families-after-brumadinho/story.md) · [Italiano](https://paulosanches.github.io/hello/it/field-notes/supporting-families-after-brumadinho/story.md) · [Español](https://paulosanches.github.io/hello/es/field-notes/supporting-families-after-brumadinho/story.md)
 
 ---
 
