@@ -255,9 +255,9 @@ Participante · OutSystems, Braga, Portugal
 
 Mi primer meetup de tecnología en Portugal, después de años sin asistir a estos encuentros. Buenas charlas, un ambiente acogedor y conversaciones con personas de startups locales y grandes empresas. Conocí a organizadores de GDG Braga y KCD Porto y compartí mi interés en contribuir a futuras ediciones como organizador y ponente, junto con mi trabajo al frente de la capability de DevOps en Accenture Portugal ATC.
 
-Ver foto
+Ver publicación en LinkedIn
 
-Fuente: https://paulosanches.github.io/hello/assets/kcd-warmup-meetup-34.webp
+Fuente: https://lnkd.in/p/eWTcDMNX
 
 ![Conversaciones en el stand de Accenture durante JNation en Coimbra.](https://paulosanches.github.io/hello/assets/jnation-2026.jpg)
 
