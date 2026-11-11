@@ -181,7 +181,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
       }
     },
     pai: {
-      portrait: 'portrait-pai.webp?v=15590254a438',
+      portrait: 'portrait-pai.webp?v=6b2df0076699',
       colour: '#111111',
       notice: {
         pt: 'Modo Pai. Digite pai novamente ou pressione Esc para voltar.',
