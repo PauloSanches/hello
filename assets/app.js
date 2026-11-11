@@ -180,6 +180,22 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         en: 'Paulo Sanches holding a Seattle Seahawks helmet'
       }
     },
+    pai: {
+      portrait: 'portrait-pai.webp?v=15590254a438',
+      colour: '#111111',
+      notice: {
+        pt: 'Modo Pai. Digite pai novamente ou pressione Esc para voltar.',
+        it: 'Modalità Pai. Digita di nuovo pai o premi Esc per tornare al tema originale.',
+        es: 'Modo Pai. Escribe pai de nuevo o pulsa Esc para volver.',
+        en: 'Pai mode. Type pai again or press Esc to reset.'
+      },
+      alt: {
+        pt: 'Homem com camisa de futebol cinza sentado ao lado de um menino',
+        it: 'Uomo con una maglia da calcio grigia seduto accanto a un bambino',
+        es: 'Hombre con camiseta de fútbol gris sentado junto a un niño',
+        en: 'Man in a grey football shirt sitting beside a boy'
+      }
+    },
     dante: {
       portrait: 'paulo-portrait-dante.webp?v=f317aa6099ec',
       colour: '#111111',
@@ -306,14 +322,14 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     }
   };
   const codes = Object.keys(modes);
-  const compactCodes = new Set(['redbull', 'gameday', 'goodmorning', 'vietnam', 'nfl', 'dante', 'tubarao', 'tubarão', 'bad', 'nega', 'cabecarosquinha', 'vasco']);
+  const compactCodes = new Set(['redbull', 'gameday', 'goodmorning', 'vietnam', 'nfl', 'dante', 'tubarao', 'tubarão', 'bad', 'nega', 'cabecarosquinha', 'vasco', 'pai']);
   const aliases = new Map([
     ['redbull', 'redbull'], ['itstimetofly', 'redbull'],
     ['gameday', 'gameday'], ['nfl', 'gameday'],
     ['everydayisgameday', 'gameday'], ['everydayisgamedayletsgo', 'gameday'],
     ['vietnam', 'vietnam'], ['goodmorning', 'vietnam'], ['goodmorningvietnam', 'vietnam'],
     ['dante', 'dante'], ['tubarao', 'tubarao'], ['bad', 'bad'], ['nega', 'nega'],
-    ['cabecarosquinha', 'cabecarosquinha'], ['vasco', 'vasco']
+    ['cabecarosquinha', 'cabecarosquinha'], ['vasco', 'vasco'], ['pai', 'pai']
   ]);
   const orderedAliases = Array.from(aliases.keys()).sort((a, b) => b.length - a.length);
   const maximumCodeLength = orderedAliases[0].length;

@@ -1672,6 +1672,38 @@ details[open] > summary .detail-plus { transform: rotate(45deg); }
   :root[data-theme="dante"] .hero-main { width: 100%; padding: 24px var(--page-gutter); }
   :root[data-theme="dante"] .hero-title { max-width: 28ch; }
 }
+/* Keep both people visible in the Pai photograph. */
+:root[data-theme="pai"] .hero { --portrait-width: min(54%, calc(var(--hero-height) * 1.6)); }
+:root[data-theme="pai"] .hero-main { width: 50%; }
+:root[data-theme="pai"] .hero-portrait {
+  top: 64px;
+  height: calc(100% - 64px);
+  transform: none;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 30%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 30%);
+}
+:root[data-theme="pai"] .portrait-photo { object-fit: contain; object-position: right center; }
+:root[data-theme="pai"] .hero-portrait::after {
+  background-image: linear-gradient(to top, var(--paper), transparent 24%);
+  background-size: 100% 100%;
+}
+@media (max-width: 760px) and (min-height: 501px) {
+  :root[data-theme="pai"] .hero { --portrait-width: 100%; --hero-title-size: clamp(16px, 4.6vw, 22px); }
+  :root[data-theme="pai"] .hero-portrait {
+    top: 70px;
+    height: 44%;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  }
+  :root[data-theme="pai"] .portrait-photo { object-position: center top; }
+  :root[data-theme="pai"] .hero-main { align-self: flex-end; width: 100%; padding: 16px var(--page-gutter) 12px; }
+  :root[data-theme="pai"] .hero-title { max-width: none; }
+}
+@media (max-height: 500px) {
+  :root[data-theme="pai"] .hero { --hero-title-size: clamp(16px, 2.8vw, 24px); }
+  :root[data-theme="pai"] .hero-main { width: 52%; }
+}
+:root[data-theme="pai"] .easter-egg-notice { border-left-color: #c9c9c9; background: #262626; box-shadow: 0 4px 20px #00000026; }
 :root[data-theme="tubarao"] .hero { --portrait-width: min(54%, calc(var(--hero-height) * 0.92 - 55.2px)); }
 :root[data-theme="tubarao"] .hero-portrait {
   top: 60px;
