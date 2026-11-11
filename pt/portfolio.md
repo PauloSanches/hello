@@ -267,9 +267,9 @@ Accenture · Coimbra, Portugal
 
 Representando a Accenture no JNation 2026 em Coimbra, em contato com a comunidade de tecnologia e compartilhando nosso trabalho de transformação de negócios em Portugal e nos mercados internacionais.
 
-Ver foto
+Ver post no LinkedIn
 
-Fonte: https://paulosanches.github.io/hello/assets/jnation-2026.jpg
+Fonte: https://lnkd.in/p/eKR6EQaE
 
 ![Selfie no hackathon de IA, com participantes trabalhando em notebooks ao fundo.](https://paulosanches.github.io/hello/assets/ai-hackathon-2025.jpg)
 
