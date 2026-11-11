@@ -279,9 +279,9 @@ Accenture · Lisbon, Braga & Coimbra
 
 An AI hackathon held simultaneously in Lisbon, Braga and Coimbra, bringing together more than 40 university students and Accenture colleagues to explore use cases, collaborate and develop new ideas.
 
-View photo
+View post on LinkedIn
 
-Source: https://paulosanches.github.io/hello/assets/ai-hackathon-2025.jpg
+Source: https://lnkd.in/p/eSZvPmZg
 
 Cubo Itaú · Masterclass #2
 
