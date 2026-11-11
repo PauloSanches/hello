@@ -113,7 +113,7 @@ Selected projects, with some engagements running in parallel.
 
 ### Game of Life - Magnólia
 
-An interactive board game with illustrated stories and reflection prompts, explored at the player's own pace.
+A landing page inspired by a board game, with illustrated stories and reflection prompts.
 
 - [Read case study](https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/agent/)
 

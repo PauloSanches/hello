@@ -2494,11 +2494,6 @@
     "it": "La navigazione annulla le attività di riproduzione in sospeso prima di cambiare casella. I comandi da tastiera e il supporto alla riduzione del movimento offrono alternative all’interazione con il puntatore e al testo animato.",
     "es": "La navegación cancela las tareas de reproducción pendientes antes de cambiar de casilla. Los controles de teclado y la opción de reducir el movimiento ofrecen alternativas al uso del puntero y al texto animado."
   },
-  "An interactive board game with illustrated stories and reflection prompts, explored at the player's own pace.": {
-    "pt": "Um jogo de tabuleiro interativo com histórias ilustradas e perguntas para reflexão, explorado no ritmo de cada jogador.",
-    "it": "Un gioco da tavolo interattivo con storie illustrate e domande di riflessione, da esplorare al proprio ritmo.",
-    "es": "Un juego de tablero interactivo con historias ilustradas y preguntas para reflexionar, que se explora al ritmo de cada jugador."
-  },
   "Read case study": {
     "pt": "Ler estudo de caso",
     "it": "Leggi il caso di studio",
@@ -3178,5 +3173,10 @@
     "pt": "Ver post no LinkedIn",
     "it": "Leggi il post su LinkedIn",
     "es": "Ver publicación en LinkedIn"
+  },
+  "A landing page inspired by a board game, with illustrated stories and reflection prompts.": {
+    "pt": "Uma landing page inspirada no jogo de tabuleiro, com histórias ilustradas e perguntas para reflexão.",
+    "it": "Una landing page ispirata a un gioco da tavolo, con storie illustrate e spunti di riflessione.",
+    "es": "Una landing page inspirada en un juego de mesa, con historias ilustradas y preguntas para reflexionar."
   }
 }

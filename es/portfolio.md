@@ -113,7 +113,7 @@ Proyectos seleccionados, con algunas colaboraciones en paralelo.
 
 ### Juego de la Vida - Magnólia
 
-Un juego de tablero interactivo con historias ilustradas y preguntas para reflexionar, que se explora al ritmo de cada jugador.
+Una landing page inspirada en un juego de mesa, con historias ilustradas y preguntas para reflexionar.
 
 - [Leer caso de estudio](https://paulosanches.github.io/hello/es/portfolio/jogo-da-vida-magnolia/agent/)
 

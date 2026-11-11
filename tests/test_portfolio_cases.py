@@ -15,7 +15,7 @@ CASE = "portfolio/jogo-da-vida-magnolia/"
 TITLE = "Game of Life - Magnólia"
 TITLES = {"": TITLE, "pt/": "Jogo da Vida - Magnólia", "it/": "Gioco della Vita - Magnólia", "es/": "Juego de la Vida - Magnólia"}
 LEAD = "An interactive board game built around storytelling and reflection."
-SUMMARY = "An interactive board game with illustrated stories and reflection prompts, explored at the player's own pace."
+SUMMARY = "A landing page inspired by a board game, with illustrated stories and reflection prompts."
 # Literal approved public copy: the build and tests never need private review files.
 PARAGRAPHS = [
     "Game of Life - Magnólia brings together 12 illustrated spaces, character stories and 10 reflection prompts in a browser-based game for desktop and mobile. Players control the pace. There is no scoring or answer form; the questions are intended for discussion outside the application.",
@@ -191,9 +191,9 @@ class PortfolioCaseTests(unittest.TestCase):
     def test_home_card_is_concise_and_opens_local_case_in_same_tab(self):
         summaries = {
             "": SUMMARY,
-            "pt/": "Um jogo de tabuleiro interativo com histórias ilustradas e perguntas para reflexão, explorado no ritmo de cada jogador.",
-            "it/": "Un gioco da tavolo interattivo con storie illustrate e domande di riflessione, da esplorare al proprio ritmo.",
-            "es/": "Un juego de tablero interactivo con historias ilustradas y preguntas para reflexionar, que se explora al ritmo de cada jugador.",
+            "pt/": "Uma landing page inspirada no jogo de tabuleiro, com histórias ilustradas e perguntas para reflexão.",
+            "it/": "Una landing page ispirata a un gioco da tavolo, con storie illustrate e spunti di riflessione.",
+            "es/": "Una landing page inspirada en un juego de mesa, con historias ilustradas y preguntas para reflexionar.",
         }
         labels = {"": "Read case study", "pt/": "Ler estudo de caso", "it/": "Leggi il caso di studio", "es/": "Leer caso de estudio"}
         for prefix, summary in summaries.items():
