@@ -247,6 +247,18 @@ I once heard a leader say: “The longer you take to deliver, the higher the exp
 
 ## Talks, events & contributions.
 
+![Evolving Kubernetes for the AI Era presentation at KCD Warmup Meetup #34, with GDG Braga and DevOps Braga banners.](https://paulosanches.github.io/hello/assets/kcd-warmup-meetup-34.webp)
+
+Participant · OutSystems, Braga, Portugal
+
+### KCD Warmup Meetup #34
+
+My first tech meetup in Portugal, after years away from these events. Good talks, a welcoming atmosphere and conversations with people from local startups and large companies. I met organizers from GDG Braga and KCD Porto and shared my interest in contributing to future editions as an organizer and speaker, alongside my work leading the DevOps capability at Accenture Portugal ATC.
+
+View photo
+
+Source: https://paulosanches.github.io/hello/assets/kcd-warmup-meetup-34.webp
+
 ![Conversations at the Accenture stand during JNation in Coimbra.](https://paulosanches.github.io/hello/assets/jnation-2026.jpg)
 
 Accenture · Coimbra, Portugal

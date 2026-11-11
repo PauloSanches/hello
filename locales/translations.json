@@ -3153,5 +3153,25 @@
     "pt": "paulosanches.github.io/hello/",
     "it": "paulosanches.github.io/hello/",
     "es": "paulosanches.github.io/hello/"
+  },
+  "My first tech meetup in Portugal, after years away from these events. Good talks, a welcoming atmosphere and conversations with people from local startups and large companies. I met organizers from GDG Braga and KCD Porto and shared my interest in contributing to future editions as an organizer and speaker, alongside my work leading the DevOps capability at Accenture Portugal ATC.": {
+    "pt": "Meu primeiro meetup de tecnologia em Portugal, depois de anos sem participar desses encontros. Boas palestras, um ambiente acolhedor e conversas com pessoas de startups locais e grandes empresas. Conheci organizadores do GDG Braga e do KCD Porto e compartilhei meu interesse em contribuir nas próximas edições como organizador e palestrante, junto ao meu trabalho à frente da capability de DevOps na Accenture Portugal ATC.",
+    "it": "Il mio primo meetup tecnologico in Portogallo, dopo anni senza partecipare a questi eventi. Buoni interventi, un’atmosfera accogliente e conversazioni con persone di startup locali e grandi aziende. Ho conosciuto organizzatori di GDG Braga e KCD Porto e condiviso il mio interesse a contribuire alle prossime edizioni come organizzatore e relatore, insieme al mio lavoro alla guida della capability DevOps di Accenture Portugal ATC.",
+    "es": "Mi primer meetup de tecnología en Portugal, después de años sin asistir a estos encuentros. Buenas charlas, un ambiente acogedor y conversaciones con personas de startups locales y grandes empresas. Conocí a organizadores de GDG Braga y KCD Porto y compartí mi interés en contribuir a futuras ediciones como organizador y ponente, junto con mi trabajo al frente de la capability de DevOps en Accenture Portugal ATC."
+  },
+  "Participant · OutSystems, Braga, Portugal": {
+    "pt": "Participante · OutSystems, Braga, Portugal",
+    "it": "Partecipante · OutSystems, Braga, Portogallo",
+    "es": "Participante · OutSystems, Braga, Portugal"
+  },
+  "KCD Warmup Meetup #34": {
+    "pt": "KCD Warmup Meetup #34",
+    "it": "KCD Warmup Meetup #34",
+    "es": "KCD Warmup Meetup #34"
+  },
+  "Evolving Kubernetes for the AI Era presentation at KCD Warmup Meetup #34, with GDG Braga and DevOps Braga banners.": {
+    "pt": "Apresentação Evolving Kubernetes for the AI Era no KCD Warmup Meetup #34, com banners do GDG Braga e DevOps Braga.",
+    "it": "Presentazione Evolving Kubernetes for the AI Era al KCD Warmup Meetup #34, con i banner di GDG Braga e DevOps Braga.",
+    "es": "Presentación Evolving Kubernetes for the AI Era en KCD Warmup Meetup #34, con banners de GDG Braga y DevOps Braga."
   }
 }
