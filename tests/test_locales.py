@@ -8,7 +8,7 @@ from urllib.parse import urljoin, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from agent_content import BASE, Document, LANGUAGES, normalise, plain
+from agent_content import BASE, Document, LANGUAGES, LANGUAGE_LABELS, normalise, plain
 
 
 class LocaleTests(unittest.TestCase):
@@ -32,9 +32,19 @@ class LocaleTests(unittest.TestCase):
                     self.assertEqual({n.attrs["hreflang"]: n.attrs["href"] for n in links if "hreflang" in n.attrs},
                                      {**variants, "x-default": variants["en"]})
                     switcher = next(n for n in doc.descendants() if "language-switcher" in n.classes)
+                    self.assertEqual(switcher.tag, "details")
+                    self.assertNotIn("open", switcher.attrs)
+                    summary = next(switcher.descendants("summary"))
+                    self.assertEqual(normalise(plain(next(summary.descendants("span")))), LANGUAGE_LABELS[info["lang"]][0])
                     controls = list(switcher.descendants("a"))
                     self.assertEqual({n.attrs["hreflang"]: urljoin(url, n.attrs["href"]) for n in controls}, variants)
                     self.assertEqual([n.attrs["hreflang"] for n in controls if n.attrs.get("aria-current") == "page"], [info["lang"]])
+                    self.assertEqual([normalise(plain(n)) for n in controls], [name for _, name in LANGUAGE_LABELS.values()])
+                    reader = Document((path.parent / "agent/index.html").read_text()).root
+                    menu = next(n for n in reader.descendants("details") if "language-switcher" in n.classes)
+                    self.assertEqual(normalise(plain(next(next(menu.descendants("summary")).descendants("span")))), LANGUAGE_LABELS[info["lang"]][0])
+                    self.assertEqual({n.attrs["hreflang"]: n.attrs["href"] for n in menu.descendants("a")},
+                                     {lang: url + "agent/" for lang, url in variants.items()})
 
     def test_spanish_content_assets_and_local_links_exist(self):
         translations = json.loads((ROOT / "locales/translations.json").read_text())

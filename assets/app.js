@@ -4,6 +4,19 @@ if (year) year.textContent = String(new Date().getFullYear());
 const language = document.documentElement.lang;
 const carouselRole = language === 'it' ? 'carosello' : language === 'pt-BR' ? 'carrossel' : language === 'es' ? 'carrusel' : 'carousel';
 const counterJoin = language === 'it' ? 'di' : language === 'pt-BR' || language === 'es' ? 'de' : 'of';
+document.querySelectorAll('details.language-switcher').forEach(menu => {
+  document.addEventListener('click', event => {
+    if (!menu.contains(event.target)) menu.open = false;
+  });
+  menu.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menu.open) {
+      event.preventDefault();
+      event.stopPropagation();
+      menu.open = false;
+      menu.querySelector('summary').focus();
+    }
+  });
+});
 document.querySelectorAll('.language-switcher a').forEach(link => {
   link.addEventListener('click', () => {
     if (!window.location.hash) return;

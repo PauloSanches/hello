@@ -29,6 +29,21 @@ VIEW_LABELS = {
     "it": ("Torna al portfolio", "Apri il file Markdown", "Portfolio completo in Markdown", "Indietro"),
     "es": ("Volver al portafolio", "Abrir archivo Markdown", "Portafolio completo en Markdown", "Volver"),
 }
+LANGUAGE_LABELS = {"en": ("EN", "English"), "it": ("ITA", "Italiano"),
+                   "pt-BR": ("PT", "Português do Brasil"), "es": ("ES", "Español")}
+
+
+def language_dropdown(variants, active="en", label="Language", reader=False):
+    """Native disclosure keeps every language reachable without JavaScript."""
+    classes = "language-switcher languages" if reader else "language-switcher"
+    links = []
+    for language, (_, name) in LANGUAGE_LABELS.items():
+        current = ' aria-current="page"' if language == active else ""
+        links.append(f'<a href="{html.escape(variants[language], quote=True)}" lang="{language}" hreflang="{language}" aria-label="{name}"{current}>{name}</a>')
+    return (f'<details class="{classes}" aria-label="{label}"><summary>'
+            f'<span class="language-current">{LANGUAGE_LABELS[active][0]}</span>'
+            '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="m3 4.5 3 3 3-3"/></svg>'
+            '</summary><div class="language-options">' + "".join(links) + '</div></details>')
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 SKIP_TAGS = {"script", "style", "svg", "nav", "button", "input", "select", "textarea", "summary"}
 SKIP_CLASSES = {"hero-tools", "carousel-hint", "carousel-controls", "sr-only", "story-open", "certification-number", "contribution-number", "agent-mode-link"}
@@ -313,10 +328,9 @@ def build_view(document, prefix, story=None, section="field-notes"):
     if story and section == "portfolio":
         label = {"": "Case study in Markdown", "pt": "Estudo de caso em Markdown", "it": "Caso di studio in Markdown", "es": "Caso de estudio en Markdown"}[prefix]
         description = html.escape(f"{label}: {title}", quote=True)
-    switches = " ".join(
-        f'<a href="{BASE}{k + "/" if k else ""}{suffix}agent/" lang="{v["lang"]}" hreflang="{v["lang"]}"' + (' aria-current="page"' if k == prefix else '') + f'>{ {"pt": "PT", "it": "ITA", "es": "ES", "": "EN"}[k] }</a>'
-        for k, v in LANGUAGES.items()
-    )
+    switches = language_dropdown(
+        {v["lang"]: f'{BASE}{k + "/" if k else ""}{suffix}agent/' for k, v in LANGUAGES.items()},
+        language, {"": "Language", "pt": "Idioma", "it": "Lingua", "es": "Idioma"}[prefix], reader=True)
     # Fully static: agents and no-JavaScript browsers can read the same file
     # content directly. Separate styling keeps the regular portfolio intact.
     return f'''<!doctype html>
@@ -335,10 +349,17 @@ def build_view(document, prefix, story=None, section="field-notes"):
     .wrap {{ width: min(1440px, calc(100% - 40px)); margin-inline: auto; }}
     header {{ padding-block: 20px; border-bottom: 1px solid #ccc; }}
     nav {{ display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; }}
-    .languages {{ display: flex; gap: 4px; }}
+    .language-switcher {{ position: relative; margin-inline-start: auto; background: white; border: 1px solid #ccc; }}
+    .language-switcher summary {{ display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 76px; min-height: 50px; padding: 12px; list-style: none; cursor: pointer; }}
+    .language-switcher summary::-webkit-details-marker {{ display: none; }}
+    .language-switcher summary svg {{ width: 12px; height: 12px; }}
+    .language-switcher[open] summary svg {{ transform: rotate(180deg); }}
+    .language-options {{ position: absolute; z-index: 10; top: calc(100% + 8px); right: -1px; min-width: 200px; max-height: calc(100svh - 96px); overflow-y: auto; padding: 4px; background: white; border: 1px solid #ccc; box-shadow: 0 8px 24px #0002; }}
+    .language-options a {{ display: flex; min-height: 44px; text-decoration: none; }}
+    .language-options a:hover {{ text-decoration: underline; }}
     a, button {{ color: inherit; display: inline-flex; align-items: center; min-height: 44px; padding: 8px; text-underline-offset: 4px; }}
     button {{ border: 0; background: none; font: inherit; text-decoration: underline; cursor: pointer; }}
-    a:focus-visible, button:focus-visible {{ outline: 2px solid #171717; outline-offset: 2px; }}
+    a:focus-visible, button:focus-visible, summary:focus-visible {{ outline: 2px solid #171717; outline-offset: 2px; }}
     [hidden] {{ display: none !important; }}
     [aria-current="page"] {{ background: #171717; color: white; }}
     h1 {{ margin: 0; padding-block: 28px 8px; font-size: clamp(24px, 4vw, 36px); }}
@@ -348,9 +369,21 @@ def build_view(document, prefix, story=None, section="field-notes"):
   </style>
 </head>
 <body>
-  <header><nav class="wrap" aria-label="AI/Agent"><a class="agent-home" href="{home}agent/">{'← ' + back if story else 'Paulo Sanches · AI/Agent'}</a><div class="languages">{switches}</div></nav></header>
+  <header><nav class="wrap" aria-label="AI/Agent"><a class="agent-home" href="{home}agent/">{'← ' + back if story else 'Paulo Sanches · AI/Agent'}</a>{switches}</nav></header>
   <main class="wrap"><h1>AI/Agent</h1><div class="file-actions"><a class="file-link" href="{markdown_url}" type="text/markdown">{download} ↗</a><button class="back-button" type="button" hidden>← {browser_back}</button><a class="back-fallback" href="{home}agent/">← {browser_back}</a></div><pre>{linked_markdown(document)}</pre></main>
   <script>
+    const languageMenu = document.querySelector('details.language-switcher');
+    document.addEventListener('click', event => {{
+      if (!languageMenu.contains(event.target)) languageMenu.open = false;
+    }});
+    languageMenu.addEventListener('keydown', event => {{
+      if (event.key === 'Escape' && languageMenu.open) {{
+        event.preventDefault();
+        event.stopPropagation();
+        languageMenu.open = false;
+        languageMenu.querySelector('summary').focus();
+      }}
+    }});
     const backButton = document.querySelector('.back-button');
     const backFallback = document.querySelector('.back-fallback');
     backButton.hidden = false;

@@ -14,10 +14,17 @@
     .wrap { width: min(1440px, calc(100% - 40px)); margin-inline: auto; }
     header { padding-block: 20px; border-bottom: 1px solid #ccc; }
     nav { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; }
-    .languages { display: flex; gap: 4px; }
+    .language-switcher { position: relative; margin-inline-start: auto; background: white; border: 1px solid #ccc; }
+    .language-switcher summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 76px; min-height: 50px; padding: 12px; list-style: none; cursor: pointer; }
+    .language-switcher summary::-webkit-details-marker { display: none; }
+    .language-switcher summary svg { width: 12px; height: 12px; }
+    .language-switcher[open] summary svg { transform: rotate(180deg); }
+    .language-options { position: absolute; z-index: 10; top: calc(100% + 8px); right: -1px; min-width: 200px; max-height: calc(100svh - 96px); overflow-y: auto; padding: 4px; background: white; border: 1px solid #ccc; box-shadow: 0 8px 24px #0002; }
+    .language-options a { display: flex; min-height: 44px; text-decoration: none; }
+    .language-options a:hover { text-decoration: underline; }
     a, button { color: inherit; display: inline-flex; align-items: center; min-height: 44px; padding: 8px; text-underline-offset: 4px; }
     button { border: 0; background: none; font: inherit; text-decoration: underline; cursor: pointer; }
-    a:focus-visible, button:focus-visible { outline: 2px solid #171717; outline-offset: 2px; }
+    a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid #171717; outline-offset: 2px; }
     [hidden] { display: none !important; }
     [aria-current="page"] { background: #171717; color: white; }
     h1 { margin: 0; padding-block: 28px 8px; font-size: clamp(24px, 4vw, 36px); }
@@ -27,7 +34,7 @@
   </style>
 </head>
 <body>
-  <header><nav class="wrap" aria-label="AI/Agent"><a class="agent-home" href="https://paulosanches.github.io/hello/pt/agent/">← Voltar ao portfólio</a><div class="languages"><a href="https://paulosanches.github.io/hello/field-notes/one-week-three-months-in-sao-paulo/agent/" lang="en" hreflang="en">EN</a> <a href="https://paulosanches.github.io/hello/pt/field-notes/one-week-three-months-in-sao-paulo/agent/" lang="pt-BR" hreflang="pt-BR" aria-current="page">PT</a> <a href="https://paulosanches.github.io/hello/it/field-notes/one-week-three-months-in-sao-paulo/agent/" lang="it" hreflang="it">ITA</a> <a href="https://paulosanches.github.io/hello/es/field-notes/one-week-three-months-in-sao-paulo/agent/" lang="es" hreflang="es">ES</a></div></nav></header>
+  <header><nav class="wrap" aria-label="AI/Agent"><a class="agent-home" href="https://paulosanches.github.io/hello/pt/agent/">← Voltar ao portfólio</a><details class="language-switcher languages" aria-label="Idioma"><summary><span class="language-current">PT</span><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="m3 4.5 3 3 3-3"/></svg></summary><div class="language-options"><a href="https://paulosanches.github.io/hello/field-notes/one-week-three-months-in-sao-paulo/agent/" lang="en" hreflang="en" aria-label="English">English</a><a href="https://paulosanches.github.io/hello/it/field-notes/one-week-three-months-in-sao-paulo/agent/" lang="it" hreflang="it" aria-label="Italiano">Italiano</a><a href="https://paulosanches.github.io/hello/pt/field-notes/one-week-three-months-in-sao-paulo/agent/" lang="pt-BR" hreflang="pt-BR" aria-label="Português do Brasil" aria-current="page">Português do Brasil</a><a href="https://paulosanches.github.io/hello/es/field-notes/one-week-three-months-in-sao-paulo/agent/" lang="es" hreflang="es" aria-label="Español">Español</a></div></details></nav></header>
   <main class="wrap"><h1>AI/Agent</h1><div class="file-actions"><a class="file-link" href="https://paulosanches.github.io/hello/pt/field-notes/one-week-three-months-in-sao-paulo/story.md" type="text/markdown">Abrir arquivo Markdown ↗</a><button class="back-button" type="button" hidden>← Voltar</button><a class="back-fallback" href="https://paulosanches.github.io/hello/pt/agent/">← Voltar</a></div><pre># Como uma semana para ajudar numa crise virou três meses em São Paulo?
 
 [Voltar ao portfólio — AI/Agent](<a href="https://paulosanches.github.io/hello/pt/agent/">https://paulosanches.github.io/hello/pt/agent/</a>)
@@ -97,6 +104,18 @@ Você já passou por uma crise que mudou o rumo de uma missão ou prolongou uma 
 [Me chama no LinkedIn para tomarmos um café virtual.](<a href="https://www.linkedin.com/in/paulosanches">https://www.linkedin.com/in/paulosanches</a>)
 </pre></main>
   <script>
+    const languageMenu = document.querySelector('details.language-switcher');
+    document.addEventListener('click', event => {
+      if (!languageMenu.contains(event.target)) languageMenu.open = false;
+    });
+    languageMenu.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && languageMenu.open) {
+        event.preventDefault();
+        event.stopPropagation();
+        languageMenu.open = false;
+        languageMenu.querySelector('summary').focus();
+      }
+    });
     const backButton = document.querySelector('.back-button');
     const backFallback = document.querySelector('.back-fallback');
     backButton.hidden = false;

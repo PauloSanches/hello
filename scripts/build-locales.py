@@ -13,7 +13,7 @@ import re
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from zoneinfo import ZoneInfo
-from agent_content import Document, build as build_agent_content
+from agent_content import Document, LANGUAGE_LABELS, language_dropdown, build as build_agent_content
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://paulosanches.github.io/hello/"
@@ -136,7 +136,10 @@ class Localize(HTMLParser):
             end = len(self.source)
         raw = self.source[start:end]
         value = html.unescape(raw).strip()
-        replacement = translate(value, self.locale)
+        if any("language-current" in attrs.get("class", "").split() for _, attrs in self.stack):
+            replacement = LANGUAGE_LABELS[self.language][0]
+        else:
+            replacement = translate(value, self.locale)
         if replacement != value:
             leading = raw[:len(raw) - len(raw.lstrip())]
             trailing = raw[len(raw.rstrip()):]
@@ -190,15 +193,9 @@ def update_language_links(source, path):
                            for lang, url in {**variants, "x-default": variants["en"]}.items())
     source = re.sub(r'(  <link rel="canonical" href="[^"]+">)',
                     lambda m: m[1] + "\n" + alternates, source, count=1)
-    labels = {"en": ("EN", "English"), "it": ("ITA", "Italiano"),
-              "pt-BR": ("PT", "Português do Brasil"), "es": ("ES", "Español")}
-    anchors = []
-    for lang, url in variants.items():
-        label, name = labels[lang]
-        current = ' aria-current="page"' if lang == "en" else ""
-        anchors.append(f'      <a href="{url.removeprefix("https://paulosanches.github.io")}" lang="{lang}" hreflang="{lang}" aria-label="{name}"{current}>{label}</a>')
-    source = re.sub(r'(<(nav|span)\b[^>]*class="language-switcher"[^>]*>).*?(</\2>)',
-                    lambda m: m[1] + "\n" + "\n".join(anchors) + "\n    " + m[3], source, flags=re.S)
+    menu = language_dropdown({lang: url.removeprefix("https://paulosanches.github.io") for lang, url in variants.items()})
+    source = re.sub(r'<(nav|span|details)\b[^>]*class="language-switcher"[^>]*>.*?</\1>',
+                    lambda _: menu, source, flags=re.S)
     match = re.search(r'(<script type="application/ld\+json">)(.*?)(</script>)', source, re.S)
     if match:
         graph = json.loads(match[2])
