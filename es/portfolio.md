@@ -109,9 +109,9 @@ Proyectos seleccionados, con algunas colaboraciones en paralelo.
 
 ## Portfolio/Side Quests
 
-![Captura de pantalla de Jogo da Vida - Magnólia, con el tablero ilustrado en la casilla final.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
+![Captura de pantalla de Juego de la Vida - Magnólia, con el tablero ilustrado en la casilla final.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
 
-### Jogo da Vida - Magnólia
+### Juego de la Vida - Magnólia
 
 Un juego de tablero interactivo con historias ilustradas y preguntas para reflexionar, que se explora al ritmo de cada jugador.
 
@@ -579,17 +579,17 @@ Markdown: https://paulosanches.github.io/hello/es/portfolio/jogo-da-vida-magnoli
 
 Portfolio / Side Quests
 
-## Jogo da Vida - Magnólia
+## Juego de la Vida - Magnólia
 
 Un juego de mesa interactivo basado en historias y reflexión.
 
-[![Captura de pantalla de Jogo da Vida - Magnólia, con el tablero ilustrado en la casilla final.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
+[![Captura de pantalla de Juego de la Vida - Magnólia, con el tablero ilustrado en la casilla final.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
 
 El tablero ilustrado al final del juego. [Ver la captura a tamaño completo](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
 
 ### El producto
 
-Jogo da Vida - Magnólia reúne 12 casillas ilustradas, historias de personajes y 10 preguntas para reflexionar en un juego de navegador para ordenador y móvil. Los jugadores controlan el ritmo. No hay puntuación ni formulario de respuestas; las preguntas están pensadas para debatir fuera de la aplicación.
+Juego de la Vida - Magnólia reúne 12 casillas ilustradas, historias de personajes y 10 preguntas para reflexionar en un juego de navegador para ordenador y móvil. Los jugadores controlan el ritmo. No hay puntuación ni formulario de respuestas; las preguntas están pensadas para debatir fuera de la aplicación.
 
 ### La experiencia
 

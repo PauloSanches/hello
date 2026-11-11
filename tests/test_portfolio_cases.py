@@ -12,12 +12,13 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from agent_content import BASE, Document, normalise, plain
 
 CASE = "portfolio/jogo-da-vida-magnolia/"
-TITLE = "Jogo da Vida - Magnólia"
+TITLE = "Game of Life - Magnólia"
+TITLES = {"": TITLE, "pt/": "Jogo da Vida - Magnólia", "it/": "Gioco della Vita - Magnólia", "es/": "Juego de la Vida - Magnólia"}
 LEAD = "An interactive board game built around storytelling and reflection."
 SUMMARY = "An interactive board game with illustrated stories and reflection prompts, explored at the player's own pace."
 # Literal approved public copy: the build and tests never need private review files.
 PARAGRAPHS = [
-    "Jogo da Vida - Magnólia brings together 12 illustrated spaces, character stories and 10 reflection prompts in a browser-based game for desktop and mobile. Players control the pace. There is no scoring or answer form; the questions are intended for discussion outside the application.",
+    "Game of Life - Magnólia brings together 12 illustrated spaces, character stories and 10 reflection prompts in a browser-based game for desktop and mobile. Players control the pace. There is no scoring or answer form; the questions are intended for discussion outside the application.",
     "Each space connects a position on the board to a story. The text appears progressively, followed by a question that keeps the story visible for reference.",
     "Players can move forward, return to an earlier space, pause the text reveal or restart the game. Moving to the next space is always a manual choice.",
     "HTML, CSS and SVG define the interface and illustrated board. JavaScript manages the active space, story/question state and transitions in the browser. GitHub Pages serves the static application; the game requires no application backend or database.",
@@ -30,7 +31,7 @@ PARAGRAPHS = [
     "A release script writes the same UTC timestamp into the page and version.json, and adds SHA-256-derived version parameters to JavaScript and CSS URLs. Its check mode verifies timestamp consistency; it does not recalculate asset hashes. Published files and browser behavior are checked separately to confirm the delivered revision.",
     "Hermes Agent and Codex supported implementation and testing on a MacBook Air M1, with requests and reviews through Telegram. ChatGPT generated character illustrations from supplied photographs; Hermes prepared and integrated the assets. Reusable skills guided design, testing, debugging and review. These tools belong to the development workflow, not the game's runtime."
 ]
-ALT = "Screenshot of Jogo da Vida - Magnólia, showing the illustrated board at its final space."
+ALT = "Screenshot of Game of Life - Magnólia, showing the illustrated board at its final space."
 CAPTION = "The illustrated board at the end of the game."
 DESTINATIONS = {
     "Open the game": "https://paulosanches.github.io/magnolia-jogo-da-vida/",
@@ -93,6 +94,9 @@ class PortfolioCaseTests(unittest.TestCase):
                 url = BASE + prefix + CASE
                 translate = lambda value: translations[value][prefix.rstrip("/")] if prefix else value
                 self.assertEqual(next(doc.descendants("html")).attrs["lang"], language)
+                heading = next(doc.descendants("h1"))
+                self.assertEqual(normalise(plain(heading)), TITLES[prefix])
+                self.assertNotIn("lang", heading.attrs)
                 self.assertEqual(normalise(plain(next(doc.descendants("title")))), translate(TITLE + " | Paulo Sanches"))
                 links = list(doc.descendants("link"))
                 self.assertEqual(next(n.attrs["href"] for n in links if n.attrs.get("rel") == "canonical"), url)
@@ -149,7 +153,7 @@ class PortfolioCaseTests(unittest.TestCase):
                 for text in text_nodes(next(Document((folder / "index.html").read_text()).root.descendants("main"))):
                     for document in [output, complete]:
                         self.assertIn(text, normalise(re.sub(r"\\([\\`*\[\]<>_])", r"\1", document)))
-                self.assertEqual(output.count("# " + TITLE + "\n"), 1)
+                self.assertEqual(output.count("# " + TITLES[prefix] + "\n"), 1)
                 self.assertIn("](" + BASE + prefix + "agent/)", output)
                 self.assertNotIn("story.md", output)
                 self.assertNotRegex(output, r"Field Notes|mailto:|tel:|<script|/Users/")
@@ -197,7 +201,7 @@ class PortfolioCaseTests(unittest.TestCase):
                 doc = Document((ROOT / prefix / "index.html").read_text()).root
                 card = next(n for n in doc.descendants("article") if "side-quest-card" in n.classes)
                 self.assertEqual([normalise(plain(n)) for n in card.descendants("p")], [summary])
-                self.assertEqual(normalise(plain(next(card.descendants("h3")))), TITLE)
+                self.assertEqual(normalise(plain(next(card.descendants("h3")))), TITLES[prefix])
                 links = list(card.descendants("a"))
                 self.assertEqual(len(links), 1)
                 self.assertEqual(links[0].attrs["href"], CASE)
@@ -217,7 +221,7 @@ class PortfolioCaseTests(unittest.TestCase):
                 folder = ROOT / prefix / CASE
                 doc = Document((folder / "agent/index.html").read_text()).root
                 description = next(n.attrs["content"] for n in doc.descendants("meta") if n.attrs.get("name") == "description")
-                self.assertEqual(description, label + ": " + TITLE)
+                self.assertEqual(description, label + ": " + TITLES[prefix])
                 translate = lambda value: translations[value][prefix.rstrip("/")] if prefix else value
                 markdown = (folder / "case.md").read_text()
                 self.assertIn(translate(CAPTION) + " [" + translate("View full-size screenshot") + "]", markdown)

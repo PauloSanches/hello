@@ -2379,10 +2379,10 @@
     "it": "Un gioco narrativo per browser con 12 caselle, personaggi illustrati e 10 domande lungo il percorso. Sviluppato con Hermes Agent e Codex, con supervisione umana.",
     "es": "Un juego narrativo para el navegador con 12 casillas, personajes ilustrados y 10 preguntas a lo largo del recorrido. Creado con Hermes Agent y Codex, con supervisión humana."
   },
-  "Screenshot of Jogo da Vida - Magnólia, showing the illustrated board at its final space.": {
+  "Screenshot of Game of Life - Magnólia, showing the illustrated board at its final space.": {
     "pt": "Captura de tela do Jogo da Vida - Magnólia, mostrando o tabuleiro ilustrado na casa final.",
-    "it": "Schermata di Jogo da Vida - Magnólia, con il tabellone illustrato nella casella finale.",
-    "es": "Captura de pantalla de Jogo da Vida - Magnólia, con el tablero ilustrado en la casilla final."
+    "it": "Schermata di Gioco della Vita - Magnólia, con il tabellone illustrato nella casella finale.",
+    "es": "Captura de pantalla de Juego de la Vida - Magnólia, con el tablero ilustrado en la casilla final."
   },
   "Open the game": {
     "pt": "Abrir jogo",
@@ -2399,20 +2399,20 @@
     "it": "Codice su GitHub",
     "es": "Código en GitHub"
   },
-  "Jogo da Vida - Magnólia": {
+  "Game of Life - Magnólia": {
     "pt": "Jogo da Vida - Magnólia",
-    "it": "Jogo da Vida - Magnólia",
-    "es": "Jogo da Vida - Magnólia"
+    "it": "Gioco della Vita - Magnólia",
+    "es": "Juego de la Vida - Magnólia"
   },
-  "Jogo da Vida - Magnólia | Paulo Sanches": {
+  "Game of Life - Magnólia | Paulo Sanches": {
     "pt": "Jogo da Vida - Magnólia | Paulo Sanches",
-    "it": "Jogo da Vida - Magnólia | Paulo Sanches",
-    "es": "Jogo da Vida - Magnólia | Paulo Sanches"
+    "it": "Gioco della Vita - Magnólia | Paulo Sanches",
+    "es": "Juego de la Vida - Magnólia | Paulo Sanches"
   },
-  "Jogo da Vida - Magnólia — Paulo Sanches": {
+  "Game of Life - Magnólia — Paulo Sanches": {
     "pt": "Jogo da Vida - Magnólia — Paulo Sanches",
-    "it": "Jogo da Vida - Magnólia — Paulo Sanches",
-    "es": "Jogo da Vida - Magnólia — Paulo Sanches"
+    "it": "Gioco della Vita - Magnólia — Paulo Sanches",
+    "es": "Juego de la Vida - Magnólia — Paulo Sanches"
   },
   "An interactive board game built around storytelling and reflection.": {
     "pt": "Um jogo de tabuleiro interativo baseado em histórias e reflexão.",
@@ -2469,10 +2469,10 @@
     "it": "Il tabellone illustrato alla fine del gioco.",
     "es": "El tablero ilustrado al final del juego."
   },
-  "Jogo da Vida - Magnólia brings together 12 illustrated spaces, character stories and 10 reflection prompts in a browser-based game for desktop and mobile. Players control the pace. There is no scoring or answer form; the questions are intended for discussion outside the application.": {
+  "Game of Life - Magnólia brings together 12 illustrated spaces, character stories and 10 reflection prompts in a browser-based game for desktop and mobile. Players control the pace. There is no scoring or answer form; the questions are intended for discussion outside the application.": {
     "pt": "Jogo da Vida - Magnólia reúne 12 casas ilustradas, histórias de personagens e 10 perguntas para reflexão em um jogo de navegador para computador e celular. Os jogadores controlam o ritmo. Não há pontuação nem formulário de respostas; as perguntas são destinadas à discussão fora da aplicação.",
-    "it": "Jogo da Vida - Magnólia riunisce 12 caselle illustrate, storie di personaggi e 10 domande di riflessione in un gioco per browser su computer e dispositivi mobili. I giocatori controllano il ritmo. Non ci sono punteggi né moduli di risposta; le domande sono pensate per essere discusse al di fuori dell’applicazione.",
-    "es": "Jogo da Vida - Magnólia reúne 12 casillas ilustradas, historias de personajes y 10 preguntas para reflexionar en un juego de navegador para ordenador y móvil. Los jugadores controlan el ritmo. No hay puntuación ni formulario de respuestas; las preguntas están pensadas para debatir fuera de la aplicación."
+    "it": "Gioco della Vita - Magnólia riunisce 12 caselle illustrate, storie di personaggi e 10 domande di riflessione in un gioco per browser su computer e dispositivi mobili. I giocatori controllano il ritmo. Non ci sono punteggi né moduli di risposta; le domande sono pensate per essere discusse al di fuori dell’applicazione.",
+    "es": "Juego de la Vida - Magnólia reúne 12 casillas ilustradas, historias de personajes y 10 preguntas para reflexionar en un juego de navegador para ordenador y móvil. Los jugadores controlan el ritmo. No hay puntuación ni formulario de respuestas; las preguntas están pensadas para debatir fuera de la aplicación."
   },
   "Each space connects a position on the board to a story. The text appears progressively, followed by a question that keeps the story visible for reference.": {
     "pt": "Cada casa conecta uma posição no tabuleiro a uma história. O texto aparece progressivamente, seguido por uma pergunta que mantém a história visível para consulta.",

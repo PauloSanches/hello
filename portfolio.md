@@ -109,9 +109,9 @@ Selected projects, with some engagements running in parallel.
 
 ## Portfolio/Side Quests
 
-![Screenshot of Jogo da Vida - Magnólia, showing the illustrated board at its final space.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
+![Screenshot of Game of Life - Magnólia, showing the illustrated board at its final space.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
 
-### Jogo da Vida - Magnólia
+### Game of Life - Magnólia
 
 An interactive board game with illustrated stories and reflection prompts, explored at the player's own pace.
 
@@ -579,17 +579,17 @@ Markdown: https://paulosanches.github.io/hello/portfolio/jogo-da-vida-magnolia/c
 
 Portfolio / Side Quests
 
-## Jogo da Vida - Magnólia
+## Game of Life - Magnólia
 
 An interactive board game built around storytelling and reflection.
 
-[![Screenshot of Jogo da Vida - Magnólia, showing the illustrated board at its final space.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
+[![Screenshot of Game of Life - Magnólia, showing the illustrated board at its final space.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
 
 The illustrated board at the end of the game. [View full-size screenshot](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
 
 ### The product
 
-Jogo da Vida - Magnólia brings together 12 illustrated spaces, character stories and 10 reflection prompts in a browser-based game for desktop and mobile. Players control the pace. There is no scoring or answer form; the questions are intended for discussion outside the application.
+Game of Life - Magnólia brings together 12 illustrated spaces, character stories and 10 reflection prompts in a browser-based game for desktop and mobile. Players control the pace. There is no scoring or answer form; the questions are intended for discussion outside the application.
 
 ### The experience
 

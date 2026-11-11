@@ -6,6 +6,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from agent_content import Document, plain, normalise
 
+TITLES = {"": "Game of Life - Magnólia", "pt/": "Jogo da Vida - Magnólia", "it/": "Gioco della Vita - Magnólia", "es/": "Juego de la Vida - Magnólia"}
+
 class SideQuestsTests(unittest.TestCase):
     def test_first_side_quest_is_reachable_after_experience(self):
         doc = Document((ROOT / "index.html").read_text()).root
@@ -16,7 +18,7 @@ class SideQuestsTests(unittest.TestCase):
         self.assertLess(ids.index("side-quests"), ids.index("stories"))
         section = next(node for node in sections if node.attrs.get("id") == "side-quests")
         self.assertEqual(len(list(section.descendants("article"))), 1)
-        self.assertIn("Jogo da Vida - Magnólia", normalise(plain(section)))
+        self.assertIn(TITLES[""], normalise(plain(section)))
         links = {node.attrs.get("href") for node in section.descendants("a")}
         self.assertEqual(links, {"portfolio/jogo-da-vida-magnolia/"})
         nav = next(node for node in doc.descendants("nav") if "explore-nav" in node.classes)
@@ -30,11 +32,11 @@ class SideQuestsTests(unittest.TestCase):
                 self.assertEqual(len(sections), 1, "The project must exist in every language")
                 exported = (ROOT / prefix / "portfolio.md").read_text()
                 self.assertIn("Portfolio/Side Quests", exported)
-                self.assertIn("Jogo da Vida - Magnólia", exported)
+                self.assertIn(TITLES[prefix], exported)
                 self.assertIn("https://paulosanches.github.io/magnolia-jogo-da-vida/backstage/", exported)
                 self.assertNotIn("/backstage/v2/", exported)
                 agent = (ROOT / prefix / "agent/index.html").read_text()
-                self.assertIn("Jogo da Vida - Magnólia", agent)
+                self.assertIn(TITLES[prefix], agent)
 
     def test_project_is_presented_as_a_card_in_a_collection(self):
         for prefix in ["", "pt/", "it/", "es/"]:

@@ -109,9 +109,9 @@ Progetti selezionati, con alcune attività svolte in parallelo.
 
 ## Portfolio/Side Quests
 
-![Schermata di Jogo da Vida - Magnólia, con il tabellone illustrato nella casella finale.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
+![Schermata di Gioco della Vita - Magnólia, con il tabellone illustrato nella casella finale.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
 
-### Jogo da Vida - Magnólia
+### Gioco della Vita - Magnólia
 
 Un gioco da tavolo interattivo con storie illustrate e domande di riflessione, da esplorare al proprio ritmo.
 
@@ -579,17 +579,17 @@ Markdown: https://paulosanches.github.io/hello/it/portfolio/jogo-da-vida-magnoli
 
 Portfolio / Side Quests
 
-## Jogo da Vida - Magnólia
+## Gioco della Vita - Magnólia
 
 Un gioco da tavolo interattivo basato su storie e riflessione.
 
-[![Schermata di Jogo da Vida - Magnólia, con il tabellone illustrato nella casella finale.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
+[![Schermata di Gioco della Vita - Magnólia, con il tabellone illustrato nella casella finale.](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
 
 Il tabellone illustrato alla fine del gioco. [Visualizza la schermata a dimensione intera](https://paulosanches.github.io/hello/assets/side-quest-magnolia.png)
 
 ### Il prodotto
 
-Jogo da Vida - Magnólia riunisce 12 caselle illustrate, storie di personaggi e 10 domande di riflessione in un gioco per browser su computer e dispositivi mobili. I giocatori controllano il ritmo. Non ci sono punteggi né moduli di risposta; le domande sono pensate per essere discusse al di fuori dell’applicazione.
+Gioco della Vita - Magnólia riunisce 12 caselle illustrate, storie di personaggi e 10 domande di riflessione in un gioco per browser su computer e dispositivi mobili. I giocatori controllano il ritmo. Non ci sono punteggi né moduli di risposta; le domande sono pensate per essere discusse al di fuori dell’applicazione.
 
 ### L’esperienza
 
