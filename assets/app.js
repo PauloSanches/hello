@@ -4,6 +4,30 @@ if (year) year.textContent = String(new Date().getFullYear());
 const language = document.documentElement.lang;
 const carouselRole = language === 'it' ? 'carosello' : language === 'pt-BR' ? 'carrossel' : language === 'es' ? 'carrusel' : 'carousel';
 const counterJoin = language === 'it' ? 'di' : language === 'pt-BR' || language === 'es' ? 'de' : 'of';
+const qrToggle = document.querySelector('.qr-toggle');
+const qrDialog = document.querySelector('.qr-dialog');
+if (qrToggle && qrDialog && typeof qrDialog.showModal === 'function') {
+  qrToggle.hidden = false;
+  qrToggle.addEventListener('click', () => {
+    qrDialog.showModal();
+    qrToggle.setAttribute('aria-expanded', 'true');
+    document.documentElement.classList.add('qr-open');
+  });
+  qrDialog.querySelector('.qr-close').addEventListener('click', () => qrDialog.close());
+  qrDialog.addEventListener('click', event => {
+    if (event.target !== qrDialog) return;
+    const bounds = qrDialog.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right ||
+        event.clientY < bounds.top || event.clientY > bounds.bottom) qrDialog.close();
+  });
+  // Keep dialog shortcuts from changing an Easter egg behind the overlay.
+  qrDialog.addEventListener('keydown', event => event.stopPropagation());
+  qrDialog.addEventListener('close', () => {
+    qrToggle.setAttribute('aria-expanded', 'false');
+    document.documentElement.classList.remove('qr-open');
+    qrToggle.focus({ preventScroll: true });
+  });
+}
 document.querySelectorAll('details.language-switcher').forEach(menu => {
   document.addEventListener('click', event => {
     if (!menu.contains(event.target)) menu.open = false;

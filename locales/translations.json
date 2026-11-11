@@ -3128,5 +3128,30 @@
     "pt": "Os nove gadgets do setup de Paulo Sanches, com suas notas sobre produtividade, uso no dia a dia e os trade-offs de cada escolha.",
     "it": "I nove gadget del setup di Paulo Sanches, con le sue note su produttività, uso quotidiano e compromessi alla base di ogni scelta.",
     "es": "Los nueve gadgets del setup de Paulo Sanches, con sus notas sobre productividad, uso cotidiano y las concesiones que implica cada elección."
+  },
+  "Show QR code": {
+    "pt": "Exibir QR code",
+    "it": "Mostra il codice QR",
+    "es": "Mostrar código QR"
+  },
+  "Close QR code": {
+    "pt": "Fechar QR code",
+    "it": "Chiudi il codice QR",
+    "es": "Cerrar código QR"
+  },
+  "QR code": {
+    "pt": "QR code",
+    "it": "Codice QR",
+    "es": "Código QR"
+  },
+  "QR code for Paulo Sanches’s portfolio": {
+    "pt": "QR code do portfólio de Paulo Sanches",
+    "it": "Codice QR del portfolio di Paulo Sanches",
+    "es": "Código QR del portafolio de Paulo Sanches"
+  },
+  "paulosanches.github.io/hello/": {
+    "pt": "paulosanches.github.io/hello/",
+    "it": "paulosanches.github.io/hello/",
+    "es": "paulosanches.github.io/hello/"
   }
 }
