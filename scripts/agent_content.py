@@ -29,17 +29,17 @@ VIEW_LABELS = {
     "it": ("Torna al portfolio", "Apri il file Markdown", "Portfolio completo in Markdown", "Indietro"),
     "es": ("Volver al portafolio", "Abrir archivo Markdown", "Portafolio completo en Markdown", "Volver"),
 }
-LANGUAGE_LABELS = {"en": ("EN", "English"), "it": ("ITA", "Italiano"),
-                   "pt-BR": ("PT", "Português do Brasil"), "es": ("ES", "Español")}
+LANGUAGE_LABELS = {"en": ("EN", "English"), "es": ("ES", "Español"),
+                   "it": ("IT", "Italiano"), "pt-BR": ("PT", "Português do Brasil")}
 
 
 def language_dropdown(variants, active="en", label="Language", reader=False):
     """Native disclosure keeps every language reachable without JavaScript."""
     classes = "language-switcher languages" if reader else "language-switcher"
     links = []
-    for language, (_, name) in LANGUAGE_LABELS.items():
+    for language, (code, name) in LANGUAGE_LABELS.items():
         current = ' aria-current="page"' if language == active else ""
-        links.append(f'<a href="{html.escape(variants[language], quote=True)}" lang="{language}" hreflang="{language}" aria-label="{name}"{current}>{name}</a>')
+        links.append(f'<a href="{html.escape(variants[language], quote=True)}" lang="{language}" hreflang="{language}" aria-label="{name}"{current}>{code}</a>')
     return (f'<details class="{classes}" aria-label="{label}"><summary>'
             f'<span class="language-current">{LANGUAGE_LABELS[active][0]}</span>'
             '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="m3 4.5 3 3 3-3"/></svg>'
@@ -354,7 +354,7 @@ def build_view(document, prefix, story=None, section="field-notes"):
     .language-switcher summary::-webkit-details-marker {{ display: none; }}
     .language-switcher summary svg {{ width: 12px; height: 12px; }}
     .language-switcher[open] summary svg {{ transform: rotate(180deg); }}
-    .language-options {{ position: absolute; z-index: 10; top: calc(100% + 8px); right: -1px; min-width: 200px; max-height: calc(100svh - 96px); overflow-y: auto; padding: 4px; background: white; border: 1px solid #ccc; box-shadow: 0 8px 24px #0002; }}
+    .language-options {{ position: absolute; z-index: 10; top: calc(100% + 8px); right: -1px; min-width: 100%; max-height: calc(100svh - 96px); overflow-y: auto; padding: 4px; background: white; border: 1px solid #ccc; box-shadow: 0 8px 24px #0002; }}
     .language-options a {{ display: flex; min-height: 44px; text-decoration: none; }}
     .language-options a:hover {{ text-decoration: underline; }}
     a, button {{ color: inherit; display: inline-flex; align-items: center; min-height: 44px; padding: 8px; text-underline-offset: 4px; }}

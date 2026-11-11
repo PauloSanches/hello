@@ -39,7 +39,7 @@ class LocaleTests(unittest.TestCase):
                     controls = list(switcher.descendants("a"))
                     self.assertEqual({n.attrs["hreflang"]: urljoin(url, n.attrs["href"]) for n in controls}, variants)
                     self.assertEqual([n.attrs["hreflang"] for n in controls if n.attrs.get("aria-current") == "page"], [info["lang"]])
-                    self.assertEqual([normalise(plain(n)) for n in controls], [name for _, name in LANGUAGE_LABELS.values()])
+                    self.assertEqual([normalise(plain(n)) for n in controls], ["EN", "ES", "IT", "PT"])
                     reader = Document((path.parent / "agent/index.html").read_text()).root
                     menu = next(n for n in reader.descendants("details") if "language-switcher" in n.classes)
                     self.assertEqual(normalise(plain(next(next(menu.descendants("summary")).descendants("span")))), LANGUAGE_LABELS[info["lang"]][0])

@@ -29,7 +29,7 @@ MONTHS = {
 }
 EN_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 PRESERVE = {
-    "Paulo Sanches", "English", "Italiano", "Português do Brasil", "Español", "EN", "ITA", "PT", "ES", "AI/Agent",
+    "Paulo Sanches", "English", "Italiano", "Português do Brasil", "Español", "EN", "IT", "ITA", "PT", "ES", "AI/Agent",
     "AWS", "GCP / Terraform", "Microsoft Entra ID", "Portugal", "Braga, Portugal",
     "Accenture · Coimbra, Portugal", "JNation", "FlashCamp", "Cubo", "for Devs.",
     "Cubo Itaú · Masterclass #2", "MASTERCLASS / 02", "Mindset", "LinkedIn",
